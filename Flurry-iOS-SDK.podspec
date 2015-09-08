@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.default_subspec = 'FlurrySDK'
 
-  s.subspec 'Flurry' do |ss|
+  s.subspec 'FlurrySDK' do |ss|
     ss.source_files = [
       'Flurry/Flurry.h',
       'Flurry/Empty.m'
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
     # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
     ss.vendored_libraries = 'FlurryAds/libFlurryAds_7.0.0.a'
-    ss.dependency 'FlurrySDK/Flurry'
+    ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
   
   s.subspec 'TumblrAPI' do |ss|
@@ -64,10 +64,9 @@ Pod::Spec.new do |s|
       'FlurryTumblrAPI/FlurryTumblrDelegate.h'
     ]
 
-    ss.dependency 'FlurrySDK/Flurry'
+    ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
-  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'Flurry-iOS-SDK' => ['Pod/Assets/*.png']
   }
