@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version          = '7.0.0'
   s.summary          = 'Flurry SDK for iOS'
   s.license  = { :type => 'Commercial', :text => license }
-  s.summary  = ‘FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integation'
+  s.summary  = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integation'
   s.homepage = 'http://developer.yahoo.com/flurry'
   s.author   = { 'Flurry' => 'http://developer.yahoo.com/flurry' }
   s.source   = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => '#{s.version}' }
@@ -32,11 +32,11 @@ Pod::Spec.new do |s|
   s.subspec 'FlurryWatchSDK' do |ss|
     ss.source_files = [
       'Flurry/FlurryWatch.h',
-      'Flurry/Flurry.h’
+      'Flurry/Flurry.h'
     ]
 
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = 'Flurry/libFlurry_7.0.0.a”
+    ss.vendored_libraries = 'Flurry/libFlurry_7.0.0.a'
   end
 
   s.subspec 'FlurryAds' do |ss|
@@ -54,14 +54,14 @@ Pod::Spec.new do |s|
     # AdSupport used:     nm -m FlurryAds/*.a | grep -v 'non-external' | grep _AS
     # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = 'FlurryAds/libFlurryAds_7.0.0.a”
+    ss.vendored_libraries = 'FlurryAds/libFlurryAds_7.0.0.a'
     ss.dependency 'FlurrySDK/Flurry'
   end
   
-  s.subspec ‘TumblrAPI’ do |ss|
+  s.subspec 'TumblrAPI' do |ss|
     ss.source_files = [
       'FlurryTumblrAPI/FlurryTumblr.h',
-      'FlurryTumblrAPI/FlurryTumblrDelegate.h’
+      'FlurryTumblrAPI/FlurryTumblrDelegate.h'
     ]
 
     ss.dependency 'FlurrySDK/Flurry'
