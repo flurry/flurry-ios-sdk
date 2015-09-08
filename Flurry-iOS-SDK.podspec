@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
   s.version          = '7.0.0'
   s.summary          = 'Flurry SDK for iOS'
-  s.license  = { :type => 'Commercial', :text => license }
-  s.summary  = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integation'
+  s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
+  s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integation'
   s.homepage = 'http://developer.yahoo.com/flurry'
-  s.author   = { 'Flurry' => 'http://developer.yahoo.com/flurry' }
-  s.source   = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => '#{s.version}' }
-  s.platform = :ios
+  s.author           = { 'Flurry' => 'integration@flurry.com' }
+  s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
+  s.platform         = :ios, '7.0'
   s.requires_arc = false
   s.default_subspec = 'FlurrySDK'
 
@@ -66,22 +66,6 @@ Pod::Spec.new do |s|
 
     ss.dependency 'FlurrySDK/Flurry'
   end
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-
-  s.license          = 'MIT'
-  s.author           = { 'Flurry' => 'integration@flurry.com' }
-  s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
- 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = false
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
