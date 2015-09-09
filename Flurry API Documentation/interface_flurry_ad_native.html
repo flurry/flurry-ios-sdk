@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('interface_flurry_ad_native.html','');}
 
 <p><code>#import &lt;<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>&gt;</code></p>
 
-<p>Inherits NSObject.</p>
+<p>Inherits &lt;NSObject&gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
@@ -118,6 +118,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a14d33a16acf647211905b1a70dcb7ba9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9">removeTrackingView</a></td></tr>
 <tr class="memdesc:a14d33a16acf647211905b1a70dcb7ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the tracking view associated with the ad object.  <a href="#a14d33a16acf647211905b1a70dcb7ba9">More...</a><br/></td></tr>
 <tr class="separator:a14d33a16acf647211905b1a70dcb7ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee0bc05028d7ca2d5272508294a1c92"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92">isVideoAd</a></td></tr>
+<tr class="memdesc:aeee0bc05028d7ca2d5272508294a1c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which returns if its a video Ad.  <a href="#aeee0bc05028d7ca2d5272508294a1c92">More...</a><br/></td></tr>
+<tr class="separator:aeee0bc05028d7ca2d5272508294a1c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -142,6 +145,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a942d35995fc5929bb462a1d1d79025e8"><td class="memItemLeft" align="right" valign="top">UIViewController *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8">viewControllerForPresentation</a></td></tr>
 <tr class="memdesc:a942d35995fc5929bb462a1d1d79025e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property should be set to the view controller that needs to be used to present a full screen when the ad is clicked. Typically this will the topmost content view controller.  <a href="#a942d35995fc5929bb462a1d1d79025e8">More...</a><br/></td></tr>
 <tr class="separator:a942d35995fc5929bb462a1d1d79025e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229c8c56ec909d3245ee37e2c1d40a67"><td class="memItemLeft" align="right" valign="top">UIView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67">videoViewContainer</a></td></tr>
+<tr class="memdesc:a229c8c56ec909d3245ee37e2c1d40a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property should be set to the view which will have the Video Player embedded for Native Video Ads.  <a href="#a229c8c56ec909d3245ee37e2c1d40a67">More...</a><br/></td></tr>
+<tr class="separator:a229c8c56ec909d3245ee37e2c1d40a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591e1fcd4df9766ce6c50f3f6af326ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_flurry_ad_targeting.html">FlurryAdTargeting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea">targeting</a></td></tr>
 <tr class="memdesc:a591e1fcd4df9766ce6c50f3f6af326ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.  <a href="#a591e1fcd4df9766ce6c50f3f6af326ea">More...</a><br/></td></tr>
 <tr class="separator:a591e1fcd4df9766ce6c50f3f6af326ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,11 +155,11 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available methods for displaying native ads. </p>
 <p>Set of methods that allow publishers to configure, target, and deliver native ads to their customers.</p>
-<p>For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</p>
+<p>For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="https://developer.yahoo.com/flurry/docs/howtos">Support Center - Publishers</a>.</p>
 <dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>6.0.0 </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00027">27</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00029">29</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a59bfc8aab67569dee1fc9965ddab3033"></a>
 <div class="memitem">
@@ -254,6 +260,43 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aeee0bc05028d7ca2d5272508294a1c92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isVideoAd </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which returns if its a video Ad. </p>
+<p>Use this property to figure out if its a Video Ad</p>
+<dl class="section note"><dt>Note</dt><dd>It is very important to set <a class="el" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8" title="This property should be set to the view controller that needs to be used to present a full screen whe...">viewControllerForPresentation</a> and <a class="el" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a> for the current Video Ad Integration</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>6.6.0</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8" title="This property should be set to the view controller that needs to be used to present a full screen whe...">viewControllerForPresentation</a> and <a class="el" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a></dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">@interface </span>AdStreamCell : UITableViewCell</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">@property</span> (nonatomic, retain) <a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>* ad;</div>
+<div class="line"><span class="keyword">@property</span> (weak, nonatomic) IBOutlet UIView *videoView;</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">@end</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">@implementation </span>AdStreamCell</div>
+<div class="line"></div>
+<div class="line">- (void) setupAdCellForNativeAd:(<a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>*) nativeAd</div>
+<div class="line">{</div>
+<div class="line"><span class="keywordflow">if</span>([<span class="keyword">self</span>.ad <a class="code" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92" title="Method which returns if its a video Ad.">isVideoAd</a>])</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">self</span>.ad.<a class="code" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a> = videoView;</div>
+<div class="line">}</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="a14d33a16acf647211905b1a70dcb7ba9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +369,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00062">62</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00063">63</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +409,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="interface_flurry_ad_native_asset.html" title="Provides all available methods for displaying native ad assets.">FlurryAdNativeAsset</a> objects </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00180">180</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00181">181</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +471,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00154">154</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00155">155</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +518,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00099">99</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00100">100</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +544,7 @@ Properties</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad space string value. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00038">38</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00039">39</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +572,7 @@ Properties</h2></td></tr>
 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The Ad Targeting object that was orignally set or nil if never set. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00256">256</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00278">278</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +615,39 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>View tracked by this ad object or nil if a tracking view has not been set on this object. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00216">216</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00217">217</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a229c8c56ec909d3245ee37e2c1d40a67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIView*) videoViewContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">retain</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property should be set to the view which will have the Video Player embedded for Native Video Ads. </p>
+<dl class="section since"><dt>Since</dt><dd>6.6.0</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_ad_native_asset.html" title="Provides all available methods for displaying native ad assets.">FlurryAdNativeAsset</a> for details on the video assets<br/>
+</dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>* nativeAd = [[<a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a> alloc] initWithSpace:adSpace];</div>
+<div class="line">nativeAd.<a class="code" href="interface_flurry_ad_native.html#a320563dd406a019e4687134c07cdd6ab" title="Sets the object to receive various delegate methods.">adDelegate</a> = <span class="keyword">self</span>;</div>
+<div class="line">nativeAd.<a class="code" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a> = <span class="keyword">self</span>.videoViewContainer;</div>
+<div class="line">[nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>UIView used for presenting the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Video Player </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00264">264</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -604,13 +679,10 @@ Properties</h2></td></tr>
 <div class="line">[nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>UIViewcontroller used for presentation of a full screen or nil if a presenting view controller has not been set </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00241">241</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00242">242</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/code/flurry/IOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

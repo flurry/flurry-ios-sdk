@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('interface_flurry.html','');});
 
 <p><code>#import &lt;<a class="el" href="_flurry_8h_source.html">Flurry.h</a>&gt;</code></p>
 
-<p>Inherits NSObject.</p>
+<p>Inherits &lt;NSObject&gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -112,10 +112,10 @@ Class Methods</h2></td></tr>
 <tr class="memdesc:a0033dc0a7acc00c9a10b19655be47aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a0033dc0a7acc00c9a10b19655be47aac">More...</a><br/></td></tr>
 <tr class="separator:a0033dc0a7acc00c9a10b19655be47aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6">activeSessionExists</a></td></tr>
-<tr class="memdesc:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a90a2dfc96d12fb3b7990e2ff1c6e0da6">More...</a><br/></td></tr>
+<tr class="memdesc:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a session currently exists and is active.  <a href="#a90a2dfc96d12fb3b7990e2ff1c6e0da6">More...</a><br/></td></tr>
 <tr class="separator:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f496e071482df2d240acbb6c2ddb556"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556">getSessionID</a></td></tr>
-<tr class="memdesc:a2f496e071482df2d240acbb6c2ddb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a2f496e071482df2d240acbb6c2ddb556">More...</a><br/></td></tr>
+<tr class="memdesc:a2f496e071482df2d240acbb6c2ddb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the session ID of the current active session.  <a href="#a2f496e071482df2d240acbb6c2ddb556">More...</a><br/></td></tr>
 <tr class="separator:a2f496e071482df2d240acbb6c2ddb556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a3ba0e3de32ab9d494617dfe4cb2888fa">setDelegate:</a></td></tr>
 <tr class="memdesc:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> delegate for callback on session creation.  <a href="#a3ba0e3de32ab9d494617dfe4cb2888fa">More...</a><br/></td></tr>
@@ -123,6 +123,15 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a57e18dc7c992272e3dc89e7f3bc853f4">pauseBackgroundSession</a></td></tr>
 <tr class="memdesc:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session left running in background.  <a href="#a57e18dc7c992272e3dc89e7f3bc853f4">More...</a><br/></td></tr>
 <tr class="separator:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae957b76d1c81276e9743977a75384821"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ae957b76d1c81276e9743977a75384821">addSessionOrigin:withDeepLink:</a></td></tr>
+<tr class="memdesc:ae957b76d1c81276e9743977a75384821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an session origin and deep link attached to each session specified by <code>sessionOriginName</code> and <code>deepLink</code>.  <a href="#ae957b76d1c81276e9743977a75384821">More...</a><br/></td></tr>
+<tr class="separator:ae957b76d1c81276e9743977a75384821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029a000693aeb3302b861229126827a3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a029a000693aeb3302b861229126827a3">addSessionOrigin:</a></td></tr>
+<tr class="memdesc:a029a000693aeb3302b861229126827a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an session origin attached to each session specified by <code>sessionOriginName</code>.  <a href="#a029a000693aeb3302b861229126827a3">More...</a><br/></td></tr>
+<tr class="separator:a029a000693aeb3302b861229126827a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1596f7a52079f1f36df255c8fd930ef"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ab1596f7a52079f1f36df255c8fd930ef">sessionProperties:</a></td></tr>
+<tr class="memdesc:ab1596f7a52079f1f36df255c8fd930ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a custom parameterized session parameters <code>parameters</code>.  <a href="#ab1596f7a52079f1f36df255c8fd930ef">More...</a><br/></td></tr>
+<tr class="separator:ab1596f7a52079f1f36df255c8fd930ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0051bbff585708b7b17dfbd10f485abd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a0051bbff585708b7b17dfbd10f485abd">addOrigin:withVersion:</a></td></tr>
 <tr class="memdesc:a0051bbff585708b7b17dfbd10f485abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an SDK origin specified by <code>originName</code> and <code>originVersion</code>.  <a href="#a0051bbff585708b7b17dfbd10f485abd">More...</a><br/></td></tr>
 <tr class="separator:a0051bbff585708b7b17dfbd10f485abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,15 +237,18 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a97ba703be21769df2d47c9a42fd4f703"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a97ba703be21769df2d47c9a42fd4f703">setPulseEnabled:</a></td></tr>
 <tr class="memdesc:a97ba703be21769df2d47c9a42fd4f703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Pulse.  <a href="#a97ba703be21769df2d47c9a42fd4f703">More...</a><br/></td></tr>
 <tr class="separator:a97ba703be21769df2d47c9a42fd4f703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa7153637496bfdc4e2b4b2a5f787a4"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a1aa7153637496bfdc4e2b4b2a5f787a4">logEvent:syndicationID:parameters:</a></td></tr>
+<tr class="memdesc:a1aa7153637496bfdc4e2b4b2a5f787a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a syndicated event specified by <code>syndicationEvent</code>.  <a href="#a1aa7153637496bfdc4e2b4b2a5f787a4">More...</a><br/></td></tr>
+<tr class="separator:a1aa7153637496bfdc4e2b4b2a5f787a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available methods for defining and reporting Analytics from use of your app. </p>
 <p>Set of methods that allow developers to capture detailed, aggregate information regarding the use of their app by end users.</p>
-<dl class="section note"><dt>Note</dt><dd>This class provides methods necessary for correct function of <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This class provides methods necessary for correct function of <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see &lt;a href=<a href="https://developer.yahoo.com/flurry/docs/howtos">https://developer.yahoo.com/flurry/docs/howtos</a>"&gt;Support Center - Publishers.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>2009 - 2013 <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>4.3.0 </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00078">78</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00099">99</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a90a2dfc96d12fb3b7990e2ff1c6e0da6"></a>
 <div class="memitem">
@@ -251,12 +263,12 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>. </p>
+<p>Returns true if a session currently exists and is active. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <div class="fragment"><div class="line">   - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
 <div class="line">{</div>
 <div class="line"><span class="comment">// Optional Flurry startup methods</span></div>
-<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6" title="Start a Flurry session for the project denoted by apiKey.">activeSessionExists</a>:<span class="stringliteral">@&quot;YOUR_API_KEY&quot;</span> withOptions:launchOptions];</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6" title="Returns true if a session currently exists and is active.">activeSessionExists</a>];</div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -363,6 +375,81 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a029a000693aeb3302b861229126827a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) addSessionOrigin: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>sessionOriginName</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an session origin attached to each session specified by <code>sessionOriginName</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>6.5.0</dd></dl>
+<p>This method allows you to specify session origin for each session. This is different than addOrigin which is used for third party wrappers after every session start.</p>
+<div class="fragment"><div class="line">   - (void)interestingMethod</div>
+<div class="line">{</div>
+<div class="line"><span class="comment">// ... after calling startSession</span></div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> addSessionOrigin:<span class="stringliteral">@&quot;facebuk&quot;</span>];</div>
+<div class="line"><span class="comment">// more code ...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionOriginName</td><td>Name of the origin. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae957b76d1c81276e9743977a75384821"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) <a class="el" href="interface_flurry.html#a029a000693aeb3302b861229126827a3">addSessionOrigin:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>sessionOriginName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withDeepLink:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>deepLink</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an session origin and deep link attached to each session specified by <code>sessionOriginName</code> and <code>deepLink</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>6.5.0</dd></dl>
+<p>This method allows you to specify session origin and deep link for each session. This is different than addOrigin which is used for third party wrappers after every session start.</p>
+<div class="fragment"><div class="line">   - (void)interestingMethod</div>
+<div class="line">{</div>
+<div class="line"><span class="comment">// ... after calling startSession</span></div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> addSessionOrigin:<span class="stringliteral">@&quot;facebuk&quot;</span>];</div>
+<div class="line"><span class="comment">// more code ...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionOriginName</td><td>Name of the origin. </td></tr>
+    <tr><td class="paramname">deepLink</td><td>Url of the deep Link. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab72c8c091057d2b60786a29d2767e99c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -461,12 +548,12 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>. </p>
+<p>Returns the session ID of the current active session. </p>
 <dl class="section since"><dt>Since</dt><dd>6.3.0</dd></dl>
 <div class="fragment"><div class="line">   - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
 <div class="line">{</div>
 <div class="line"><span class="comment">// Optional Flurry startup methods</span></div>
-<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556" title="Start a Flurry session for the project denoted by apiKey.">getSessionID</a>];</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556" title="Returns the session ID of the current active session.">getSessionID</a>];</div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -659,6 +746,56 @@ Class Methods</h2></td></tr>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of the event. For maximum effectiveness, we recommend using a naming scheme that can be easily understood by non-technical people in your business domain.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1aa7153637496bfdc4e2b4b2a5f787a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (FlurryEventRecordStatus) <a class="el" href="interface_flurry.html#a347b475a85dd8b4ebedc728bdbba6844">logEvent:</a> </td>
+          <td></td>
+          <td class="paramtype">(FlurrySyndicationEvent)&#160;</td>
+          <td class="paramname"><em>syndicationEvent</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">syndicationID:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>syndicationID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">parameters:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Records a syndicated event specified by <code>syndicationEvent</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>6.7.0</dd></dl>
+<p>This method is excusively for use by the Tumblr App, calls from others app will be ignored.</p>
+<div class="fragment"><div class="line">- (void) reblogButtonHandler</div>
+<div class="line">{</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logEvent:Reblog syndicationID:<span class="stringliteral">@&quot;123&quot;</span>, parameters:nil];</div>
+<div class="line"><span class="comment">// Perform</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">syndicationEvent</td><td>syndication event. </td></tr>
+    <tr><td class="paramname">syndicationID</td><td>syndication ID that is associated with the event </td></tr>
+    <tr><td class="paramname">parameters</td><td>use this to pass in syndication parameters such as kSyndicationiOSDeepLink, kSyndicationAndroidDeepLink, kSyndicationWebLinkDeepLink</td></tr>
   </table>
   </dd>
 </dl>
@@ -887,6 +1024,34 @@ Class Methods</h2></td></tr>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="ab1596f7a52079f1f36df255c8fd930ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) sessionProperties: </td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>parameters</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a custom parameterized session parameters <code>parameters</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>6.5.0</dd></dl>
+<p>This method allows you to associate parameters with an session. Parameters are valuable as they allow you to store characteristics of an session.</p>
+<dl class="section note"><dt>Note</dt><dd>You should not pass private or confidential information about your origin info in a custom origin. <br/>
+ A maximum of 20 parameter names may be associated with any origin. Sending over 20 parameter names with a single origin will result in no parameters being logged for that origin.</dd></dl>
+<div class="fragment"></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>An immutable copy of map containing Name-Value pairs of parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a55692f576c987dc0ed73a2ba4aa31710"></a>
@@ -1470,9 +1635,6 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/code/flurry/IOSSDK/AdUnityAgent/Classes/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
