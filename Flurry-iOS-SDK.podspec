@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version          = '7.1.0'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
-  s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integation'
+  s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
   s.homepage = 'http://developer.yahoo.com/flurry'
   s.author           = { 'Flurry' => 'integration@flurry.com' }
   s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
