@@ -15,8 +15,8 @@ To enable Flurry Analytics:
 To enable Flurry Ad serving  : 
 
 ```
-  pod ‘Flurry-iOS-SDK/FlurrySDK’
-  pod 'FlurrySDK/FlurryAds', '~>6.7'
+  pod 'Flurry-iOS-SDK/FlurrySDK'
+  pod 'Flurry-iOS-SDK/FlurryAds'
 ```
 
 
@@ -31,7 +31,7 @@ Don't forget to read how to track events correctly in Apple Watch Extensions  in
 
 To enable Tubmlr in-app sharing: 
 ```
-pod ‘Flurry-iOS-SDK/FlurrySDK’
+pod 'Flurry-iOS-SDK/FlurrySDK'
 pod 'Flurry-iOS-SDK/FlurryAds'
-pod 'Flurry-iOS-SDK/TumblrAPI’
+pod 'Flurry-iOS-SDK/TumblrAPI'
 ```
