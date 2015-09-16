@@ -13,5 +13,7 @@ var files =
     [ "FlurryAdNativeStyle.h", "_flurry_ad_native_style_8h_source.html", null ],
     [ "FlurryAds.h", "_flurry_ads_8h_source.html", null ],
     [ "FlurryAdTargeting.h", "_flurry_ad_targeting_8h_source.html", null ],
+    [ "FlurryTumblr.h", "_flurry_tumblr_8h_source.html", null ],
+    [ "FlurryTumblrDelegate.h", "_flurry_tumblr_delegate_8h_source.html", null ],
     [ "FlurryWatch.h", "_flurry_watch_8h_source.html", null ]
 ];
