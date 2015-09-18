@@ -65,6 +65,7 @@ Pod::Spec.new do |s|
     ]
 
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
+    ss.dependency 'Flurry-iOS-SDK/FlurryAds'
   end
 
   s.resource_bundles = {
