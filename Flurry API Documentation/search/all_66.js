@@ -23,6 +23,5 @@ var searchData=
   ['flurrysessiondidcreatewithinfo_3a',['flurrySessionDidCreateWithInfo:',['../protocol_flurry_delegate-p.html#a6dc78e394f0aa01cdcca997525e07fe4',1,'FlurryDelegate-p']]],
   ['flurrytextshareparameters',['FlurryTextShareParameters',['../interface_flurry_text_share_parameters.html',1,'']]],
   ['flurrytumblr',['FlurryTumblr',['../interface_flurry_tumblr.html',1,'']]],
-  ['flurrytumblrdelegate_2dp',['FlurryTumblrDelegate-p',['../protocol_flurry_tumblr_delegate-p.html',1,'']]],
   ['flurrywatch',['FlurryWatch',['../interface_flurry_watch.html',1,'']]]
 ];

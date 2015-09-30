@@ -16,7 +16,6 @@ var annotated =
     [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", "interface_flurry_image_share_parameters" ],
     [ "FlurryTextShareParameters", "interface_flurry_text_share_parameters.html", "interface_flurry_text_share_parameters" ],
     [ "FlurryTumblr", "interface_flurry_tumblr.html", null ],
-    [ "<FlurryTumblrDelegate>", "protocol_flurry_tumblr_delegate-p.html", "protocol_flurry_tumblr_delegate-p" ],
     [ "FlurryWatch", "interface_flurry_watch.html", null ],
     [ "<IFlurryTumblrShareParameters>", "protocol_i_flurry_tumblr_share_parameters-p.html", "protocol_i_flurry_tumblr_share_parameters-p" ]
 ];

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '7.1.1'
+  s.version          = '7.2.0'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     ]
     
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = 'Flurry/libFlurry_7.1.1.a'
+    ss.vendored_libraries = 'Flurry/libFlurry_7.2.0.a'
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     ]
 
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = 'Flurry/libFlurry_7.1.1.a'
+    ss.vendored_libraries = 'Flurry/libFlurry_7.2.0.a'
   end
 
   s.subspec 'FlurryAds' do |ss|
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
     # AdSupport used:     nm -m FlurryAds/*.a | grep -v 'non-external' | grep _AS
     # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = 'FlurryAds/libFlurryAds_7.1.1.a'
+    ss.vendored_libraries = 'FlurryAds/libFlurryAds_7.2.0.a'
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
   

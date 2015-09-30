@@ -16,6 +16,5 @@ var searchData=
   ['flurryimageshareparameters',['FlurryImageShareParameters',['../interface_flurry_image_share_parameters.html',1,'']]],
   ['flurrytextshareparameters',['FlurryTextShareParameters',['../interface_flurry_text_share_parameters.html',1,'']]],
   ['flurrytumblr',['FlurryTumblr',['../interface_flurry_tumblr.html',1,'']]],
-  ['flurrytumblrdelegate_2dp',['FlurryTumblrDelegate-p',['../protocol_flurry_tumblr_delegate-p.html',1,'']]],
   ['flurrywatch',['FlurryWatch',['../interface_flurry_watch.html',1,'']]]
 ];

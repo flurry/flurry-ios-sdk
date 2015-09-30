@@ -26,7 +26,8 @@ typedef enum {
     FlurryEventUniqueCountExceeded,
     FlurryEventParamsCountExceeded,
     FlurryEventLogCountExceeded,
-    FlurryEventLoggingDelayed
+    FlurryEventLoggingDelayed,
+    FlurryEventAnalyticsDisabled
 } FlurryEventRecordStatus;
 
 
@@ -845,7 +846,7 @@ extern NSString* const kSyndicationWebDeepLink;
  *
  *  @param userID The app id for a user.
  */
-+ (void)setUserID:(NSString *)userID;	
++ (void)setUserID:(NSString *)userID;
 
 /*!
  *  @brief Set your user's age in years.
