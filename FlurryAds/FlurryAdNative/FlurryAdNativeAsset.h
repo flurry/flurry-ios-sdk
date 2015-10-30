@@ -42,7 +42,7 @@ typedef enum
  *
  *  @since 6.0.0
  */
-@property (nonatomic, retain, readonly) NSString *name;
+@property (nonatomic, strong, readonly) NSString *name;
 
 /*!
  *  @brief Read only property that indicates the type of asset.
@@ -56,7 +56,7 @@ typedef enum
  *
  *  @since 6.0.0
  */
-@property (nonatomic, retain, readonly) NSString *value;
+@property (nonatomic, strong, readonly) NSString *value;
 
 /*!
  *  @brief Read only property that indicates the width of the asset. This value is set if this object represents an image asset.

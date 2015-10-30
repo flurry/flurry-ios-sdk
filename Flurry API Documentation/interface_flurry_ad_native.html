@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.2.1</span>
+   &#160;<span id="projectnumber">7.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -121,6 +121,12 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:aeee0bc05028d7ca2d5272508294a1c92"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92">isVideoAd</a></td></tr>
 <tr class="memdesc:aeee0bc05028d7ca2d5272508294a1c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which returns if its a video Ad.  <a href="#aeee0bc05028d7ca2d5272508294a1c92">More...</a><br/></td></tr>
 <tr class="separator:aeee0bc05028d7ca2d5272508294a1c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc51d0ea9b92aafb2a0f5c8037f4f1b0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#adc51d0ea9b92aafb2a0f5c8037f4f1b0">setPencilViewToTrack:withExpandButton:andCTAButton:</a></td></tr>
+<tr class="memdesc:adc51d0ea9b92aafb2a0f5c8037f4f1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up Pencil view to track which will be used to send impression beacons. A click on this view sets the display state to expanded and the delegate callback adNativeExpandToggled: is invoked. The cta button provided in this call is used to invoke landing page.  <a href="#adc51d0ea9b92aafb2a0f5c8037f4f1b0">More...</a><br/></td></tr>
+<tr class="separator:adc51d0ea9b92aafb2a0f5c8037f4f1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7471e00bc418f4e6a724dde504cb67aa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a7471e00bc418f4e6a724dde504cb67aa">setExpandedViewToTrack:withExpandButton:andCTAButton:</a></td></tr>
+<tr class="memdesc:a7471e00bc418f4e6a724dde504cb67aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up expanded view to track which will be used to send click beacons. A click on this view loads the landing page. The expand button provided in this call is used to collpase the expanded view of ad.  <a href="#a7471e00bc418f4e6a724dde504cb67aa">More...</a><br/></td></tr>
+<tr class="separator:a7471e00bc418f4e6a724dde504cb67aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -136,6 +142,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a8da67a3606163b4f4e0220878d23249e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e">expired</a></td></tr>
 <tr class="memdesc:a8da67a3606163b4f4e0220878d23249e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an ad has expired.  <a href="#a8da67a3606163b4f4e0220878d23249e">More...</a><br/></td></tr>
 <tr class="separator:a8da67a3606163b4f4e0220878d23249e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="memItemLeft" align="right" valign="top">kFlurryAdNativeDisplayState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a1fe0f40954a53d9f42d19baab87f4cd0">displayState</a></td></tr>
+<tr class="memdesc:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of assets that match the specified asset type.  <a href="#a1fe0f40954a53d9f42d19baab87f4cd0">More...</a><br/></td></tr>
+<tr class="separator:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65370a089d7814416b4511fdb0b2dd66"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66">assetList</a></td></tr>
 <tr class="memdesc:a65370a089d7814416b4511fdb0b2dd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property will retrieve the native ad's assets. The assets will be available when the ad is ready.  <a href="#a65370a089d7814416b4511fdb0b2dd66">More...</a><br/></td></tr>
 <tr class="separator:a65370a089d7814416b4511fdb0b2dd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +168,7 @@ Properties</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>6.0.0 </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00029">29</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00034">34</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a59bfc8aab67569dee1fc9965ddab3033"></a>
 <div class="memitem">
@@ -289,10 +298,10 @@ Properties</h2></td></tr>
 <div class="line"></div>
 <div class="line">- (void) setupAdCellForNativeAd:(<a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>*) nativeAd</div>
 <div class="line">{</div>
-<div class="line"><span class="keywordflow">if</span>([<span class="keyword">self</span>.ad <a class="code" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92" title="Method which returns if its a video Ad.">isVideoAd</a>])</div>
-<div class="line">{</div>
-<div class="line"><span class="keyword">self</span>.ad.<a class="code" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a> = videoView;</div>
-<div class="line">}</div>
+<div class="line">    <span class="keywordflow">if</span>([<span class="keyword">self</span>.ad <a class="code" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92" title="Method which returns if its a video Ad.">isVideoAd</a>])</div>
+<div class="line">    {</div>
+<div class="line">       <span class="keyword">self</span>.ad.<a class="code" href="interface_flurry_ad_native.html#a229c8c56ec909d3245ee37e2c1d40a67" title="This property should be set to the view which will have the Video Player embedded for Native Video Ad...">videoViewContainer</a> = videoView;</div>
+<div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
 </div>
@@ -332,6 +341,154 @@ Properties</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
+<a class="anchor" id="a7471e00bc418f4e6a724dde504cb67aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setExpandedViewToTrack: </td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>expandedView</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withExpandButton:</td>
+          <td></td>
+          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramname"><em>expandButton</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andCTAButton:</td>
+          <td></td>
+          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramname"><em>ctaButton</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up expanded view to track which will be used to send click beacons. A click on this view loads the landing page. The expand button provided in this call is used to collpase the expanded view of ad. </p>
+<dl class="section note"><dt>Note</dt><dd>The expand button can't be nil.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>7.3.0</dd></dl>
+<div class="fragment"><div class="line">- (void)setupWithFlurryNativeAd:(<a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>*)adNative atPosition:(NSInteger)position displayType:(kFlurryAdNativeDisplayState)displayType</div>
+<div class="line">{</div>
+<div class="line">    [<span class="keyword">self</span>.ad <a class="code" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9" title="Removes the tracking view associated with the ad object.">removeTrackingView</a>];</div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">self</span>.ad = adNative;</div>
+<div class="line">    <span class="keyword">self</span>.ad.displayState = displayType;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (adNative.assetList == nil)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">self</span>.frame = CGRectMake(0, 0, 0, 0);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> ([Utils isPortrait]) {</div>
+<div class="line">        [<span class="keyword">self</span> adjustForPortrait];</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        [<span class="keyword">self</span> adjustForLandscape:adNative];</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">self</span>.cardTitleLabel.textColor = [UIColor blackColor];</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (displayType == FLURRY_NATIVE_AD_EXPANDED)</div>
+<div class="line">    {</div>
+<div class="line">        [<span class="keyword">self</span> showExpanded];</div>
+<div class="line">        [<span class="keyword">self</span>.ad setExpandedViewToTrack:<span class="keyword">self</span> withExpandButton:<span class="keyword">self</span>.expandButton andCTAButton:nil];</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        [<span class="keyword">self</span> showCollapsed];</div>
+<div class="line">        [<span class="keyword">self</span>.ad setPencilViewToTrack:<span class="keyword">self</span> withExpandButton:<span class="keyword">self</span>.expandButton andCTAButton:<span class="keyword">self</span>.CTASquareImageButton];</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expandedView</td><td>A UIView used to build the native ad in expanded state </td></tr>
+    <tr><td class="paramname">expandButton</td><td>A UIButton to collapse to pencil view. Please use the collapse button of the expanded view </td></tr>
+    <tr><td class="paramname">ctaButton</td><td>A UIButton to open the landing page from expanded view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adc51d0ea9b92aafb2a0f5c8037f4f1b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setPencilViewToTrack: </td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>pencilView</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withExpandButton:</td>
+          <td></td>
+          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramname"><em>expandButton</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andCTAButton:</td>
+          <td></td>
+          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramname"><em>ctaButton</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up Pencil view to track which will be used to send impression beacons. A click on this view sets the display state to expanded and the delegate callback adNativeExpandToggled: is invoked. The cta button provided in this call is used to invoke landing page. </p>
+<dl class="section note"><dt>Note</dt><dd>The expand button can't be nil.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>7.3.0</dd></dl>
+<div class="fragment"><div class="line">- (void)setupWithFlurryNativeAd:(<a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>*)adNative atPosition:(NSInteger)position displayType:(kFlurryAdNativeDisplayState)displayType</div>
+<div class="line">{</div>
+<div class="line">    [<span class="keyword">self</span>.ad <a class="code" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9" title="Removes the tracking view associated with the ad object.">removeTrackingView</a>];</div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">self</span>.ad = adNative;</div>
+<div class="line">    <span class="keyword">self</span>.ad.displayState = displayType;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (adNative.assetList == nil)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">self</span>.frame = CGRectMake(0, 0, 0, 0);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> ([Utils isPortrait]) {</div>
+<div class="line">        [<span class="keyword">self</span> adjustForPortrait];</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        [<span class="keyword">self</span> adjustForLandscape:adNative];</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">self</span>.cardTitleLabel.textColor = [UIColor blackColor];</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (displayType == FLURRY_NATIVE_AD_EXPANDED)</div>
+<div class="line">    {</div>
+<div class="line">        [<span class="keyword">self</span> showExpanded];</div>
+<div class="line">        [<span class="keyword">self</span>.ad setExpandedViewToTrack:<span class="keyword">self</span> withExpandButton:<span class="keyword">self</span>.expandButton andCTAButton:nil];</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        [<span class="keyword">self</span> showCollapsed];</div>
+<div class="line">        [<span class="keyword">self</span>.ad setPencilViewToTrack:<span class="keyword">self</span> withExpandButton:<span class="keyword">self</span>.expandButton andCTAButton:<span class="keyword">self</span>.CTASquareImageButton];</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pencilView</td><td>A UIView used to build the native ad in collapsed state </td></tr>
+    <tr><td class="paramname">expandButton</td><td>A UIButton to expand the pencil view. Please use the expand button of the pencil view </td></tr>
+    <tr><td class="paramname">ctaButton</td><td>A UIButton to open the landing page from minimal view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a320563dd406a019e4687134c07cdd6ab"></a>
 <div class="memitem">
@@ -346,7 +503,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">weak</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -369,7 +526,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00063">63</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00068">68</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +543,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -409,7 +566,47 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="interface_flurry_ad_native_asset.html" title="Provides all available methods for displaying native ad assets.">FlurryAdNativeAsset</a> objects </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00181">181</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00218">218</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fe0f40954a53d9f42d19baab87f4cd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (kFlurryAdNativeDisplayState) displayState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of assets that match the specified asset type. </p>
+<p>This property can be used to set the exapnd state of the ad. User need to set this value appropriately. Default is FLURRY_NATIVE_AD_EXPANDED</p>
+<dl class="section since"><dt>Since</dt><dd>7.3.0</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>FlurryAdNative::kFlurryAdNativeDisplayState for the list of available display types.<br/>
+</dd></dl>
+<div class="fragment"><div class="line">- (IBAction)expandBtnTapped:(<span class="keywordtype">id</span>)sender {</div>
+<div class="line">   <span class="keywordflow">if</span> (<span class="keyword">self</span>.ad.displayState == FLURRY_NATIVE_AD_COLLAPSED)</div>
+<div class="line">   {</div>
+<div class="line">       <span class="keyword">self</span>.ad.displayState = FLURRY_NATIVE_AD_EXPANDED;</div>
+<div class="line">       [<span class="keyword">self</span> showExpanded];</div>
+<div class="line"></div>
+<div class="line">   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">self</span>.ad.displayState == FLURRY_NATIVE_AD_EXPANDED) {</div>
+<div class="line">       <span class="keyword">self</span>.ad.displayState = FLURRY_NATIVE_AD_COLLAPSED;</div>
+<div class="line">       [<span class="keyword">self</span> showCollapsed];</div>
+<div class="line">   }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>Array of assets for the specified asset type </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00192">192</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +668,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00155">155</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00160">160</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +715,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00100">100</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00105">105</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +732,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">copy</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -544,7 +741,7 @@ Properties</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad space string value. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00039">39</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00044">44</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +758,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">retain</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -572,7 +769,7 @@ Properties</h2></td></tr>
 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The Ad Targeting object that was orignally set or nil if never set. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00278">278</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00315">315</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +786,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">retain</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -615,7 +812,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>View tracked by this ad object or nil if a tracking view has not been set on this object. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00217">217</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00254">254</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -632,7 +829,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">retain</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -647,7 +844,7 @@ Properties</h2></td></tr>
 <div class="line">[nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>UIView used for presenting the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Video Player </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00264">264</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00301">301</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +861,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">retain</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -679,12 +876,12 @@ Properties</h2></td></tr>
 <div class="line">[nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>UIViewcontroller used for presentation of a full screen or nil if a presenting view controller has not been set </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00242">242</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00279">279</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/code/flurry/YahooIOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
+<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

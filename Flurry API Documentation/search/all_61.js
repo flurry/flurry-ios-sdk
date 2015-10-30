@@ -30,6 +30,7 @@ var searchData=
   ['adnativedidfetchad_3a',['adNativeDidFetchAd:',['../protocol_flurry_ad_native_delegate-p.html#a145a00a1cfd5526c157bdbcf7af7a4a8',1,'FlurryAdNativeDelegate-p']]],
   ['adnativedidlogimpression_3a',['adNativeDidLogImpression:',['../protocol_flurry_ad_native_delegate-p.html#a9fd3605a6413e3918296e2ec5db418fc',1,'FlurryAdNativeDelegate-p']]],
   ['adnativedidreceiveclick_3a',['adNativeDidReceiveClick:',['../protocol_flurry_ad_native_delegate-p.html#a74707f0902106972554b42a36495733b',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativeexpandtoggled_3a',['adNativeExpandToggled:',['../protocol_flurry_ad_native_delegate-p.html#a27cbc783d56a333c7639e96f8aba5637',1,'FlurryAdNativeDelegate-p']]],
   ['adnativewilldismiss_3a',['adNativeWillDismiss:',['../protocol_flurry_ad_native_delegate-p.html#a2f5f3d7b688c95240f51140c848404d3',1,'FlurryAdNativeDelegate-p']]],
   ['adnativewillleaveapplication_3a',['adNativeWillLeaveApplication:',['../protocol_flurry_ad_native_delegate-p.html#a257a0d54437bfffdb184e7a1464ad7cd',1,'FlurryAdNativeDelegate-p']]],
   ['adnativewillpresent_3a',['adNativeWillPresent:',['../protocol_flurry_ad_native_delegate-p.html#a65b451548e89f3bd16e48ce8dfcb9363',1,'FlurryAdNativeDelegate-p']]],

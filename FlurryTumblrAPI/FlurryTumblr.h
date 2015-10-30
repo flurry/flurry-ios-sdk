@@ -22,16 +22,16 @@
 
 @interface FlurryTextShareParameters : NSObject <IFlurryTumblrShareParameters>
 
-@property (nonatomic, retain) NSString* text;
-@property (nonatomic, retain) NSString* title;
+@property (nonatomic, strong) NSString* text;
+@property (nonatomic, strong) NSString* title;
 
 @end
 
 
 @interface FlurryImageShareParameters : NSObject <IFlurryTumblrShareParameters>
 
-@property (nonatomic, retain) NSString* imageURL;
-@property (nonatomic, retain) NSString* imageCaption;
+@property (nonatomic, strong) NSString* imageURL;
+@property (nonatomic, strong) NSString* imageCaption;
 
 @end
 

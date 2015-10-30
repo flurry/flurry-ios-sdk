@@ -15,7 +15,6 @@ var searchData=
   ['flurryadnative',['FlurryAdNative',['../interface_flurry_ad_native.html',1,'']]],
   ['flurryadnativeasset',['FlurryAdNativeAsset',['../interface_flurry_ad_native_asset.html',1,'']]],
   ['flurryadnativedelegate_2dp',['FlurryAdNativeDelegate-p',['../protocol_flurry_ad_native_delegate-p.html',1,'']]],
-  ['flurryadnativestyle',['FlurryAdNativeStyle',['../interface_flurry_ad_native_style.html',1,'']]],
   ['flurryads',['FlurryAds',['../interface_flurry_ads.html',1,'']]],
   ['flurryadtargeting',['FlurryAdTargeting',['../interface_flurry_ad_targeting.html',1,'']]],
   ['flurrydelegate_2dp',['FlurryDelegate-p',['../protocol_flurry_delegate-p.html',1,'']]],
@@ -23,5 +22,6 @@ var searchData=
   ['flurrysessiondidcreatewithinfo_3a',['flurrySessionDidCreateWithInfo:',['../protocol_flurry_delegate-p.html#a6dc78e394f0aa01cdcca997525e07fe4',1,'FlurryDelegate-p']]],
   ['flurrytextshareparameters',['FlurryTextShareParameters',['../interface_flurry_text_share_parameters.html',1,'']]],
   ['flurrytumblr',['FlurryTumblr',['../interface_flurry_tumblr.html',1,'']]],
+  ['flurrytumblrdelegate_2dp',['FlurryTumblrDelegate-p',['../protocol_flurry_tumblr_delegate-p.html',1,'']]],
   ['flurrywatch',['FlurryWatch',['../interface_flurry_watch.html',1,'']]]
 ];

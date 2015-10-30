@@ -79,7 +79,7 @@ typedef enum {
  *  @param location A CLLocation object containing latitude and longitude.
  *
  */
-@property (nonatomic, retain) CLLocation* location;
+@property (nonatomic, strong) CLLocation* location;
 
 /*!
  *  @brief Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when a user clicks on an ad.
@@ -106,7 +106,7 @@ typedef enum {
  *
  *  @param userCookies The information about the user executing ad actions. Note: do not transmit personally identifiable information in the user cookies.
  */
-@property (nonatomic, retain) NSDictionary *userCookies;
+@property (nonatomic, strong) NSDictionary *userCookies;
 
 /*!
  *  @brief Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is requested.
@@ -133,7 +133,7 @@ typedef enum {
  *
  *  @param keywords The information about the user to be used in targeting an ad. Note: do not transmit personally identifiable information in keywords.
  */
-@property (nonatomic, retain) NSDictionary *keywords;
+@property (nonatomic, strong) NSDictionary *keywords;
 
 
 @property (nonatomic, assign) BOOL testAdsEnabled;

@@ -12,6 +12,11 @@
 #import "FlurryAdNativeDelegate.h"
 #import "FlurryAdTargeting.h"
 
+typedef enum {
+    FLURRY_NATIVE_AD_COLLAPSED = 0,
+    FLURRY_NATIVE_AD_EXPANDED
+} kFlurryAdNativeDisplayState;
+
 @class FlurryNativeVideoPlayer;
 
 /*!
@@ -36,7 +41,7 @@
  *
  *  @return The ad space string value.
  */
-@property (nonatomic, readonly) NSString *space;
+@property (nonatomic, copy, readonly) NSString *space;
 
 /*!
  *  @brief Sets the object to receive various delegate methods.
@@ -60,7 +65,7 @@
  *  @param delegate The object to receive notifications of various ad actions.
  *
  */
-@property (nonatomic, assign) id<FlurryAdNativeDelegate> adDelegate;
+@property (nonatomic, weak) id<FlurryAdNativeDelegate> adDelegate;
 
 /*!
  *  @brief Returns if an ad is currently ready to display for this ad object
@@ -155,6 +160,38 @@
 @property (nonatomic, readonly) BOOL expired;
 
 /*!
+ *  @brief List of assets that match the specified asset type
+ *
+ *  This property can be used to set the exapnd state of the ad. User need to set 
+    this value appropriately. Default is FLURRY_NATIVE_AD_EXPANDED
+ *
+ *  @since 7.3.0
+ *
+ *  @see FlurryAdNative#kFlurryAdNativeDisplayState for the list of available display types.\n
+ *
+ *  @code
+ 
+     - (IBAction)expandBtnTapped:(id)sender {
+        if (self.ad.displayState == FLURRY_NATIVE_AD_COLLAPSED)
+        {
+            self.ad.displayState = FLURRY_NATIVE_AD_EXPANDED;
+            [self showExpanded];
+     
+        } else if (self.ad.displayState == FLURRY_NATIVE_AD_EXPANDED) {
+            self.ad.displayState = FLURRY_NATIVE_AD_COLLAPSED;
+            [self showCollapsed];
+        }
+     }
+
+ 
+ *  @endcode
+ *
+ *  @return Array of assets for the specified asset type
+ *
+ */
+@property (nonatomic, assign) kFlurryAdNativeDisplayState displayState;
+
+/*!
  *  @brief This property will retrieve the native ad's assets. The assets will be available when the ad is ready.
  *  @since 6.0.0
  *
@@ -178,7 +215,7 @@
  *  @return Array of FlurryAdNativeAsset objects
  *
  */
-@property (nonatomic, readonly) NSArray *assetList;
+@property (nonatomic, strong, readonly) NSArray *assetList;
 
 /*!
  *  @brief The UIView that needs click tracking
@@ -214,7 +251,7 @@
  *  @return View tracked by this ad object or nil if a tracking view has not been set on this object.
  *
  */
-@property (nonatomic, retain) UIView *trackingView;
+@property (nonatomic, strong) UIView *trackingView;
 
 /*!
  *  @brief This property should be set to the view controller that needs to be used
@@ -239,7 +276,7 @@
     if a presenting view controller has not been set
  *
  */
-@property (nonatomic, retain) UIViewController* viewControllerForPresentation;
+@property (nonatomic, strong) UIViewController* viewControllerForPresentation;
 
 /*!
  *  @brief This property should be set to the view which will 
@@ -261,7 +298,7 @@
  *  @return UIView used for presenting the Flurry Video Player
  *
  */
-@property (nonatomic, retain) UIView* videoViewContainer;
+@property (nonatomic, strong) UIView* videoViewContainer;
 
 /*!
  *  @brief This property should be used for ad targeting based on parameters such as
@@ -275,7 +312,7 @@
  *  @return The Ad Targeting object that was orignally set or nil if never set.
  *
  */
-@property (nonatomic, retain) FlurryAdTargeting *targeting;
+@property (nonatomic, strong) FlurryAdTargeting *targeting;
 
 /*!
  *  @brief Initialize the native ad object
@@ -391,6 +428,7 @@
  *
  */
 - (void) removeTrackingView;
+
 /*!
  *  @brief Method which returns if its a video Ad
  *
@@ -404,27 +442,129 @@
  *
  *  @code
  
- @interface AdStreamCell : UITableViewCell
- 
- @property (nonatomic, retain) FlurryAdNative* ad;
- @property (weak, nonatomic) IBOutlet UIView *videoView;
+     @interface AdStreamCell : UITableViewCell
+     
+     @property (nonatomic, retain) FlurryAdNative* ad;
+     @property (weak, nonatomic) IBOutlet UIView *videoView;
 
- @end
- 
- @implementation AdStreamCell
- 
- - (void) setupAdCellForNativeAd:(FlurryAdNative*) nativeAd
- {
- if([self.ad isVideoAd])
- {
- self.ad.videoViewContainer = videoView;
- }
- }
+     @end
+     
+     @implementation AdStreamCell
+     
+     - (void) setupAdCellForNativeAd:(FlurryAdNative*) nativeAd
+     {
+         if([self.ad isVideoAd])
+         {
+            self.ad.videoViewContainer = videoView;
+         }
+     }
  
  @endcode
  *
  *
  */
--(BOOL)isVideoAd;
+- (BOOL)isVideoAd;
+
+/*!
+ *  @brief Sets up Pencil view to track which will be used to send impression beacons. 
+        A click on this view sets the display state to expanded and the delegate callback adNativeExpandToggled: is invoked.
+        The cta button provided in this call is used to invoke landing page.
+ *
+ *  @note The expand button can't be nil.
+ *
+ *  @since 7.3.0
+ *
+ *  @code
+
+    - (void)setupWithFlurryNativeAd:(FlurryAdNative*)adNative atPosition:(NSInteger)position displayType:(kFlurryAdNativeDisplayState)displayType
+    {
+        [self.ad removeTrackingView];
+        
+        self.ad = adNative;
+        self.ad.displayState = displayType;
+        
+        if (adNative.assetList == nil)
+        {
+            self.frame = CGRectMake(0, 0, 0, 0);
+            return;
+        }
+        
+        if ([Utils isPortrait]) {
+            [self adjustForPortrait];
+        } else {
+            [self adjustForLandscape:adNative];
+        }
+        
+        self.cardTitleLabel.textColor = [UIColor blackColor];
+        
+        if (displayType == FLURRY_NATIVE_AD_EXPANDED)
+        {
+            [self showExpanded];
+            [self.ad setExpandedViewToTrack:self withExpandButton:self.expandButton andCTAButton:nil];
+        } else {
+            [self showCollapsed];
+            [self.ad setPencilViewToTrack:self withExpandButton:self.expandButton andCTAButton:self.CTASquareImageButton];
+        }
+    }
+ 
+ @endcode
+ *
+ *  @param pencilView A UIView used to build the native ad in collapsed state
+ *  @param expandButton A UIButton to expand the pencil view. Please use the expand button of the pencil view
+ *  @param ctaButton A UIButton to open the landing page from minimal view.
+ *
+ */
+- (void)setPencilViewToTrack:(UIView*)pencilView withExpandButton:(UIButton*)expandButton andCTAButton:(UIButton*)ctaButton;
+
+
+/*!
+ *  @brief Sets up expanded view to track which will be used to send click beacons.
+            A click on this view loads the landing page.
+            The expand button provided in this call is used to collpase the expanded view of ad.
+ *
+ *  @note The expand button can't be nil.
+ *
+ *  @since 7.3.0
+ *
+ *  @code
+ 
+    - (void)setupWithFlurryNativeAd:(FlurryAdNative*)adNative atPosition:(NSInteger)position displayType:(kFlurryAdNativeDisplayState)displayType
+    {
+        [self.ad removeTrackingView];
+        
+        self.ad = adNative;
+        self.ad.displayState = displayType;
+        
+        if (adNative.assetList == nil)
+        {
+            self.frame = CGRectMake(0, 0, 0, 0);
+            return;
+        }
+        
+        if ([Utils isPortrait]) {
+            [self adjustForPortrait];
+        } else {
+            [self adjustForLandscape:adNative];
+        }
+        
+        self.cardTitleLabel.textColor = [UIColor blackColor];
+        
+        if (displayType == FLURRY_NATIVE_AD_EXPANDED)
+        {
+            [self showExpanded];
+            [self.ad setExpandedViewToTrack:self withExpandButton:self.expandButton andCTAButton:nil];
+        } else {
+            [self showCollapsed];
+            [self.ad setPencilViewToTrack:self withExpandButton:self.expandButton andCTAButton:self.CTASquareImageButton];
+        }
+    }
+ @endcode
+ *
+ *  @param expandedView A UIView used to build the native ad in expanded state
+ *  @param expandButton A UIButton to collapse to pencil view. Please use the collapse button of the expanded view
+ *  @param ctaButton A UIButton to open the landing page from expanded view.
+ *
+ */
+- (void)setExpandedViewToTrack:(UIView*)expandedView withExpandButton:(UIButton*)expandButton andCTAButton:(UIButton*)ctaButton;
 
 @end

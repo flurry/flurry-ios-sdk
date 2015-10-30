@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.2.1</span>
+   &#160;<span id="projectnumber">7.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -129,6 +129,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a9fd3605a6413e3918296e2ec5db418fc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_native_delegate-p.html#a9fd3605a6413e3918296e2ec5db418fc">adNativeDidLogImpression:</a></td></tr>
 <tr class="memdesc:a9fd3605a6413e3918296e2ec5db418fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informational callback invoked when an ad impression is logged.  <a href="#a9fd3605a6413e3918296e2ec5db418fc">More...</a><br/></td></tr>
 <tr class="separator:a9fd3605a6413e3918296e2ec5db418fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cbc783d56a333c7639e96f8aba5637"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_native_delegate-p.html#a27cbc783d56a333c7639e96f8aba5637">adNativeExpandToggled:</a></td></tr>
+<tr class="memdesc:a27cbc783d56a333c7639e96f8aba5637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informational callback invoked when an ad impression is logged.  <a href="#a27cbc783d56a333c7639e96f8aba5637">More...</a><br/></td></tr>
+<tr class="separator:a27cbc783d56a333c7639e96f8aba5637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available delegates for receiving callbacks related to Native Ad Serving. </p>
@@ -327,6 +330,39 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a27cbc783d56a333c7639e96f8aba5637"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) adNativeExpandToggled: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_flurry_ad_native.html">FlurryAdNative</a> *)&#160;</td>
+          <td class="paramname"><em>nativeAd</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Informational callback invoked when an ad impression is logged. </p>
+<dl class="section since"><dt>Since</dt><dd>7.3.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nativeAd</td><td>The native ad object associated with the impressions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a2f5f3d7b688c95240f51140c848404d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +464,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>/Users/akshayb/code/flurry/YahooIOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_delegate_8h_source.html">FlurryAdNativeDelegate.h</a></li>
+<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_delegate_8h_source.html">FlurryAdNativeDelegate.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

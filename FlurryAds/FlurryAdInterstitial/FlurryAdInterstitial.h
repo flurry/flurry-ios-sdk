@@ -48,7 +48,7 @@
  *  @return The ad targeting that was orignally set or nil if never set.
  *
  */
-@property (nonatomic, retain) FlurryAdTargeting *targeting;
+@property (nonatomic, strong) FlurryAdTargeting *targeting;
 
 /*!
  *  @brief Sets the object to receive various delegate methods.
@@ -73,7 +73,7 @@
  *  @return The ad delegate object if set earlier, or nil if never set
  *
  */
-@property (nonatomic, assign) id<FlurryAdInterstitialDelegate> adDelegate;
+@property (nonatomic, weak) id<FlurryAdInterstitialDelegate> adDelegate;
 
 
 /*!
