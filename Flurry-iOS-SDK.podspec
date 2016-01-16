@@ -71,6 +71,7 @@ Pod::Spec.new do |s|
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
     ss.vendored_libraries = "FlurryAds/libFlurryAds_7.5.0.a" 
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
+    ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   end
   
   s.subspec 'TumblrAPI' do |ss|
