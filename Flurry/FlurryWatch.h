@@ -83,9 +83,13 @@
  */
 + (FlurryEventRecordStatus)logWatchEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
 
+
 /*!
  *  @brief Records a watch exception. Commonly used to catch unhandled exceptions.
  *  @since 6.4.0
+ *
+ *  @note: This routine is deprecated and will be removed in the next release, 
+ *  please use logWatchEvent in its place
  *
  *  This method captures an exception for reporting to Flurry. We recommend adding an uncaught
  *  exception listener to capture any exceptions that occur during usage that is not
@@ -106,13 +110,16 @@
  *  @param message The message to associate with the error.
  *  @param exception The exception object to report.
  */
-+ (void)logWatchError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception;
++ (void) logWatchError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception  __attribute__ ((deprecated));
 
 /*!
  *  @brief Records a watch error.
  *  @since 6.4.0
  *
  *  This method captures an error for reporting to Flurry.
+ *
+ *  @note: This routine is deprecated and will be removed in the next release,
+ *  please use logWatchEvent in its place
  *
  *  @note This method is only supported within a watch extension.\n
  *
@@ -129,6 +136,7 @@
  *  @param message The message to associate with the error.
  *  @param error The error object to report.
  */
-+ (void)logWatchError:(NSString *)errorID message:(NSString *)message error:(NSError *)error;
++ (void) logWatchError:(NSString *)errorID message:(NSString *)message error:(NSError *)error  __attribute__ ((deprecated));
+
 
 @end
