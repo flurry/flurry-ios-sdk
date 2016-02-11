@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
   s.homepage = 'http://developer.yahoo.com/flurry'
   s.author           = { 'Flurry' => 'integration@flurry.com' }
-  s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
-  s.platform         = :ios, '5.0'
+  s.source           = { :git => 'https://github.com/abhandary/Flurry.git', :tag => s.version.to_s }
   s.requires_arc = false
+  s.platforms   = { :ios => "5.0", :watchos => "2.0" }
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
@@ -25,7 +25,9 @@ Pod::Spec.new do |s|
       'Flurry/Empty.m'
     ]
     
+    ss.platform   = :ios, '5.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
+    ss.weak_framework = 'WatchConnectivity'
     ss.vendored_libraries = "Flurry/libFlurry_7.5.0.a"
   end
 
@@ -35,16 +37,18 @@ Pod::Spec.new do |s|
       'Flurry/Flurry.h'
     ]
 
-    ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
+    ss.platform   = :ios, '5.0'
+    ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
     ss.vendored_libraries = "Flurry/libFlurry_7.5.0.a"
   end
 
-  s.subspec 'FlurryWatch2SDK' do |ss|
+  s.subspec 'FlurryWatchOSSDK' do |ss|
     ss.source_files = [
       'Flurry/FlurryWatch.h',
       'Flurry/Flurry.h'
     ]
 
+    ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
     ss.vendored_libraries = "Flurry/libFlurryWatch_7.5.0.a"
   end
@@ -57,6 +61,7 @@ Pod::Spec.new do |s|
     # libz.dylib:  nm -m FlurryAds/*.a | grep -v 'non-external' | grep _inflate
     ss.libraries = 'z'
     
+    ss.platform   = :ios, '5.0'
     ss.frameworks = 'CoreGraphics', 'CoreMedia', 'MediaPlayer', 'AVFoundation'
     # next frameworks is optional according:
     # https://developer.yahoo.com/flurry/docs/publisher/code/ios/
@@ -74,6 +79,7 @@ Pod::Spec.new do |s|
       'FlurryTumblrAPI/FlurryTumblrDelegate.h'
     ]
 
+    ss.platform   = :ios, '5.0'
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
     ss.dependency 'Flurry-iOS-SDK/FlurryAds'
   end
