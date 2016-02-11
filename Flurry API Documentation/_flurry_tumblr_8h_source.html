@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryTumblrAPI/FlurryTumblr.h Source File</title>
+<title>iOS SDK: /Users/akshayb/Downloads/Flurry-iOS-7.5.0/FlurryTumblrAPI/FlurryTumblr.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.3.0</span>
+   &#160;<span id="projectnumber">7.5.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -104,46 +104,46 @@ $(document).ready(function(){initNavTree('_flurry_tumblr_8h_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;FlurryTumblrDelegate.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">   13</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a> &lt;NSObject&gt;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">   15</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     iOSDeepLink;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     androidDeepLink;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     webLink;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     iOSDeepLink;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     androidDeepLink;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSString*     webLink;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="interface_flurry_text_share_parameters.html">   21</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_text_share_parameters.html">FlurryTextShareParameters</a> : NSObject &lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="interface_flurry_text_share_parameters.html">   23</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_text_share_parameters.html">FlurryTextShareParameters</a> : NSObject &lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* text;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* title;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* text;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* title;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="interface_flurry_image_share_parameters.html">   29</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_image_share_parameters.html">FlurryImageShareParameters</a> : NSObject &lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="interface_flurry_image_share_parameters.html">   31</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_image_share_parameters.html">FlurryImageShareParameters</a> : NSObject &lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* imageURL;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* imageCaption;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* imageURL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* imageCaption;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="interface_flurry_tumblr.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> : NSObject</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="interface_flurry_tumblr.html">   39</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> : NSObject</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;+ (void) post: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;)parameters  presentingViewController:(UIViewController*) presentingController;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;+ (void) setDelegate: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a>&gt;) delegate;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;+ (UIImage*) <a class="code" href="interface_flurry_tumblr.html#a227d535a29e4fafc995c940e817f87f4" title="Returns a Tumblr icon.">tumblrLogo</a>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret consumerScheme:(NSString*)urlScheme;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;+ (void) post: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;)parameters  presentingViewController:(UIViewController*) presentingController;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;+ (void) setDelegate: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a>&gt;) delegate;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;+ (UIImage*) <a class="code" href="interface_flurry_tumblr.html#a227d535a29e4fafc995c940e817f87f4" title="Returns a Tumblr icon.">tumblrLogo</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;+ (BOOL)handleURL:(NSURL*)url;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
