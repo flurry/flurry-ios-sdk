@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
   s.homepage = 'http://developer.yahoo.com/flurry'
   s.author           = { 'Flurry' => 'integration@flurry.com' }
-  s.source           = { :git => 'https://github.com/abhandary/Flurry.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
   s.requires_arc = false
   s.platforms   = { :ios => "5.0", :watchos => "2.0" }
   s.default_subspec = 'FlurrySDK'
