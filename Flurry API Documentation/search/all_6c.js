@@ -11,8 +11,8 @@ var searchData=
   ['logevent_3awithparameters_3a',['logEvent:withParameters:',['../interface_flurry.html#a0edb3515b807632a8c5de768c748c27a',1,'Flurry']]],
   ['logevent_3awithparameters_3atimed_3a',['logEvent:withParameters:timed:',['../interface_flurry.html#aeb3e6380938fea8e4252bdfc10db45c4',1,'Flurry']]],
   ['logpageview',['logPageView',['../interface_flurry.html#a612da8f1557fa0e29d50640400d896ec',1,'Flurry']]],
-  ['logwatcherror_3amessage_3aerror_3a',['logWatchError:message:error:',['../interface_flurry_watch.html#a922aea860bf359feeb398cecc937bfb1',1,'FlurryWatch']]],
-  ['logwatcherror_3amessage_3aexception_3a',['logWatchError:message:exception:',['../interface_flurry_watch.html#a1c50e970e30a495f33ddbf0d57a85b91',1,'FlurryWatch']]],
+  ['logwatcherror_3amessage_3aerror_3a',['logWatchError:message:error:',['../interface_flurry_watch.html#aacd1103d04e36fc109cfc1412f92c455',1,'FlurryWatch']]],
+  ['logwatcherror_3amessage_3aexception_3a',['logWatchError:message:exception:',['../interface_flurry_watch.html#afe4ce4e6c5c856e9b893b6e4bdc4c911',1,'FlurryWatch']]],
   ['logwatchevent_3a',['logWatchEvent:',['../interface_flurry_watch.html#acbdf8e279783520d7d7668ade376bca7',1,'FlurryWatch']]],
   ['logwatchevent_3awithparameters_3a',['logWatchEvent:withParameters:',['../interface_flurry_watch.html#a88317d5a6bf8f22065bd0a93ea464720',1,'FlurryWatch']]]
 ];

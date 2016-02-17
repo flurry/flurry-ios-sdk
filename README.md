@@ -20,12 +20,23 @@ To enable Flurry Ad serving  :
 ```
 
 
-To use FlurrySDK for Apple Watch Extension:    
+To use FlurrySDK for Apple Watch 1.x Extension:    
 ```
-target :"Your Apple Watch Extension Target" do 
+target :"Your Apple Watch 1.x Extension Target" do 
    pod 'Flurry-iOS-SDK/FlurryWatchSDK’
 end   
 ```
+
+
+To use FlurrySDK for Apple Watch 2.x Extension:    
+```
+target :"Your Apple Watch 2.x Extension Target" do 
+pod 'Flurry-iOS-SDK/FlurryWatchOSSDK’
+platform :watchos, '2.0'
+end   
+```
+
+
 Don't forget to read how to track events correctly in Apple Watch Extensions  in FlurryiOSAnalyticsREADMExx.pdf  
 
 

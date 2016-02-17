@@ -6,6 +6,7 @@ var searchData=
   ['setappversion_3a',['setAppVersion:',['../interface_flurry.html#a4ccd9b24965b9f514f525a9eb15d071d',1,'Flurry']]],
   ['setbackgroundsessionenabled_3a',['setBackgroundSessionEnabled:',['../interface_flurry.html#a936cba06051ba7a149b988a434d2a05c',1,'Flurry']]],
   ['setconsumerkey_3aconsumersecret_3a',['setConsumerKey:consumerSecret:',['../interface_flurry_tumblr.html#a149263d5409960fd59594672f5e13c7a',1,'FlurryTumblr']]],
+  ['setconsumerkey_3aconsumersecret_3aconsumerscheme_3a',['setConsumerKey:consumerSecret:consumerScheme:',['../interface_flurry_tumblr.html#a9fb18febec84248c191eb706c1a11f15',1,'FlurryTumblr']]],
   ['setcrashreportingenabled_3a',['setCrashReportingEnabled:',['../interface_flurry.html#a20dbc3ff9cc3c114aad7e7713547dfe1',1,'Flurry']]],
   ['setdebuglogenabled_3a',['setDebugLogEnabled:',['../interface_flurry.html#a68104a89eff2e63d71b413d3212c5178',1,'Flurry']]],
   ['setdelegate_3a',['setDelegate:',['../interface_flurry.html#a3ba0e3de32ab9d494617dfe4cb2888fa',1,'Flurry::setDelegate:()'],['../interface_flurry_tumblr.html#a0ac7f81701cd92da2ea2085878f1c1c7',1,'FlurryTumblr::setDelegate:()']]],

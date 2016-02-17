@@ -6,6 +6,7 @@ var hierarchy =
       [ "FlurryAdInterstitial", "interface_flurry_ad_interstitial.html", null ],
       [ "FlurryAdNative", "interface_flurry_ad_native.html", null ],
       [ "FlurryAdNativeAsset", "interface_flurry_ad_native_asset.html", null ],
+      [ "FlurryAdNativeStyle", "interface_flurry_ad_native_style.html", null ],
       [ "FlurryAds", "interface_flurry_ads.html", null ],
       [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", null ],
       [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", null ],

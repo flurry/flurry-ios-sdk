@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.3.0</span>
+   &#160;<span id="projectnumber">7.5.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -106,18 +106,18 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a88317d5a6bf8f22065bd0a93ea464720"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_watch.html#a88317d5a6bf8f22065bd0a93ea464720">logWatchEvent:withParameters:</a></td></tr>
 <tr class="memdesc:a88317d5a6bf8f22065bd0a93ea464720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a custom parameterized event specified by <code>eventName</code> with <code>parameters</code>.  <a href="#a88317d5a6bf8f22065bd0a93ea464720">More...</a><br/></td></tr>
 <tr class="separator:a88317d5a6bf8f22065bd0a93ea464720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c50e970e30a495f33ddbf0d57a85b91"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_watch.html#a1c50e970e30a495f33ddbf0d57a85b91">logWatchError:message:exception:</a></td></tr>
-<tr class="memdesc:a1c50e970e30a495f33ddbf0d57a85b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a watch exception. Commonly used to catch unhandled exceptions.  <a href="#a1c50e970e30a495f33ddbf0d57a85b91">More...</a><br/></td></tr>
-<tr class="separator:a1c50e970e30a495f33ddbf0d57a85b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a922aea860bf359feeb398cecc937bfb1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_watch.html#a922aea860bf359feeb398cecc937bfb1">logWatchError:message:error:</a></td></tr>
-<tr class="memdesc:a922aea860bf359feeb398cecc937bfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a watch error.  <a href="#a922aea860bf359feeb398cecc937bfb1">More...</a><br/></td></tr>
-<tr class="separator:a922aea860bf359feeb398cecc937bfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4ce4e6c5c856e9b893b6e4bdc4c911"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_watch.html#afe4ce4e6c5c856e9b893b6e4bdc4c911">logWatchError:message:exception:</a></td></tr>
+<tr class="memdesc:afe4ce4e6c5c856e9b893b6e4bdc4c911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a watch exception. Commonly used to catch unhandled exceptions.  <a href="#afe4ce4e6c5c856e9b893b6e4bdc4c911">More...</a><br/></td></tr>
+<tr class="separator:afe4ce4e6c5c856e9b893b6e4bdc4c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd1103d04e36fc109cfc1412f92c455"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_watch.html#aacd1103d04e36fc109cfc1412f92c455">logWatchError:message:error:</a></td></tr>
+<tr class="memdesc:aacd1103d04e36fc109cfc1412f92c455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a watch error.  <a href="#aacd1103d04e36fc109cfc1412f92c455">More...</a><br/></td></tr>
+<tr class="separator:aacd1103d04e36fc109cfc1412f92c455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_flurry_watch_8h_source.html#l00011">11</a> of file <a class="el" href="_flurry_watch_8h_source.html">FlurryWatch.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a922aea860bf359feeb398cecc937bfb1"></a>
+<a class="anchor" id="aacd1103d04e36fc109cfc1412f92c455"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -131,13 +131,7 @@ Class Methods</h2></td></tr>
           <td class="paramkey">message:</td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>message</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">error:</td>
-          <td></td>
-          <td class="paramtype">(NSError *)&#160;</td>
-          <td class="paramname"><em>error</em>&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,9 +144,11 @@ Class Methods</h2></td></tr>
 <p>Records a watch error. </p>
 <dl class="section since"><dt>Since</dt><dd>6.4.0</dd></dl>
 <p>This method captures an error for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>This method is only supported within a watch extension.<br/>
+<dl class="section note"><dt>Note</dt><dd>: This routine is deprecated and will be removed in the next release, please use logWatchEvent in its place</dd>
+<dd>
+This method is only supported within a watch extension.<br/>
 </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_watch.html#a1c50e970e30a495f33ddbf0d57a85b91" title="Records a watch exception. Commonly used to catch unhandled exceptions.">+ logWatchError:message:exception:</a> for details on capturing exceptions.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_watch.html#afe4ce4e6c5c856e9b893b6e4bdc4c911" title="Records a watch exception. Commonly used to catch unhandled exceptions.">+ logWatchError:message:exception:</a> for details on capturing exceptions.</dd></dl>
 <div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
 <div class="line">{</div>
 <div class="line">[<a class="code" href="interface_flurry_watch.html">FlurryWatch</a> logWatchError:<span class="stringliteral">@&quot;Interface failed to load&quot;</span> message:[error localizedDescription] error:error];</div>
@@ -168,7 +164,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1c50e970e30a495f33ddbf0d57a85b91"></a>
+<a class="anchor" id="afe4ce4e6c5c856e9b893b6e4bdc4c911"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -182,13 +178,7 @@ Class Methods</h2></td></tr>
           <td class="paramkey">message:</td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>message</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">exception:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>exception</em>&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,10 +190,11 @@ Class Methods</h2></td></tr>
 
 <p>Records a watch exception. Commonly used to catch unhandled exceptions. </p>
 <dl class="section since"><dt>Since</dt><dd>6.4.0</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: This routine is deprecated and will be removed in the next release, please use logWatchEvent in its place</dd></dl>
 <p>This method captures an exception for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. We recommend adding an uncaught exception listener to capture any exceptions that occur during usage that is not anticipated by your app.</p>
 <dl class="section note"><dt>Note</dt><dd>This method is only supported within a watch extension.<br/>
 </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_watch.html#a922aea860bf359feeb398cecc937bfb1" title="Records a watch error.">+ logWatchError:message:error:</a> for details on capturing errors.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_watch.html#aacd1103d04e36fc109cfc1412f92c455" title="Records a watch error.">+ logWatchError:message:error:</a> for details on capturing errors.</dd></dl>
 <div class="fragment"><div class="line">   - (void) uncaughtExceptionHandler(NSException *exception)</div>
 <div class="line">{</div>
 <div class="line">[<a class="code" href="interface_flurry_watch.html">FlurryWatch</a> logWatchError:<span class="stringliteral">@&quot;Uncaught&quot;</span> message:<span class="stringliteral">@&quot;Crash!&quot;</span> exception:exception];</div>
@@ -308,7 +299,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_watch_8h_source.html">FlurryWatch.h</a></li>
+<li>/Users/akshayb/Downloads/Flurry-iOS-7.5.0/Flurry/<a class="el" href="_flurry_watch_8h_source.html">FlurryWatch.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
