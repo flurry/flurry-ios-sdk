@@ -11,6 +11,7 @@ var annotated =
     [ "<FlurryAdNativeDelegate>", "protocol_flurry_ad_native_delegate-p.html", "protocol_flurry_ad_native_delegate-p" ],
     [ "FlurryAdNativeStyle", "interface_flurry_ad_native_style.html", "interface_flurry_ad_native_style" ],
     [ "FlurryAds", "interface_flurry_ads.html", null ],
+    [ "FlurryAds(ForceLoad)", "category_flurry_ads_07_force_load_08.html", null ],
     [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", "interface_flurry_ad_targeting" ],
     [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", "protocol_flurry_delegate-p" ],
     [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", "interface_flurry_image_share_parameters" ],

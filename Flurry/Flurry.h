@@ -90,7 +90,7 @@ extern NSString* const kSyndicationWebDeepLink;
  *  
  *  @note This class provides methods necessary for correct function of Flurry.h.
  *  For information on how to use Flurry's Ads SDK to
- *  attract high-quality users and monetize your user base see <a href=https://developer.yahoo.com/flurry/docs/howtos">Support Center - Publishers</a>.
+ *  attract high-quality users and monetize your user base see <a href="https://developer.yahoo.com/flurry/docs/howtos">Support Center - Publishers</a>.
  *  
  *  @author 2009 - 2013 Flurry, Inc. All Rights Reserved.
  *  @version 4.3.0
