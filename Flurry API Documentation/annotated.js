@@ -1,6 +1,7 @@
 var annotated =
 [
     [ "Flurry", "interface_flurry.html", null ],
+    [ "Flurry(ForceLoad)", "category_flurry_07_force_load_08.html", null ],
     [ "FlurryAdBanner", "interface_flurry_ad_banner.html", "interface_flurry_ad_banner" ],
     [ "<FlurryAdBannerDelegate>", "protocol_flurry_ad_banner_delegate-p.html", "protocol_flurry_ad_banner_delegate-p" ],
     [ "<FlurryAdDelegate>", "protocol_flurry_ad_delegate-p.html", "protocol_flurry_ad_delegate-p" ],
