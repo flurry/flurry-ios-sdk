@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "iOS SDK", "index.html", [
+  [ "Flurry iOS SDK", "index.html", [
     [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
