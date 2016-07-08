@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '7.6.4'
+  s.version          = '7.6.6'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     ss.platform   = :ios, '6.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
     ss.weak_framework = 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurry_7.6.4.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.6.6.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :ios, '6.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_7.6.4.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.6.6.a"
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurryWatch_7.6.4.a"
+    ss.vendored_libraries = "Flurry/libFlurryWatch_7.6.6.a"
   end
 
   s.subspec 'FlurryAds' do |ss|
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
     # AdSupport used:     nm -m FlurryAds/*.a | grep -v 'non-external' | grep _AS
     # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = "FlurryAds/libFlurryAds_7.6.4.a"
+    ss.vendored_libraries = "FlurryAds/libFlurryAds_7.6.6.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
@@ -87,10 +87,4 @@ Pod::Spec.new do |s|
     ss.dependency 'Flurry-iOS-SDK/FlurryAds'
   end
 
-  #s.resource_bundles = {
-  #  'Flurry-iOS-SDK' => ['Pod/Assets/*.png']
-  #}
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
