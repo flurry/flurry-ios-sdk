@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
   s.subspec 'FlurryWatchOSSDK' do |ss|
     ss.source_files = [
       'Flurry/FlurryWatch.h',
+      'Flurry/FlurryWatchEmpty.m',
       'Flurry/Flurry.h'
     ]
 
