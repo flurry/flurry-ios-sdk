@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.subspec 'FlurrySDK' do |ss|
     ss.source_files = [
       'Flurry/Flurry.h',
+      'Flurry/FlurrySessionBuilder.h',
       'Flurry/FlurryEmpty.m'
     ]
 
@@ -33,8 +34,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'FlurryWatchSDK' do |ss|
     ss.source_files = [
-      'Flurry/FlurryWatch.h',
       'Flurry/Flurry.h',
+      'Flurry/FlurryWatch.h',
+      'Flurry/FlurrySessionBuilder.h',
+      'Flurry/FlurryWatchEmpty.m',
       'Flurry/FlurryEmpty.m'
     ]
 
@@ -47,7 +50,8 @@ Pod::Spec.new do |s|
     ss.source_files = [
       'Flurry/FlurryWatch.h',
       'Flurry/Flurry.h',
-      'Flurry/FlurryWatchEmpty.m',
+      'Flurry/FlurrySessionBuilder.h',
+      'Flurry/FlurryWatchEmpty.m'
     ]
 
     ss.platform   = :watchos, '2.0'
@@ -55,17 +59,17 @@ Pod::Spec.new do |s|
     ss.vendored_libraries = "Flurry/libFlurryWatch_7.8.0.a"
   end
 
-  s.subspec 'FlurryTVOSSDK' do |ss|
-    ss.source_files = [
-      'Flurry/Flurry.h',
-      'Flurry/FlurryEmpty.m'
-    ]
+  s.subspec 'FlurryTVOS' do |ss|
+     ss.source_files = [
+       'Flurry/Flurry.h',
+       'Flurry/FlurrySessionBuilder.h',
+       'Flurry/FlurryEmpty.m'
+     ]
 
-    ss.platform   = :tvos, '9.0'
-    ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
-    ss.vendored_libraries = "Flurry/libFlurryTVOS_7.8.0.a"
-  end
-
+     ss.platform   = :tvos, '9.0'
+     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
+     ss.vendored_libraries = "Flurry/libFlurryTVOS_7.8.0.a"
+   end
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = [
@@ -100,11 +104,4 @@ Pod::Spec.new do |s|
     ss.dependency 'Flurry-iOS-SDK/FlurryAds'
   end
 
-  s.resource_bundles = {
-    'Flurry-iOS-SDK' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
