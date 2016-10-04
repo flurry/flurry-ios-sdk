@@ -36,6 +36,7 @@ typedef enum {
 /*!
  *  @brief Retrieves an ad for the given @c space.
  *  @since 4.1.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method will attempt to retrieve ads for the given space from the Flurry server.
  * 
@@ -74,11 +75,12 @@ typedef enum {
  *  @param frame The frame of the view that will be used for the ad container.
  *  @param size The default size of an ad space. This can be overriden on the server. See @c FlurryAdSize in the FlurryAds.h file for allowable values.
  */
-+(void) fetchAdForSpace:(NSString*)space frame:(CGRect)frame size:(FlurryAdSize)size;
++(void) fetchAdForSpace:(NSString*)space frame:(CGRect)frame size:(FlurryAdSize)size __attribute__ ((deprecated));
 
 /*!
  *  @brief Returns if an ad is currently ready to display for a given @c space.
  *  @since 4.1.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method will verify if there is an ad is currently available for this 
  *  user. If an ad is not available, you may call #fetchAdForSpace:view:size: to load a new ad.
@@ -108,13 +110,14 @@ typedef enum {
  *
  *  @return YES/NO to indicate if an ad is ready to be displayed.
  */
-+(BOOL) adReadyForSpace:(NSString*)space;
++(BOOL) adReadyForSpace:(NSString*)space __attribute__ ((deprecated));
 
 
 /*!
  *  @brief Display an ad for the given @c space.
  *  @since 4.1.0
  *  @updated 5.4.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  *
  *  This method will display an ad if one is ready for display on the device.
  *
@@ -145,7 +148,7 @@ typedef enum {
  *  @param viewControllerForPresentation The viewController to show the fullscreen ad modally.
  *  be splash screen for SPLASH_AD.
  */
-+ (void)displayAdForSpace:(NSString*)space onView:(UIView *)view viewControllerForPresentation:(UIViewController*) viewControllerForPresentation;
++ (void)displayAdForSpace:(NSString*)space onView:(UIView *)view viewControllerForPresentation:(UIViewController*) viewControllerForPresentation   __attribute__ ((deprecated));
 
 
 /*!
@@ -189,6 +192,7 @@ typedef enum {
  *  @brief Fetch and Display an ad for the given @c space.
  *  @since 4.0.0
  *  @updated 5.4.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  *
  *  This method will display an ad if one is available from the Flurry server for this
  *  user.
@@ -228,11 +232,12 @@ typedef enum {
  *  @param view The UIView in your app that the ad will be placed as a subview. Note: for fullscreen ads, this view is not used as a container, but the size of the view may still be used for determining what types of ads will fit in this space.
  *  @param size The default size of an ad space. This can be overriden on the server. See @c FlurryAdSize in the FlurryAds.h file for allowable values.
  */
-+ (void)fetchAndDisplayAdForSpace:(NSString*)space view:(UIView *)viewContainer viewController:(UIViewController*) viewControllerForPresentation size:(FlurryAdSize)size;
++ (void)fetchAndDisplayAdForSpace:(NSString*)space view:(UIView *)viewContainer viewController:(UIViewController*) viewControllerForPresentation size:(FlurryAdSize)size __attribute__ ((deprecated));
 
 /*!
  *  @brief Removes an ad for the given @c space.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method will remove an ad if one is currently displaying.
  * 
@@ -254,11 +259,12 @@ typedef enum {
  *  @param space The placement of an ad in your app, where placement may
  *  be splash screen for SPLASH_AD.
  */
-+ (void) removeAdFromSpace:(NSString*)space;
++ (void) removeAdFromSpace:(NSString*)space  __attribute__ ((deprecated));
 
 /*!
  *  @brief Initializes the ad serving system.
  *  @since 4.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method initializes the ad serving system and can be used to pre-cache ads from the server (this is done when ad spaces are configured on the server).
  * 
@@ -279,11 +285,12 @@ typedef enum {
  *  @param rvc The primary root view controller of your app.
  *
  */
-+ (void) initialize: (UIViewController *)rvc;
++ (void) initialize: (UIViewController *)rvc  __attribute__ ((deprecated));
 
 /*!
  *  @brief Sets the object to receive various delegate methods.
  *  @since 4.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method allows you to register an object that will receive 
  *  notifications at different phases of ad serving.
@@ -304,11 +311,12 @@ typedef enum {
  *  @param delegate The object to receive notifications of various ad actions.
  *
  */
-+ (void)setAdDelegate:(id)delegate;
++ (void)setAdDelegate:(id)delegate  __attribute__ ((deprecated));
 
 /*!
  *  @brief Informs server to send test ads.
  *  @since 4.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method allows you to request test ads from the server.  These ads do not generate revenue so it is CRITICAL this call is removed prior to app submission.
  * 
@@ -327,11 +335,12 @@ typedef enum {
  *  @param enable YES to receive test ads to the device. Not including this method is equivalent to passing NO.
  *
  */
-+ (void)enableTestAds:(BOOL)enable;
++ (void)enableTestAds:(BOOL)enable  __attribute__ ((deprecated));
 
 /*!
  *  @brief Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when a user clicks on an ad.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  UserCookies allow the developer to specify information on a user executing an ad action. There is one UserCookie object, and on each ad click that UserCookie is transmitted to the Flurry servers. The UserCookie key/value pairs will be transmitted back to the developer via the app callback if one is set. This is useful for rewarded inventory, to identify which of your users should be rewarded when a reward callback is sent.
  * 
@@ -356,22 +365,24 @@ typedef enum {
  * 
  *  @param userCookies The information about the user executing ad actions. Note: do not transmit personally identifiable information in the user cookies.
  */
-+ (void) setUserCookies:(NSDictionary *) userCookies;
++ (void) setUserCookies:(NSDictionary *) userCookies  __attribute__ ((deprecated));
 
 /*!
  *  @brief Removes a previously set dictionary of key/value pairs.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method removes information from the one UserCookie object.
  * 
  *  @see #setUserCookies: for details on setting user cookies.
  *
  */
-+ (void) clearUserCookies;
++ (void) clearUserCookies  __attribute__ ((deprecated));
 
 /*!
  *  @brief Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is requested.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  Keywords allow the developer to specify information on a user executing an ad action for the purposes of targeting.  There is one keywords object that is transmitted to the Flurry servers on each ad request. If corresponding keywords are matched on the ad server, a subset of targeted ads will be delivered. This allows partners to supply information they track internally, which is not available to Flurry's targeting system.
  * 
@@ -397,29 +408,31 @@ typedef enum {
  * 
  *  @param keywords The information about the user to be used in targeting an ad. Note: do not transmit personally identifiable information in keywords.
  */
-+ (void) setKeywordsForTargeting:(NSDictionary*) keywords;
++ (void) setKeywordsForTargeting:(NSDictionary*) keywords  __attribute__ ((deprecated));
 
 /*!
  *  @brief Removes a previously set dictionary of key/value pairs.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method removes information from the one keywords object.
  * 
  *  @see #setKeywords: for details on setting keywords.
  *
  */
-+ (void) clearKeywords;
++ (void) clearKeywords  __attribute__ ((deprecated));
 
 /*!
  *  @brief Method to add a custom ad network to be served through the standard Flurry ad system.
  *  @since 4.0.0
+ *  @deprecated 7.8.0 - please use the Object APIs
  * 
  *  This method adds a network with the necessary publisher supplied properties to the Flurry sdk.
  * 
  *  @see @c FlurryCustomAdNetwork and @c FlurryCustomAdNetworkProperties for details.
  *
  */
-+ (void) addCustomAdNetwork:(Class<FlurryCustomAdNetwork>)adNetworkClass withProperties:(id<FlurryCustomAdNetworkProperties>)adNetworkProperties;
++ (void) addCustomAdNetwork:(Class<FlurryCustomAdNetwork>)adNetworkClass withProperties:(id<FlurryCustomAdNetworkProperties>)adNetworkProperties  __attribute__ ((deprecated));
 
 
 @end
