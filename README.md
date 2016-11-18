@@ -39,7 +39,7 @@ end
 To use FlurrySDK for TVOS
 ```
 target :"Your TVOS Target" do 
-  pod 'Flurry-iOS-SDK/FlurryTVOSSDK'
+  pod 'Flurry-iOS-SDK/FlurryTVOS'
   platform :tvos, '9.0'
 end   
 ```
