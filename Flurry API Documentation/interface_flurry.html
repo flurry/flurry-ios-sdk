@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.8.2</span>
+   &#160;<span id="projectnumber">7.9.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -120,9 +120,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6">activeSessionExists</a></td></tr>
 <tr class="memdesc:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a session currently exists and is active.  <a href="#a90a2dfc96d12fb3b7990e2ff1c6e0da6">More...</a><br/></td></tr>
 <tr class="separator:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f496e071482df2d240acbb6c2ddb556"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556">getSessionID</a></td></tr>
-<tr class="memdesc:a2f496e071482df2d240acbb6c2ddb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the session ID of the current active session.  <a href="#a2f496e071482df2d240acbb6c2ddb556">More...</a><br/></td></tr>
-<tr class="separator:a2f496e071482df2d240acbb6c2ddb556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bbe4c62d2e45a86dccb900cfb9f741"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a91bbe4c62d2e45a86dccb900cfb9f741">getSessionID</a></td></tr>
+<tr class="memdesc:a91bbe4c62d2e45a86dccb900cfb9f741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the session ID of the current active session.  <a href="#a91bbe4c62d2e45a86dccb900cfb9f741">More...</a><br/></td></tr>
+<tr class="separator:a91bbe4c62d2e45a86dccb900cfb9f741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a3ba0e3de32ab9d494617dfe4cb2888fa">setDelegate:</a></td></tr>
 <tr class="memdesc:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> delegate for callback on session creation.  <a href="#a3ba0e3de32ab9d494617dfe4cb2888fa">More...</a><br/></td></tr>
 <tr class="separator:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +144,114 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a928b07baaee4262f675f4727ba0938b5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a928b07baaee4262f675f4727ba0938b5">addOrigin:withVersion:withParameters:</a></td></tr>
 <tr class="memdesc:a928b07baaee4262f675f4727ba0938b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a custom parameterized origin specified by <code>originName</code> with <code>originVersion</code> and <code>parameters</code>.  <a href="#a928b07baaee4262f675f4727ba0938b5">More...</a><br/></td></tr>
 <tr class="separator:a928b07baaee4262f675f4727ba0938b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f36039f18a1b9c5b2ef72c013006522"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f36039f18a1b9c5b2ef72c013006522"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameLevelStart:</b></td></tr>
+<tr class="separator:a8f36039f18a1b9c5b2ef72c013006522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d58c318d60172ff6286a3f6d6f56af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d58c318d60172ff6286a3f6d6f56af"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameLevelStart:optional:</b></td></tr>
+<tr class="separator:a03d58c318d60172ff6286a3f6d6f56af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd4a934224f11b86a4a05b6ae8bcc31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fd4a934224f11b86a4a05b6ae8bcc31"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameLevelEnd:score:levelEvent:</b></td></tr>
+<tr class="separator:a8fd4a934224f11b86a4a05b6ae8bcc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad483e4ea5bbd2cc9ccdb749077d63e0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad483e4ea5bbd2cc9ccdb749077d63e0b"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameLevelEnd:score:levelEvent:optional:</b></td></tr>
+<tr class="separator:ad483e4ea5bbd2cc9ccdb749077d63e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7058e634d3c4577eef6596535ae5496"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7058e634d3c4577eef6596535ae5496"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGamePlayerLevel:</b></td></tr>
+<tr class="separator:af7058e634d3c4577eef6596535ae5496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd7a4c21496d4c64c07d9dd33f242b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dd7a4c21496d4c64c07d9dd33f242b8"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGamePlayerLevel:optional:</b></td></tr>
+<tr class="separator:a5dd7a4c21496d4c64c07d9dd33f242b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b887d4431072c87809a8c1688678cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58b887d4431072c87809a8c1688678cc"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGamePlayerAchievement:</b></td></tr>
+<tr class="separator:a58b887d4431072c87809a8c1688678cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4767778fb93bc7b0292746f1a7a2681"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4767778fb93bc7b0292746f1a7a2681"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGamePlayerAchievement:optional:</b></td></tr>
+<tr class="separator:af4767778fb93bc7b0292746f1a7a2681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca6f2d546410d05bd23d45092a5bd5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afca6f2d546410d05bd23d45092a5bd5e"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCharacter:level:</b></td></tr>
+<tr class="separator:afca6f2d546410d05bd23d45092a5bd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dc7346d0ee0f671b7eb81bfb779e48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09dc7346d0ee0f671b7eb81bfb779e48"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCharacter:level:optional:</b></td></tr>
+<tr class="separator:a09dc7346d0ee0f671b7eb81bfb779e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14af22881d150070f4c46fc4a70066b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14af22881d150070f4c46fc4a70066b8"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCharacterDeath:</b></td></tr>
+<tr class="separator:a14af22881d150070f4c46fc4a70066b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28d89b54b905054ec16d821b2c2c76f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad28d89b54b905054ec16d821b2c2c76f"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCharacterDeath:optional:</b></td></tr>
+<tr class="separator:ad28d89b54b905054ec16d821b2c2c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c832eac56d2077e18030fb03a97bec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14c832eac56d2077e18030fb03a97bec"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCurrency:acquired:currencyType:reason:</b></td></tr>
+<tr class="separator:a14c832eac56d2077e18030fb03a97bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6668fa8b6fb0f6772d509a889ed7e789"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6668fa8b6fb0f6772d509a889ed7e789"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCurrency:acquired:currencyType:reason:optional:</b></td></tr>
+<tr class="separator:a6668fa8b6fb0f6772d509a889ed7e789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa932d00ee0a5460a51bc1721be6133d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa932d00ee0a5460a51bc1721be6133d5"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCurrency:spent:currencyType:</b></td></tr>
+<tr class="separator:aa932d00ee0a5460a51bc1721be6133d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77863096ad489e8cca2bbf10ff44665c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77863096ad489e8cca2bbf10ff44665c"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameCurrency:spent:currencyType:optional:</b></td></tr>
+<tr class="separator:a77863096ad489e8cca2bbf10ff44665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227c526d0fbb6fb6974cbdc997c061b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a227c526d0fbb6fb6974cbdc997c061b4"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameItem:acquired:balance:cost:currencyType:</b></td></tr>
+<tr class="separator:a227c526d0fbb6fb6974cbdc997c061b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1237c3fd8e927460913d7dc900072d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace1237c3fd8e927460913d7dc900072d"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameItem:acquired:balance:cost:currencyType:optional:</b></td></tr>
+<tr class="separator:ace1237c3fd8e927460913d7dc900072d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbe944280188336564139db7e98a099"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cbe944280188336564139db7e98a099"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameItem:disposed:balance:cost:currencyType:</b></td></tr>
+<tr class="separator:a1cbe944280188336564139db7e98a099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92a15a9267941df08f293f70efe3768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad92a15a9267941df08f293f70efe3768"></a>
+(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <b>logGameItem:disposed:balance:cost:currencyType:optional:</b></td></tr>
+<tr class="separator:ad92a15a9267941df08f293f70efe3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbfaa5c3be4c7820ed8e2e5a3917e68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcbfaa5c3be4c7820ed8e2e5a3917e68"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>createAndSendSession</b></td></tr>
+<tr class="separator:adcbfaa5c3be4c7820ed8e2e5a3917e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a847c6e6d4b335410bbd519b17422c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a847c6e6d4b335410bbd519b17422c5"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>pauseSession</b></td></tr>
+<tr class="separator:a6a847c6e6d4b335410bbd519b17422c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20cc31a53d316c2b7b79934ae2fdf0d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20cc31a53d316c2b7b79934ae2fdf0d0"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>endSession</b></td></tr>
+<tr class="separator:a20cc31a53d316c2b7b79934ae2fdf0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a63803a122f2539ac962868e5c1d31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81a63803a122f2539ac962868e5c1d31"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>handleException:</b></td></tr>
+<tr class="separator:a81a63803a122f2539ac962868e5c1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a30182ff49c8043788a4217402848c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a30182ff49c8043788a4217402848c0"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setServerURL:</b></td></tr>
+<tr class="separator:a6a30182ff49c8043788a4217402848c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e57c8b3de53bd81528725e59535edef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e57c8b3de53bd81528725e59535edef"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setPulseServerURL:</b></td></tr>
+<tr class="separator:a4e57c8b3de53bd81528725e59535edef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d4d8e88446c4254e673c77b292b3a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52d4d8e88446c4254e673c77b292b3a6"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setPulseCBServerURL:</b></td></tr>
+<tr class="separator:a52d4d8e88446c4254e673c77b292b3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87084e95dd0856082758acac9ecd6680"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87084e95dd0856082758acac9ecd6680"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <b>sendUsageInfo</b></td></tr>
+<tr class="separator:a87084e95dd0856082758acac9ecd6680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60417e9ea90a72196b73d126d35db7b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60417e9ea90a72196b73d126d35db7b9"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <b>hasUserOptedOut</b></td></tr>
+<tr class="separator:a60417e9ea90a72196b73d126d35db7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173ab14f4c78134413ce44d8968e0d9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a173ab14f4c78134413ce44d8968e0d9f"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setMaxSessionsSaved:</b></td></tr>
+<tr class="separator:a173ab14f4c78134413ce44d8968e0d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53a8af22d83cc94bb2041031a21a4c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53a8af22d83cc94bb2041031a21a4c3"></a>
+(NSDictionary *)&#160;</td><td class="memItemRight" valign="bottom">+ <b>launchOptions</b></td></tr>
+<tr class="separator:ac53a8af22d83cc94bb2041031a21a4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512a49ca12dbd429bb1e9325dc002795"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a512a49ca12dbd429bb1e9325dc002795"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setAppCloudServerToStaging:</b></td></tr>
+<tr class="separator:a512a49ca12dbd429bb1e9325dc002795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5a0c04ab6d9fb7cf83476c35da772c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e5a0c04ab6d9fb7cf83476c35da772c"></a>
+(int)&#160;</td><td class="memItemRight" valign="bottom">+ <b>sessionContinueSeconds</b></td></tr>
+<tr class="separator:a7e5a0c04ab6d9fb7cf83476c35da772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c64581d3569926d25d1c981318fe6bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c64581d3569926d25d1c981318fe6bb"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>shutdown</b></td></tr>
+<tr class="separator:a3c64581d3569926d25d1c981318fe6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef4f80b8704903c13277b570017e3b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef4f80b8704903c13277b570017e3b3"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>removeInstallationIDFromKeychain</b></td></tr>
+<tr class="separator:a5ef4f80b8704903c13277b570017e3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02db5090b858a57e3a38fdfb1c06d18d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02db5090b858a57e3a38fdfb1c06d18d"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setFlurryOptOut:</b></td></tr>
+<tr class="separator:a02db5090b858a57e3a38fdfb1c06d18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Pre-Session Calls</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Optional sdk settings that should be called before start session. </p>
 </div></td></tr>
@@ -237,9 +345,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a936cba06051ba7a149b988a434d2a05c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a936cba06051ba7a149b988a434d2a05c">setBackgroundSessionEnabled:</a></td></tr>
 <tr class="memdesc:a936cba06051ba7a149b988a434d2a05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set session to support background execution.  <a href="#a936cba06051ba7a149b988a434d2a05c">More...</a><br/></td></tr>
 <tr class="separator:a936cba06051ba7a149b988a434d2a05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75fc84e73c7e2d703311991508379407"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a75fc84e73c7e2d703311991508379407">setEventLoggingEnabled:</a></td></tr>
-<tr class="memdesc:a75fc84e73c7e2d703311991508379407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable custom event logging.  <a href="#a75fc84e73c7e2d703311991508379407">More...</a><br/></td></tr>
-<tr class="separator:a75fc84e73c7e2d703311991508379407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c72cb736e74eebc68f507564298cc88"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a9c72cb736e74eebc68f507564298cc88">setEventLoggingEnabled:</a></td></tr>
+<tr class="memdesc:a9c72cb736e74eebc68f507564298cc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable custom event logging.  <a href="#a9c72cb736e74eebc68f507564298cc88">More...</a><br/></td></tr>
+<tr class="separator:a9c72cb736e74eebc68f507564298cc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ba703be21769df2d47c9a42fd4f703"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a97ba703be21769df2d47c9a42fd4f703">setPulseEnabled:</a></td></tr>
 <tr class="memdesc:a97ba703be21769df2d47c9a42fd4f703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Pulse.  <a href="#a97ba703be21769df2d47c9a42fd4f703">More...</a><br/></td></tr>
 <tr class="separator:a97ba703be21769df2d47c9a42fd4f703"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +357,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:af06649e3f8a54df621e4f03acc4ea0be"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#af06649e3f8a54df621e4f03acc4ea0be">logPaymentTransaction:statusCallback:</a></td></tr>
 <tr class="memdesc:af06649e3f8a54df621e4f03acc4ea0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an Apple Store transaction.  <a href="#af06649e3f8a54df621e4f03acc4ea0be">More...</a><br/></td></tr>
 <tr class="separator:af06649e3f8a54df621e4f03acc4ea0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1992325a1eef97d4d7592a5ac27630c3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a1992325a1eef97d4d7592a5ac27630c3">setIAPReportingEnabled:</a></td></tr>
+<tr class="memdesc:a1992325a1eef97d4d7592a5ac27630c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables implicit recording of Apple Store transactions.  <a href="#a1992325a1eef97d4d7592a5ac27630c3">More...</a><br/></td></tr>
+<tr class="separator:a1992325a1eef97d4d7592a5ac27630c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available methods for defining and reporting Analytics from use of your app. </p>
@@ -280,6 +391,8 @@ Class Methods</h2></td></tr>
 <div class="line">    <span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00551">551</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0051bbff585708b7b17dfbd10f485abd"></a>
@@ -295,7 +408,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">withVersion:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>originVersion</em>&#160;</td>
         </tr>
         <tr>
@@ -325,6 +438,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00790">790</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a928b07baaee4262f675f4727ba0938b5"></a>
@@ -340,7 +455,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">withVersion:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>originVersion</em></td>
         </tr>
         <tr>
@@ -381,6 +496,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00815">815</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a029a000693aeb3302b861229126827a3"></a>
@@ -413,6 +530,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00725">725</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae957b76d1c81276e9743977a75384821"></a>
@@ -428,7 +547,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">withDeepLink:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>deepLink</em>&#160;</td>
         </tr>
         <tr>
@@ -455,6 +574,8 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00747">747</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -518,6 +639,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01180">1180</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7bb5278edece8dd7d97ebd5ccedb68cf"></a>
@@ -539,14 +662,18 @@ Class Methods</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#ab717465e705b23c80253dddae321f5bc" title="Generates debug logs to console.">+ setLogLevel:</a> for information on how to view debugging information on your console.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The agent version of the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> SDK. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00291">291</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>Referenced by <a class="el" href="_flurry_8m_source.html#l00458">startSession:</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a2f496e071482df2d240acbb6c2ddb556"></a>
+<a class="anchor" id="a91bbe4c62d2e45a86dccb900cfb9f741"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (NSString*) getSessionID </td>
+          <td class="memname">+ (NSString *) getSessionID </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
@@ -559,10 +686,12 @@ Class Methods</h2></td></tr>
 <div class="fragment"><div class="line">- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Optional Flurry startup methods</span></div>
-<div class="line">    [<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556" title="Returns the session ID of the current active session.">getSessionID</a>];</div>
+<div class="line">    [<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a91bbe4c62d2e45a86dccb900cfb9f741" title="Returns the session ID of the current active session.">getSessionID</a>];</div>
 <div class="line">    <span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00560">560</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8e75ee91fbed799971dfe2b11719802f"></a>
@@ -579,7 +708,7 @@ Class Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>see +(void)<a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6" title="Automatically track page views on a UINavigationController or UITabBarController.">logAllPageViewsForTarget:</a>target; for details </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.7 This method does the same as +(void)<a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6" title="Automatically track page views on a UINavigationController or UITabBarController.">logAllPageViewsForTarget:</a>target method and is left for backward compatibility </dd></dl>
 
 </div>
@@ -613,6 +742,8 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00989">989</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -662,6 +793,8 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00925">925</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -719,6 +852,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00880">880</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a347b475a85dd8b4ebedc728bdbba6844"></a>
@@ -757,6 +892,10 @@ Class Methods</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00842">842</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l01131">logEvent:withParameters:timed:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1aa7153637496bfdc4e2b4b2a5f787a4"></a>
@@ -772,13 +911,13 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">syndicationID:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>syndicationID</em></td>
         </tr>
         <tr>
           <td class="paramkey">parameters:</td>
           <td></td>
-          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
           <td class="paramname"><em>parameters</em>&#160;</td>
         </tr>
         <tr>
@@ -806,6 +945,10 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01086">1086</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l00861">logEvent:withParameters:</a>.</p>
 
 </div>
 </div>
@@ -860,6 +1003,10 @@ Class Methods</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01104">1104</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l01131">logEvent:withParameters:timed:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0edb3515b807632a8c5de768c748c27a"></a>
@@ -911,6 +1058,12 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00861">861</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l01131">logEvent:withParameters:timed:</a>.</p>
+
+<p>Referenced by <a class="el" href="_flurry_8m_source.html#l01086">logEvent:syndicationID:parameters:</a>.</p>
 
 </div>
 </div>
@@ -980,6 +1133,10 @@ Class Methods</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01131">1131</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>Referenced by <a class="el" href="_flurry_8m_source.html#l00842">logEvent:</a>, <a class="el" href="_flurry_8m_source.html#l01104">logEvent:timed:</a>, and <a class="el" href="_flurry_8m_source.html#l00861">logEvent:withParameters:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a612da8f1557fa0e29d50640400d896ec"></a>
@@ -1004,6 +1161,8 @@ Class Methods</h2></td></tr>
 <div class="line">    [<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a612da8f1557fa0e29d50640400d896ec" title="Explicitly track a page view during a session.">logPageView</a>];</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01013">1013</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af06649e3f8a54df621e4f03acc4ea0be"></a>
@@ -1013,7 +1172,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) logPaymentTransaction: </td>
           <td></td>
-          <td class="paramtype">(SKPaymentTransaction *)&#160;</td>
+          <td class="paramtype">(SKPaymentTransaction*)&#160;</td>
           <td class="paramname"><em>transaction</em></td>
         </tr>
         <tr>
@@ -1041,6 +1200,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01488">1488</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a57e18dc7c992272e3dc89e7f3bc853f4"></a>
@@ -1067,6 +1228,8 @@ Class Methods</h2></td></tr>
 <div class="line">    <span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00615">615</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab1596f7a52079f1f36df255c8fd930ef"></a>
@@ -1095,6 +1258,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00775">775</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a55692f576c987dc0ed73a2ba4aa31710"></a>
@@ -1122,6 +1287,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01378">1378</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afe1eee79e322f865073600a0aa13e008"></a>
@@ -1139,7 +1306,7 @@ Class Methods</h2></td></tr>
 
 <p>Explicitly specifies the App Version that <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use to group Analytics data. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
 <p>This is an optional method that overrides the App Version <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> uses for reporting. <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use the CFBundleVersion in your info.plist file when this method is not invoked.</p>
 <dl class="section note"><dt>Note</dt><dd>There is a maximum of 605 versions allowed for a single app. <br/>
  This method must be called prior to invoking <a class="el" href="interface_flurry.html#aeadfa23545c392ffd46db448b6a95809" title="Start a Flurry session for the project denoted by apiKey.">startSession:</a>.</dd></dl>
@@ -1178,6 +1345,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01340">1340</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a65c17d1390b8bd841b33d6e8e0aebcd0"></a>
@@ -1195,7 +1364,7 @@ Class Methods</h2></td></tr>
 
 <p>Enable automatic collection of crash reports. </p>
 <dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API.</dd></dl>
 <p>This is an optional method that collects crash reports when enabled. The default value is <code>NO</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must be called prior to invoking <a class="el" href="interface_flurry.html#aeadfa23545c392ffd46db448b6a95809" title="Start a Flurry session for the project denoted by apiKey.">startSession:</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1222,7 +1391,7 @@ Class Methods</h2></td></tr>
 
 <p>Generates debug logs to console. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>since 7.7.0, please use setLogLevel or <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>since 7.7.0, please use setLogLevel or <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
 <p>This is an optional method that displays debug information related to the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> SDK. display information to the console. The default setting for this method is <code>NO</code> which sets the log level to <code>FlurryLogLevelCriticalOnly</code>. When set to <code>YES</code> the debug log level is set to <code>FlurryLogLevelDebug</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1240,7 +1409,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) setDelegate: </td>
           <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="protocol_flurry_delegate-p.html">FlurryDelegate</a> &gt;)&#160;</td>
+          <td class="paramtype">(id&lt;<a class="el" href="protocol_flurry_delegate-p.html">FlurryDelegate</a>&gt;)&#160;</td>
           <td class="paramname"><em>delegate</em></td>
           <td></td>
         </tr>
@@ -1257,17 +1426,18 @@ Class Methods</h2></td></tr>
 <div class="line">    <span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00590">590</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a75fc84e73c7e2d703311991508379407"></a>
+<a class="anchor" id="a9c72cb736e74eebc68f507564298cc88"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">+ (void) setEventLoggingEnabled: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -1275,6 +1445,7 @@ Class Methods</h2></td></tr>
 
 <p>Enable custom event logging. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>since 7.9.0. This method will be removed in a future version of the SDK.</dd></dl>
 <p>Use this method to allow the capture of custom events. The default value is <code>YES</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1309,6 +1480,36 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01355">1355</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1992325a1eef97d4d7592a5ac27630c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setIAPReportingEnabled: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>value</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables implicit recording of Apple Store transactions. </p>
+<dl class="section since"><dt>Since</dt><dd>7.9.0</dd></dl>
+<p>This method needs to be called before any transaction is finialized.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>YES to enable transaction logging, NO to stop transaction logging. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01493">1493</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -1373,6 +1574,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00565">565</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab717465e705b23c80253dddae321f5bc"></a>
@@ -1400,6 +1603,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00295">295</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a97ba703be21769df2d47c9a42fd4f703"></a>
@@ -1426,6 +1631,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01235">1235</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa0946c8f58af04167e345968f509a168"></a>
@@ -1443,7 +1650,7 @@ Class Methods</h2></td></tr>
 
 <p>Set the timeout for expiring a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>since 7.7.0, please use <a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> in place of calling this API. This method will be removed in a future version of the SDK.</dd></dl>
 <p>This is an optional method that sets the time the app may be in the background before starting a new session upon resume. The default value for the session timeout is 10 seconds in the background.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must be called prior to invoking <a class="el" href="interface_flurry.html#aeadfa23545c392ffd46db448b6a95809" title="Start a Flurry session for the project denoted by apiKey.">startSession:</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1481,6 +1688,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01310">1310</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9deea9dd729686c86645ba919fe0776f"></a>
@@ -1506,6 +1715,8 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01325">1325</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -1537,6 +1748,8 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01393">1393</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7f1e93aa12021d864af31e327ea368e0"></a>
@@ -1562,6 +1775,8 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01203">1203</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
 
 </div>
 </div>
@@ -1597,6 +1812,12 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00458">458</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l00291">getFlurryAgentVersion</a>.</p>
+
+<p>Referenced by <a class="el" href="_flurry_8m_source.html#l00419">startSession:withOptions:</a>, and <a class="el" href="_flurry_8m_source.html#l00450">startSession:withSessionBuilder:</a>.</p>
 
 </div>
 </div>
@@ -1643,6 +1864,12 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00419">419</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l00458">startSession:</a>.</p>
+
+<p>Referenced by <a class="el" href="_flurry_8m_source.html#l00432">startSession:withOptions:withSessionBuilder:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2288a589e4ad73043f4b5de633383a01"></a>
@@ -1664,7 +1891,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="paramkey">withSessionBuilder:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td>
+          <td class="paramtype">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*)&#160;</td>
           <td class="paramname"><em>sessionBuilder</em>&#160;</td>
         </tr>
         <tr>
@@ -1699,6 +1926,10 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00432">432</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l00419">startSession:withOptions:</a>.</p>
 
 </div>
 </div>
@@ -1750,6 +1981,10 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l00450">450</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_8m_source.html#l00458">startSession:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a732b380542c75c2f12d6ec90b9959aeb"></a>
@@ -1782,10 +2017,13 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_8m_source.html#l01008">1008</a> of file <a class="el" href="_flurry_8m_source.html">Flurry.m</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/Downloads/Flurry-iOS-7.8.2/Flurry/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/y/var/builds/workspace/182685-Flurry_IOSSDK-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/home/y/var/builds/workspace/182685-Flurry_IOSSDK-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8m_source.html">Flurry.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

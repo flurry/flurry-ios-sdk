@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /Users/akshayb/Downloads/Flurry-iOS-7.8.2/Flurry/FlurrySessionBuilder.h Source File</title>
+<title>iOS SDK: /home/y/var/builds/workspace/182685-Flurry_IOSSDK-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/FlurrySessionBuilder.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.8.2</span>
+   &#160;<span id="projectnumber">7.9.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -126,14 +126,19 @@ $(document).ready(function(){initNavTree('_flurry_session_builder_8h_source.html
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withShowErrorInLog:(BOOL) value;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVSessionReportingInterval:(NSInteger) value;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVEventCountThreshold:(NSInteger) value;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIAPReportingEnabled:(BOOL) value;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVSessionReportingInterval:(NSInteger) value;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVEventCountThreshold:(NSInteger) value;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

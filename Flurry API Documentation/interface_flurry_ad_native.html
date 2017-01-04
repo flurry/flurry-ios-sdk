@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.8.2</span>
+   &#160;<span id="projectnumber">7.9.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,9 +112,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a57bce4e4583329c78202193be48e6ae9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9">fetchAd</a></td></tr>
 <tr class="memdesc:a57bce4e4583329c78202193be48e6ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an ad for this ad object.  <a href="#a57bce4e4583329c78202193be48e6ae9">More...</a><br/></td></tr>
 <tr class="separator:a57bce4e4583329c78202193be48e6ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59bfc8aab67569dee1fc9965ddab3033"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a59bfc8aab67569dee1fc9965ddab3033">assetListForType:</a></td></tr>
-<tr class="memdesc:a59bfc8aab67569dee1fc9965ddab3033"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of assets that match the specified asset type.  <a href="#a59bfc8aab67569dee1fc9965ddab3033">More...</a><br/></td></tr>
-<tr class="separator:a59bfc8aab67569dee1fc9965ddab3033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cb037fa756abd5923de6ad2decdcd1"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#ad1cb037fa756abd5923de6ad2decdcd1">assetListForType:</a></td></tr>
+<tr class="memdesc:ad1cb037fa756abd5923de6ad2decdcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of assets that match the specified asset type.  <a href="#ad1cb037fa756abd5923de6ad2decdcd1">More...</a><br/></td></tr>
+<tr class="separator:ad1cb037fa756abd5923de6ad2decdcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d33a16acf647211905b1a70dcb7ba9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9">removeTrackingView</a></td></tr>
 <tr class="memdesc:a14d33a16acf647211905b1a70dcb7ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the tracking view associated with the ad object.  <a href="#a14d33a16acf647211905b1a70dcb7ba9">More...</a><br/></td></tr>
 <tr class="separator:a14d33a16acf647211905b1a70dcb7ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +127,27 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a7471e00bc418f4e6a724dde504cb67aa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_native.html#a7471e00bc418f4e6a724dde504cb67aa">setExpandedViewToTrack:withExpandButton:andCTAButton:</a></td></tr>
 <tr class="memdesc:a7471e00bc418f4e6a724dde504cb67aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up expanded view to track which will be used to send click beacons. A click on this view loads the landing page. The expand button provided in this call is used to collpase the expanded view of ad.  <a href="#a7471e00bc418f4e6a724dde504cb67aa">More...</a><br/></td></tr>
 <tr class="separator:a7471e00bc418f4e6a724dde504cb67aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f3b68e57db020186c28338c9aea617"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45f3b68e57db020186c28338c9aea617"></a>
+(FlurryNativeVideoState *)&#160;</td><td class="memItemRight" valign="bottom">- <b>getVideoState</b></td></tr>
+<tr class="separator:a45f3b68e57db020186c28338c9aea617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf720942dfeb9f068549e27be1ddb17c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf720942dfeb9f068549e27be1ddb17c"></a>
+(FlurryNativeVideoPlayer *)&#160;</td><td class="memItemRight" valign="bottom">- <b>getVideoPlayer</b></td></tr>
+<tr class="separator:adf720942dfeb9f068549e27be1ddb17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c4472ca4976db9f5c16dc1c14abf2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72c4472ca4976db9f5c16dc1c14abf2d"></a>
+(NSTimer *)&#160;</td><td class="memItemRight" valign="bottom">- <b>getPlayerTimer</b></td></tr>
+<tr class="separator:a72c4472ca4976db9f5c16dc1c14abf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9008ac34b51387c527473c4f15785b36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9008ac34b51387c527473c4f15785b36"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setPlayerTimer:</b></td></tr>
+<tr class="separator:a9008ac34b51387c527473c4f15785b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1570e9e70b2452a7a2f9bbdc50563d40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1570e9e70b2452a7a2f9bbdc50563d40"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>isAutoPlay</b></td></tr>
+<tr class="separator:a1570e9e70b2452a7a2f9bbdc50563d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21937e36a9310512efca3ebb21d6ef9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21937e36a9310512efca3ebb21d6ef9b"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>videoIntergrationCorrectness</b></td></tr>
+<tr class="separator:a21937e36a9310512efca3ebb21d6ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bde2c17c57abe297048d4be6ee7fe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80bde2c17c57abe297048d4be6ee7fe2"></a>
+(NSDate *)&#160;</td><td class="memItemRight" valign="bottom">- <b>adMoveOutTimeStamp</b></td></tr>
+<tr class="separator:a80bde2c17c57abe297048d4be6ee7fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -145,9 +166,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="memItemLeft" align="right" valign="top">kFlurryAdNativeDisplayState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a1fe0f40954a53d9f42d19baab87f4cd0">displayState</a></td></tr>
 <tr class="memdesc:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of assets that match the specified asset type.  <a href="#a1fe0f40954a53d9f42d19baab87f4cd0">More...</a><br/></td></tr>
 <tr class="separator:a1fe0f40954a53d9f42d19baab87f4cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65370a089d7814416b4511fdb0b2dd66"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66">assetList</a></td></tr>
-<tr class="memdesc:a65370a089d7814416b4511fdb0b2dd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property will retrieve the native ad's assets. The assets will be available when the ad is ready.  <a href="#a65370a089d7814416b4511fdb0b2dd66">More...</a><br/></td></tr>
-<tr class="separator:a65370a089d7814416b4511fdb0b2dd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00da6515713215b0bd5cd98551a2a733"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a00da6515713215b0bd5cd98551a2a733">assetList</a></td></tr>
+<tr class="memdesc:a00da6515713215b0bd5cd98551a2a733"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property will retrieve the native ad's assets. The assets will be available when the ad is ready.  <a href="#a00da6515713215b0bd5cd98551a2a733">More...</a><br/></td></tr>
+<tr class="separator:a00da6515713215b0bd5cd98551a2a733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7336a0cde2dc7ec0f9ae1c432afec4f3"><td class="memItemLeft" align="right" valign="top">UIView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3">trackingView</a></td></tr>
 <tr class="memdesc:a7336a0cde2dc7ec0f9ae1c432afec4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UIView that needs click tracking.  <a href="#a7336a0cde2dc7ec0f9ae1c432afec4f3">More...</a><br/></td></tr>
 <tr class="separator:a7336a0cde2dc7ec0f9ae1c432afec4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,12 +191,12 @@ Properties</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00034">34</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a59bfc8aab67569dee1fc9965ddab3033"></a>
+<a class="anchor" id="ad1cb037fa756abd5923de6ad2decdcd1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (NSArray*) assetListForType: </td>
+          <td class="memname">- (NSArray *) assetListForType: </td>
           <td></td>
           <td class="paramtype">(kAssetType)&#160;</td>
           <td class="paramname"><em>type</em></td>
@@ -203,6 +224,8 @@ Properties</h2></td></tr>
 <div class="line">   <span class="comment">// user imageAssets in your app</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>Array of assets for the specified asset type </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00480">480</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
 
 </div>
 </div>
@@ -240,6 +263,8 @@ Properties</h2></td></tr>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00191">191</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a661aa88c4a33ce7220fb10326202589e"></a>
@@ -266,6 +291,10 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00100">100</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
+<p>References <a class="el" href="_flurry_ad_native_8h_source.html#l00044">space</a>.</p>
 
 </div>
 </div>
@@ -304,6 +333,8 @@ Properties</h2></td></tr>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00505">505</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a14d33a16acf647211905b1a70dcb7ba9"></a>
@@ -339,6 +370,8 @@ Properties</h2></td></tr>
 <div class="line">    <span class="keyword">self</span>.ad.<a class="code" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3" title="The UIView that needs click tracking.">trackingView</a> = <span class="keyword">self</span>;</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00433">433</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7471e00bc418f4e6a724dde504cb67aa"></a>
@@ -348,19 +381,19 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (void) setExpandedViewToTrack: </td>
           <td></td>
-          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramtype">(UIView*)&#160;</td>
           <td class="paramname"><em>expandedView</em></td>
         </tr>
         <tr>
           <td class="paramkey">withExpandButton:</td>
           <td></td>
-          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramtype">(UIButton*)&#160;</td>
           <td class="paramname"><em>expandButton</em></td>
         </tr>
         <tr>
           <td class="paramkey">andCTAButton:</td>
           <td></td>
-          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramtype">(UIButton*)&#160;</td>
           <td class="paramname"><em>ctaButton</em>&#160;</td>
         </tr>
         <tr>
@@ -413,6 +446,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00332">332</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="adc51d0ea9b92aafb2a0f5c8037f4f1b0"></a>
@@ -422,19 +457,19 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (void) setPencilViewToTrack: </td>
           <td></td>
-          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramtype">(UIView*)&#160;</td>
           <td class="paramname"><em>pencilView</em></td>
         </tr>
         <tr>
           <td class="paramkey">withExpandButton:</td>
           <td></td>
-          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramtype">(UIButton*)&#160;</td>
           <td class="paramname"><em>expandButton</em></td>
         </tr>
         <tr>
           <td class="paramkey">andCTAButton:</td>
           <td></td>
-          <td class="paramtype">(UIButton *)&#160;</td>
+          <td class="paramtype">(UIButton*)&#160;</td>
           <td class="paramname"><em>ctaButton</em>&#160;</td>
         </tr>
         <tr>
@@ -487,6 +522,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8m_source.html#l00324">324</a> of file <a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -530,7 +567,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a65370a089d7814416b4511fdb0b2dd66"></a>
+<a class="anchor" id="a00da6515713215b0bd5cd98551a2a733"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -538,7 +575,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (NSArray*) assetList</td>
+          <td class="memname">- (NSArray *) assetList</td>
         </tr>
       </table>
   </td>
@@ -743,6 +780,8 @@ Properties</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00044">44</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
+<p>Referenced by <a class="el" href="_flurry_ad_native_8m_source.html#l00100">initWithSpace:</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a591e1fcd4df9766ce6c50f3f6af326ea"></a>
@@ -880,8 +919,9 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/Downloads/Flurry-iOS-7.8.2/FlurryAds/FlurryAdNative/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/y/var/builds/workspace/182685-Flurry_IOSSDK-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
+<li>/home/y/var/builds/workspace/182685-Flurry_IOSSDK-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8m_source.html">FlurryAdNative.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
