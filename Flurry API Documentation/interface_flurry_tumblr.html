@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.8.2</span>
+   &#160;<span id="projectnumber">7.9.1</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,9 +112,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a0ac7f81701cd92da2ea2085878f1c1c7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_tumblr.html#a0ac7f81701cd92da2ea2085878f1c1c7">setDelegate:</a></td></tr>
 <tr class="memdesc:a0ac7f81701cd92da2ea2085878f1c1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the object to receive various delegate methods.  <a href="#a0ac7f81701cd92da2ea2085878f1c1c7">More...</a><br/></td></tr>
 <tr class="separator:a0ac7f81701cd92da2ea2085878f1c1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227d535a29e4fafc995c940e817f87f4"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_tumblr.html#a227d535a29e4fafc995c940e817f87f4">tumblrLogo</a></td></tr>
-<tr class="memdesc:a227d535a29e4fafc995c940e817f87f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Tumblr icon.  <a href="#a227d535a29e4fafc995c940e817f87f4">More...</a><br/></td></tr>
-<tr class="separator:a227d535a29e4fafc995c940e817f87f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717868516671f4e18d8982540c26c1ab"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_tumblr.html#a717868516671f4e18d8982540c26c1ab">tumblrLogo</a></td></tr>
+<tr class="memdesc:a717868516671f4e18d8982540c26c1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Tumblr icon.  <a href="#a717868516671f4e18d8982540c26c1ab">More...</a><br/></td></tr>
+<tr class="separator:a717868516671f4e18d8982540c26c1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e6018fa1aff43090b6f976691b853cd"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_tumblr.html#a7e6018fa1aff43090b6f976691b853cd">handleURL:</a></td></tr>
 <tr class="memdesc:a7e6018fa1aff43090b6f976691b853cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> SDK handles the URL.  <a href="#a7e6018fa1aff43090b6f976691b853cd">More...</a><br/></td></tr>
 <tr class="separator:a7e6018fa1aff43090b6f976691b853cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,7 +130,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (BOOL) handleURL: </td>
           <td></td>
-          <td class="paramtype">(NSURL *)&#160;</td>
+          <td class="paramtype">(NSURL*)&#160;</td>
           <td class="paramname"><em>url</em></td>
           <td></td>
         </tr>
@@ -150,6 +150,8 @@ Class Methods</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> NO;</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00149">149</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aac103922646082e60876d883da7c2c6f"></a>
@@ -159,13 +161,13 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) post: </td>
           <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a> &gt;)&#160;</td>
+          <td class="paramtype">(id&lt;<a class="el" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;)&#160;</td>
           <td class="paramname"><em>parameters</em></td>
         </tr>
         <tr>
           <td class="paramkey">presentingViewController:</td>
           <td></td>
-          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramtype">(UIViewController*)&#160;</td>
           <td class="paramname"><em>presentingController</em>&#160;</td>
         </tr>
         <tr>
@@ -195,6 +197,8 @@ Class Methods</h2></td></tr>
 <div class="line">    [<a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> post:imgShareParameters presentingViewController:<span class="keyword">self</span>];</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00124">124</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a149263d5409960fd59594672f5e13c7a"></a>
@@ -204,13 +208,13 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) setConsumerKey: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>consumerKey</em></td>
         </tr>
         <tr>
           <td class="paramkey">consumerSecret:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>consumerSecret</em>&#160;</td>
         </tr>
         <tr>
@@ -230,6 +234,8 @@ Class Methods</h2></td></tr>
 <div class="line">[<a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> setConsumerKey:@”Your Consumer Key” consumerSecret:@”Your Consumer Secret”];</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00130">130</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9fb18febec84248c191eb706c1a11f15"></a>
@@ -239,19 +245,19 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) setConsumerKey: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>consumerKey</em></td>
         </tr>
         <tr>
           <td class="paramkey">consumerSecret:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>consumerSecret</em></td>
         </tr>
         <tr>
           <td class="paramkey">consumerScheme:</td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramtype">(NSString*)&#160;</td>
           <td class="paramname"><em>urlScheme</em>&#160;</td>
         </tr>
         <tr>
@@ -272,6 +278,8 @@ Class Methods</h2></td></tr>
 <div class="line">    [<a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> setConsumerKey:@”Your Consumer Key” consumerSecret:@”Your Consumer Secret” consumerScheme:<span class="stringliteral">@&quot;Your Consumer Scheme&quot;</span>];</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00135">135</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0ac7f81701cd92da2ea2085878f1c1c7"></a>
@@ -281,7 +289,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) setDelegate: </td>
           <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a> &gt;)&#160;</td>
+          <td class="paramtype">(id&lt;<a class="el" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a>&gt;)&#160;</td>
           <td class="paramname"><em>delegate</em></td>
           <td></td>
         </tr>
@@ -306,14 +314,16 @@ Class Methods</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00144">144</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a227d535a29e4fafc995c940e817f87f4"></a>
+<a class="anchor" id="a717868516671f4e18d8982540c26c1ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (UIImage*) tumblrLogo </td>
+          <td class="memname">+ (UIImage *) tumblrLogo </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
@@ -328,17 +338,20 @@ Class Methods</h2></td></tr>
 <div class="fragment"><div class="line">- (void) addTumblrButton</div>
 <div class="line">{</div>
 <div class="line">    UIButton* tumblrButton = [[UIButton alloc] init];</div>
-<div class="line">    UIImage* tumblrImage = [<a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> <a class="code" href="interface_flurry_tumblr.html#a227d535a29e4fafc995c940e817f87f4" title="Returns a Tumblr icon.">tumblrLogo</a>];</div>
+<div class="line">    UIImage* tumblrImage = [<a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> <a class="code" href="interface_flurry_tumblr.html#a717868516671f4e18d8982540c26c1ab" title="Returns a Tumblr icon.">tumblrLogo</a>];</div>
 <div class="line">    [tumblrButton setBackgroundImage:tumblrImage forState:UIControlStateNormal];</div>
 <div class="line">    [<span class="keyword">self</span>.view addSubView: tumblrButton];</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_tumblr_8m_source.html#l00140">140</a> of file <a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/Downloads/Flurry-iOS-7.8.2/FlurryTumblrAPI/<a class="el" href="_flurry_tumblr_8h_source.html">FlurryTumblr.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/y/var/builds/workspace/183196-Flurry_IOSSDK_Releases-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryTumblrAPI/<a class="el" href="_flurry_tumblr_8h_source.html">FlurryTumblr.h</a></li>
+<li>/home/y/var/builds/workspace/183196-Flurry_IOSSDK_Releases-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryTumblrAPI/<a class="el" href="_flurry_tumblr_8m_source.html">FlurryTumblr.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
