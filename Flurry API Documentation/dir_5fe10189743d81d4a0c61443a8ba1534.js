@@ -1,7 +1,5 @@
-var dir_aae36e320ba1b963e2be5fc812c23c9d =
+var dir_5fe10189743d81d4a0c61443a8ba1534 =
 [
-    [ "Flurry+Gaming.h", "_flurry_09_gaming_8h_source.html", null ],
-    [ "Flurry+Private.h", "_flurry_09_private_8h_source.html", null ],
     [ "Flurry.h", "_flurry_8h_source.html", null ],
     [ "Flurry.m", "_flurry_8m_source.html", null ],
     [ "FlurryEmpty.m", "_flurry_empty_8m_source.html", null ],

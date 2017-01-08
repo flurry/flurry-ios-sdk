@@ -20,8 +20,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_flurry_09_gaming_8h_source.html",
-"protocol_flurry_ad_delegate-p.html#aff43a6fbd2a1d34170d25721c013bf9f"
+"_flurry_8h_source.html",
+"protocol_flurry_ad_stream_delegate-p.html#a730f1fde7b03640959c5ff5a93ac53da"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
