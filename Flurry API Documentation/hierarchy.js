@@ -2,10 +2,7 @@ var hierarchy =
 [
     [ "Flurry(ForceLoad)", "category_flurry_07_force_load_08.html", null ],
     [ "Flurry(Gaming)", "category_flurry_07_gaming_08.html", null ],
-    [ "Flurry(Private)", "category_flurry_07_private_08.html", null ],
-    [ "FlurryAdNative(Private)", "category_flurry_ad_native_07_private_08.html", null ],
     [ "FlurryAdNativeAsset()", "category_flurry_ad_native_asset_07_08.html", null ],
-    [ "FlurryAdNativeAsset(Private)", "category_flurry_ad_native_asset_07_private_08.html", null ],
     [ "FlurryAdNativeStyle()", "category_flurry_ad_native_style_07_08.html", null ],
     [ "FlurryAds(ForceLoad)", "category_flurry_ads_07_force_load_08.html", null ],
     [ "FlurryAdTargeting()", "category_flurry_ad_targeting_07_08.html", null ],

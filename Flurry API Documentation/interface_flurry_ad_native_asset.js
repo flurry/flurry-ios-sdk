@@ -1,6 +1,5 @@
 var interface_flurry_ad_native_asset =
 [
-    [ "initWithDictionary:", "interface_flurry_ad_native_asset.html#ab8c9f4834b1da676dcb70382d2f5f63a", null ],
     [ "height", "interface_flurry_ad_native_asset.html#a50759eca02d4332a0737b2e9eeeba303", null ],
     [ "name", "interface_flurry_ad_native_asset.html#af839e5a8d6a44ca316601616fa1f4f97", null ],
     [ "type", "interface_flurry_ad_native_asset.html#a885b639a4b00a479595da6c9a33d5aae", null ],
