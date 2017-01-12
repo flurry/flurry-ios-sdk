@@ -1,9 +1,9 @@
 var interface_flurry_session_builder =
 [
-    [ "withAppVersion:", "interface_flurry_session_builder.html#aed2a348706805985098d45da65fe6bdf", null ],
-    [ "withCrashReporting:", "interface_flurry_session_builder.html#aa215490eeec92d33a51fa63bdffe18d2", null ],
-    [ "withIAPReportingEnabled:", "interface_flurry_session_builder.html#a44f21b62a103c8374dc838526747a8df", null ],
-    [ "withLogLevel:", "interface_flurry_session_builder.html#a59217357bd14f669a2bdd302a86f4278", null ],
-    [ "withSessionContinueSeconds:", "interface_flurry_session_builder.html#a9e8c8bbfa5184cf68403b05d689bbac8", null ],
-    [ "withShowErrorInLog:", "interface_flurry_session_builder.html#a646957674349a0772868eb672debb3c4", null ]
+    [ "withAppVersion:", "interface_flurry_session_builder.html#a759df1999a1212d59b7153cc7524da6e", null ],
+    [ "withCrashReporting:", "interface_flurry_session_builder.html#a8bf13ca5dd0d60d56d2619982a3b06f6", null ],
+    [ "withIAPReportingEnabled:", "interface_flurry_session_builder.html#a1dc8f27408ae2e4a95b073bffbe1af19", null ],
+    [ "withLogLevel:", "interface_flurry_session_builder.html#ac891dc68740af34d6aad9098981e1cd0", null ],
+    [ "withSessionContinueSeconds:", "interface_flurry_session_builder.html#a1c8910aefa70cc2f76cc5b21ed6c34ef", null ],
+    [ "withShowErrorInLog:", "interface_flurry_session_builder.html#ad23c59d06218aba6cd9e4700d7a3564f", null ]
 ];

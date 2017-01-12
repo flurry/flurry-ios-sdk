@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '7.9.1'
+  s.version          = '7.9.2'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     ss.platform   = :ios, '6.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
     ss.weak_framework = 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurry_7.9.1.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.9.2.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :ios, '6.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_7.9.1.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.9.2.a"
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurryWatch_7.9.1.a"
+    ss.vendored_libraries = "Flurry/libFlurryWatch_7.9.2.a"
   end
 
   s.subspec 'FlurryTVOS' do |ss|
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
 
      ss.platform   = :tvos, '9.0'
      ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
-     ss.vendored_libraries = "Flurry/libFlurryTVOS_7.9.1.a"
+     ss.vendored_libraries = "Flurry/libFlurryTVOS_7.9.2.a"
    end
 
   s.subspec 'FlurryAds' do |ss|
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
     ss.platform   = :ios, '6.0'
     ss.frameworks = 'CoreGraphics', 'CoreMedia', 'MediaPlayer', 'AVFoundation'
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = "FlurryAds/libFlurryAds_7.9.1.a"
+    ss.vendored_libraries = "FlurryAds/libFlurryAds_7.9.2.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
