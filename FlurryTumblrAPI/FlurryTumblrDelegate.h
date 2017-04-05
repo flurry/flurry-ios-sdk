@@ -1,3 +1,7 @@
+/*!
+ *  @brief FlurryTumblrDelegate
+ *  @deprecated 8.0.0
+ */
 
 typedef enum
 {
@@ -10,9 +14,9 @@ typedef enum
 
 @optional
 
-- (void) flurryTumblrPostError: (NSError*) error errorType:(FlurryTumblrErrorType) errorType;
+- (void) flurryTumblrPostError: (NSError*) error errorType:(FlurryTumblrErrorType) errorType __attribute__ ((deprecated));
 
-- (void) flurryTumblrPostSuccess;
+- (void) flurryTumblrPostSuccess __attribute__ ((deprecated));
 
 
 @end
