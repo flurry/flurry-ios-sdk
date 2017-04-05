@@ -39,6 +39,7 @@
 /*!
  *  @brief Set the consumer key and secret
  *  @since 7.0.0
+ *  @deprecated 8.0.0
  *
  *  Set your app’s consumer key and secret prior to making any calls to
  *  FlurryTumblr
@@ -53,11 +54,12 @@
  @endcode
  *
  */
-+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret;
++ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret __attribute__ ((deprecated));
 
 /*!
  *  @brief Set the consumer key , consumer secret and consume urlScheme(required for SafariViewController login control)
  *  @since 7.5.0
+ *  @deprecated 8.0.0
  *
  *  Set your app’s consumer key and secret prior to making any calls to FlurryTumblr
  *  The URL scheme is the app's custom URL scheme.  
@@ -89,12 +91,13 @@
     @endcode
  *
  */
-+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret consumerScheme:(NSString*)urlScheme;
++ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret consumerScheme:(NSString*)urlScheme __attribute__ ((deprecated));
 
 
 /*!
  *  @brief Authenticate and then share to Tumblr
  *  @since 7.0.0
+ *  @deprecated 8.0.0
  *
  *  Flurry will do a one time authentication of the user and then post the shared content to Tumblr.
  *  To receive success and failure notifications please implement the FlurryTumblrDelegate protocol
@@ -122,11 +125,12 @@
     @endcode
  *
  */
-+ (void) post: (id<IFlurryTumblrShareParameters>)parameters  presentingViewController:(UIViewController*) presentingController;
++ (void) post: (id<IFlurryTumblrShareParameters>)parameters  presentingViewController:(UIViewController*) presentingController __attribute__ ((deprecated));
 
 /*!
  *  @brief Sets the object to receive various delegate methods.
  *  @since 7.0.0
+ *  @deprecated 8.0.0
  *
  *  This method allows you to register an object that will receive
  *  notifications at different phases of Tumblr sharing.
@@ -148,12 +152,13 @@
  *  @param delegate The object to receive notifications of various tumblr actions.
  *
  */
-+ (void) setDelegate: (id<FlurryTumblrDelegate>) delegate;
++ (void) setDelegate: (id<FlurryTumblrDelegate>) delegate __attribute__ ((deprecated));
 
 
 /*!
  *  @brief Returns a Tumblr icon
  *  @since 7.0.0
+ *  @deprecated 8.0.0
  *
  *  This image can be used with a UI element such as a UI button that will
  *  share to Tumblr.
@@ -174,11 +179,12 @@
  *  @endcode
  *
  */
-+ (UIImage*) tumblrLogo;
++ (UIImage*) tumblrLogo __attribute__ ((deprecated));
 
 /*!
  *  @brief Check to see if the Flurry SDK handles the URL
  *  @since 7.5.0
+ *  @deprecated 8.0.0
  *
  *  Flurry will listen and handle the URL callback from SafariViewController after Tumblr login
  *  This features added for only iOS 9.0 and above.
@@ -197,5 +203,5 @@
  * @endcode
  *
  */
-+ (BOOL)handleURL:(NSURL*)url;
++ (BOOL)handleURL:(NSURL*)url __attribute__ ((deprecated));
 @end

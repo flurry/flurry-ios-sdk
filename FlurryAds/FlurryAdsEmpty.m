@@ -1,6 +1,6 @@
 
-#import "FlurryAds.h"
+#import "FlurryAdNative.h"
 
-@implementation FlurryAds (ForceLoad)
+@implementation FlurryAdNative (ForceLoad)
 
 @end
