@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">7.10.0</span>
+   &#160;<span id="projectnumber">8.0.2</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -130,20 +130,20 @@ $(document).ready(function(){initNavTree('_flurry_tumblr_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="interface_flurry_tumblr.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_tumblr.html">FlurryTumblr</a> : NSObject</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret consumerScheme:(NSString*)urlScheme;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;+ (void) post: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;)parameters  presentingViewController:(UIViewController*) presentingController;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;+ (void) setDelegate: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a>&gt;) delegate;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;+ (UIImage*) <a class="code" href="interface_flurry_tumblr.html#a227d535a29e4fafc995c940e817f87f4" title="Returns a Tumblr icon.">tumblrLogo</a>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;+ (BOOL)handleURL:(NSURL*)url;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;+ (void) setConsumerKey: (NSString*) consumerKey consumerSecret: (NSString*) consumerSecret consumerScheme:(NSString*)urlScheme __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;+ (void) post: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_i_flurry_tumblr_share_parameters-p.html">IFlurryTumblrShareParameters</a>&gt;)parameters  presentingViewController:(UIViewController*) presentingController __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;+ (void) setDelegate: (<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a>&gt;) delegate __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;+ (UIImage*) tumblrLogo <a class="code" href="interface_flurry_tumblr.html#a6cb3e5689f455d315bb9c56c90acae39" title="Returns a Tumblr icon.">__attribute__</a> ((deprecated));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;+ (BOOL)handleURL:(NSURL*)url __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
