@@ -1,6 +1,8 @@
 var hierarchy =
 [
+    [ "<FConfigObserver>", "protocol_f_config_observer-p.html", null ],
     [ "NSObject", null, [
+      [ "FConfig", "interface_f_config.html", null ],
       [ "Flurry", "interface_flurry.html", null ],
       [ "FlurryAdBanner", "interface_flurry_ad_banner.html", null ],
       [ "FlurryAdInterstitial", "interface_flurry_ad_interstitial.html", null ],
