@@ -11,4 +11,4 @@
 language: generic
 
 before_install:
-- if [ $TRAVIS_PULL_REQUEST = 'false' ] && [ $TRAVIS_BRANCH = 'master' ]; then sh update-docs.sh; fi
+- if [ $TRAVIS_BRANCH = 'master' ]; then sh update-docs.sh; fi
