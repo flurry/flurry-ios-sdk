@@ -276,7 +276,7 @@ typedef enum {
     if a presenting view controller has not been set
  *
  */
-@property (nonatomic, strong) UIViewController* viewControllerForPresentation;
+@property (nonatomic, weak) UIViewController* viewControllerForPresentation;
 
 /*!
  *  @brief This property should be set to the view which will 
