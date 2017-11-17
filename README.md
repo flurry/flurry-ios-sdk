@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fflurry%2Fflurry-ios-sdk.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fflurry%2Fflurry-ios-sdk?ref=badge_shield)
+
 Flurry SDK
 ==========
 
@@ -48,3 +50,7 @@ end
 
 Don't forget to read how to track events correctly in Apple Watch Extensions  in FlurryiOSAnalyticsREADMExx.pdf  
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fflurry%2Fflurry-ios-sdk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fflurry%2Fflurry-ios-sdk?ref=badge_large)
