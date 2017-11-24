@@ -15,7 +15,7 @@ var searchData=
   ['setgender_3a',['setGender:',['../interface_flurry.html#a40c368f4ef3784467f9ba170c37c174f',1,'Flurry']]],
   ['setiapreportingenabled_3a',['setIAPReportingEnabled:',['../interface_flurry.html#a1992325a1eef97d4d7592a5ac27630c3',1,'Flurry']]],
   ['setkeywordsfortargeting_3a',['setKeywordsForTargeting:',['../interface_flurry_ads.html#aa191fe99171a1e3dc47a7fba2148f3e2',1,'FlurryAds']]],
-  ['setlatitude_3alongitude_3ahorizontalaccuracy_3averticalaccuracy_3a',['setLatitude:longitude:horizontalAccuracy:verticalAccuracy:',['../interface_flurry.html#ad1dce23676e4ac28661415ab22d5a736',1,'Flurry']]],
+  ['setlatitude_3alongitude_3ahorizontalaccuracy_3averticalaccuracy_3a',['setLatitude:longitude:horizontalAccuracy:verticalAccuracy:',['../interface_flurry.html#a01ee271623f6df7af9cf3e97139136b3',1,'Flurry']]],
   ['setloglevel_3a',['setLogLevel:',['../interface_flurry.html#ab717465e705b23c80253dddae321f5bc',1,'Flurry']]],
   ['setpencilviewtotrack_3awithexpandbutton_3aandctabutton_3a',['setPencilViewToTrack:withExpandButton:andCTAButton:',['../interface_flurry_ad_native.html#adc51d0ea9b92aafb2a0f5c8037f4f1b0',1,'FlurryAdNative']]],
   ['setpulseenabled_3a',['setPulseEnabled:',['../interface_flurry.html#a97ba703be21769df2d47c9a42fd4f703',1,'Flurry']]],

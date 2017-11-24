@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.2</span>
+   &#160;<span id="projectnumber">8.2.2</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -220,14 +220,11 @@ Class Methods</h2></td></tr>
 <tr class="memdesc:a40c368f4ef3784467f9ba170c37c174f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set your user's gender.  <a href="#a40c368f4ef3784467f9ba170c37c174f">More...</a><br/></td></tr>
 <tr class="separator:a40c368f4ef3784467f9ba170c37c174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Location Reporting</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Opt-out Methods for setting location information. </p>
+<tr><td colspan="2"><div class="groupText"><p>Methods for setting location information. </p>
 </div></td></tr>
-<tr class="memitem:ad1dce23676e4ac28661415ab22d5a736"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ad1dce23676e4ac28661415ab22d5a736">setLatitude:longitude:horizontalAccuracy:verticalAccuracy:</a></td></tr>
-<tr class="memdesc:ad1dce23676e4ac28661415ab22d5a736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the location of the session.  <a href="#ad1dce23676e4ac28661415ab22d5a736">More...</a><br/></td></tr>
-<tr class="separator:ad1dce23676e4ac28661415ab22d5a736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a983b560788350369a4db0325ead0f"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a94a983b560788350369a4db0325ead0f">trackPreciseLocation:</a></td></tr>
-<tr class="memdesc:a94a983b560788350369a4db0325ead0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on/off location information of the session (default is on).  <a href="#a94a983b560788350369a4db0325ead0f">More...</a><br/></td></tr>
-<tr class="separator:a94a983b560788350369a4db0325ead0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ee271623f6df7af9cf3e97139136b3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a01ee271623f6df7af9cf3e97139136b3">setLatitude:longitude:horizontalAccuracy:verticalAccuracy:</a></td></tr>
+<tr class="memdesc:a01ee271623f6df7af9cf3e97139136b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the location of the session.  <a href="#a01ee271623f6df7af9cf3e97139136b3">More...</a><br/></td></tr>
+<tr class="separator:a01ee271623f6df7af9cf3e97139136b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Session Reporting Calls</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Optional methods that can be called at any point to control session reporting. </p>
 </div></td></tr>
@@ -1346,7 +1343,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad1dce23676e4ac28661415ab22d5a736"></a>
+<a class="anchor" id="a01ee271623f6df7af9cf3e97139136b3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1366,7 +1363,13 @@ Class Methods</h2></td></tr>
           <td class="paramkey">horizontalAccuracy:</td>
           <td></td>
           <td class="paramtype">(float)&#160;</td>
-          <td class="paramname"><em>horizontalAccuracy</em>&#160;</td>
+          <td class="paramname"><em>horizontalAccuracy</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">verticalAccuracy:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>verticalAccuracy</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1812,43 +1815,8 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a94a983b560788350369a4db0325ead0f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (BOOL) trackPreciseLocation: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>state</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Turn on/off location information of the session (default is on). </p>
-<dl class="section since"><dt>Since</dt><dd>8.4.0</dd></dl>
-<p>Use CLLocationManager to start the location tracking of the session. <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> does not prompt users for location permission, we fetch the available location in device daemon.</p>
-<dl class="section note"><dt>Note</dt><dd>Only the last location in cache is captured per session. <br/>
- Regardless of accuracy specified, the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> SDK will only report location at city level or higher. <br/>
- Location is aggregated across all users of your app and not available on a per user basis. <br/>
- This information should only be captured if it is germaine to the use of your app.</dd></dl>
-<div class="fragment"><div class="line">CLLocationManager *locationManager = [[CLLocationManager alloc] init];</div>
-<div class="line">[locationManager startUpdatingLocation];</div>
-</div><!-- fragment --><p>It is on by default. After starting the location manager, you can turn off opt-out location tracking by calling this method.</p>
-<div class="fragment"><div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>  trackPreciseLocation:NO];</div>
-</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">state</td><td>The boolean to switch on/off for location tracking </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a boolean, if the state is YES, it tests device/app permission. If permission is granted, it returns NO. If permission is valid, it returns YES. If the state is NO, it always returns NO. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/y/workspace/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/home/y/var/builds/workspace/67719-flurry_unified_sdk-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
