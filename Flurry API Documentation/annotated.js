@@ -1,7 +1,5 @@
 var annotated =
 [
-    [ "FConfig", "interface_f_config.html", "interface_f_config" ],
-    [ "<FConfigObserver>", "protocol_f_config_observer-p.html", "protocol_f_config_observer-p" ],
     [ "Flurry", "interface_flurry.html", null ],
     [ "FlurryAdBanner", "interface_flurry_ad_banner.html", "interface_flurry_ad_banner" ],
     [ "<FlurryAdBannerDelegate>", "protocol_flurry_ad_banner_delegate-p.html", "protocol_flurry_ad_banner_delegate-p" ],
