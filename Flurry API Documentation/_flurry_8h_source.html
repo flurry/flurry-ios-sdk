@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /home/y/var/builds/workspace/67719-flurry_unified_sdk-trunk-component/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/Flurry.h Source File</title>
+<title>iOS SDK: /home/y/workspace/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/Flurry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.2.1</span>
+   &#160;<span id="projectnumber">8.3.4</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -254,44 +254,48 @@ $(document).ready(function(){initNavTree('_flurry_8h_source.html','');});
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;+ (void)setGender:(NSString *)gender; <span class="comment">// user&#39;s gender m or f</span></div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;+ (void)setLatitude:(<span class="keywordtype">double</span>)latitude longitude:(<span class="keywordtype">double</span>)longitude horizontalAccuracy:(<span class="keywordtype">float</span>)horizontalAccuracy verticalAccuracy:(<span class="keywordtype">float</span>)verticalAccuracy;</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;+ (void)setLatitude:(<span class="keywordtype">double</span>)latitude longitude:(<span class="keywordtype">double</span>)longitude horizontalAccuracy:(<span class="keywordtype">float</span>)horizontalAccuracy verticalAccuracy:(<span class="keywordtype">float</span>)verticalAccuracy __attribute__ ((deprecated));;</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;+ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;+ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled;</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;+ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled;</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;+ (void)setEventLoggingEnabled:(BOOL)value __attribute__ ((deprecated));</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;+ (void)setPulseEnabled:(BOOL)value;</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;+ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent syndicationID:(NSString*) syndicationID parameters:(NSDictionary*) parameters;</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;+ (BOOL)trackPreciseLocation:(BOOL)state;</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;+ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;+ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled;</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;+ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled;</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;+ (void)setEventLoggingEnabled:(BOOL)value __attribute__ ((deprecated));</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;+ (void) logPaymentTransaction:(SKPaymentTransaction*)transaction statusCallback:(<span class="keywordtype">void</span>(^)(FlurryTransactionRecordStatus))statusCallback;</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;+ (void) setIAPReportingEnabled:(BOOL)value;</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;+ (void)registerJSContextWithContext:(JSContext*)jscontext;</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;+ (void)setPulseEnabled:(BOOL)value;</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;+ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent syndicationID:(NSString*) syndicationID parameters:(NSDictionary*) parameters;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;+ (void) logPaymentTransaction:(SKPaymentTransaction*)transaction statusCallback:(<span class="keywordtype">void</span>(^)(FlurryTransactionRecordStatus))statusCallback;</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;+ (void) setIAPReportingEnabled:(BOOL)value;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
 <div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;+ (void)registerJSContextWithContext:(JSContext*)jscontext;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
