@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -253,6 +253,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>didReceiveActionWithIdentifier:message:
+: <a class="el" href="protocol_flurry_messaging_delegate-p.html#a6496ada7dd4d349e04231b9735fee061">&lt;FlurryMessagingDelegate&gt;</a>
+</li>
+<li>didReceiveMessage:
+: <a class="el" href="protocol_flurry_messaging_delegate-p.html#a4f21f83aaa6ad9ea1ff12ed69947987d">&lt;FlurryMessagingDelegate&gt;</a>
+</li>
 <li>displayAdForSpace:modallyForViewController:
 : <a class="el" href="interface_flurry_ads.html#ae61be44f5308297f7021fef7aa702934">FlurryAds</a>
 </li>
@@ -333,6 +339,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 , <a class="el" href="interface_flurry_ad_native.html#a661aa88c4a33ce7220fb10326202589e">FlurryAdNative</a>
 , <a class="el" href="interface_flurry_ad_interstitial.html#aad64e5430b9acfefb23c5f0cb31ab1de">FlurryAdInterstitial</a>
 </li>
+<li>isFlurryMsg:
+: <a class="el" href="interface_flurry_messaging.html#a7d9394746831a88efeb67121026ad69c">FlurryMessaging</a>
+</li>
 <li>isVideoAd
 : <a class="el" href="interface_flurry_ad_native.html#aeee0bc05028d7ca2d5272508294a1c92">FlurryAdNative</a>
 </li>
@@ -347,6 +356,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>leaveBreadcrumb:
+: <a class="el" href="interface_flurry.html#ade3c74cc1c06158ad420288fb5e5bb0b">Flurry</a>
+</li>
 <li>location
 : <a class="el" href="interface_flurry_ad_targeting.html#a2600adbd7bc010f3733dabe2581ccfd8">FlurryAdTargeting</a>
 </li>
@@ -359,8 +371,14 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>logError:message:error:
 : <a class="el" href="interface_flurry.html#ae937294c559758cdcba67be720fe4f04">Flurry</a>
 </li>
+<li>logError:message:error:withParameters:
+: <a class="el" href="interface_flurry.html#a85f4db210e74ea7f5e4aa437ad3aca73">Flurry</a>
+</li>
 <li>logError:message:exception:
 : <a class="el" href="interface_flurry.html#a13309d1a6fb5777d9ba6fb85df47e558">Flurry</a>
+</li>
+<li>logError:message:exception:withParameters:
+: <a class="el" href="interface_flurry.html#a48bcc8b442354cd393ebd9969b0c50db">Flurry</a>
 </li>
 <li>logEvent:
 : <a class="el" href="interface_flurry.html#a347b475a85dd8b4ebedc728bdbba6844">Flurry</a>
@@ -412,6 +430,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>post:presentingViewController:
 : <a class="el" href="interface_flurry_tumblr.html#adc151e23592ddf562cdf50189d7920dd">FlurryTumblr</a>
 </li>
+<li>presentNotification:withCompletionHandler:
+: <a class="el" href="interface_flurry_messaging.html#ae09c0f60636b2705cc61fc4f216218fb">FlurryMessaging</a>
+</li>
 <li>presentWithViewController:
 : <a class="el" href="interface_flurry_ad_interstitial.html#a3548d0b0dfcc60640656db34181c0916">FlurryAdInterstitial</a>
 </li>
@@ -446,8 +467,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>setAppVersion:
 : <a class="el" href="interface_flurry.html#afe1eee79e322f865073600a0aa13e008">Flurry</a>
 </li>
+<li>setAutoIntegrationForMessaging
+: <a class="el" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc">FlurryMessaging</a>
+</li>
 <li>setBackgroundSessionEnabled:
-: <a class="el" href="interface_flurry.html#a936cba06051ba7a149b988a434d2a05c">Flurry</a>
+: <a class="el" href="interface_flurry.html#ac7a6639bb80642049036fea136b64a6e">Flurry</a>
 </li>
 <li>setConsumerKey:consumerSecret:
 : <a class="el" href="interface_flurry_tumblr.html#a2d3c9030347d6de5c53e98e8d85c8ba8">FlurryTumblr</a>
@@ -464,6 +488,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>setDelegate:
 : <a class="el" href="interface_flurry.html#a3ba0e3de32ab9d494617dfe4cb2888fa">Flurry</a>
 , <a class="el" href="interface_flurry_tumblr.html#a2e70871092daff47bf594d4deca723a8">FlurryTumblr</a>
+</li>
+<li>setDeviceToken:
+: <a class="el" href="interface_flurry_messaging.html#a9dc00b938793ae00dccc71bc23a24511">FlurryMessaging</a>
 </li>
 <li>setEventLoggingEnabled:
 : <a class="el" href="interface_flurry.html#a9c72cb736e74eebc68f507564298cc88">Flurry</a>
@@ -485,6 +512,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>setLogLevel:
 : <a class="el" href="interface_flurry.html#ab717465e705b23c80253dddae321f5bc">Flurry</a>
+</li>
+<li>setMessagingDelegate:
+: <a class="el" href="interface_flurry_messaging.html#a2cc53b29b345ce62ec870a791a35a139">FlurryMessaging</a>
 </li>
 <li>setPencilViewToTrack:withExpandButton:andCTAButton:
 : <a class="el" href="interface_flurry_ad_native.html#adc51d0ea9b92aafb2a0f5c8037f4f1b0">FlurryAdNative</a>
@@ -511,9 +541,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="interface_flurry.html#a7f1e93aa12021d864af31e327ea368e0">Flurry</a>
 </li>
 <li>space
-: <a class="el" href="interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891">FlurryAdBanner</a>
+: <a class="el" href="interface_flurry_ad_native.html#a89286ea9a48e2576afde64bf41436e12">FlurryAdNative</a>
 , <a class="el" href="interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0">FlurryAdInterstitial</a>
-, <a class="el" href="interface_flurry_ad_native.html#a89286ea9a48e2576afde64bf41436e12">FlurryAdNative</a>
+, <a class="el" href="interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891">FlurryAdBanner</a>
 </li>
 <li>spaceClickActionDidFail:error:
 : <a class="el" href="protocol_flurry_ad_delegate-p.html#ab48c7bbba044873d95f894f84d2a128a">&lt;FlurryAdDelegate&gt;</a>

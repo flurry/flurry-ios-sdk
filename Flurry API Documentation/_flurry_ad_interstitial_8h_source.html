@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -110,21 +110,21 @@ $(document).ready(function(){initNavTree('_flurry_ad_interstitial_8h_source.html
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0">   36</a></span>&#160;<span class="keyword">@property</span> (nonatomic, copy, readonly) NSString *<a class="code" href="interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0" title="Read only property that can be used to retrieve the ad space that was passed into an initializer rout...">space</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a8dff6d55f20df82c36a5c76257e0beed">   51</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> *<a class="code" href="interface_flurry_ad_interstitial.html#a8dff6d55f20df82c36a5c76257e0beed" title="This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.">targeting</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e">   76</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;FlurryAdInterstitialDelegate&gt; <a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various delegate methods.">adDelegate</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433">  113</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;- (id)   initWithSpace:(NSString *)space;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;- (void) <a class="code" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212" title="Retrieves an ad for this object using the adspace specified in the initializer routine.">fetchAd</a>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;- (void) presentWithViewController: (UIViewController *) presentingViewController;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a8dff6d55f20df82c36a5c76257e0beed">   49</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> *<a class="code" href="interface_flurry_ad_interstitial.html#a8dff6d55f20df82c36a5c76257e0beed" title="This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.">targeting</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e">   72</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;FlurryAdInterstitialDelegate&gt; <a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various notifications of various ad actions.">adDelegate</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433">  109</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (id)   initWithSpace:(NSString *)space;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;- (void) <a class="code" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212" title="Retrieves an ad for this object using the adspace specified in the initializer routine.">fetchAd</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;- (void) presentWithViewController: (UIViewController *) presentingViewController;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

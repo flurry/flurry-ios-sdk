@@ -689,7 +689,7 @@ typedef enum {
 /*!
  *  @brief Records an app exception. Commonly used to catch unhandled exceptions.
  *  @since 2.7
- * 
+ *
  *  This method captures an exception for reporting to Flurry. We recommend adding an uncaught
  *  exception listener to capture any exceptions that occur during usage that is not
  *  anticipated by your app.
@@ -719,8 +719,7 @@ typedef enum {
 /*!
  *  @brief Records an app error.
  *  @since 2.7
- * 
- *  This method captures an error for reporting to Flurry.
+ *
  * 
  *  @see #logError:message:exception: for details on capturing exceptions.
  *
@@ -736,6 +735,78 @@ typedef enum {
  *  @param error The error object to report.
  */
 + (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error;
+
+/*!
+ *  @brief Records an app exception. Commonly used to catch unhandled exceptions.
+ *  @since 8.4.0
+ *
+ *  This method captures an exception for reporting to Flurry. We recommend adding an uncaught
+ *  exception listener to capture any exceptions that occur during usage that is not
+ *  anticipated by your app.
+ *
+ *  @see #logError:message:error:withParameters: for details on capturing errors.
+ *
+ *  @code
+ *  - (void) uncaughtExceptionHandler(NSException *exception)
+ {
+ NSDictionary* crashParameters =  [NSDictionary dictionaryWithObjectsAndKeys:@"AppVersion", @"3.2", nil];
+ [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception withParameters:crashParameters];
+ }
+ 
+ - (void)applicationDidFinishLaunching:(UIApplication *)application
+ {
+ NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+ [Flurry startSession:@"YOUR_API_KEY"];
+ // ....
+ }
+ *  @endcode
+ *
+ *  @param errorID Name of the error.
+ *  @param message The message to associate with the error.
+ *  @param exception The exception object to report.
+ *  @param parameters Custom parameters associated with the exception
+ */
++ (void)logError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception withParameters:(NSDictionary*)parameters;
+
+/*!
+ *  @brief Records an app error.
+ *  @since 8.4.0
+ *  This method captures an error for reporting to Flurry.
+ *
+ *  @see #logError:message:exception:withParameters: for details on capturing exceptions.
+ *
+ *  @code
+ *  - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+ {
+ [Flurry logError:@"WebView No Load" message:[error localizedDescription] error:error];
+ }
+ *  @endcode
+ *
+ *  @param errorID Name of the error.
+ *  @param message The message to associate with the error.
+ *  @param error The error object to report.
+ *  @param parameters Custom parameters associated with the error
+ */
++ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error withParameters:(NSDictionary*)parameters;
+
+/*!
+ *  @brief Leave a breadcrumb.
+ *  @since 8.4.0
+ *  This method captures breadcrumbs of 250 characters. The last 207 recorded
+ *  breadcrumbs are included in crash and error logs.
+ *  Breadcrumbs are reset at every application launch.
+ *
+ *  @code
+ *  - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+ {
+ [Flurry leaveBreadcrumb:@"WebView not loading"];
+ }
+ *  @endcode
+ *
+ *  @param breadcrumb string.
+ *
+ */
++ (void)leaveBreadcrumb:(NSString*)breadcrumb;
 
 /*!
  *  @brief Records a timed event specified by @c eventName.
@@ -1121,19 +1192,21 @@ typedef enum {
  *  @brief Set session to support background execution.
  *  @since 4.2.2
  *
- *  Use this method to enable reporting of errors and events when application is 
+ *  @deprecated since 8.4.0.
+ *
+ *  Use this method to enable reporting of errors and events when application is
  *  running in backgorund (such applications have  UIBackgroundModes in Info.plist).
- *  You should call #pauseBackgroundSession when appropriate in background mode to 
+ *  You should call #pauseBackgroundSession when appropriate in background mode to
  *  pause the session (for example when played song completed in background)
  *
  *  Default value is @c NO
  *
  *  @see #pauseBackgroundSession for details
  *
- *  @param setBackgroundSessionEnabled YES to enbale background support and 
+ *  @param setBackgroundSessionEnabled YES to enbale background support and
  *  continue log events and errors for running session.
  */
-+ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled;
++ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled __attribute__ ((deprecated));
 
 /*!
  *  @brief Enable custom event logging.

@@ -47,15 +47,13 @@
  *
  *  @see FlurryAdTargeting for details.
  *
- *  @param  targeting The ad targeting object.
- *
  *  @return The ad targeting that was orignally set or nil if never set.
  *
  */
 @property (nonatomic, strong) FlurryAdTargeting* targeting;
 
 /*!
- *  @brief Sets the object to receive various delegate methods.
+ *  @brief Sets the object to receive various notifications of various ad actions.
  *  @since 6.0.0
  *
  *  This method allows you to register an object that will receive
@@ -72,7 +70,6 @@
     }
  *  @endcode
  *
- *  @param delegate The object to receive notifications of various ad actions.
  *
  */
 @property (nonatomic, weak) id<FlurryAdBannerDelegate> adDelegate;

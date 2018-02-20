@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -125,7 +125,7 @@ Properties</h2></td></tr>
 <tr class="memdesc:a8dff6d55f20df82c36a5c76257e0beed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.  <a href="#a8dff6d55f20df82c36a5c76257e0beed">More...</a><br/></td></tr>
 <tr class="separator:a8dff6d55f20df82c36a5c76257e0beed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a527674749cdef0c75da3aab1b8e3ba1e"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html">FlurryAdInterstitialDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e">adDelegate</a></td></tr>
-<tr class="memdesc:a527674749cdef0c75da3aab1b8e3ba1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the object to receive various delegate methods.  <a href="#a527674749cdef0c75da3aab1b8e3ba1e">More...</a><br/></td></tr>
+<tr class="memdesc:a527674749cdef0c75da3aab1b8e3ba1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the object to receive various notifications of various ad actions.  <a href="#a527674749cdef0c75da3aab1b8e3ba1e">More...</a><br/></td></tr>
 <tr class="separator:a527674749cdef0c75da3aab1b8e3ba1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2d31b8390aa670ea70df637d580433"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433">ready</a></td></tr>
 <tr class="memdesc:a8a2d31b8390aa670ea70df637d580433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an ad is currently ready to display for this ad object.  <a href="#a8a2d31b8390aa670ea70df637d580433">More...</a><br/></td></tr>
@@ -239,7 +239,7 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">viewController</td><td>The viewController to show the fullscreen ad modally. </td></tr>
+    <tr><td class="paramname">presentingViewController</td><td>The viewController to show the fullscreen ad modally. </td></tr>
   </table>
   </dd>
 </dl>
@@ -265,25 +265,19 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the object to receive various delegate methods. </p>
+<p>Sets the object to receive various notifications of various ad actions. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <p>This method allows you to register an object that will receive notifications at different phases of interstitial ad serving.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Ad Serving.">FlurryAdInterstitialDelegate</a> for details on delegates available.</dd></dl>
 <div class="fragment"><div class="line">-(void) fetchInterstitialAd;</div>
 <div class="line">{</div>
 <div class="line">    FlurryAdInterstitial* interstitialAd = [[FlurryAdInterstitial alloc] initWithSpace:adSpace];</div>
-<div class="line">    interstitialAd.<a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various delegate methods.">adDelegate</a> = <span class="keyword">self</span>;</div>
+<div class="line">    interstitialAd.<a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various notifications of various ad actions.">adDelegate</a> = <span class="keyword">self</span>;</div>
 <div class="line">    [interstitialAd <a class="code" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212" title="Retrieves an ad for this object using the adspace specified in the initializer routine.">fetchAd</a>];</div>
 <div class="line">}</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">delegate</td><td>The object to receive notifications of various ad actions.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The ad delegate object if set earlier, or nil if never set </dd></dl>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>The ad delegate object if set earlier, or nil if never set </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00076">76</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00072">72</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
 
 </div>
 </div>
@@ -323,13 +317,13 @@ Properties</h2></td></tr>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">self</span>.adInterstitial = [[FlurryAdInterstitial alloc] initWithSpace:<span class="stringliteral">@&quot;MAIN_VIEW_INTERSTITIAL&quot;</span>];</div>
-<div class="line">        <span class="keyword">self</span>.adInterstitial.<a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various delegate methods.">adDelegate</a> = <span class="keyword">self</span>;</div>
+<div class="line">        <span class="keyword">self</span>.adInterstitial.<a class="code" href="interface_flurry_ad_interstitial.html#a527674749cdef0c75da3aab1b8e3ba1e" title="Sets the object to receive various notifications of various ad actions.">adDelegate</a> = <span class="keyword">self</span>;</div>
 <div class="line">        [<span class="keyword">self</span>.adInterstitial <a class="code" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212" title="Retrieves an ad for this object using the adspace specified in the initializer routine.">fetchAd</a>];</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00113">113</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00109">109</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
 
 </div>
 </div>
@@ -380,15 +374,9 @@ Properties</h2></td></tr>
 <p>This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> for details.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targeting</td><td>The ad targeting object.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad targeting that was orignally set or nil if never set. </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00051">51</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00049">49</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
 
 </div>
 </div>

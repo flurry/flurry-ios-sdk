@@ -43,15 +43,13 @@
  *
  *  @see FlurryAdTargeting for details.
  *
- *  @param  targeting The ad targeting object.
- *
  *  @return The ad targeting that was orignally set or nil if never set.
  *
  */
 @property (nonatomic, strong) FlurryAdTargeting *targeting;
 
 /*!
- *  @brief Sets the object to receive various delegate methods.
+ *  @brief Sets the object to receive various notifications of various ad actions.
  *  @since 6.0.0
  *
  *  This method allows you to register an object that will receive
@@ -67,8 +65,6 @@
         [interstitialAd fetchAd];
     }
  *  @endcode
- *
- *  @param delegate The object to receive notifications of various ad actions.
  *
  *  @return The ad delegate object if set earlier, or nil if never set
  *
@@ -187,7 +183,7 @@
     }
  *  @endcode
  *
- *  @param viewController The viewController to show the fullscreen ad modally.
+ *  @param presentingViewController The viewController to show the fullscreen ad modally.
  */
 - (void) presentWithViewController: (UIViewController *) presentingViewController;
 

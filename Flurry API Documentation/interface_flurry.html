@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -183,6 +183,15 @@ Class Methods</h2></td></tr>
 <tr class="memitem:ae937294c559758cdcba67be720fe4f04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ae937294c559758cdcba67be720fe4f04">logError:message:error:</a></td></tr>
 <tr class="memdesc:ae937294c559758cdcba67be720fe4f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an app error.  <a href="#ae937294c559758cdcba67be720fe4f04">More...</a><br/></td></tr>
 <tr class="separator:ae937294c559758cdcba67be720fe4f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bcc8b442354cd393ebd9969b0c50db"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a48bcc8b442354cd393ebd9969b0c50db">logError:message:exception:withParameters:</a></td></tr>
+<tr class="memdesc:a48bcc8b442354cd393ebd9969b0c50db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an app exception. Commonly used to catch unhandled exceptions.  <a href="#a48bcc8b442354cd393ebd9969b0c50db">More...</a><br/></td></tr>
+<tr class="separator:a48bcc8b442354cd393ebd9969b0c50db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f4db210e74ea7f5e4aa437ad3aca73"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a85f4db210e74ea7f5e4aa437ad3aca73">logError:message:error:withParameters:</a></td></tr>
+<tr class="memdesc:a85f4db210e74ea7f5e4aa437ad3aca73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an app error.  <a href="#a85f4db210e74ea7f5e4aa437ad3aca73">More...</a><br/></td></tr>
+<tr class="separator:a85f4db210e74ea7f5e4aa437ad3aca73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3c74cc1c06158ad420288fb5e5bb0b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ade3c74cc1c06158ad420288fb5e5bb0b">leaveBreadcrumb:</a></td></tr>
+<tr class="memdesc:ade3c74cc1c06158ad420288fb5e5bb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a breadcrumb.  <a href="#ade3c74cc1c06158ad420288fb5e5bb0b">More...</a><br/></td></tr>
+<tr class="separator:ade3c74cc1c06158ad420288fb5e5bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f900e58cc3de4cc30a6a93a84e42b5"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#af8f900e58cc3de4cc30a6a93a84e42b5">logEvent:timed:</a></td></tr>
 <tr class="memdesc:af8f900e58cc3de4cc30a6a93a84e42b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a timed event specified by <code>eventName</code>.  <a href="#af8f900e58cc3de4cc30a6a93a84e42b5">More...</a><br/></td></tr>
 <tr class="separator:af8f900e58cc3de4cc30a6a93a84e42b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +246,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a9deea9dd729686c86645ba919fe0776f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a9deea9dd729686c86645ba919fe0776f">setSessionReportsOnPauseEnabled:</a></td></tr>
 <tr class="memdesc:a9deea9dd729686c86645ba919fe0776f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set session to report when app is sent to the background.  <a href="#a9deea9dd729686c86645ba919fe0776f">More...</a><br/></td></tr>
 <tr class="separator:a9deea9dd729686c86645ba919fe0776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936cba06051ba7a149b988a434d2a05c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a936cba06051ba7a149b988a434d2a05c">setBackgroundSessionEnabled:</a></td></tr>
-<tr class="memdesc:a936cba06051ba7a149b988a434d2a05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set session to support background execution.  <a href="#a936cba06051ba7a149b988a434d2a05c">More...</a><br/></td></tr>
-<tr class="separator:a936cba06051ba7a149b988a434d2a05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a6639bb80642049036fea136b64a6e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ac7a6639bb80642049036fea136b64a6e">setBackgroundSessionEnabled:</a></td></tr>
+<tr class="memdesc:ac7a6639bb80642049036fea136b64a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set session to support background execution.  <a href="#ac7a6639bb80642049036fea136b64a6e">More...</a><br/></td></tr>
+<tr class="separator:ac7a6639bb80642049036fea136b64a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c72cb736e74eebc68f507564298cc88"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a9c72cb736e74eebc68f507564298cc88">setEventLoggingEnabled:</a></td></tr>
 <tr class="memdesc:a9c72cb736e74eebc68f507564298cc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable custom event logging.  <a href="#a9c72cb736e74eebc68f507564298cc88">More...</a><br/></td></tr>
 <tr class="separator:a9c72cb736e74eebc68f507564298cc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,6 +580,35 @@ Class Methods</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
+<a class="anchor" id="ade3c74cc1c06158ad420288fb5e5bb0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) leaveBreadcrumb: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>breadcrumb</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Leave a breadcrumb. </p>
+<dl class="section since"><dt>Since</dt><dd>8.4.0 This method captures breadcrumbs of 250 characters. The last 207 recorded breadcrumbs are included in crash and error logs. Breadcrumbs are reset at every application launch.</dd></dl>
+<div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
+<div class="line">{</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> leaveBreadcrumb:<span class="stringliteral">@&quot;WebView not loading&quot;</span>];</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">breadcrumb</td><td>string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8e75ee91fbed799971dfe2b11719802f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -654,7 +692,6 @@ Class Methods</h2></td></tr>
 
 <p>Records an app error. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<p>This method captures an error for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a13309d1a6fb5777d9ba6fb85df47e558" title="Records an app exception. Commonly used to catch unhandled exceptions.">+ logError:message:exception:</a> for details on capturing exceptions.</dd></dl>
 <div class="fragment"><div class="line">- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error </div>
 <div class="line">{</div>
@@ -665,6 +702,61 @@ Class Methods</h2></td></tr>
     <tr><td class="paramname">errorID</td><td>Name of the error. </td></tr>
     <tr><td class="paramname">message</td><td>The message to associate with the error. </td></tr>
     <tr><td class="paramname">error</td><td>The error object to report. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a85f4db210e74ea7f5e4aa437ad3aca73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) logError: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>errorID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">message:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>message</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withParameters:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Records an app error. </p>
+<dl class="section since"><dt>Since</dt><dd>8.4.0 This method captures an error for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a48bcc8b442354cd393ebd9969b0c50db" title="Records an app exception. Commonly used to catch unhandled exceptions.">+ logError:message:exception:withParameters:</a> for details on capturing exceptions.</dd></dl>
+<div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
+<div class="line">{</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logError:<span class="stringliteral">@&quot;WebView No Load&quot;</span> message:[error localizedDescription] error:error];</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorID</td><td>Name of the error. </td></tr>
+    <tr><td class="paramname">message</td><td>The message to associate with the error. </td></tr>
+    <tr><td class="paramname">error</td><td>The error object to report. </td></tr>
+    <tr><td class="paramname">parameters</td><td>Custom parameters associated with the error </td></tr>
   </table>
   </dd>
 </dl>
@@ -721,6 +813,70 @@ Class Methods</h2></td></tr>
     <tr><td class="paramname">errorID</td><td>Name of the error. </td></tr>
     <tr><td class="paramname">message</td><td>The message to associate with the error. </td></tr>
     <tr><td class="paramname">exception</td><td>The exception object to report. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a48bcc8b442354cd393ebd9969b0c50db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) logError: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>errorID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">message:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>message</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">exception:</td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>exception</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withParameters:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Records an app exception. Commonly used to catch unhandled exceptions. </p>
+<dl class="section since"><dt>Since</dt><dd>8.4.0</dd></dl>
+<p>This method captures an exception for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. We recommend adding an uncaught exception listener to capture any exceptions that occur during usage that is not anticipated by your app.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a85f4db210e74ea7f5e4aa437ad3aca73" title="Records an app error.">+ logError:message:error:withParameters:</a> for details on capturing errors.</dd></dl>
+<div class="fragment"><div class="line">   - (void) uncaughtExceptionHandler(NSException *exception)</div>
+<div class="line">{</div>
+<div class="line">NSDictionary* crashParameters =  [NSDictionary dictionaryWithObjectsAndKeys:<span class="stringliteral">@&quot;AppVersion&quot;</span>, <span class="stringliteral">@&quot;3.2&quot;</span>, nil];</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logError:<span class="stringliteral">@&quot;Uncaught&quot;</span> message:<span class="stringliteral">@&quot;Crash!&quot;</span> exception:exception withParameters:crashParameters];</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">- (void)applicationDidFinishLaunching:(UIApplication *)application</div>
+<div class="line">{</div>
+<div class="line">NSSetUncaughtExceptionHandler(&amp;uncaughtExceptionHandler);</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> startSession:<span class="stringliteral">@&quot;YOUR_API_KEY&quot;</span>];</div>
+<div class="line"><span class="comment">// ....</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorID</td><td>Name of the error. </td></tr>
+    <tr><td class="paramname">message</td><td>The message to associate with the error. </td></tr>
+    <tr><td class="paramname">exception</td><td>The exception object to report. </td></tr>
+    <tr><td class="paramname">parameters</td><td>Custom parameters associated with the exception </td></tr>
   </table>
   </dd>
 </dl>
@@ -1065,8 +1221,8 @@ Class Methods</h2></td></tr>
 
 <p>Pauses a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session left running in background. </p>
 <dl class="section since"><dt>Since</dt><dd>4.2.2</dd></dl>
-<p>This method should be used in case of <a class="el" href="interface_flurry.html#a936cba06051ba7a149b988a434d2a05c" title="Set session to support background execution.">setBackgroundSessionEnabled:</a> set to YES. It can be called when application finished all background tasks (such as playing music) to pause session.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a936cba06051ba7a149b988a434d2a05c" title="Set session to support background execution.">+ setBackgroundSessionEnabled:</a> for details on setting a custom behaviour on resigning activity.</dd></dl>
+<p>This method should be used in case of <a class="el" href="interface_flurry.html#ac7a6639bb80642049036fea136b64a6e" title="Set session to support background execution.">setBackgroundSessionEnabled:</a> set to YES. It can be called when application finished all background tasks (such as playing music) to pause session.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#ac7a6639bb80642049036fea136b64a6e" title="Set session to support background execution.">+ setBackgroundSessionEnabled:</a> for details on setting a custom behaviour on resigning activity.</dd></dl>
 <div class="fragment"><div class="line">- (void)allBackgroundTasksFinished</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// ....</span></div>
@@ -1159,15 +1315,14 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a936cba06051ba7a149b988a434d2a05c"></a>
+<a class="anchor" id="ac7a6639bb80642049036fea136b64a6e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">+ (void) setBackgroundSessionEnabled: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>setBackgroundSessionEnabled</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -1175,6 +1330,7 @@ Class Methods</h2></td></tr>
 
 <p>Set session to support background execution. </p>
 <dl class="section since"><dt>Since</dt><dd>4.2.2</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>since 8.4.0.</dd></dl>
 <p>Use this method to enable reporting of errors and events when application is running in backgorund (such applications have UIBackgroundModes in Info.plist). You should call <a class="el" href="interface_flurry.html#a57e18dc7c992272e3dc89e7f3bc853f4" title="Pauses a Flurry session left running in background.">pauseBackgroundSession</a> when appropriate in background mode to pause the session (for example when played song completed in background)</p>
 <p>Default value is <code>NO</code> </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a57e18dc7c992272e3dc89e7f3bc853f4" title="Pauses a Flurry session left running in background.">+ pauseBackgroundSession</a> for details</dd></dl>
@@ -1281,7 +1437,7 @@ Class Methods</h2></td></tr>
 
 <p>Enable custom event logging. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>since 7.9.0. This method will be removed in a future version of the SDK.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>since 7.9.0. This method will be removed in a future version of the SDK.</dd></dl>
 <p>Use this method to allow the capture of custom events. The default value is <code>YES</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

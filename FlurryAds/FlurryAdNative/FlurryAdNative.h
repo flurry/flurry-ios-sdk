@@ -62,8 +62,6 @@ typedef enum {
     }
  *  @endcode
  *
- *  @param delegate The object to receive notifications of various ad actions.
- *
  */
 @property (nonatomic, weak) id<FlurryAdNativeDelegate> adDelegate;
 

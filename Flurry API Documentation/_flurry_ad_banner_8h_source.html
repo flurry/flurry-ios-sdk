@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,22 +111,22 @@ $(document).ready(function(){initNavTree('_flurry_ad_banner_8h_source.html','');
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891">   38</a></span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString* <a class="code" href="interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891" title="Read only property that can be used to retrieve the ad space that was passed into an initializer rout...">space</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#a6ea7b83935ea721a3db6f4480d4f6cec">   55</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a>* <a class="code" href="interface_flurry_ad_banner.html#a6ea7b83935ea721a3db6f4480d4f6cec" title="This property should be used for ad targeting based on parameters such as location, targeting kewords and user cookies.">targeting</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#ae4b5ed28a94efcf7d40ebe145f8bf25e">   78</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;FlurryAdBannerDelegate&gt; <a class="code" href="interface_flurry_ad_banner.html#ae4b5ed28a94efcf7d40ebe145f8bf25e" title="Sets the object to receive various delegate methods.">adDelegate</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#afb79074aa07a6e339ed5f0545202ca97">  116</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_banner.html#afb79074aa07a6e339ed5f0545202ca97" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;- (id) initWithSpace:(NSString *)space;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;- (void) fetchAdForFrame:(CGRect)frame;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;- (void) displayAdInView:(UIView *)view viewControllerForPresentation:(UIViewController *)viewController;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;- (void) fetchAndDisplayAdInView:(UIView *)view viewControllerForPresentation:(UIViewController *)viewController;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#a6ea7b83935ea721a3db6f4480d4f6cec">   53</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a>* <a class="code" href="interface_flurry_ad_banner.html#a6ea7b83935ea721a3db6f4480d4f6cec" title="This property should be used for ad targeting based on parameters such as location, targeting kewords and user cookies.">targeting</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#ae4b5ed28a94efcf7d40ebe145f8bf25e">   75</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;FlurryAdBannerDelegate&gt; <a class="code" href="interface_flurry_ad_banner.html#ae4b5ed28a94efcf7d40ebe145f8bf25e" title="Sets the object to receive various notifications of various ad actions.">adDelegate</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="interface_flurry_ad_banner.html#afb79074aa07a6e339ed5f0545202ca97">  113</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_banner.html#afb79074aa07a6e339ed5f0545202ca97" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;- (id) initWithSpace:(NSString *)space;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;- (void) fetchAdForFrame:(CGRect)frame;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;- (void) displayAdInView:(UIView *)view viewControllerForPresentation:(UIViewController *)viewController;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;- (void) fetchAndDisplayAdInView:(UIView *)view viewControllerForPresentation:(UIViewController *)viewController;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

@@ -10,6 +10,8 @@ var hierarchy =
       [ "FlurryAds", "interface_flurry_ads.html", null ],
       [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", null ],
       [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", null ],
+      [ "FlurryMessage", "interface_flurry_message.html", null ],
+      [ "FlurryMessaging", "interface_flurry_messaging.html", null ],
       [ "FlurrySessionBuilder", "interface_flurry_session_builder.html", null ],
       [ "FlurryTextShareParameters", "interface_flurry_text_share_parameters.html", null ],
       [ "FlurryTumblr", "interface_flurry_tumblr.html", null ],
@@ -22,6 +24,7 @@ var hierarchy =
       [ "<FlurryAdNativeDelegate>", "protocol_flurry_ad_native_delegate-p.html", null ],
       [ "<FlurryAdStreamDelegate>", "protocol_flurry_ad_stream_delegate-p.html", null ],
       [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", null ],
+      [ "<FlurryMessagingDelegate>", "protocol_flurry_messaging_delegate-p.html", null ],
       [ "<FlurryTumblrDelegate>", "protocol_flurry_tumblr_delegate-p.html", null ],
       [ "<IFlurryTumblrShareParameters>", "protocol_i_flurry_tumblr_share_parameters-p.html", [
         [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", null ],

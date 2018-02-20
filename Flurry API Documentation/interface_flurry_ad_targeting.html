@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -116,10 +116,10 @@ Properties</h2></td></tr>
 <tr class="memdesc:a2600adbd7bc010f3733dabe2581ccfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the location for Ad Targeting.  <a href="#a2600adbd7bc010f3733dabe2581ccfd8">More...</a><br/></td></tr>
 <tr class="separator:a2600adbd7bc010f3733dabe2581ccfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f7f2f48713ab6699394fa080c7963c"><td class="memItemLeft" align="right" valign="top">NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_targeting.html#af9f7f2f48713ab6699394fa080c7963c">userCookies</a></td></tr>
-<tr class="memdesc:af9f7f2f48713ab6699394fa080c7963c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a dictionary of key/value pairs, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when a user clicks on an ad.  <a href="#af9f7f2f48713ab6699394fa080c7963c">More...</a><br/></td></tr>
+<tr class="memdesc:af9f7f2f48713ab6699394fa080c7963c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The information about the user executing ad actions which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when a user clicks on an ad. Note: do not transmit personally identifiable information in the user cookies.  <a href="#af9f7f2f48713ab6699394fa080c7963c">More...</a><br/></td></tr>
 <tr class="separator:af9f7f2f48713ab6699394fa080c7963c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cce26d3aaa140baf1f8379dd62145c"><td class="memItemLeft" align="right" valign="top">NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c">keywords</a></td></tr>
-<tr class="memdesc:a27cce26d3aaa140baf1f8379dd62145c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a dictionary of key/value pairs, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when an ad is requested.  <a href="#a27cce26d3aaa140baf1f8379dd62145c">More...</a><br/></td></tr>
+<tr class="memdesc:a27cce26d3aaa140baf1f8379dd62145c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The information about the user to be used in targeting an ad, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when an ad is requested. Note: do not transmit personally identifiable information in keywords.  <a href="#a27cce26d3aaa140baf1f8379dd62145c">More...</a><br/></td></tr>
 <tr class="separator:a27cce26d3aaa140baf1f8379dd62145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c85fc0043d8909f1254a3d9145c7994"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c85fc0043d8909f1254a3d9145c7994"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>testAdsEnabled</b></td></tr>
@@ -159,30 +159,24 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>testAdsEnabled</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Sets a dictionary of key/value pairs, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when an ad is requested. </p>
+<p>The information about the user to be used in targeting an ad, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when an ad is requested. Note: do not transmit personally identifiable information in keywords. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <p>Keywords allow the developer to specify information on a user executing an ad action for the purposes of targeting. These keywords are transmitted to the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers on this ad object's ad request. If corresponding keywords are matched on the ad server, a subset of targeted ads will be delivered. This allows partners to supply information they track internally, which is not available to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s targeting system.</p>
 <dl class="section note"><dt>Note</dt><dd>Calling this method with a nil or empty dictionary will clear any previously passed keywords. Calling this method a second time with a valid dictionary will replace the previous entries.</dd></dl>
 <div class="fragment"><div class="line">- (void) showInterstitialAddKeywords</div>
 <div class="line">{</div>
-<div class="line">    NSDictionary *<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is reque...">keywords</a> =</div>
+<div class="line">    NSDictionary *<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="The information about the user to be used in targeting an ad, which will be transmitted to Flurry ser...">keywords</a> =</div>
 <div class="line">    [NSDictionary dictionaryWithObjectsAndKeys:<span class="stringliteral">@&quot;UserParameterValue&quot;</span>, <span class="comment">// Parameter Value</span></div>
 <div class="line">                                                <span class="stringliteral">@&quot;UserParameterName&quot;</span>, <span class="comment">// Parameter Name</span></div>
 <div class="line">                                                nil];</div>
 <div class="line">    FlurryAdInterstitial* adInterstitial = [[FlurryAdInterstitial alloc] initWithSpace:<span class="stringliteral">@&quot;MAIN_SCREEN_INTERSTITIAL&quot;</span>];</div>
 <div class="line">    <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a>* adTargeting = [<a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> targeting];</div>
-<div class="line">    adTargeting.<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is reque...">keywords</a> = <a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is reque...">keywords</a>;</div>
+<div class="line">    adTargeting.<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="The information about the user to be used in targeting an ad, which will be transmitted to Flurry ser...">keywords</a> = <a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="The information about the user to be used in targeting an ad, which will be transmitted to Flurry ser...">keywords</a>;</div>
 <div class="line">    adInterstitial.adTargeting = adTargeting;</div>
 <div class="line">    [adInterstitial fetchAd];</div>
 <div class="line">}</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">keywords</td><td>The information about the user to be used in targeting an ad. Note: do not transmit personally identifiable information in keywords. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00136">136</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00134">134</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
 
 </div>
 </div>
@@ -217,14 +211,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>testAdsEnabled</b></t
 <div class="line">    <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a>* adTargeting = [<a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> targeting];</div>
 <div class="line">    adTargeting.<a class="code" href="interface_flurry_ad_targeting.html#a2600adbd7bc010f3733dabe2581ccfd8" title="Set the location for Ad Targeting.">location</a> = locationManager.location;</div>
 <div class="line">}</div>
-</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">location</td><td>A CLLocation object containing latitude and longitude. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00082">82</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00081">81</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +234,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>testAdsEnabled</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Sets a dictionary of key/value pairs, which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when a user clicks on an ad. </p>
+<p>The information about the user executing ad actions which will be transmitted to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers when a user clicks on an ad. Note: do not transmit personally identifiable information in the user cookies. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <p>UserCookies allow the developer to specify information on a user executing an ad action. On each ad click the UserCookies are transmitted to the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> servers. The UserCookie key/value pairs will be transmitted back to the developer via the app callback if one is set. This is useful for rewarded inventory, to identify which of your users should be rewarded when a reward callback is sent.</p>
 <dl class="section note"><dt>Note</dt><dd>Calling this method with a nil or empty dictionary will clear any previously set user cookies. Calling this method a second time with a valid dictionary will replace the previous entries.</dd></dl>
@@ -258,18 +246,12 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>testAdsEnabled</b></t
 <div class="line">                                                nil];</div>
 <div class="line">    FlurryAdInterstitial* adInterstitial = [[FlurryAdInterstitial alloc] initWithSpace:<span class="stringliteral">@&quot;MAIN_SCREEN_INTERSTITIAL&quot;</span>];</div>
 <div class="line">    <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a>* adTargeting = [<a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> targeting];</div>
-<div class="line">    adTargeting.<a class="code" href="interface_flurry_ad_targeting.html#af9f7f2f48713ab6699394fa080c7963c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when a user clicks ...">userCookies</a> = cookies;</div>
+<div class="line">    adTargeting.<a class="code" href="interface_flurry_ad_targeting.html#af9f7f2f48713ab6699394fa080c7963c" title="The information about the user executing ad actions which will be transmitted to Flurry servers when ...">userCookies</a> = cookies;</div>
 <div class="line">    adInterstitial.adTargeting = adTargeting;</div>
 <div class="line">    [adInterstitial fetchAd];</div>
 <div class="line">}</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userCookies</td><td>The information about the user executing ad actions. Note: do not transmit personally identifiable information in the user cookies. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00109">109</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_flurry_ad_targeting_8h_source.html#l00108">108</a> of file <a class="el" href="_flurry_ad_targeting_8h_source.html">FlurryAdTargeting.h</a>.</p>
 
 </div>
 </div>

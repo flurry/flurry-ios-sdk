@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.3.4</span>
+   &#160;<span id="projectnumber">8.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -222,80 +222,86 @@ $(document).ready(function(){initNavTree('_flurry_8h_source.html','');});
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;+ (void)logError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;+ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName timed:(BOOL)timed;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters timed:(BOOL)timed;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters; <span class="comment">// non-nil parameters will update the parameters</span></div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;+ (void)logAllPageViews:(<span class="keywordtype">id</span>)target __attribute__ ((deprecated));  </div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;+ (void)logAllPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;+ (void)stopLogPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;+ (void)logPageView;</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;+ (void)setUserID:(NSString *)userID;</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;+ (void)setAge:(<span class="keywordtype">int</span>)age;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;+ (void)setGender:(NSString *)gender; <span class="comment">// user&#39;s gender m or f</span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;+ (void)setLatitude:(<span class="keywordtype">double</span>)latitude longitude:(<span class="keywordtype">double</span>)longitude horizontalAccuracy:(<span class="keywordtype">float</span>)horizontalAccuracy verticalAccuracy:(<span class="keywordtype">float</span>)verticalAccuracy __attribute__ ((deprecated));;</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;+ (BOOL)trackPreciseLocation:(BOOL)state;</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;+ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;+ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled;</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;+ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled;</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;+ (void)setEventLoggingEnabled:(BOOL)value __attribute__ ((deprecated));</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;+ (void)setPulseEnabled:(BOOL)value;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;+ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent syndicationID:(NSString*) syndicationID parameters:(NSDictionary*) parameters;</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;+ (void) logPaymentTransaction:(SKPaymentTransaction*)transaction statusCallback:(<span class="keywordtype">void</span>(^)(FlurryTransactionRecordStatus))statusCallback;</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;+ (void) setIAPReportingEnabled:(BOOL)value;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;+ (void)registerJSContextWithContext:(JSContext*)jscontext;</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;+ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;+ (void)logError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception withParameters:(NSDictionary*)parameters;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;+ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error withParameters:(NSDictionary*)parameters;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;+ (void)leaveBreadcrumb:(NSString*)breadcrumb;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName timed:(BOOL)timed;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters timed:(BOOL)timed;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters; <span class="comment">// non-nil parameters will update the parameters</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;+ (void)logAllPageViews:(<span class="keywordtype">id</span>)target __attribute__ ((deprecated));  </div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;+ (void)logAllPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;+ (void)stopLogPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;+ (void)logPageView;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;+ (void)setUserID:(NSString *)userID;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;+ (void)setAge:(<span class="keywordtype">int</span>)age;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;+ (void)setGender:(NSString *)gender; <span class="comment">// user&#39;s gender m or f</span></div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;+ (void)setLatitude:(<span class="keywordtype">double</span>)latitude longitude:(<span class="keywordtype">double</span>)longitude horizontalAccuracy:(<span class="keywordtype">float</span>)horizontalAccuracy verticalAccuracy:(<span class="keywordtype">float</span>)verticalAccuracy __attribute__ ((deprecated));;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;+ (BOOL)trackPreciseLocation:(BOOL)state;</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;+ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;+ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;+ (void)setBackgroundSessionEnabled:(BOOL)setBackgroundSessionEnabled __attribute__ ((deprecated));</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;+ (void)setEventLoggingEnabled:(BOOL)value __attribute__ ((deprecated));</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;<span class="preprocessor">#if !TARGET_OS_TV</span></div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;+ (void)setPulseEnabled:(BOOL)value;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;+ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent syndicationID:(NSString*) syndicationID parameters:(NSDictionary*) parameters;</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;+ (void) logPaymentTransaction:(SKPaymentTransaction*)transaction statusCallback:(<span class="keywordtype">void</span>(^)(FlurryTransactionRecordStatus))statusCallback;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;+ (void) setIAPReportingEnabled:(BOOL)value;</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;+ (void)registerJSContextWithContext:(JSContext*)jscontext;</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
