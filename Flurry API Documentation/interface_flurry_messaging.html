@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.4.0</span>
+   &#160;<span id="projectnumber">8.4.4.rc1</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -115,6 +115,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a2cc53b29b345ce62ec870a791a35a139"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_messaging.html#a2cc53b29b345ce62ec870a791a35a139">setMessagingDelegate:</a></td></tr>
 <tr class="memdesc:a2cc53b29b345ce62ec870a791a35a139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="interface_flurry_messaging.html">FlurryMessaging</a> delegate for optional callback on push events.  <a href="#a2cc53b29b345ce62ec870a791a35a139">More...</a><br/></td></tr>
 <tr class="separator:a2cc53b29b345ce62ec870a791a35a139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce8071a472fe25adbcea64e6c2777f8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_messaging.html#a8ce8071a472fe25adbcea64e6c2777f8">setMessagingDelegate:withCallbackQueue:</a></td></tr>
+<tr class="memdesc:a8ce8071a472fe25adbcea64e6c2777f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="interface_flurry_messaging.html">FlurryMessaging</a> delegate for optional callback on push events.  <a href="#a8ce8071a472fe25adbcea64e6c2777f8">More...</a><br/></td></tr>
+<tr class="separator:a8ce8071a472fe25adbcea64e6c2777f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -276,6 +279,44 @@ Class Methods</h2></td></tr>
 <div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc" title="Call this setter if you want enable AUTOMATIC INTEGRATION for Push Notificaions.">setAutoIntegrationForMessaging</a>];</div>
 <div class="line"><span class="comment">// If self implements protocol, FlurryMessagingDelegate</span></div>
 <div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> setMessagingDelegate:<span class="keyword">self</span>];</div>
+<div class="line"><span class="comment">// ....</span></div>
+<div class="line">}</div>
+<div class="line">   @note By <span class="keywordflow">default</span> the callback is received on the main queue. Optionally users can choose to receive on a specific queue by <span class="keyword">using</span></div>
+<div class="line">+(void) setMessagingDelegate:(nonnull __weak id&lt;FlurryMessagingDelegate&gt;)delegate withCallbackQueue:(nonnull dispatch_queue_t)messagingCallbackQueue;</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a8ce8071a472fe25adbcea64e6c2777f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) <a class="el" href="interface_flurry_messaging.html#a2cc53b29b345ce62ec870a791a35a139">setMessagingDelegate:</a> </td>
+          <td></td>
+          <td class="paramtype">(nonnull __weak id&lt; <a class="el" href="protocol_flurry_messaging_delegate-p.html">FlurryMessagingDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>delegate</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withCallbackQueue:</td>
+          <td></td>
+          <td class="paramtype">(nonnull dispatch_queue_t)&#160;</td>
+          <td class="paramname"><em>messagingCallbackQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set <a class="el" href="interface_flurry_messaging.html">FlurryMessaging</a> delegate for optional callback on push events. </p>
+<dl class="section since"><dt>Since</dt><dd>8.4.4</dd></dl>
+<div class="fragment"><div class="line">   - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
+<div class="line">{</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc" title="Call this setter if you want enable AUTOMATIC INTEGRATION for Push Notificaions.">setAutoIntegrationForMessaging</a>];</div>
+<div class="line"><span class="comment">// If self implements protocol, FlurryMessagingDelegate</span></div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> setMessagingDelegate:<span class="keyword">self</span> withCallbackQueue:queue];</div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 

@@ -80,6 +80,8 @@ typedef enum {
  *  @see Flurry#startSession for details on session.
  *
  *  @param info A dictionary of session information: sessionID, apiKey
+ *  @note By default the callback is received on the global_queue with default priority. Optionally users can choose to receive on a specific queue by using
+ * + (void)setDelegate:(nonnull id<FlurryDelegate>)delegate withCallbackQueue:(dispatch_queue_t)flurryCallbackQueue;
  */
 - (void)flurrySessionDidCreateWithInfo:(NSDictionary*)info;
 
@@ -450,9 +452,25 @@ typedef enum {
  *
  
  */
-+ (void)setDelegate:(id<FlurryDelegate>)delegate;
++ (void)setDelegate:(nonnull id<FlurryDelegate>)delegate;
 
-
+/*!
+ *  @brief Set Flurry delegate for callback on session creation with a callback queue.
+ *  @since 8.4.4
+ *
+ * @code
+ *  - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+ // Optional Flurry startup methods
+ // If self implements protocol, FlurryDelegate
+ [Flurry setDelegate:self withCallbackQueue:queue];
+ // ....
+ }
+ * @endcode
+ *
+ 
+ */
++ (void)setDelegate:(nonnull id<FlurryDelegate>)delegate withCallbackQueue:(nonnull dispatch_queue_t)flurryCallbackQueue;
 #if !TARGET_OS_TV
 /*!
  *  @brief Pauses a Flurry session left running in background.
