@@ -9,6 +9,7 @@ var hierarchy =
       [ "FlurryAdNativeStyle", "interface_flurry_ad_native_style.html", null ],
       [ "FlurryAds", "interface_flurry_ads.html", null ],
       [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", null ],
+      [ "FlurryConsent", "interface_flurry_consent.html", null ],
       [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", null ],
       [ "FlurryMessage", "interface_flurry_message.html", null ],
       [ "FlurryMessaging", "interface_flurry_messaging.html", null ],

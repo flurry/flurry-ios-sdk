@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.4.0</span>
+   &#160;<span id="projectnumber">8.5.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -115,6 +115,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:ad23c59d06218aba6cd9e4700d7a3564f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ad23c59d06218aba6cd9e4700d7a3564f">withShowErrorInLog:</a></td></tr>
 <tr class="memdesc:ad23c59d06218aba6cd9e4700d7a3564f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays an exception in the debug log if thrown during a Session.  <a href="#ad23c59d06218aba6cd9e4700d7a3564f">More...</a><br/></td></tr>
 <tr class="separator:ad23c59d06218aba6cd9e4700d7a3564f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ac37e7e5acf5b073b518ab2ca3e33d0c8">withConsent:</a></td></tr>
+<tr class="memdesc:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the consent information with the SDK. Consent information is used to determine if the gdpr laws are applicable.  <a href="#ac37e7e5acf5b073b518ab2ca3e33d0c8">More...</a><br/></td></tr>
+<tr class="separator:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a1dc8f27408ae2e4a95b073bffbe1af19">withIAPReportingEnabled:</a></td></tr>
 <tr class="memdesc:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables implicit recording of Apple Store transactions.  <a href="#a1dc8f27408ae2e4a95b073bffbe1af19">More...</a><br/></td></tr>
 <tr class="separator:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +127,7 @@ Instance Methods</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_flurry_session_builder_8h_source.html#l00022">22</a> of file <a class="el" href="_flurry_session_builder_8h_source.html">FlurrySessionBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_session_builder_8h_source.html#l00026">26</a> of file <a class="el" href="_flurry_session_builder_8h_source.html">FlurrySessionBuilder.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a759df1999a1212d59b7153cc7524da6e"></a>
 <div class="memitem">
@@ -150,6 +153,34 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ac37e7e5acf5b073b518ab2ca3e33d0c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withConsent: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_flurry_consent.html">FlurryConsent</a> *)&#160;</td>
+          <td class="paramname"><em>consent</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers the consent information with the SDK. Consent information is used to determine if the gdpr laws are applicable. </p>
+<dl class="section since"><dt>Since</dt><dd>8.5.0</dd></dl>
+<p>Use this method to pass the consent information to the SDK</p>
+<dl class="section note"><dt>Note</dt><dd>This method must be called prior to invoking #startSession:</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">consent</td><td>The consent information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd>(<a class="el" href="interface_flurry_consent.html#a373eeff9023480414c93da105265378e" title="Use this api to initialize the FlurryConsent object.">- initWithGDPRScope:andConsentStrings: (FlurryConsent)</a>) </dd></dl>
 
 </div>
 </div>
