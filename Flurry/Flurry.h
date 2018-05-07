@@ -80,6 +80,8 @@ typedef enum {
  *  @see Flurry#startSession for details on session.
  *
  *  @param info A dictionary of session information: sessionID, apiKey
+ *  @note By default the callback is received on the global_queue with default priority. Optionally users can choose to receive on a specific queue by using
+ * + (void)setDelegate:(nonnull id<FlurryDelegate>)delegate withCallbackQueue:(dispatch_queue_t)flurryCallbackQueue;
  */
 - (void)flurrySessionDidCreateWithInfo:(NSDictionary*)info;
 
@@ -450,9 +452,25 @@ typedef enum {
  *
  
  */
-+ (void)setDelegate:(id<FlurryDelegate>)delegate;
++ (void)setDelegate:(nonnull id<FlurryDelegate>)delegate;
 
-
+/*!
+ *  @brief Set Flurry delegate for callback on session creation with a callback queue.
+ *  @since 8.4.4
+ *
+ * @code
+ *  - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+ // Optional Flurry startup methods
+ // If self implements protocol, FlurryDelegate
+ [Flurry setDelegate:self withCallbackQueue:queue];
+ // ....
+ }
+ * @endcode
+ *
+ 
+ */
++ (void)setDelegate:(nonnull id<FlurryDelegate>)delegate withCallbackQueue:(nonnull dispatch_queue_t)flurryCallbackQueue;
 #if !TARGET_OS_TV
 /*!
  *  @brief Pauses a Flurry session left running in background.
@@ -1227,12 +1245,13 @@ typedef enum {
  *  @brief Enables Flurry Pulse
  *  @since 6.3.0
  *
+ *  @deprecated since 8.5.0.
  *  @note: Please see https://developer.yahoo.com/flurry-pulse/ for more details
  *
  *  @param value YES to enable event logging, NO to stop custom logging.
  *
  */
-+ (void)setPulseEnabled:(BOOL)value;
++ (void)setPulseEnabled:(BOOL)value __attribute__ ((deprecated));
 #endif
 
 
@@ -1328,5 +1347,15 @@ typedef enum {
 + (void)registerJSContextWithContext:(JSContext*)jscontext;
 #endif
 
-
+/*!
+ *  @brief Open privacy dashboard in Safari Browser async with a completion handler callback
+ *  @since 8.5.0
+ *
+ *  This method is used to open a web page of privacy dashboard in external browser for user to access and edit their data under the scope of GDPR, in the callback, you are able to check whether privacy dashboard is successfully opened, and apply fallback logics.
+ *  @note: Call this method after invoking #startSession:
+ *
+ *  @param completionHandler a callback getting called when SDK finishes the attempt to openURL the privacy dashboard, the success boolean provided for checks and fallbacks.
+ *
+ */
++ (void)openPrivacyDashboard:(void(^)(BOOL success))completionHandler;
 @end

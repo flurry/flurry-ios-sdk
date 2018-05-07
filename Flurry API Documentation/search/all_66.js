@@ -19,6 +19,7 @@ var searchData=
   ['flurryads',['FlurryAds',['../interface_flurry_ads.html',1,'']]],
   ['flurryadstreamdelegate_2dp',['FlurryAdStreamDelegate-p',['../protocol_flurry_ad_stream_delegate-p.html',1,'']]],
   ['flurryadtargeting',['FlurryAdTargeting',['../interface_flurry_ad_targeting.html',1,'']]],
+  ['flurryconsent',['FlurryConsent',['../interface_flurry_consent.html',1,'']]],
   ['flurrydelegate_2dp',['FlurryDelegate-p',['../protocol_flurry_delegate-p.html',1,'']]],
   ['flurryimageshareparameters',['FlurryImageShareParameters',['../interface_flurry_image_share_parameters.html',1,'']]],
   ['flurrymessage',['FlurryMessage',['../interface_flurry_message.html',1,'']]],

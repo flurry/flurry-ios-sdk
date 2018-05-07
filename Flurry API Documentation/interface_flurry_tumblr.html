@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.4.0</span>
+   &#160;<span id="projectnumber">8.6.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -138,7 +138,7 @@ Class Methods</h2></td></tr>
 
 <p>Returns a Tumblr icon. </p>
 <dl class="section since"><dt>Since</dt><dd>7.0.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p>This image can be used with a UI element such as a UI button that will share to Tumblr.</p>
 <dl class="section see"><dt>See Also</dt><dd><a href="https://www.tumblr.com/logo">https://www.tumblr.com/logo</a> for additional icons</dd></dl>
 <div class="fragment"><div class="line">- (void) addTumblrButton</div>
@@ -168,7 +168,7 @@ Class Methods</h2></td></tr>
 
 <p>Check to see if the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> SDK handles the URL. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p><a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will listen and handle the URL callback from SafariViewController after Tumblr login This features added for only iOS 9.0 and above.</p>
 <div class="fragment"><div class="line">-(BOOL) application:(UIApplication *)app openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation</div>
 <div class="line">{</div>
@@ -198,7 +198,7 @@ Class Methods</h2></td></tr>
 
 <p>Authenticate and then share to Tumblr. </p>
 <dl class="section since"><dt>Since</dt><dd>7.0.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p><a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will do a one time authentication of the user and then post the shared content to Tumblr. To receive success and failure notifications please implement the <a class="el" href="protocol_flurry_tumblr_delegate-p.html">FlurryTumblrDelegate</a> protocol and register your viewcontroller as the delegate with <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_text_share_parameters.html">FlurryTextShareParameters</a> and <a class="el" href="interface_flurry_image_share_parameters.html">FlurryImageShareParameters</a></dd></dl>
 <div class="fragment"><div class="line">- (void)tumblrPostImage:(NSURL*)imgPath withCaption:(NSString*)imgCaption</div>
@@ -234,7 +234,7 @@ Class Methods</h2></td></tr>
 
 <p>Set the consumer key and secret. </p>
 <dl class="section since"><dt>Since</dt><dd>7.0.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p>Set your app’s consumer key and secret prior to making any calls to <a class="el" href="interface_flurry_tumblr.html">FlurryTumblr</a></p>
 <div class="fragment"><div class="line">   - (void)applicationDidFinishLaunching:(UIApplication *)application</div>
 <div class="line">{</div>
@@ -270,7 +270,7 @@ Class Methods</h2></td></tr>
 
 <p>Set the consumer key , consumer secret and consume urlScheme(required for SafariViewController login control) </p>
 <dl class="section since"><dt>Since</dt><dd>7.5.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p>Set your app’s consumer key and secret prior to making any calls to <a class="el" href="interface_flurry_tumblr.html">FlurryTumblr</a> The URL scheme is the app's custom URL scheme. Custom URL scheme is typically added to your app's plist as shown below: &lt;array&gt; &lt;dict&gt; &lt;key&gt;CFBundleURLName&lt;/key&gt; &lt;string&gt;com.yahoo.Tumblr-Publisher&lt;/string&gt; &lt;key&gt;CFBundleURLSchemes&lt;/key&gt; &lt;array&gt; &lt;string&gt;Tumblr-Publisher&lt;/string&gt; &lt;/array&gt; &lt;/dict&gt; &lt;/array&gt;</p>
 <dl class="section note"><dt>Note</dt><dd>As the app can have multiple custom URL schemes, <a class="el" href="interface_flurry_tumblr.html">FlurryTumblr</a> does not read the custom URL scheme from the app's plist and requires that the app pass the URL scheme it wishes to use with <a class="el" href="interface_flurry_tumblr.html">FlurryTumblr</a> to the SDK. The app needs to call this API and then call handleURL as noted below to enable <a class="el" href="interface_flurry_tumblr.html">FlurryTumblr</a> to use SafariViewController to authenticate the user.</dd></dl>
 <div class="fragment"><div class="line">- (void)applicationDidFinishLaunching:(UIApplication *)application</div>
@@ -296,7 +296,7 @@ Class Methods</h2></td></tr>
 
 <p>Sets the object to receive various delegate methods. </p>
 <dl class="section since"><dt>Since</dt><dd>7.0.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>8.0.0</dd></dl>
 <p>This method allows you to register an object that will receive notifications at different phases of Tumblr sharing.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="_flurry_tumblr_delegate_8h_source.html">FlurryTumblrDelegate.h</a> for details on delegates available.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>: please don’t set the delegate to nil on viewDidUnload as <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Tumblr views are shown modally it is recommended instead to set it to nil in the dealloc of your delegate object.</dd></dl>

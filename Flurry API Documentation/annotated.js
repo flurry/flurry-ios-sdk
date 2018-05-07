@@ -13,6 +13,7 @@ var annotated =
     [ "FlurryAds", "interface_flurry_ads.html", null ],
     [ "<FlurryAdStreamDelegate>", "protocol_flurry_ad_stream_delegate-p.html", "protocol_flurry_ad_stream_delegate-p" ],
     [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", "interface_flurry_ad_targeting" ],
+    [ "FlurryConsent", "interface_flurry_consent.html", "interface_flurry_consent" ],
     [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", "protocol_flurry_delegate-p" ],
     [ "FlurryImageShareParameters", "interface_flurry_image_share_parameters.html", "interface_flurry_image_share_parameters" ],
     [ "FlurryMessage", "interface_flurry_message.html", "interface_flurry_message" ],

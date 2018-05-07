@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.4.0</span>
+   &#160;<span id="projectnumber">8.6.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -147,10 +147,12 @@ $(document).ready(function(){initNavTree('_flurry_messaging_8h_source.html','');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;+(void) <a class="code" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc" title="Call this setter if you want enable AUTOMATIC INTEGRATION for Push Notificaions.">setAutoIntegrationForMessaging</a>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;+(void) setMessagingDelegate:(nonnull __weak <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate ;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate withCallbackQueue:(nonnull dispatch_queue_t)messagingCallbackQueue;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

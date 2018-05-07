@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.4.0</span>
+   &#160;<span id="projectnumber">8.6.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -143,6 +143,10 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>By default the callback is received on the global_queue with default priority. Optionally users can choose to receive on a specific queue by using<ul>
+<li>(void)setDelegate:(nonnull id&lt;FlurryDelegate&gt;)delegate withCallbackQueue:(dispatch_queue_t)flurryCallbackQueue; </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
