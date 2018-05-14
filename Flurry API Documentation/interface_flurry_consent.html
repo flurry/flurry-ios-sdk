@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.6.0</span>
+   &#160;<span id="projectnumber">8.6.1</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('interface_flurry_consent.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:a373eeff9023480414c93da105265378e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_consent.html">FlurryConsent</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_consent.html#a373eeff9023480414c93da105265378e">initWithGDPRScope:andConsentStrings:</a></td></tr>
-<tr class="memdesc:a373eeff9023480414c93da105265378e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this api to initialize the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object.  <a href="#a373eeff9023480414c93da105265378e">More...</a><br/></td></tr>
-<tr class="separator:a373eeff9023480414c93da105265378e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_consent.html">FlurryConsent</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_consent.html#aa8b918945304a9195a4a07f5b2ab7bf9">initWithGDPRScope:andConsentStrings:</a></td></tr>
+<tr class="memdesc:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this api to initialize the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object.  <a href="#aa8b918945304a9195a4a07f5b2ab7bf9">More...</a><br/></td></tr>
+<tr class="separator:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -147,7 +147,7 @@ NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>consentStri
 
 </div>
 </div>
-<a class="anchor" id="a373eeff9023480414c93da105265378e"></a>
+<a class="anchor" id="aa8b918945304a9195a4a07f5b2ab7bf9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -155,7 +155,7 @@ NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>consentStri
           <td class="memname">- (<a class="el" href="interface_flurry_consent.html">FlurryConsent</a>*) initWithGDPRScope: </td>
           <td></td>
           <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>inGDPRScope</em></td>
+          <td class="paramname"><em>isGDPRScope</em></td>
         </tr>
         <tr>
           <td class="paramkey">andConsentStrings:</td>
@@ -176,8 +176,8 @@ NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>consentStri
 <p>This api initializes the consent object. This object needs to be registered with the SDK.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inGDPRScope,:</td><td><code>YES</code> states that GDPR laws apply The default value is <code>NO</code> </td></tr>
-    <tr><td class="paramname">consentStrings,:</td><td>NSDictionary* &lt;NSString*,NSString*&gt; =&gt; &lt;consent sting format , consent string&gt;.</td></tr>
+    <tr><td class="paramname">isGDPRScope</td><td><code>YES</code> states that GDPR laws apply The default value is <code>NO</code> </td></tr>
+    <tr><td class="paramname">consentStrings</td><td>NSDictionary* &lt;NSString*,NSString*&gt; =&gt; &lt;consent sting format , consent string&gt;.</td></tr>
   </table>
   </dd>
 </dl>
@@ -206,7 +206,7 @@ NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>consentStri
  FlurryConsent::initWithGDPRScope:andConsentStrings to create the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">consent,:</td><td>The <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object which contains the GDPR scope flag and the consent strings</td></tr>
+    <tr><td class="paramname">consent</td><td>The <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object which contains the GDPR scope flag and the consent strings</td></tr>
   </table>
   </dd>
 </dl>
