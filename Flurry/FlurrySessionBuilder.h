@@ -155,7 +155,7 @@ typedef enum {
  *
  *  @note This method must be called prior to invoking #startSession:.
  *
- *  @param duration The period after which a partial session report is sent to Flurry.
+ *  @param value The period after which a partial session report is sent to Flurry.
  */
 - (FlurrySessionBuilder*) withTVSessionReportingInterval:(NSInteger) value;
 
@@ -168,7 +168,7 @@ typedef enum {
  *
  *  @note This method must be called prior to invoking #startSession:.
  *
- *  @param  count The number of events after which partial session report is sent to Flurry.
+ *  @param value The number of events after which partial session report is sent to Flurry.
  */
 - (FlurrySessionBuilder*) withTVEventCountThreshold:(NSInteger) value;
 #endif

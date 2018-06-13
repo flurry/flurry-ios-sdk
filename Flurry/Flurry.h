@@ -43,9 +43,9 @@ typedef enum {
     
 }FlurrySyndicationEvent;
 
-extern NSString* const kSyndicationiOSDeepLink;
-extern NSString* const kSyndicationAndroidDeepLink;
-extern NSString* const kSyndicationWebDeepLink;
+extern NSString* _Nonnull const kSyndicationiOSDeepLink;
+extern NSString* _Nonnull const kSyndicationAndroidDeepLink;
+extern NSString* _Nonnull const kSyndicationWebDeepLink;
 
 
 typedef enum {
@@ -83,7 +83,7 @@ typedef enum {
  *  @note By default the callback is received on the global_queue with default priority. Optionally users can choose to receive on a specific queue by using
  * + (void)setDelegate:(nonnull id<FlurryDelegate>)delegate withCallbackQueue:(dispatch_queue_t)flurryCallbackQueue;
  */
-- (void)flurrySessionDidCreateWithInfo:(NSDictionary*)info;
+- (void)flurrySessionDidCreateWithInfo:(nonnull NSDictionary*)info;
 
 @end
 
@@ -125,7 +125,7 @@ typedef enum {
  *
  *  @param version The custom version name.
  */
-+ (void)setAppVersion:(NSString*) version __attribute__ ((deprecated));
++ (void)setAppVersion:(nonnull NSString*) version __attribute__ ((deprecated));
 
 
 #if TARGET_OS_TV
@@ -175,7 +175,7 @@ typedef enum {
  *  @return The agent version of the Flurry SDK.
  *
  */
-+ (NSString *)getFlurryAgentVersion;
++ (nonnull NSString *)getFlurryAgentVersion;
 
 /*!
  *  @brief Displays an exception in the debug log if thrown during a Session.
@@ -294,7 +294,7 @@ typedef enum {
  * @param apiKey The API key for this project.
  */
 
-+ (void)startSession:(NSString *)apiKey;
++ (void)startSession:(nonnull NSString *)apiKey;
 
 
 /*!
@@ -326,7 +326,7 @@ typedef enum {
  * @param options passed launchOptions from the applicatin's didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
  
  */
-+ (void) startSession:(NSString *)apiKey withOptions:(id)options;
++ (void) startSession:(nonnull NSString *)apiKey withOptions:(nullable id)options;
 
 
 /*!
@@ -364,7 +364,7 @@ typedef enum {
  * @param sessionBuilder pass in the session builder object to specify that session construction options
  
  */
-+ (void) startSession:(NSString *)apiKey withOptions:(id)options withSessionBuilder:(FlurrySessionBuilder*) sessionBuilder;
++ (void) startSession:(nonnull NSString *)apiKey withOptions:(nullable id)options withSessionBuilder:(nullable FlurrySessionBuilder*) sessionBuilder;
 
 
 /*!
@@ -400,7 +400,7 @@ typedef enum {
  * @param apiKey The API key for this project.
  * @param sessionBuilder pass in the session builder object to specify that session construction options
  */
-+ (void) startSession:(NSString *)apiKey withSessionBuilder:(FlurrySessionBuilder *)sessionBuilder;
++ (void) startSession:(nonnull NSString *)apiKey withSessionBuilder:(nullable FlurrySessionBuilder *)sessionBuilder;
 
 /*!
  *  @brief Returns true if a session currently exists and is active.
@@ -433,7 +433,7 @@ typedef enum {
  *
  
  */
-+ (NSString*)getSessionID;
++ (nonnull NSString*)getSessionID;
 
 
 /*!
@@ -514,7 +514,8 @@ typedef enum {
  *  @param sessionOriginName    Name of the origin.
  *  @param deepLink             Url of the deep Link.
  */
-+ (void)addSessionOrigin:(NSString *)sessionOriginName  withDeepLink:(NSString*)deepLink;
++ (void)addSessionOrigin:(nonnull NSString *)sessionOriginName
+            withDeepLink:(nonnull NSString *)deepLink;
 
 /*!
  *  @brief Adds an session origin attached to each session specified by @c sessionOriginName.
@@ -535,7 +536,7 @@ typedef enum {
  *
  *  @param sessionOriginName    Name of the origin.
  */
-+ (void)addSessionOrigin:(NSString *)sessionOriginName;
++ (void)addSessionOrigin:(nonnull NSString *)sessionOriginName;
 
 /*!
  *  @brief Adds a custom parameterized session parameters @c parameters.
@@ -557,7 +558,7 @@ typedef enum {
  *
  *  @param parameters An immutable copy of map containing Name-Value pairs of parameters.
  */
-+ (void)sessionProperties:(NSDictionary *)parameters;
++ (void)sessionProperties:(nonnull NSDictionary *)parameters;
 
 /*!
  *  @brief Adds an SDK origin specified by @c originName and @c originVersion.
@@ -580,7 +581,8 @@ typedef enum {
  *  @param originName    Name of the origin.
  *  @param originVersion Version string of the origin wrapper
  */
-+ (void)addOrigin:(NSString *)originName withVersion:(NSString*)originVersion;
++ (void)addOrigin:(nonnull NSString *)originName
+      withVersion:(nonnull NSString *)originVersion;
 
 /*!
  *  @brief Adds a custom parameterized origin specified by @c originName with @c originVersion and @c parameters.
@@ -613,7 +615,9 @@ typedef enum {
  *  @param originVersion Version string of the origin wrapper
  *  @param parameters An immutable copy of map containing Name-Value pairs of parameters.
  */
-+ (void)addOrigin:(NSString *)originName withVersion:(NSString*)originVersion withParameters:(NSDictionary *)parameters;
++ (void)addOrigin:(nonnull NSString *)originName
+      withVersion:(nonnull NSString*)originVersion
+   withParameters:(nullable NSDictionary *)parameters;
 
 /** @name Event and Error Logging
  *  Methods for reporting custom events and errors during the session. 
@@ -656,7 +660,7 @@ typedef enum {
  *
  *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
  */
-+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName;
++ (FlurryEventRecordStatus)logEvent:(nonnull NSString *)eventName;
 
 /*!
  *  @brief Records a custom parameterized event specified by @c eventName with @c parameters.
@@ -702,7 +706,8 @@ typedef enum {
  *
  *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
  */
-+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
++ (FlurryEventRecordStatus)logEvent:(nonnull NSString *)eventName
+                     withParameters:(nullable NSDictionary *)parameters;
 
 /*!
  *  @brief Records an app exception. Commonly used to catch unhandled exceptions.
@@ -732,7 +737,9 @@ typedef enum {
  *  @param message The message to associate with the error.
  *  @param exception The exception object to report.
  */
-+ (void)logError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception;
++ (void)logError:(nonnull NSString *)errorID
+         message:(nullable NSString *)message
+       exception:(nullable NSException *)exception;
 
 /*!
  *  @brief Records an app error.
@@ -752,7 +759,9 @@ typedef enum {
  *  @param message The message to associate with the error.
  *  @param error The error object to report.
  */
-+ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error;
++ (void)logError:(nonnull NSString *)errorID
+         message:(nullable NSString *)message
+           error:(nullable NSError *)error;
 
 /*!
  *  @brief Records an app exception. Commonly used to catch unhandled exceptions.
@@ -784,7 +793,10 @@ typedef enum {
  *  @param exception The exception object to report.
  *  @param parameters Custom parameters associated with the exception
  */
-+ (void)logError:(NSString *)errorID message:(NSString *)message exception:(NSException *)exception withParameters:(NSDictionary*)parameters;
++ (void)logError:(nonnull NSString *)errorID
+         message:(nullable NSString *)message
+       exception:(nullable NSException *)exception
+  withParameters:(nullable NSDictionary*)parameters;
 
 /*!
  *  @brief Records an app error.
@@ -805,7 +817,10 @@ typedef enum {
  *  @param error The error object to report.
  *  @param parameters Custom parameters associated with the error
  */
-+ (void)logError:(NSString *)errorID message:(NSString *)message error:(NSError *)error withParameters:(NSDictionary*)parameters;
++ (void)logError:(nonnull NSString *)errorID
+         message:(nullable NSString *)message
+           error:(nullable NSError *)error
+  withParameters:(nullable NSDictionary*)parameters;
 
 /*!
  *  @brief Leave a breadcrumb.
@@ -824,7 +839,7 @@ typedef enum {
  *  @param breadcrumb string.
  *
  */
-+ (void)leaveBreadcrumb:(NSString*)breadcrumb;
++ (void)leaveBreadcrumb:(nonnull NSString*)breadcrumb;
 
 /*!
  *  @brief Records a timed event specified by @c eventName.
@@ -865,7 +880,7 @@ typedef enum {
  *
  *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
  */
-+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName timed:(BOOL)timed;
++ (FlurryEventRecordStatus)logEvent:(nonnull NSString *)eventName timed:(BOOL)timed;
 
 /*!
  *  @brief Records a custom parameterized timed event specified by @c eventName with @c parameters.
@@ -914,7 +929,7 @@ typedef enum {
  *
  *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
  */
-+ (FlurryEventRecordStatus)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters timed:(BOOL)timed;
++ (FlurryEventRecordStatus)logEvent:(nonnull NSString *)eventName withParameters:(nullable NSDictionary *)parameters timed:(BOOL)timed;
 
 /*!
  *  @brief Ends a timed event specified by @c eventName and optionally updates parameters with @c parameters.
@@ -961,7 +976,7 @@ typedef enum {
  *  that can be easily understood by non-technical people in your business domain.
  *  @param parameters An immutable copy of map containing Name-Value pairs of parameters.
  */
-+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;	// non-nil parameters will update the parameters
++ (void)endTimedEvent:(nonnull NSString *)eventName withParameters:(nullable NSDictionary *)parameters;	// non-nil parameters will update the parameters
 
 //@}
 
@@ -978,7 +993,7 @@ typedef enum {
  *  @since 2.7
  *  This method does the same as +(void)logAllPageViewsForTarget:(id)target method and is left for backward compatibility
  */
-+ (void)logAllPageViews:(id)target __attribute__ ((deprecated));		
++ (void)logAllPageViews:(nullable id)target __attribute__ ((deprecated));
 /*!
  *  @brief Automatically track page views on a @c UINavigationController or @c UITabBarController.
  *  @since 4.3
@@ -1001,7 +1016,7 @@ typedef enum {
  * 
  *  @param target The navigation or tab bar controller.
  */
-+ (void)logAllPageViewsForTarget:(id)target;
++ (void)logAllPageViewsForTarget:(nullable id)target;
 
 /*!
  *  @brief Stops logging page views on previously observed with logAllPageViewsForTarget: @c UINavigationController or @c UITabBarController.
@@ -1020,7 +1035,7 @@ typedef enum {
  * 
  *  @param target The navigation or tab bar controller.
  */
-+ (void)stopLogPageViewsForTarget:(id)target;
++ (void)stopLogPageViewsForTarget:(nullable id)target;
 
 /*!
  *  @brief Explicitly track a page view during a session.
@@ -1061,7 +1076,7 @@ typedef enum {
  *
  *  @param userID The app id for a user.
  */
-+ (void)setUserID:(NSString *)userID;
++ (void)setUserID:(nullable NSString *)userID;
 
 /*!
  *  @brief Set your user's age in years.
@@ -1092,7 +1107,7 @@ typedef enum {
  *  @param gender Reported gender of user.
  *
  */
-+ (void)setGender:(NSString *)gender;	// user's gender m or f
++ (void)setGender:(nonnull NSString *)gender;	// user's gender m or f
 
 //@}
 
@@ -1276,7 +1291,9 @@ typedef enum {
  *
  *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
  */
-+ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent syndicationID:(NSString*) syndicationID parameters:(NSDictionary*) parameters;
++ (FlurryEventRecordStatus) logEvent:(FlurrySyndicationEvent) syndicationEvent
+                       syndicationID:(nonnull NSString *) syndicationID
+                          parameters:(nullable NSDictionary *) parameters;
 
 #if !TARGET_OS_WATCH
 /*!
@@ -1290,7 +1307,8 @@ typedef enum {
  *  @param statusCallback a callback gettign called when the status of  ID that is associated with the event
  *
  */
-+ (void) logPaymentTransaction:(SKPaymentTransaction*)transaction statusCallback:(void(^)(FlurryTransactionRecordStatus))statusCallback;
++ (void) logPaymentTransaction:(nonnull SKPaymentTransaction *)transaction
+                statusCallback:(nullable void(^)(FlurryTransactionRecordStatus))statusCallback;
 #endif
 
 #if !TARGET_OS_WATCH
@@ -1314,8 +1332,8 @@ typedef enum {
  *  @since 1.0.0
  *  
  *
- *  @param appController The TVApplicationController object
- *  @param jsContext The JavaScript context object passed in
+ *  appController The TVApplicationController object
+ *  jsContext The JavaScript context object passed in
  *
  *  This method is exclusively for use by the Client-Server TV apps. This method will internally register
  *  JavaScript APIs exposed on the TVJS domain with the Flurry SDK. The JavaScript methods available are:
@@ -1357,5 +1375,5 @@ typedef enum {
  *  @param completionHandler a callback getting called when SDK finishes the attempt to openURL the privacy dashboard, the success boolean provided for checks and fallbacks.
  *
  */
-+ (void)openPrivacyDashboard:(void(^)(BOOL success))completionHandler;
++ (void)openPrivacyDashboard:(nullable void(^)(BOOL success))completionHandler;
 @end

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.6.1</span>
+   &#160;<span id="projectnumber">9.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_messaging.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,7 +121,7 @@ Class Methods</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_flurry_messaging_8h_source.html#l00069">69</a> of file <a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_messaging_8h_source.html#l00068">68</a> of file <a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a7d9394746831a88efeb67121026ad69c"></a>
 <div class="memitem">
@@ -141,7 +141,7 @@ Class Methods</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>8.1.0.rc.1</dd></dl>
 <p>This method logs and processes the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Push Notification actions.</p>
 <div class="fragment"><div class="line">- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response</div>
-<div class="line">withCompletionHandler:(<span class="keywordtype">void</span> (^)())completionHandler</div>
+<div class="line">withCompletionHandler:(<span class="keywordtype">void</span> (^)(void))completionHandler</div>
 <div class="line">{</div>
 <div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> receivedNotificationResponse:response withCompletionHandler:^{</div>
 <div class="line">completionHandler();</div>
@@ -323,7 +323,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/y/workspace/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a></li>
+<li>/home/y/workspace/app_root/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,7 +7,6 @@
 //
 #if !TARGET_OS_WATCH
 #import <Foundation/Foundation.h>
-#import "Flurry.h"
 #import <UserNotifications/UserNotifications.h>
 
 @class FlurryMessage;
@@ -140,7 +139,7 @@ typedef void(^MessagingHandler)(void);
  *
  *  @code
  - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response
- withCompletionHandler:(void (^)())completionHandler
+ withCompletionHandler:(void (^)(void))completionHandler
  {
  [Flurry receivedNotificationResponse:response withCompletionHandler:^{
  completionHandler();

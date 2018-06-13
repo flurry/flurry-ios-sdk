@@ -15,3 +15,10 @@ typedef enum
     FLURRY_AD_ERROR_DID_FAIL_TO_FETCH_AD = 1,
     FLURRY_AD_ERROR_CLICK_ACTION_FAILED  = 2,
 }FlurryAdError;
+
+typedef enum {
+    FlurryAdCodeError = 1,
+    FlurryAdCodeException = 2,
+    FlurryAdCodeCrash = 3,
+    FlurryAdUrlLoadFail = 4
+} FlurryAdErrorCode;

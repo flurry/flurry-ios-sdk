@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /home/y/workspace/app_root/AdUnityAgent/FlurrySDK/PublicAPIs/FlurryAPI/FlurryMessaging.h Source File</title>
+<title>iOS SDK: /home/y/workspace/app_root/FlurrySDK/PublicAPIs/FlurryAPI/FlurryMessaging.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">8.6.1</span>
+   &#160;<span id="projectnumber">9.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('_flurry_messaging_8h_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,58 +101,57 @@ $(document).ready(function(){initNavTree('_flurry_messaging_8h_source.html','');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;Flurry.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &lt;UserNotifications/UserNotifications.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="protocol_flurry_messaging_delegate-p.html">   23</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@optional</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;-(void) didReceiveMessage:(nonnull <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>*)message;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;-(void) didReceiveActionWithIdentifier:(nullable NSString*)identifier message:(nonnull <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>*)message;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> void(^MessagingHandler)(void);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="interface_flurry_message.html">   59</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a> : NSObject</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* title;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* body;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* sound;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSDictionary* appData;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;UserNotifications/UserNotifications.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="protocol_flurry_messaging_delegate-p.html">   22</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;-(void) didReceiveMessage:(nonnull <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>*)message;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;-(void) didReceiveActionWithIdentifier:(nullable NSString*)identifier message:(nonnull <a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a>*)message;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> void(^MessagingHandler)(void);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="interface_flurry_message.html">   58</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a> : NSObject</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* title;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* body;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSString* sound;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong, nullable) NSDictionary* appData;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="interface_flurry_messaging.html">   69</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_messaging.html">FlurryMessaging</a> : NSObject</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;+(void) setDeviceToken:(nullable NSData *)deviceToken;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if TARGET_OS_IPHONE</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>+(void) receivedRemoteNotification:(nonnull NSDictionary *)userInfo withCompletionHandler:(_Nullable MessagingHandler)completionHandler;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;+(void) presentNotification:(nonnull UNNotification *)notification withCompletionHandler:(_Nullable MessagingHandler)completionHandler API_AVAILABLE(ios(10.0));</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#if TARGET_OS_IPHONE</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span>+(void) receivedNotificationResponse:(nonnull UNNotificationResponse *)response withCompletionHandler:(_Nullable MessagingHandler) completionHandler API_AVAILABLE(ios(10.0));</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;+(BOOL) isFlurryMsg:(nonnull NSDictionary*)userInfo;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="interface_flurry_messaging.html">   68</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_messaging.html">FlurryMessaging</a> : NSObject</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;+(void) setDeviceToken:(nullable NSData *)deviceToken;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#if TARGET_OS_IPHONE</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span>+(void) receivedRemoteNotification:(nonnull NSDictionary *)userInfo withCompletionHandler:(_Nullable MessagingHandler)completionHandler;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;+(void) presentNotification:(nonnull UNNotification *)notification withCompletionHandler:(_Nullable MessagingHandler)completionHandler API_AVAILABLE(ios(10.0));</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#if TARGET_OS_IPHONE</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor"></span>+(void) receivedNotificationResponse:(nonnull UNNotificationResponse *)response withCompletionHandler:(_Nullable MessagingHandler) completionHandler API_AVAILABLE(ios(10.0));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;+(BOOL) isFlurryMsg:(nonnull NSDictionary*)userInfo;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;+(void) <a class="code" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc" title="Call this setter if you want enable AUTOMATIC INTEGRATION for Push Notificaions.">setAutoIntegrationForMessaging</a>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate ;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;+(void) <a class="code" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc" title="Call this setter if you want enable AUTOMATIC INTEGRATION for Push Notificaions.">setAutoIntegrationForMessaging</a>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate ;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate withCallbackQueue:(nonnull dispatch_queue_t)messagingCallbackQueue;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;+(void) setMessagingDelegate:(nonnull <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_flurry_messaging_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Flurry Notifications.">FlurryMessagingDelegate</a>&gt;)delegate withCallbackQueue:(nonnull dispatch_queue_t)messagingCallbackQueue;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
