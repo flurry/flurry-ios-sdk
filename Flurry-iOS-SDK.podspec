@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '9.0.0'
+  s.version          = '9.1.0'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     ss.platform   = :ios, '8.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
     ss.weak_framework = 'WatchConnectivity', 'CoreLocation'
-    ss.vendored_libraries = "Flurry/libFlurry_9.0.0.a"
+    ss.vendored_libraries = "Flurry/libFlurry_9.1.0.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
     ss.platform   = :ios, '8.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
     ss.weak_frameworks = 'CoreLocation'
-    ss.vendored_libraries = "Flurry/libFlurry_9.0.0.a"
+    ss.vendored_libraries = "Flurry/libFlurry_9.1.0.a"
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurryWatch_9.0.0.a"
+    ss.vendored_libraries = "Flurry/libFlurryWatch_9.1.0.a"
   end
 
   s.subspec 'FlurryTVOS' do |ss|
@@ -74,9 +74,9 @@ Pod::Spec.new do |s|
 
      ss.platform   = :tvos, '9.0'
      ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-     ss.vendored_libraries = "Flurry/libFlurryTVOS_9.0.0.a"
+     ss.vendored_libraries = "Flurry/libFlurryTVOS_9.1.0.a"
    end
-
+   
   s.subspec 'FlurryAds' do |ss|
      ss.source_files = [
        'FlurryAds/**/*.h',
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
      ss.platform   = :ios, '8.0'
      ss.frameworks = 'CoreGraphics', 'CoreMedia', 'MediaPlayer', 'AVFoundation', 'CoreTelephony', 'WebKit', 'SystemConfiguration'
      ss.weak_frameworks = 'AdSupport', 'StoreKit', 'SafariServices'
-     ss.vendored_libraries = 'FlurryAds/libFlurryAds_1.0.0.a'
+     ss.vendored_libraries = 'FlurryAds/libFlurryAds_1.1.0.a'
      ss.dependency 'Flurry-iOS-SDK/FlurrySDK',  '~> 9.0.0'
    end
 
@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
     ]
 
     ss.platform   = :ios, '8.0'
-    ss.vendored_libraries = "FlurryMessaging/libFlurryMessaging_9.0.0.a"
+    ss.vendored_libraries = "FlurryMessaging/libFlurryMessaging_9.1.0.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
  end
 
