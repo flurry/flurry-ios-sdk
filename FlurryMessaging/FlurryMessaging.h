@@ -97,7 +97,7 @@ typedef void(^MessagingHandler)(void);
  }];
  }
  * @note The completionHandler provided by UIApplication should be called within the Flurry's completion handler.
- * This gives Flurry sufficient time to finish processing and not suspend the app in between.
+ * This gives Flurry sufficient time to finish processing and not suspend the app in between. The completionHandler may be called from a background thread.
  *
  * @endcode
  *
@@ -148,7 +148,7 @@ typedef void(^MessagingHandler)(void);
  * @note Does not have to be implemented if the app is not targetting iOS10 or if you do not wish to use
  * UNUserNotificationCenter.
  * The completionHandler provided by UNUserNotificationCenter should be called within the Flurry's completion handler.
- * This gives Flurry sufficient time to finish processing and not suspend the app in between.
+ * This gives Flurry sufficient time to finish processing and not suspend the app in between. The completionHandler may be called from a background thread.
  *
  * @endcode
  *

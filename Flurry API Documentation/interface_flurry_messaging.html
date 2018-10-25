@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.2.3.xcode9</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -150,7 +150,7 @@ Class Methods</h2></td></tr>
 <div class="line">  @note Does not have to be implemented <span class="keywordflow">if</span> the app is not targetting iOS10 or <span class="keywordflow">if</span> you <span class="keywordflow">do</span> not wish to use</div>
 <div class="line">  UNUserNotificationCenter.</div>
 <div class="line">  The completionHandler provided by UNUserNotificationCenter should be called within the <a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a><span class="stringliteral">&#39;s completion handler.</span></div>
-<div class="line"><span class="stringliteral">  This gives Flurry sufficient time to finish processing and not suspend the app in between.</span></div>
+<div class="line"><span class="stringliteral">  This gives Flurry sufficient time to finish processing and not suspend the app in between. The completionHandler may be called from a background thread.</span></div>
 </div><!-- fragment --><p>Helper method which identifies a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> generated Push Notification </p>
 <dl class="section since"><dt>Since</dt><dd>8.1.0.rc.1</dd></dl>
 <div class="fragment"><div class="line">-(void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo</div>
@@ -192,7 +192,7 @@ Class Methods</h2></td></tr>
 <div class="line">}];</div>
 <div class="line">}</div>
 <div class="line">  @note The completionHandler provided by UIApplication should be called within the <a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a><span class="stringliteral">&#39;s completion handler.</span></div>
-<div class="line"><span class="stringliteral">  This gives Flurry sufficient time to finish processing and not suspend the app in between.</span></div>
+<div class="line"><span class="stringliteral">  This gives Flurry sufficient time to finish processing and not suspend the app in between. The completionHandler may be called from a background thread.</span></div>
 </div><!-- fragment --><p>(MANUAL INTEGRATION) Method to be called when a notification is presented by the UNUserNotificationCenter when in foreground. </p>
 <dl class="section since"><dt>Since</dt><dd>8.1.0.rc.1</dd></dl>
 <p>This method logs and processes the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Push Notification when presented in foreground by the UNUserNotificationCenter.</p>
