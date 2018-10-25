@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '9.2.3.xcode9'
+  s.version          = '9.2.3'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :ios, '8.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_9.2.3.xcode9.a"
+    ss.vendored_libraries = "Flurry/libFlurry_9.2.3.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :ios, '8.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_9.2.3.xcode9.a"
+    ss.vendored_libraries = "Flurry/libFlurry_9.2.3.a"
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurryWatch_9.2.3.xcode9.a"
+    ss.vendored_libraries = "Flurry/libFlurryWatch_9.2.3.a"
   end
 
   s.subspec 'FlurryTVOS' do |ss|
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
 
      ss.platform   = :tvos, '9.0'
      ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-     ss.vendored_libraries = "Flurry/libFlurryTVOS_9.2.3.xcode9.a"
+     ss.vendored_libraries = "Flurry/libFlurryTVOS_9.2.3.a"
    end
 
   s.subspec 'FlurryAds' do |ss|
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
     ]
 
     ss.platform   = :ios, '8.0'
-    ss.vendored_libraries = "FlurryMessaging/libFlurryMessaging_9.2.3.xcode9.a"
+    ss.vendored_libraries = "FlurryMessaging/libFlurryMessaging_9.2.3.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
         'FlurryConfig/FConfigEmpty.m',
     ]
     ss.platform   = :ios, '8.0'
-    ss.vendored_libraries = "FlurryConfig/libFlurryConfig_9.2.3.xcode9.a"
+    ss.vendored_libraries = "FlurryConfig/libFlurryConfig_9.2.3.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 end
