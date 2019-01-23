@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Flurry' => 'integration@flurry.com' }
   s.source           = { :git => 'https://github.com/flurry/Flurry-iOS-SDK.git', :tag => s.version.to_s }
   s.requires_arc = false
-  s.platforms   = { :ios => "8.0", :watchos => "2.0" }
+  s.platforms   = { :ios => "8.0", :watchos => "2.0", :tvos => "9.0" }
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
