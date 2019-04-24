@@ -2,7 +2,7 @@ Flurry SDK
 ==========
 
 
-To use FlurrySDK from cocoapods, for Analytics, Ad serving,  Apple Watch Extension, and for tvOS app follow the instructions below:
+To use FlurrySDK from cocoapods, for Analytics, Ad serving,  Apple Watch Extension, and for Tumblr in-app sharing follow the instructions:
 
 
 To enable Flurry Analytics:
