@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 @class FConfigUserBuilder;
 @class FConfigBuilder;
+@protocol FConfigCoreObserver;
+
+
 
 /*!
  * @brief Provides a protocol for subscribed observers of the FConfig class to listen to
@@ -20,7 +23,7 @@
  * @note This is an observer pattern and is not a delegate.  This means that multiple classes
  * can observe after registering with the FConfig#registerObserver method.
  */
-@protocol FConfigObserver <NSObject>
+@protocol FConfigObserver <FConfigCoreObserver>
 
 @optional
 /*!

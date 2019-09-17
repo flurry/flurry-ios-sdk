@@ -141,11 +141,61 @@ typedef enum {
 
 - (FlurrySessionBuilder*) withIncludeBackgroundSessionsInMetrics:(BOOL) value;
 
+/*!
+ *  @brief Set the Session Origin for the Flurry session.
+ *  @since 10.0.0
+ *
+ *  This is an optional method that sets the session origin 
+ *
+ *  @param origin The session origin value.
+ */
+- (FlurrySessionBuilder*) withSessionOrigin:(NSString*) origin;
+
+/*!
+ *  @brief Set the Session Origin Version for the Flurry session.
+ *  @since 10.0.0
+ *
+ *  This is an optional method that sets the session origin version
+ *
+ *  @param version The session origin version value.
+ */
+- (FlurrySessionBuilder*) withSessionOriginVerion:(NSString*) version;
+
+/*!
+ *  @brief Set the Session OriginSets Paramters for the Flurry session.
+ *  @since 10.0.0
+ *
+ *  This is an optional method that sets the session origin parameters for origin sets (max key value pairs = 10)
+ *
+ *  @param parameters The session origin parameters.
+ */
+- (FlurrySessionBuilder*) withSessionOriginParameters:(NSDictionary*) parameters;
+
+/*!
+ *  @brief Set the Deeplink for the Flurry session.
+ *  @since 10.0.0
+ *
+ *  This is an optional method that sets the deeplink which started the app and Flurry Session
+ *
+ *  @param deeplink The session deeplink value.
+ */
+- (FlurrySessionBuilder*) withSessionDeeplink:(NSString*) deeplink;
+
+/*!
+ *  @brief Set the Session properties for the Flurry session.
+ *  @since 10.0.0
+ *
+ *  This is an optional method that sets the session properties
+ *
+ *  @param properties The session paramaters.
+ */
+- (FlurrySessionBuilder*) withSessionProperties:(NSDictionary*) properties;
 
 
 #endif
 
 #if TARGET_OS_TV
+
 /*!
  *  @brief Sets the minimum duration (in minutes) before a partial session report is sent to Flurry.
  *  @since 7.7.0
