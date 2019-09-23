@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 @class FConfigUserBuilder;
 @class FConfigBuilder;
-@protocol FConfigCoreObserver;
 
 
 
@@ -23,7 +22,7 @@
  * @note This is an observer pattern and is not a delegate.  This means that multiple classes
  * can observe after registering with the FConfig#registerObserver method.
  */
-@protocol FConfigObserver <FConfigCoreObserver>
+@protocol FConfigObserver <NSObject>
 
 @optional
 /*!

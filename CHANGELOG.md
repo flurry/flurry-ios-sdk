@@ -1,6 +1,13 @@
 # Change Log
 
-## Version 10.0.0 - 09/18/2019
+## Version 10.x
+
+### Version 10.0.1 - 09/23/2019
+
+* Fixed potential build errors while using FConfig.
+* Improved reliability and performance.
+
+### Version 10.0.0 - 09/17/2019
 
 * Redesigned, slimmer SDK structured on the modular analytics session resulting in reduced SDK size, shorter cold start, and laying down the foundation for server-side configurable session definition. 
 * Flurry Analytics Support for watchOS 5
