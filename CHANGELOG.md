@@ -2,6 +2,15 @@
 
 ## Version 10.x
 
+### Version 10.0.2 - 10/01/2019
+
+* API Deprecations
+    * `[Flurry setSessionReportsOnCloseEnabled:]`
+    * `[Flurry setSessionReportsOnPauseEnabled:]`
+* watchOS apps no longer have access to `Flurry` class. watchOS APIs are only located in `FlurryWatch` class.
+* Fixed crash on iOS 8 and iOS 9 devices.
+* Improved reliability and performance.
+
 ### Version 10.0.1 - 09/23/2019
 
 * Fixed potential build errors while using FConfig.

@@ -23,6 +23,9 @@ typedef enum {
 } FlurryLogLevel;
 
 
+#if !TARGET_OS_WATCH
+
+
 @interface FlurrySessionBuilder : NSObject
 
 /*!
@@ -115,7 +118,6 @@ typedef enum {
 - (FlurrySessionBuilder*) withConsent:(FlurryConsent*)consent;
 
 
-#if !TARGET_OS_WATCH
 /*!
  *  @brief Enables implicit recording of Apple Store transactions.
  *  @since 7.9.0
@@ -192,8 +194,6 @@ typedef enum {
 - (FlurrySessionBuilder*) withSessionProperties:(NSDictionary*) properties;
 
 
-#endif
-
 #if TARGET_OS_TV
 
 /*!
@@ -224,3 +224,5 @@ typedef enum {
 #endif
 
 @end
+
+#endif

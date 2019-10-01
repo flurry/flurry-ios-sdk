@@ -55,6 +55,7 @@ typedef enum {
     FlurryTransactionRecodingDisabled
 } FlurryTransactionRecordStatus;
 
+#if !TARGET_OS_WATCH
 
 /*!
  *  @brief Provides all available delegates for receiving callbacks related to Flurry analytics.
@@ -505,6 +506,7 @@ typedef enum {
 /*!
  *  @brief Set session to report when app closes.
  *  @since 2.7
+ *  @deprecated since 10.0.2.
  *
  *  Use this method report session data when the app is closed. The default value is @c YES.
  *
@@ -515,20 +517,20 @@ typedef enum {
  *  @param sendSessionReportsOnClose YES to send on close, NO to omit reporting on close.
  *
  */
-+ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose;
++ (void)setSessionReportsOnCloseEnabled:(BOOL)sendSessionReportsOnClose __attribute__ ((deprecated));
 
 /*!
  *  @brief Set session to report when app is sent to the background.
  *  @since 2.7
+ *  @deprecated since 10.0.2.
  *
  *  Use this method report session data when the app is paused. The default value is @c YES.
  *
  *  @param setSessionReportsOnPauseEnabled YES to send on pause, NO to omit reporting on pause.
  *
  */
-+ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled;
++ (void)setSessionReportsOnPauseEnabled:(BOOL)setSessionReportsOnPauseEnabled __attribute__ ((deprecated));
 
-#if !TARGET_OS_WATCH
 /*!
  *  @brief Enables implicit recording of Apple Store transactions.
  *  @since 7.9.0
@@ -540,7 +542,7 @@ typedef enum {
  *
  */
 + (void) setIAPReportingEnabled:(BOOL)value;
-#endif
+
 
 #pragma mark - Add sessionOrigin, originAttributes and sessionProperties
 
@@ -794,7 +796,6 @@ typedef enum {
                        syndicationID:(nonnull NSString *) syndicationID
                           parameters:(nullable NSDictionary *) parameters;
 
-#if !TARGET_OS_WATCH
 /*!
  *  @brief Records an Apple Store transaction.
  *  @since 7.8.0
@@ -835,7 +836,6 @@ typedef enum {
                                     userDefinedParams:(nullable NSDictionary*)transactionParams
                                        statusCallback:(nullable void(^)(FlurryTransactionRecordStatus))statusCallback;
 
-#endif
 
 #pragma mark - Timed Event Logging
 
@@ -1232,6 +1232,8 @@ typedef enum {
  *  Flurry.setIAPReportingEnabled(enableIAP: boolean);
  *  Flurry.getVersions(): object;
  *
+ *  Deprecated TVML JavaScript APIs:
+ *
  *  flurryLogEvent({String} eventName)
  *  flurryLogEvent({String} eventName, {object} params)
  *  flurryLogTimedEvent({String} eventName)
@@ -1274,3 +1276,5 @@ typedef enum {
 + (void)openPrivacyDashboard:(nullable void(^)(BOOL success))completionHandler;
 
 @end
+
+#endif
