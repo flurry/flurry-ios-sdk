@@ -1054,10 +1054,10 @@ typedef enum {
  *  @see #logError:message:exception: for details on capturing exceptions.
  *
  *  @code
- *  - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
- {
- [Flurry logError:@"WebView No Load" message:[error localizedDescription] error:error];
- }
+ *  - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;
+ * {
+    [Flurry logError:@"WebView No Load" message:[error localizedDescription] error:error];
+    }
  *  @endcode
  *
  *  @param errorID Name of the error.
@@ -1076,7 +1076,7 @@ typedef enum {
  *  @see #logError:message:exception:withParameters: for details on capturing exceptions.
  *
  *  @code
- *  - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+ *  - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;
  {
  [Flurry logError:@"WebView No Load" message:[error localizedDescription] error:error];
  }
@@ -1100,7 +1100,7 @@ typedef enum {
  *  Breadcrumbs are reset at every application launch.
  *
  *  @code
- *  - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+ *  - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;
  {
  [Flurry leaveBreadcrumb:@"WebView not loading"];
  }

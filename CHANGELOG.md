@@ -2,6 +2,16 @@
 
 ## Version 10.x
 
+### Version 10.1.0 - 12/02/2019
+
+* New apis for FlurryCCPA
+    *  Added `[FlurryCCPA withDataSaleOptOut:]` to `FlurrySessionBuilder`
+    * Added `[FlurryCCPA setDataSaleOptOut:]` 
+    * Added `[FlurryCCPA setDelete:]` 
+* Made fix for FConfig fetch fail
+* Fixed revenue APIs call back crashes
+* Uses WKWebView for ad display
+
 ### Version 10.0.2 - 10/01/2019
 
 * API Deprecations

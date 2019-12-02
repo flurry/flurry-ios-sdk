@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">10.0.2</span>
+   &#160;<span id="projectnumber">10.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -606,7 +606,7 @@ Class Methods</h2></td></tr>
 
 <p>Leave a breadcrumb. </p>
 <dl class="section since"><dt>Since</dt><dd>8.4.0 This method captures breadcrumbs of 250 characters. The last 207 recorded breadcrumbs are included in crash and error logs. Breadcrumbs are reset at every application launch.</dd></dl>
-<div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
+<div class="fragment"><div class="line">   - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;</div>
 <div class="line">{</div>
 <div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> leaveBreadcrumb:<span class="stringliteral">@&quot;WebView not loading&quot;</span>];</div>
 <div class="line">}</div>
@@ -684,10 +684,10 @@ Class Methods</h2></td></tr>
 <p>Records an app error for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a98c1ff91136a4b966d3acf1d83022993" title="Records an app exception. Commonly used to catch unhandled exceptions.">+ logError:message:exception:</a> for details on capturing exceptions.</dd></dl>
-<div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
+<div class="fragment"><div class="line"> - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;</div>
 <div class="line">{</div>
-<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logError:<span class="stringliteral">@&quot;WebView No Load&quot;</span> message:[error localizedDescription] error:error];</div>
-<div class="line">}</div>
+<div class="line"> [<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logError:<span class="stringliteral">@&quot;WebView No Load&quot;</span> message:[error localizedDescription] error:error];</div>
+<div class="line"> }</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">errorID</td><td>Name of the error. </td></tr>
@@ -738,7 +738,7 @@ Class Methods</h2></td></tr>
 <p>Records an app error. </p>
 <dl class="section since"><dt>Since</dt><dd>8.4.0 This method overloads on logError:message:error: to capture an error for reporting to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>.</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#adaaa127626e66823723b79363b57ef46" title="Records an app exception. Commonly used to catch unhandled exceptions.">+ logError:message:exception:withParameters:</a> for details on capturing exceptions.</dd></dl>
-<div class="fragment"><div class="line">   - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error</div>
+<div class="fragment"><div class="line">   - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error;</div>
 <div class="line">{</div>
 <div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logError:<span class="stringliteral">@&quot;WebView No Load&quot;</span> message:[error localizedDescription] error:error];</div>
 <div class="line">}</div>

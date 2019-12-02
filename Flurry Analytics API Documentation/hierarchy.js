@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "NSObject", null, [
       [ "Flurry", "interface_flurry.html", null ],
+      [ "FlurryCCPA", "interface_flurry_c_c_p_a.html", null ],
       [ "FlurryConsent", "interface_flurry_consent.html", null ],
       [ "FlurryMessage", "interface_flurry_message.html", null ],
       [ "FlurryMessaging", "interface_flurry_messaging.html", null ],
