@@ -1,6 +1,7 @@
 var searchData=
 [
   ['flurry',['Flurry',['../interface_flurry.html',1,'']]],
+  ['flurryccpa',['FlurryCCPA',['../interface_flurry_c_c_p_a.html',1,'']]],
   ['flurryconsent',['FlurryConsent',['../interface_flurry_consent.html',1,'']]],
   ['flurrydelegate_2dp',['FlurryDelegate-p',['../protocol_flurry_delegate-p.html',1,'']]],
   ['flurrymessage',['FlurryMessage',['../interface_flurry_message.html',1,'']]],

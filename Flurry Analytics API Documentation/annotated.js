@@ -1,6 +1,7 @@
 var annotated =
 [
     [ "Flurry", "interface_flurry.html", null ],
+    [ "FlurryCCPA", "interface_flurry_c_c_p_a.html", null ],
     [ "FlurryConsent", "interface_flurry_consent.html", "interface_flurry_consent" ],
     [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", "protocol_flurry_delegate-p" ],
     [ "FlurryMessage", "interface_flurry_message.html", "interface_flurry_message" ],

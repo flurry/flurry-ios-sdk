@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">10.0.0</span>
+   &#160;<span id="projectnumber">10.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -102,63 +102,68 @@ $(document).ready(function(){initNavTree('_flurry_session_builder_8h_source.html
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;FlurryConsent.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;FlurryCCPA.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    FlurryLogLevelNone = 0,         <span class="comment">//No output</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    FlurryLogLevelCriticalOnly,     <span class="comment">//Default, outputs only critical log events</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    FlurryLogLevelDebug,            <span class="comment">//Debug level, outputs critical and main log events</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    FlurryLogLevelAll               <span class="comment">//Highest level, outputs all log events</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} FlurryLogLevel;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    FlurryLogLevelNone = 0,         <span class="comment">//No output</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    FlurryLogLevelCriticalOnly,     <span class="comment">//Default, outputs only critical log events</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    FlurryLogLevelDebug,            <span class="comment">//Debug level, outputs critical and main log events</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    FlurryLogLevelAll               <span class="comment">//Highest level, outputs all log events</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} FlurryLogLevel;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="interface_flurry_session_builder.html">   26</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> : NSObject</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withAppVersion:(NSString *)value;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="interface_flurry_session_builder.html">   30</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> : NSObject</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withDataSaleOptOut:(BOOL)value;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionContinueSeconds:(NSInteger)value;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withCrashReporting:(BOOL)value;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withLogLevel:(FlurryLogLevel) value;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withAppVersion:(NSString *)value;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionContinueSeconds:(NSInteger)value;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withCrashReporting:(BOOL)value;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withShowErrorInLog:(BOOL) value;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withConsent:(<a class="code" href="interface_flurry_consent.html">FlurryConsent</a>*)consent;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withLogLevel:(FlurryLogLevel) value;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withShowErrorInLog:(BOOL) value;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#if !TARGET_OS_WATCH</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIAPReportingEnabled:(BOOL) value;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIncludeBackgroundSessionsInMetrics:(BOOL) value;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOrigin:(NSString*) origin;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginVerion:(NSString*) version;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginParameters:(NSDictionary*) parameters;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionDeeplink:(NSString*) deeplink;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionProperties:(NSDictionary*) properties;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVSessionReportingInterval:(NSInteger) value;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVEventCountThreshold:(NSInteger) value;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withConsent:(<a class="code" href="interface_flurry_consent.html">FlurryConsent</a>*)consent;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIAPReportingEnabled:(BOOL) value;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIncludeBackgroundSessionsInMetrics:(BOOL) value;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOrigin:(NSString*) origin;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginVerion:(NSString*) version;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginParameters:(NSDictionary*) parameters;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionDeeplink:(NSString*) deeplink;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionProperties:(NSDictionary*) properties;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#if TARGET_OS_TV</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVSessionReportingInterval:(NSInteger) value;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;- (<a class="code" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withTVEventCountThreshold:(NSInteger) value;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

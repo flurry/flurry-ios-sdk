@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: FlurryMessage Class Reference</title>
+<title>iOS SDK: FlurryCCPA Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('interface_flurry_message.html','');});
+$(document).ready(function(){initNavTree('interface_flurry_c_c_p_a.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -89,43 +89,73 @@ $(document).ready(function(){initNavTree('interface_flurry_message.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#properties">Properties</a> &#124;
-<a href="class_flurry_message-members.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Class Methods</a> &#124;
+<a href="class_flurry_c_c_p_a-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FlurryMessage Class Reference</div>  </div>
+<div class="title">FlurryCCPA Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a> is a convenience class to access all the properties set on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Message.  
- <a href="interface_flurry_message.html#details">More...</a></p>
-
-<p><code>#import &lt;<a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a>&gt;</code></p>
-
 <p>Inherits NSObject.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a481fc5c004784523330e8b5db5a61681"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a481fc5c004784523330e8b5db5a61681"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
-<tr class="separator:a481fc5c004784523330e8b5db5a61681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5a2f7e7bffda2fd534eb92ca87cf48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf5a2f7e7bffda2fd534eb92ca87cf48"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>body</b></td></tr>
-<tr class="separator:adf5a2f7e7bffda2fd534eb92ca87cf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a1a44d0195608595819aa5416d247a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a1a44d0195608595819aa5416d247a"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>sound</b></td></tr>
-<tr class="separator:a40a1a44d0195608595819aa5416d247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af17339922bfcd0ff91c573b20b39a247"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af17339922bfcd0ff91c573b20b39a247"></a>
-NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>appData</b></td></tr>
-<tr class="separator:af17339922bfcd0ff91c573b20b39a247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Class Methods</h2></td></tr>
+<tr class="memitem:ab6fcc3c7e321f7b4874dcd78407fc9aa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_c_c_p_a.html#ab6fcc3c7e321f7b4874dcd78407fc9aa">setDataSaleOptOut:</a></td></tr>
+<tr class="memdesc:ab6fcc3c7e321f7b4874dcd78407fc9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An api to send ccpa compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the user's choice to opt out or opt in to data sale to third parties.  <a href="#ab6fcc3c7e321f7b4874dcd78407fc9aa">More...</a><br/></td></tr>
+<tr class="separator:ab6fcc3c7e321f7b4874dcd78407fc9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6a4e999df2672054b684d812e4dd8c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_c_c_p_a.html#ace6a4e999df2672054b684d812e4dd8c">setDelete</a></td></tr>
+<tr class="memdesc:ace6a4e999df2672054b684d812e4dd8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An api to allow the user to request <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> delete their collected data from this app.  <a href="#ace6a4e999df2672054b684d812e4dd8c">More...</a><br/></td></tr>
+<tr class="separator:ace6a4e999df2672054b684d812e4dd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="interface_flurry_message.html" title="FlurryMessage is a convenience class to access all the properties set on the Flurry Message...">FlurryMessage</a> is a convenience class to access all the properties set on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> Message. </p>
-<dl class="section since"><dt>Since</dt><dd>8.1.0.rc.1</dd></dl>
-<p>Title - gives the Message title Body - gives the Message body Sound - gives the name of the sound file set on the Message payload AppData - gives the custom &lt;key, value&gt; pairs set on the Message payload </p>
+<div class="textblock">
+<p>Definition at line <a class="el" href="_flurry_c_c_p_a_8h_source.html#l00011">11</a> of file <a class="el" href="_flurry_c_c_p_a_8h_source.html">FlurryCCPA.h</a>.</p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="ab6fcc3c7e321f7b4874dcd78407fc9aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDataSaleOptOut: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>isOptOut</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_flurry_messaging_8h_source.html#l00058">58</a> of file <a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/y/workspace/src/git.ouroath.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_messaging_8h_source.html">FlurryMessaging.h</a></li>
+<p>An api to send ccpa compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the user's choice to opt out or opt in to data sale to third parties. </p>
+<dl class="section since"><dt>Since</dt><dd>10.1.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isOptOut</td><td>boolean true if the user wants to opt out of data sale, the default value is false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace6a4e999df2672054b684d812e4dd8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDelete </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An api to allow the user to request <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> delete their collected data from this app. </p>
+<dl class="section since"><dt>Since</dt><dd>10.1.0 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/y/workspace/src/git.ouroath.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_c_c_p_a_8h_source.html">FlurryCCPA.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
