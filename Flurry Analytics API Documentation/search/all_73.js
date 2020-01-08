@@ -1,6 +1,8 @@
 var searchData=
 [
   ['sessionproperties_3a',['sessionProperties:',['../interface_flurry.html#aa0113a72b10023a2c21e5f06d47e32f6',1,'Flurry']]],
+  ['set_3avalue_3a',['set:value:',['../interface_flurry_user_properties.html#aa049d80ee2766df8657a893a54c5cda3',1,'FlurryUserProperties']]],
+  ['set_3avalues_3a',['set:values:',['../interface_flurry_user_properties.html#a8529b51fb7fd1126107161c19c1fbaa8',1,'FlurryUserProperties']]],
   ['setage_3a',['setAge:',['../interface_flurry.html#a55692f576c987dc0ed73a2ba4aa31710',1,'Flurry']]],
   ['setautointegrationformessaging',['setAutoIntegrationForMessaging',['../interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc',1,'FlurryMessaging']]],
   ['setdatasaleoptout_3a',['setDataSaleOptOut:',['../interface_flurry_c_c_p_a.html#ab6fcc3c7e321f7b4874dcd78407fc9aa',1,'FlurryCCPA']]],
