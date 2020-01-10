@@ -2,6 +2,21 @@
 
 ## Version 10.x
 
+### Version 10.2.0 - 1/08/2020
+
+* New apis for FlurryUserProperties
+    * Added `[FlurryUserProperties set: values:]` 
+    * Added `[FlurryUserProperties set: value:]` 
+    * Added `[FlurryUserProperties add: values:]`
+    * Added `[FlurryUserProperties add: value:]`
+    * Added `[FlurryUserProperties remove: values:]`
+    * Added `[FlurryUserProperties remove: value:]`
+    * Added `[FlurryUserProperties remove:]`
+    * Added `[FlurryUserProperties flag:]`
+    
+* Watchos streaming sdk watchconnectivity bug fix
+* Fixed bug when setCrashReportingEnable:NO
+
 ### Version 10.1.0 - 12/02/2019
 
 * New apis for FlurryCCPA
