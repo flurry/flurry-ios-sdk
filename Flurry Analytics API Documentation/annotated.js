@@ -8,5 +8,6 @@ var annotated =
     [ "FlurryMessaging", "interface_flurry_messaging.html", null ],
     [ "<FlurryMessagingDelegate>", "protocol_flurry_messaging_delegate-p.html", "protocol_flurry_messaging_delegate-p" ],
     [ "FlurrySessionBuilder", "interface_flurry_session_builder.html", "interface_flurry_session_builder" ],
+    [ "FlurryUserProperties", "interface_flurry_user_properties.html", null ],
     [ "FlurryWatch", "interface_flurry_watch.html", null ]
 ];

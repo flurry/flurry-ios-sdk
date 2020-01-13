@@ -7,6 +7,7 @@ var hierarchy =
       [ "FlurryMessage", "interface_flurry_message.html", null ],
       [ "FlurryMessaging", "interface_flurry_messaging.html", null ],
       [ "FlurrySessionBuilder", "interface_flurry_session_builder.html", null ],
+      [ "FlurryUserProperties", "interface_flurry_user_properties.html", null ],
       [ "FlurryWatch", "interface_flurry_watch.html", null ]
     ] ],
     [ "<NSObject>", null, [
