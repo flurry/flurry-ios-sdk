@@ -2,27 +2,34 @@
 
 ## Version 10.x
 
-### Version 10.2.0 - 1/08/2020
+### Version 10.3.0 - 04/13/2020
+
+* Fixed crash caused by Calendar Preferences update
+* Fixed Crash on FlurryWatchConnectivity when running an iPad
+* Fixed crash caused by fetching app state in background thread
+* Fixed crash caused by invalid pointer during URLSession construction
+* Added sanity check for userId to conform to data type String
+
+### Version 10.2.0 - 01/08/2020
 
 * New apis for FlurryUserProperties
-    * Added `[FlurryUserProperties set: values:]` 
-    * Added `[FlurryUserProperties set: value:]` 
+    * Added `[FlurryUserProperties set: values:]`
+    * Added `[FlurryUserProperties set: value:]`
     * Added `[FlurryUserProperties add: values:]`
     * Added `[FlurryUserProperties add: value:]`
     * Added `[FlurryUserProperties remove: values:]`
     * Added `[FlurryUserProperties remove: value:]`
     * Added `[FlurryUserProperties remove:]`
     * Added `[FlurryUserProperties flag:]`
-    
-* Watchos streaming sdk watchconnectivity bug fix
+* WatchOS streaming sdk watchconnectivity bug fix
 * Fixed bug when setCrashReportingEnable:NO
 
 ### Version 10.1.0 - 12/02/2019
 
 * New apis for FlurryCCPA
-    *  Added `[FlurryCCPA withDataSaleOptOut:]` to `FlurrySessionBuilder`
-    * Added `[FlurryCCPA setDataSaleOptOut:]` 
-    * Added `[FlurryCCPA setDelete:]` 
+    * Added `[FlurryCCPA withDataSaleOptOut:]` to `FlurrySessionBuilder`
+    * Added `[FlurryCCPA setDataSaleOptOut:]`
+    * Added `[FlurryCCPA setDelete:]`
 * Made fix for FConfig fetch fail
 * Fixed revenue APIs call back crashes
 * Uses WKWebView for ad display

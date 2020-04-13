@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #if !TARGET_OS_WATCH
-#import <StoreKit/StoreKit.h>
+@class SKPaymentTransaction;
 #endif
 #if TARGET_OS_TV
 @class JSContext;
