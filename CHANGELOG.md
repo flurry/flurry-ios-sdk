@@ -2,6 +2,11 @@
 
 ## Version 10.x
 
+### Version 10.3.1 - 04/23/2020
+
+* Fixed crash when session cold starts
+* Fixed crash on iPad iOS 12.x
+
 ### Version 10.3.0 - 04/13/2020
 
 * Fixed crash caused by Calendar Preferences update

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '10.3.0'
+  s.version          = '10.3.1'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting. Flurry Ads for Native, Full Screen Ads integration'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
       'Flurry/FlurryEmpty.m'
     ]
     ss.ios.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.ios.vendored_libraries = 'Flurry/libFlurry_10.3.0.a'
+    ss.ios.vendored_libraries = 'Flurry/libFlurry_10.3.1.a'
 
     ss.tvos.deployment_target = '9.0'
     ss.tvos.source_files = [
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
       'Flurry/FlurryEmpty.m'
     ]
     ss.tvos.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.tvos.vendored_libraries = 'Flurry/libFlurryTVOS_10.3.0.a'
+    ss.tvos.vendored_libraries = 'Flurry/libFlurryTVOS_10.3.1.a'
 
     ss.watchos.deployment_target = '2.0'
     ss.watchos.source_files = [
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
       'Flurry/FlurryWatchEmpty.m'
     ]
     ss.watchos.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.watchos.vendored_libraries = "Flurry/libFlurryWatch_10.3.0.a"
+    ss.watchos.vendored_libraries = "Flurry/libFlurryWatch_10.3.1.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :ios, '8.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_10.3.0.a"
+    ss.vendored_libraries = "Flurry/libFlurry_10.3.1.a"
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :watchos, '2.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_libraries = "Flurry/libFlurryWatch_10.3.0.a"
+    ss.vendored_libraries = "Flurry/libFlurryWatch_10.3.1.a"
   end
 
   s.subspec 'FlurryTVOS' do |ss|
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
 
     ss.platform   = :tvos, '9.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurryTVOS_10.3.0.a"
+    ss.vendored_libraries = "Flurry/libFlurryTVOS_10.3.1.a"
   end
 
   s.subspec 'FlurryConfig' do |ss|
@@ -113,7 +113,7 @@ Pod::Spec.new do |s|
     ]
 
     ss.platform   = :ios, '8.0'
-    ss.vendored_libraries = "FlurryConfig/libFlurryConfig_10.3.0.a"
+    ss.vendored_libraries = "FlurryConfig/libFlurryConfig_10.3.1.a"
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
@@ -124,15 +124,15 @@ Pod::Spec.new do |s|
     ]
 
     ss.ios.deployment_target = '8.0'
-    ss.ios.vendored_libraries = "FlurryMessaging/libFlurryMessaging_10.3.0.a"
+    ss.ios.vendored_libraries = "FlurryMessaging/libFlurryMessaging_10.3.1.a"
 
     ss.tvos.deployment_target = '9.0'
-    ss.tvos.vendored_libraries = "FlurryMessaging/libFlurryMessagingTV_10.3.0.a"
+    ss.tvos.vendored_libraries = "FlurryMessaging/libFlurryMessagingTV_10.3.1.a"
 
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
-s.subspec 'FlurryAds' do |ss|   
+  s.subspec 'FlurryAds' do |ss|   
     ss.source_files = [   
       'FlurryAds/**/*.h',   
       'FlurryAds/FlurryAdsEmpty.m'    
@@ -142,7 +142,7 @@ s.subspec 'FlurryAds' do |ss|
     ss.frameworks = 'CoreGraphics', 'CoreMedia', 'MediaPlayer', 'AVFoundation', 'CoreTelephony', 'WebKit', 'SystemConfiguration'    
     ss.weak_frameworks = 'AdSupport', 'StoreKit', 'SafariServices'    
     ss.vendored_libraries = 'FlurryAds/libFlurryAds_1.4.1.a'    
-    ss.dependency 'Flurry-iOS-SDK/FlurrySDK',  '~> 10.3.0'  
+    ss.dependency 'Flurry-iOS-SDK/FlurrySDK',  '~> 10.3.1'  
   end
 
 end
