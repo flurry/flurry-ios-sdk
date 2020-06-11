@@ -2,10 +2,16 @@
 
 ## Version 10.x
 
-### Version 10.3.1 - 04/23/2020
+### Version 10.3.2 - 06/11/2020
+* Fixed memory leaks in FlurryDataSender and FlurryDataSenderIndex
+* Fixed crash in FlurryiOSUtil while getting CoreTelephony data
+* Fixed missing launch options when session cold starts from push open using FlurryMessaging
+* Upgraded API levels for various iOS/watchOS frameworks
+
+### Version 10.3.1 - 04/17/2020
 
 * Fixed crash when session cold starts
-* Fixed crash on iPad iOS 12.x
+* Fixed missing set launch options when session cold start from push open
 
 ### Version 10.3.0 - 04/13/2020
 
