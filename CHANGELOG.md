@@ -2,7 +2,13 @@
 
 ## Version 10.x
 
+### Version 10.3.3 - 06/24/2020
+
+* Fixed unarchiving exception with NSSecureCoding conformed
+* Fixed watchOS / iOS SDK connectivity issues
+
 ### Version 10.3.2 - 06/11/2020
+
 * Fixed memory leaks in FlurryDataSender and FlurryDataSenderIndex
 * Fixed crash in FlurryiOSUtil while getting CoreTelephony data
 * Fixed missing launch options when session cold starts from push open using FlurryMessaging
