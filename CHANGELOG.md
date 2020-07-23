@@ -2,6 +2,12 @@
 
 ## Version 10.x
 
+### Version 10.3.4 - 07/23/2020
+
+* Fixed crash analytics issue
+* Fixed crash in App orientation data validation
+* Removed base64 encoded params for error frame
+
 ### Version 10.3.3 - 06/24/2020
 
 * Fixed unarchiving exception with NSSecureCoding conformed
