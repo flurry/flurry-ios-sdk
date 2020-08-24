@@ -8,7 +8,6 @@ var searchData=
   ['flurrymessaging',['FlurryMessaging',['../interface_flurry_messaging.html',1,'']]],
   ['flurrymessagingdelegate_2dp',['FlurryMessagingDelegate-p',['../protocol_flurry_messaging_delegate-p.html',1,'']]],
   ['flurrysessionbuilder',['FlurrySessionBuilder',['../interface_flurry_session_builder.html',1,'']]],
-  ['flurryskadnetwork',['FlurrySKAdNetwork',['../interface_flurry_s_k_ad_network.html',1,'']]],
   ['flurryuserproperties',['FlurryUserProperties',['../interface_flurry_user_properties.html',1,'']]],
   ['flurrywatch',['FlurryWatch',['../interface_flurry_watch.html',1,'']]]
 ];

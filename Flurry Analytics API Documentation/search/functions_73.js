@@ -22,5 +22,6 @@ var searchData=
   ['startsession_3a',['startSession:',['../interface_flurry.html#a400ad85344ff73f9db482e026ef1bd43',1,'Flurry']]],
   ['startsession_3awithoptions_3a',['startSession:withOptions:',['../interface_flurry.html#af294c95eb5a5fa9dd4e6df23ce8a5527',1,'Flurry']]],
   ['startsession_3awithoptions_3awithsessionbuilder_3a',['startSession:withOptions:withSessionBuilder:',['../interface_flurry.html#a6899d62f8c303f8a5ab5a394791cfe27',1,'Flurry']]],
-  ['startsession_3awithsessionbuilder_3a',['startSession:withSessionBuilder:',['../interface_flurry.html#a2e94bb1db305b0c6f9a60cae74c713a2',1,'Flurry']]]
+  ['startsession_3awithsessionbuilder_3a',['startSession:withSessionBuilder:',['../interface_flurry.html#a2e94bb1db305b0c6f9a60cae74c713a2',1,'Flurry']]],
+  ['stoplogpageviewsfortarget_3a',['stopLogPageViewsForTarget:',['../interface_flurry.html#a3c2f3052a52f8fad17313ddf2360b2ad',1,'Flurry']]]
 ];

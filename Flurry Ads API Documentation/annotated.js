@@ -2,7 +2,6 @@ var annotated =
 [
     [ "FlurryAdBanner", "interface_flurry_ad_banner.html", "interface_flurry_ad_banner" ],
     [ "<FlurryAdBannerDelegate>", "protocol_flurry_ad_banner_delegate-p.html", "protocol_flurry_ad_banner_delegate-p" ],
-    [ "FlurryAdConsent", "interface_flurry_ad_consent.html", "interface_flurry_ad_consent" ],
     [ "<FlurryAdDelegate>", "protocol_flurry_ad_delegate-p.html", "protocol_flurry_ad_delegate-p" ],
     [ "FlurryAdInterstitial", "interface_flurry_ad_interstitial.html", "interface_flurry_ad_interstitial" ],
     [ "<FlurryAdInterstitialDelegate>", "protocol_flurry_ad_interstitial_delegate-p.html", "protocol_flurry_ad_interstitial_delegate-p" ],

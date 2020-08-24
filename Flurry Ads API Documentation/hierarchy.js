@@ -1,11 +1,5 @@
 var hierarchy =
 [
-    [ "FlurryAdActor", null, [
-      [ "FlurryAdConsent", "interface_flurry_ad_consent.html", null ]
-    ] ],
-    [ "<IFlurryConsentObserver>", null, [
-      [ "FlurryAdConsent", "interface_flurry_ad_consent.html", null ]
-    ] ],
     [ "<NSObject>", null, [
       [ "FlurryAdBanner", "interface_flurry_ad_banner.html", null ],
       [ "<FlurryAdBannerDelegate>", "protocol_flurry_ad_banner_delegate-p.html", null ],
