@@ -7,6 +7,7 @@ var searchData=
   ['fetchanddisplayadinview_3aviewcontrollerforpresentation_3a',['fetchAndDisplayAdInView:viewControllerForPresentation:',['../interface_flurry_ad_banner.html#a40eca9bc9f5faa460877e89d863643e8',1,'FlurryAdBanner']]],
   ['flurryadbanner',['FlurryAdBanner',['../interface_flurry_ad_banner.html',1,'']]],
   ['flurryadbannerdelegate_2dp',['FlurryAdBannerDelegate-p',['../protocol_flurry_ad_banner_delegate-p.html',1,'']]],
+  ['flurryadconsent',['FlurryAdConsent',['../interface_flurry_ad_consent.html',1,'']]],
   ['flurryaddelegate_2dp',['FlurryAdDelegate-p',['../protocol_flurry_ad_delegate-p.html',1,'']]],
   ['flurryaderror_2eh',['FlurryAdError.h',['../_flurry_ad_error_8h.html',1,'']]],
   ['flurryadinterstitial',['FlurryAdInterstitial',['../interface_flurry_ad_interstitial.html',1,'']]],

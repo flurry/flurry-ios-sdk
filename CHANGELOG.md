@@ -1,11 +1,33 @@
 # Change Log
 
+## Version 11.x
+
+### Version 11.0.0 - 08/24/2020
+
+* Flurry Analytics Support for iOS 14.0, tvOS 14.0, watchOS 7.0
+* Added support for iOS 14 App Tracking Transparency. [See YDN doc here](https://developer.yahoo.com/flurry/docs/analytics/gettingstarted/ios14/att/)
+* Added SKAdNetwork Conversion Value: Publishers can use Flurry to manage & understand Conversion Value. [See Blog Post](https://www.flurry.com/blog/post/626449503277531136/announcing-flurry-conversion-value-analytics-for) and [YDN doc](https://developer.yahoo.com/flurry/docs/analytics/gettingstarted/ios14/SKAdNetwork/) here.
+* New APIs for `FlurrySKAdNetwork`
+    * Added `[FlurrySKAdNetwork flurryUpdateConversionValueWithEvent:]`
+    * Added `[FlurrySKAdNetwork flurryUpdateConversionValue:]`
+* New APIs for `Flurry`
+    * `[Flurry logPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:]`
+* API Deprecations
+    * `[Flurry logPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:]` 
+* API Removals
+    * `[Flurry logAllPageViewsForTarget:]`
+    * `[Flurry stopLogPageViewsForTarget:]`
+    * `[Flurry logPageView]`
+* Fixed bugs in FlurryKVStorage for nested data types
+* Fixed crash on FlurrySignalConnectionTypeDataProvider KVC issue
+
+
 ## Version 10.x
 
 ### Version 10.3.4 - 07/23/2020
 
 * Fixed crash analytics issue
-* Fixed crash in App orientation data validation
+* Fixed App orientation data validation crash
 * Removed base64 encoded params for error frame
 
 ### Version 10.3.3 - 06/24/2020
