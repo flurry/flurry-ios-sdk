@@ -2,6 +2,11 @@
 
 ## Version 11.x
 
+### Version 11.1.0 - 09/15/2020
+
+* Fixed duplicate symbol issue in crash reporter
+* Upgraded APIs level for Interface orientation data source and fixed potential race condition
+
 ### Version 11.0.0 - 08/24/2020
 
 * Flurry Analytics Support for iOS 14.0, tvOS 14.0, watchOS 7.0
