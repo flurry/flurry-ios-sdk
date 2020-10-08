@@ -2,8 +2,11 @@
 
 ## Version 11.x
 
-### Version 11.1.0 - 09/15/2020
+### Version 11.1.1 - 10/08/2020
+* Fixed location source threading warning
+* Potentially fixed interface orientation data source crash
 
+### Version 11.1.0 - 09/15/2020
 * Fixed duplicate symbol issue in crash reporter
 * Upgraded APIs level for Interface orientation data source and fixed potential race condition
 
