@@ -2,17 +2,27 @@
 
 ## Version 11.x
 
+### Version 11.2.1 - 04/06/2021
+
+* Separates xcode11 and xcode 12 builds
+* FlurryMessaging auto integration crash fix
+* Fix UIApplication.endBackgroundTask(_:) risk
+* Fix incorrect crash report stacktrace for log error and exception
+
 ### Version 11.2.0 - 11/30/2020
+
 * Separates xcode11 and xcode 12 builds
 * Symbolication error fix
 * Background sessions fix
 * App orientation crash fix
 
 ### Version 11.1.1 - 10/08/2020
+
 * Fixed location source threading warning
 * Potentially fixed interface orientation data source crash
 
 ### Version 11.1.0 - 09/15/2020
+
 * Fixed duplicate symbol issue in crash reporter
 * Upgraded APIs level for Interface orientation data source and fixed potential race condition
 
