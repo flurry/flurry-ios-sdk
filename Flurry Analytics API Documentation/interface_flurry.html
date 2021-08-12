@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.2.0</span>
+   &#160;<span id="projectnumber">11.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -123,6 +123,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:aa3a7e7cce662daf546bb428eb929ac09"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#aa3a7e7cce662daf546bb428eb929ac09">openPrivacyDashboard:</a></td></tr>
 <tr class="memdesc:aa3a7e7cce662daf546bb428eb929ac09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open privacy dashboard in Safari Browser async with a completion handler callback.  <a href="#aa3a7e7cce662daf546bb428eb929ac09">More...</a><br/></td></tr>
 <tr class="separator:aa3a7e7cce662daf546bb428eb929ac09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619e1b8bc420644fe3783c18b960bc7d"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a619e1b8bc420644fe3783c18b960bc7d">logStandardEvent:withParameters:</a></td></tr>
+<tr class="memdesc:a619e1b8bc420644fe3783c18b960bc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a standard parameterized event specified by <code>eventType</code> with <code>parameters</code>.  <a href="#a619e1b8bc420644fe3783c18b960bc7d">More...</a><br/></td></tr>
+<tr class="separator:a619e1b8bc420644fe3783c18b960bc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Pre-Session Calls</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Optional sdk settings that should be called before start session. </p>
 </div></td></tr>
@@ -247,7 +250,7 @@ Class Methods</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This class provides methods necessary for correct function of <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="https://developer.yahoo.com/flurry/docs/howtos">Support Center - Publishers</a>.</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>4.3.0 </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00118">118</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00138">138</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a90a2dfc96d12fb3b7990e2ff1c6e0da6"></a>
 <div class="memitem">
@@ -1272,6 +1275,58 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a619e1b8bc420644fe3783c18b960bc7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (FlurryEventRecordStatus) logStandardEvent: </td>
+          <td></td>
+          <td class="paramtype">(FlurryEvent)&#160;</td>
+          <td class="paramname"><em>eventType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withParameters:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Records a standard parameterized event specified by <code>eventType</code> with <code>parameters</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>11.3.0</dd></dl>
+<p>This method allows you to log standard events associated with parameters. Parameters are extremely valuable as they allow you to store characteristics of an action. For example, if a user purchased an item (log an purchase event), it may be helpful to know item info (itemName, itemType, itemId, itemCount), and transaction info (price, totalAmount, currency, transactionId) of such events.</p>
+<dl class="section note"><dt>Note</dt><dd>You should not pass private or confidential information about your users in a standard event.</dd></dl>
+<p>A maximum of 10 parameter names may be associated with any event. Sending over 10 parameter names with a single event will result in no parameters being logged for that event.</p>
+<div class="fragment"><div class="line">- (void)someGamingEvent{</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *param = [[[[[[<a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> alloc] init]</div>
+<div class="line">                                setString:<span class="stringliteral">@&quot;Game pro&quot;</span> forParam:[<a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> levelName]]</div>
+<div class="line">                               setInteger:2 forParam:[<a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> levelNumber]]</div>
+<div class="line">                                setString:<span class="stringliteral">@&quot;12345&quot;</span> forKey:<span class="stringliteral">@&quot;userId&quot;</span>]</div>
+<div class="line">                               setInteger:10 forKey:<span class="stringliteral">@&quot;numOfTrials&quot;</span>];</div>
+<div class="line"></div>
+<div class="line">    [<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> logStandardEvent:FLURRY_EVENT_LEVEL_COMPLETED withParameters:param];</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventType</td><td>FlurryEvent enum. </td></tr>
+    <tr><td class="paramname">parameters</td><td>a <a class="el" href="interface_flurry_param.html" title="FlurryParam serves as a generic class for five types of Flurry param keys.">FlurryParam</a> object that stores key-value pairs of a standard parameterized event.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>enum FlurryEventRecordStatus for the recording status of the logged event. </dd></dl>
+
+<p>Provided by category <a class="el" href="category_flurry_07_event_08.html#a619e1b8bc420644fe3783c18b960bc7d">Flurry(Event)</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa3a7e7cce662daf546bb428eb929ac09"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1866,7 +1921,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_20114773/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/Users/sd_builder_32969525/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
