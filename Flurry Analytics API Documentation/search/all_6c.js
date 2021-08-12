@@ -1,6 +1,9 @@
 var searchData=
 [
   ['leavebreadcrumb_3a',['leaveBreadcrumb:',['../interface_flurry.html#a0a687cef2243c35cd9254bcc1aefb9e8',1,'Flurry']]],
+  ['levelname',['levelName',['../interface_flurry_param_builder.html#aa13f1f7b93a7263fa07fd6d8c7725680',1,'FlurryParamBuilder']]],
+  ['levelnumber',['levelNumber',['../interface_flurry_param_builder.html#a4dd63e449b23a429dc5407021915a676',1,'FlurryParamBuilder']]],
+  ['liketype',['likeType',['../interface_flurry_param_builder.html#a3e1d7369b3a3ee46efb08a104db263ae',1,'FlurryParamBuilder']]],
   ['logerror_3amessage_3aerror_3a',['logError:message:error:',['../interface_flurry.html#ae4e1963ff2c6ad658311a6920014d036',1,'Flurry']]],
   ['logerror_3amessage_3aerror_3awithparameters_3a',['logError:message:error:withParameters:',['../interface_flurry.html#ae4566512c574b54fa3dec4fe5b5a4b6f',1,'Flurry']]],
   ['logerror_3amessage_3aexception_3a',['logError:message:exception:',['../interface_flurry.html#a98c1ff91136a4b966d3acf1d83022993',1,'Flurry']]],
@@ -13,6 +16,7 @@ var searchData=
   ['logflurrypaymenttransactionparamswithtransactionid_3aproductid_3aquantity_3aprice_3acurrency_3aproductname_3atransactionstate_3auserdefinedparams_3astatuscallback_3a',['logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:',['../interface_flurry.html#a92fac7019218edf89cd1b8c5380f52ad',1,'Flurry']]],
   ['logpaymenttransaction_3astatuscallback_3a',['logPaymentTransaction:statusCallback:',['../interface_flurry.html#aa16d83cf9e0e1112bbd68e5ffb1649c4',1,'Flurry']]],
   ['logpaymenttransactionparamswithtransactionid_3aproductid_3aquantity_3aprice_3acurrency_3aproductname_3atransactionstate_3auserdefinedparams_3astatuscallback_3a',['logPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:',['../interface_flurry.html#a002840eaa680722db66a57ce2224e723',1,'Flurry']]],
+  ['logstandardevent_3awithparameters_3a',['logStandardEvent:withParameters:',['../category_flurry_07_event_08.html#a619e1b8bc420644fe3783c18b960bc7d',1,'Flurry(Event)::logStandardEvent:withParameters:()'],['../interface_flurry.html#a619e1b8bc420644fe3783c18b960bc7d',1,'Flurry::logStandardEvent:withParameters:()']]],
   ['logwatchevent_3a',['logWatchEvent:',['../interface_flurry_watch.html#acbdf8e279783520d7d7668ade376bca7',1,'FlurryWatch']]],
   ['logwatchevent_3awithparameters_3a',['logWatchEvent:withParameters:',['../interface_flurry_watch.html#a88317d5a6bf8f22065bd0a93ea464720',1,'FlurryWatch']]]
 ];

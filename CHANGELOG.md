@@ -2,6 +2,12 @@
 
 ## Version 11.x
 
+### Version 11.3.0 - 08/12/2021
+
+* You asked for standard events and we are here to tell you, you are getting them! Standard Events help you track standardized actions that users take within your app – for example, making a purchase, adding a social comment, or clicking on an Ad. We are taking the guess work out on what to call the events and what parameters to pass in by providing an API to seamlessly log all of these standard actions within your app. 
+
+* Fix missing crash report on tvOS SDK
+
 ### Version 11.2.1 - 04/06/2021
 
 * Separates xcode11 and xcode 12 builds
