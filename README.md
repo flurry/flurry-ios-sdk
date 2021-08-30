@@ -127,7 +127,16 @@ Use this to log normal events and timed events in your app.
   // Timed events
   Flurry.logEvent("Event", withParameters: ["Key": "Value"], timed: true)
   Flurry.endTimedEvent("Event", withParameters: ["Key": "Value"])
+  
+  // Standard events
+  let param = FlurryParamBuilder()
+      .setDouble(34.99, for: FlurryParamBuilder.totalAmount())
+      .setBoolean(true, for: FlurryParamBuilder.success())
+      .setString("book 1", for: FlurryParamBuilder.itemName())
+      .setString("This is an awesome book to purchase !!!", forKey: "note")
+  Flurry.logStandardEvent(FlurryEvent.FLURRY_EVENT_PURCHASED, withParameters: param)
   ```
+  Please see our [sample project here](https://github.com/flurry/iOS-StandardEventSample).
 
 * watchOS
 
