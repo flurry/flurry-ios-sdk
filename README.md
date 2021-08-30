@@ -182,6 +182,6 @@ Flurry.addOrigin("ORIGIN_NAME", withVersion: "ORIGIN_VERSION", withParameters: [
 
 ## License
 
-Copyright 2019 Flurry by Verizon Media
+Copyright (c) 2021 Yahoo.
 
 This project is licensed under the terms of the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) open source license. Please refer to [LICENSE](LICENSE) for the full terms. Your use of Flurry is governed by [Flurry Terms of Service](https://developer.yahoo.com/flurry/legal-privacy/terms-service/).
