@@ -25,12 +25,12 @@ Please choose the closest item by replacing `[ ]` with `[x]`.
 Please choose the platform(s) that you are having the issue by replacing `[ ]` with `[x]`.
 - [ ] iOS
 - [ ] tvOS
-- [ ] WatchOS
+- [ ] watchOS
 
 **Environment**
 Please tell us the versions of Flurry SDK, XCode, and iOS you are using. 
 * Flurry SDK:
-* XCode:
+* Xcode:
 * iOS:
 
 **To Reproduce**
