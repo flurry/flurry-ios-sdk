@@ -1,8 +1,9 @@
 //
 //  FlurrySKAdNetwork.h
-//  SingularAdvertiserSampleApp
+//  Flurry
 //
 //  Created by Hunter Hays on 7/22/20.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,12 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FlurrySKAdNetwork : NSObject
 
 typedef NS_ENUM(NSUInteger, FlurryConversionValueEventType) {
-NoEvent = 0, //0000
-Registration = 1, //0001
-Login, //0010
-Subscription, //0100
-InAppPurchase // 1000
-
+    NoEvent = 0,
+    Registration,
+    Login,
+    Subscription,
+    InAppPurchase,
 };
 
 /*!

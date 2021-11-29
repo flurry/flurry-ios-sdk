@@ -2,7 +2,7 @@
 //  Flurry.h
 //  Flurry iOS Analytics Agent
 //
-//  Copyright 2016 Flurry, Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 //	Methods in this header file are for use with Flurry Analytics
 
@@ -19,16 +19,16 @@
 /*!
  *  @brief Enum for payment transaction state
  */
-typedef enum {
+typedef NS_ENUM(NSUInteger, FlurryPaymentTransactionState) {
     FlurryPaymentTransactionStatePurchasing = 0,
     FlurryPaymentTransactionStateSuccess = 1,
     FlurryPaymentTransactionStateFailure = 2,
     FlurryPaymentTransactionStateRestored = 3,
     FlurryPaymentTransactionStateDeferred = 4
-} FlurryPaymentTransactionState;
+};
 
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, FlurryEventRecordStatus) {
     FlurryEventFailed = 0,
     FlurryEventRecorded,
     FlurryEventUniqueCountExceeded,
@@ -37,7 +37,7 @@ typedef enum {
     FlurryEventLoggingDelayed,
     FlurryEventAnalyticsDisabled,
     FlurryEventParametersMismatched
-} FlurryEventRecordStatus;
+};
 
 
 /*!
@@ -46,27 +46,26 @@ typedef enum {
  *
  */
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, FlurrySyndicationEvent){
     FlurrySyndicationReblog      = 0,
     FlurrySyndicationFastReblog  = 1,
     FlurrySyndicationSourceClick = 2,
     FlurrySyndicationLike        = 3,
     FlurrySyndicationShareClick  = 4,
     FlurrySyndicationPostSend    = 5
-    
-}FlurrySyndicationEvent;
+};
 
 extern NSString* _Nonnull const kSyndicationiOSDeepLink;
 extern NSString* _Nonnull const kSyndicationAndroidDeepLink;
 extern NSString* _Nonnull const kSyndicationWebDeepLink;
 
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, FlurryTransactionRecordStatus) {
     FlurryTransactionRecordFailed = 0,
     FlurryTransactionRecorded,
     FlurryTransactionRecordExceeded,
     FlurryTransactionRecodingDisabled
-} FlurryTransactionRecordStatus;
+};
 
 #if !TARGET_OS_WATCH
 
@@ -874,6 +873,7 @@ typedef enum {
  *  @brief Records Apple store IAP transaction params and user defined transaction params manually.
  *  @since 11.0.0
  *
+ *  @deprecated since 12.0.0
  *  @param transactionId a string Id for this IAP transaction
  *  @param productId a string Id for this IAP transaction product
  *  @param quantity an integer representation of quantity of items purchased
@@ -894,8 +894,33 @@ typedef enum {
                                                 productName:(nonnull NSString *)productName
                                            transactionState:(FlurryPaymentTransactionState)transactionState
                                           userDefinedParams:(nullable NSDictionary *)transactionParams
-                                             statusCallback:(nullable void(^)(FlurryTransactionRecordStatus))statusCallback;
+                                             statusCallback:(nullable void(^)(FlurryTransactionRecordStatus))statusCallback __attribute__((deprecated("use +logPaymentTransactionWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:")));
 
+/*!
+ *  @brief Records Apple store IAP transaction params and user defined transaction params manually.
+ *  @since 11.4.0
+ *
+ *  @param transactionId a string Id for this IAP transaction
+ *  @param productId a string Id for this IAP transaction product
+ *  @param quantity an integer representation of quantity of items purchased
+ *  @param price a float representation of price of the item
+ *  @param currency a string representation of currency of the transaction
+ *  @param productName a string representation of product name
+ *  @param transactionState an enum to convert transaction state to integer: 0:Purchasing, 1:Success, 2:Failure, 3:Restored, 4:Deferred
+ *  @param transactionParams a dictionary of user defined transaction params to record
+ *  @param statusCallback a callback gettign called when the status of ID that is associated with the event
+ *
+ */
+
++ (void) logPaymentTransactionWithTransactionId:(nonnull NSString *)transactionId
+                                                  productId:(nonnull NSString *)productId
+                                                   quantity:(NSUInteger)quantity
+                                                      price:(double)price
+                                                   currency:(nonnull NSString *)currency
+                                                productName:(nonnull NSString *)productName
+                                           transactionState:(FlurryPaymentTransactionState)transactionState
+                                          userDefinedParams:(nullable NSDictionary *)transactionParams
+                                             statusCallback:(nullable void(^)(FlurryTransactionRecordStatus))statusCallback;
 
 #pragma mark - Timed Event Logging
 
@@ -1295,6 +1320,43 @@ typedef enum {
 + (void)fetch;
 
 #endif
+
+/*!
+ *  @brief Explicitly specifies the App Version that Flurry will use to group Analytics data.
+ *  @since 11.4.0
+ *
+ *  This is a method that overrides the App Version Flurry uses for reporting. Flurry will
+ *  use the CFBundleVersion in your info.plist file when this method is not invoked.
+ *
+ *  @note There is a maximum of 605 versions allowed for a single app.
+ *
+ *  @param version The custom version name.
+ */
++ (void)setAppVersion:(nonnull NSString *)version;
+
+/*!
+ *  @brief Set the timeout for expiring a Flurry session.
+ *  @since 11.4.0
+ *
+ *  This is a method that sets the time the app may be in the background before
+ *  starting a new session upon resume.  The default value for the session timeout is 10
+ *  seconds in the background.
+ *
+ *  @param seconds The time in seconds to set the session timeout to.
+ */
+
++ (void)setSessionContinueSeconds:(int)seconds;
+
+/*!
+ *  @brief Enables opting out of background sessions being counted towards total sessions.
+ *  @since 11.4.0
+ *
+ *  @param value @c NO to opt out of counting background sessions towards total sessions.
+ *  The default value for the session is @c YES
+ */
+
++ (void)setCountBackgroundSessions:(BOOL)value;
+
 @end
 
 #endif

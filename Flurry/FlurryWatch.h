@@ -2,7 +2,7 @@
 //  FlurryWatch.h
 //  Flurry iOS Analytics Agent
 //
-//  Copyright 2009-2015 Flurry, Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 //	Methods in this header file are for use with Flurry Analytics
 

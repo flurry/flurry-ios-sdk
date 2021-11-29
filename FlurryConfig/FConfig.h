@@ -2,8 +2,8 @@
 //  FConfig.h
 //  Flurry
 //
-//  Created by  Mark Cwalinski on 1/18/17.
-//  Copyright © 2017 Flurry. All rights reserved.
+//  Created by Mark Cwalinski on 1/18/17.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

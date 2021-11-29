@@ -3,7 +3,7 @@
 //  Flurry
 //
 //  Created by Ishwarya Iyer on 4/2/18.
-//  Copyright © 2018 Flurry Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

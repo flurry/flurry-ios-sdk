@@ -2,6 +2,23 @@
 
 ## Version 11.x
 
+### Version 11.4.0 - 11/29/2021
+
+* Introduced drop rule for user property
+* Added new APIs for `Flurry`
+    * Add new manual payment log API `[Flurry logPaymentTransactionWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:]`
+    * Add new setter APIs
+        * Add `[Flurry setAppVersion:]`
+        * Add `[Flurry setSessionContinueSeconds:]`
+        * Add `[Flurry setCountBackgroundSessions:]`
+* API deprecations
+    * `[Flurry logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:]`
+    
+* Fixed publisher segmentation registering internal listener during initialization
+* Fixed FlurryConfig memory leaks during initialization
+* Update Copyright (c) 2021 Yahoo
+
+    
 ### Version 11.3.0 - 08/12/2021
 
 * You asked for standard events and we are here to tell you, you are getting them! Standard Events help you track standardized actions that users take within your app – for example, making a purchase, adding a social comment, or clicking on an Ad. We are taking the guess work out on what to call the events and what parameters to pass in by providing an API to seamlessly log all of these standard actions within your app. 

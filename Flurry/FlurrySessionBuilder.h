@@ -3,7 +3,7 @@
 //  Flurry
 //
 //  Created by Akshay Bhandary on 7/14/16.
-//  Copyright © 2016 Flurry Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,12 +16,12 @@
  *  @since 4.2.0
  *
  */
-typedef enum {
-    FlurryLogLevelNone = 0,         //No output
-    FlurryLogLevelCriticalOnly,     //Default, outputs only critical log events
-    FlurryLogLevelDebug,            //Debug level, outputs critical and main log events
-    FlurryLogLevelAll               //Highest level, outputs all log events
-} FlurryLogLevel;
+typedef NS_ENUM(NSUInteger, FlurryLogLevel){
+    FlurryLogLevelNone = 0,         // No output
+    FlurryLogLevelCriticalOnly,     // Default, outputs only critical log events
+    FlurryLogLevelDebug,            // Debug level, outputs critical and main log events
+    FlurryLogLevelAll               // Highest level, outputs all log events
+};
 
 
 #if !TARGET_OS_WATCH
@@ -30,12 +30,11 @@ typedef enum {
 @interface FlurrySessionBuilder : NSObject
 
 /*!
-*@brief An api to send ccpa compliance data to Flurry on the user's choice to opt out or opt in to data sale to third parties.
-*   @since 10.1.0
-*
-*
-* @param value  boolean true if the user wants to opt out of data sale, the default value is false
-*/
+ *  @brief An api to send ccpa compliance data to Flurry on the user's choice to opt out or opt in to data sale to third parties.
+ *  @since 10.1.0
+ *
+ *  @param value  boolean true if the user wants to opt out of data sale, the default value is false
+ */
 
 - (FlurrySessionBuilder*) withDataSaleOptOut:(BOOL)value;
 

@@ -3,7 +3,7 @@
 //  Flurry
 //
 //  Created by Hunter Hays on 9/5/19.
-//  Copyright © 2019 Oath Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

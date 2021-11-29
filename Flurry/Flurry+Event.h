@@ -1,10 +1,10 @@
 //
 //  Flurry+Event.h
-//  Flurry iOS Analytics Agent
+//  Flurry
 //
-//  Copyright 2021 Flurry, Inc. All rights reserved.
+//  Copyright (c) 2021 Yahoo. All rights reserved.
 //
-//    Methods in this header file are for use with Flurry Analytics
+//  Methods in this header file are for use with Flurry Analytics
 
 #import <Foundation/Foundation.h>
 #import "Flurry.h"
