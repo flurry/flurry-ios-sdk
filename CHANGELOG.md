@@ -16,7 +16,7 @@
     
 * Fixed publisher segmentation registering internal listener during initialization
 * Fixed FlurryConfig memory leaks during initialization
-* Changed all public enum to NS_ENUM for better swift compatibility (for swift developers, need to call enum family name dot enum name)
+* Changed all public enum to NS_ENUM for better swift compatibility
 * Update Copyright (c) 2021 Yahoo
 
     
