@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.3.0</span>
+   &#160;<span id="projectnumber">11.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -123,6 +123,15 @@ Class Methods</h2></td></tr>
 <tr class="memitem:aa3a7e7cce662daf546bb428eb929ac09"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#aa3a7e7cce662daf546bb428eb929ac09">openPrivacyDashboard:</a></td></tr>
 <tr class="memdesc:aa3a7e7cce662daf546bb428eb929ac09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open privacy dashboard in Safari Browser async with a completion handler callback.  <a href="#aa3a7e7cce662daf546bb428eb929ac09">More...</a><br/></td></tr>
 <tr class="separator:aa3a7e7cce662daf546bb428eb929ac09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960d178414ddac8120f32865a3b9cb6e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a960d178414ddac8120f32865a3b9cb6e">setAppVersion:</a></td></tr>
+<tr class="memdesc:a960d178414ddac8120f32865a3b9cb6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly specifies the App Version that <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use to group Analytics data.  <a href="#a960d178414ddac8120f32865a3b9cb6e">More...</a><br/></td></tr>
+<tr class="separator:a960d178414ddac8120f32865a3b9cb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b79d4d804074f4b66f3434d9318ceee"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a1b79d4d804074f4b66f3434d9318ceee">setSessionContinueSeconds:</a></td></tr>
+<tr class="memdesc:a1b79d4d804074f4b66f3434d9318ceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout for expiring a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a1b79d4d804074f4b66f3434d9318ceee">More...</a><br/></td></tr>
+<tr class="separator:a1b79d4d804074f4b66f3434d9318ceee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ba8180040d5efb0b6506446665588b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a08ba8180040d5efb0b6506446665588b">setCountBackgroundSessions:</a></td></tr>
+<tr class="memdesc:a08ba8180040d5efb0b6506446665588b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables opting out of background sessions being counted towards total sessions.  <a href="#a08ba8180040d5efb0b6506446665588b">More...</a><br/></td></tr>
+<tr class="separator:a08ba8180040d5efb0b6506446665588b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619e1b8bc420644fe3783c18b960bc7d"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a619e1b8bc420644fe3783c18b960bc7d">logStandardEvent:withParameters:</a></td></tr>
 <tr class="memdesc:a619e1b8bc420644fe3783c18b960bc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a standard parameterized event specified by <code>eventType</code> with <code>parameters</code>.  <a href="#a619e1b8bc420644fe3783c18b960bc7d">More...</a><br/></td></tr>
 <tr class="separator:a619e1b8bc420644fe3783c18b960bc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,9 +225,12 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a002840eaa680722db66a57ce2224e723"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a002840eaa680722db66a57ce2224e723">logPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:</a></td></tr>
 <tr class="memdesc:a002840eaa680722db66a57ce2224e723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records Apple store IAP transaction params and user defined transaction params manually.  <a href="#a002840eaa680722db66a57ce2224e723">More...</a><br/></td></tr>
 <tr class="separator:a002840eaa680722db66a57ce2224e723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92fac7019218edf89cd1b8c5380f52ad"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a92fac7019218edf89cd1b8c5380f52ad">logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:</a></td></tr>
-<tr class="memdesc:a92fac7019218edf89cd1b8c5380f52ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records Apple store IAP transaction params and user defined transaction params manually.  <a href="#a92fac7019218edf89cd1b8c5380f52ad">More...</a><br/></td></tr>
-<tr class="separator:a92fac7019218edf89cd1b8c5380f52ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab59063c1aa796eb7662fc02924bddf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#aeab59063c1aa796eb7662fc02924bddf">logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:</a></td></tr>
+<tr class="memdesc:aeab59063c1aa796eb7662fc02924bddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records Apple store IAP transaction params and user defined transaction params manually.  <a href="#aeab59063c1aa796eb7662fc02924bddf">More...</a><br/></td></tr>
+<tr class="separator:aeab59063c1aa796eb7662fc02924bddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae020f786a24e3daf4f4c1e52fe83b386"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ae020f786a24e3daf4f4c1e52fe83b386">logPaymentTransactionWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:</a></td></tr>
+<tr class="memdesc:ae020f786a24e3daf4f4c1e52fe83b386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records Apple store IAP transaction params and user defined transaction params manually.  <a href="#ae020f786a24e3daf4f4c1e52fe83b386">More...</a><br/></td></tr>
+<tr class="separator:ae020f786a24e3daf4f4c1e52fe83b386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7150b0e95faa309b8d1ab98b75fe8e8"><td class="memItemLeft" align="right" valign="top">(FlurryEventRecordStatus)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ae7150b0e95faa309b8d1ab98b75fe8e8">logEvent:timed:</a></td></tr>
 <tr class="memdesc:ae7150b0e95faa309b8d1ab98b75fe8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a timed event specified by <code>eventName</code>.  <a href="#ae7150b0e95faa309b8d1ab98b75fe8e8">More...</a><br/></td></tr>
 <tr class="separator:ae7150b0e95faa309b8d1ab98b75fe8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +262,7 @@ Class Methods</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This class provides methods necessary for correct function of <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="https://developer.yahoo.com/flurry/docs/howtos">Support Center - Publishers</a>.</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>4.3.0 </dd></dl>
 
-<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00138">138</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
+<p>Definition at line <a class="el" href="_flurry_8h_source.html#l00137">137</a> of file <a class="el" href="_flurry_8h_source.html">Flurry.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a90a2dfc96d12fb3b7990e2ff1c6e0da6"></a>
 <div class="memitem">
@@ -1072,7 +1084,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a92fac7019218edf89cd1b8c5380f52ad"></a>
+<a class="anchor" id="aeab59063c1aa796eb7662fc02924bddf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1122,13 +1134,7 @@ Class Methods</h2></td></tr>
           <td class="paramkey">userDefinedParams:</td>
           <td></td>
           <td class="paramtype">(nullable NSDictionary *)&#160;</td>
-          <td class="paramname"><em>transactionParams</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">statusCallback:</td>
-          <td></td>
-          <td class="paramtype">(FlurryTransactionRecordStatus)&#160;</td>
-          <td class="paramname"><em>statusCallback</em>&#160;</td>
+          <td class="paramname"><em>transactionParams</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1140,6 +1146,7 @@ Class Methods</h2></td></tr>
 
 <p>Records Apple store IAP transaction params and user defined transaction params manually. </p>
 <dl class="section since"><dt>Since</dt><dd>11.0.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>since 12.0.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transactionId</td><td>a string Id for this IAP transaction </td></tr>
@@ -1267,6 +1274,91 @@ Class Methods</h2></td></tr>
     <tr><td class="paramname">currency</td><td>a string representation of currency of the transaction </td></tr>
     <tr><td class="paramname">productName</td><td>a string representation of product name </td></tr>
     <tr><td class="paramname">transactionState</td><td>a string representation of 0 - 4 representing transaction state: 0:Purchasing, 1:Success, 2:Failure, 3:Restored, 4:Deferred </td></tr>
+    <tr><td class="paramname">transactionParams</td><td>a dictionary of user defined transaction params to record </td></tr>
+    <tr><td class="paramname">statusCallback</td><td>a callback gettign called when the status of ID that is associated with the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae020f786a24e3daf4f4c1e52fe83b386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) logPaymentTransactionWithTransactionId: </td>
+          <td></td>
+          <td class="paramtype">(nonnull NSString *)&#160;</td>
+          <td class="paramname"><em>transactionId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">productId:</td>
+          <td></td>
+          <td class="paramtype">(nonnull NSString *)&#160;</td>
+          <td class="paramname"><em>productId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">quantity:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>quantity</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">price:</td>
+          <td></td>
+          <td class="paramtype">(double)&#160;</td>
+          <td class="paramname"><em>price</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">currency:</td>
+          <td></td>
+          <td class="paramtype">(nonnull NSString *)&#160;</td>
+          <td class="paramname"><em>currency</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">productName:</td>
+          <td></td>
+          <td class="paramtype">(nonnull NSString *)&#160;</td>
+          <td class="paramname"><em>productName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">transactionState:</td>
+          <td></td>
+          <td class="paramtype">(FlurryPaymentTransactionState)&#160;</td>
+          <td class="paramname"><em>transactionState</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">userDefinedParams:</td>
+          <td></td>
+          <td class="paramtype">(nullable NSDictionary *)&#160;</td>
+          <td class="paramname"><em>transactionParams</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">statusCallback:</td>
+          <td></td>
+          <td class="paramtype">(FlurryTransactionRecordStatus)&#160;</td>
+          <td class="paramname"><em>statusCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Records Apple store IAP transaction params and user defined transaction params manually. </p>
+<dl class="section since"><dt>Since</dt><dd>11.4.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transactionId</td><td>a string Id for this IAP transaction </td></tr>
+    <tr><td class="paramname">productId</td><td>a string Id for this IAP transaction product </td></tr>
+    <tr><td class="paramname">quantity</td><td>an integer representation of quantity of items purchased </td></tr>
+    <tr><td class="paramname">price</td><td>a float representation of price of the item </td></tr>
+    <tr><td class="paramname">currency</td><td>a string representation of currency of the transaction </td></tr>
+    <tr><td class="paramname">productName</td><td>a string representation of product name </td></tr>
+    <tr><td class="paramname">transactionState</td><td>an enum to convert transaction state to integer: 0:Purchasing, 1:Success, 2:Failure, 3:Restored, 4:Deferred </td></tr>
     <tr><td class="paramname">transactionParams</td><td>a dictionary of user defined transaction params to record </td></tr>
     <tr><td class="paramname">statusCallback</td><td>a callback gettign called when the status of ID that is associated with the event </td></tr>
   </table>
@@ -1444,6 +1536,58 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a960d178414ddac8120f32865a3b9cb6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setAppVersion: </td>
+          <td></td>
+          <td class="paramtype">(nonnull NSString *)&#160;</td>
+          <td class="paramname"><em>version</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Explicitly specifies the App Version that <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use to group Analytics data. </p>
+<dl class="section since"><dt>Since</dt><dd>11.4.0</dd></dl>
+<p>This is a method that overrides the App Version <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> uses for reporting. <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use the CFBundleVersion in your info.plist file when this method is not invoked.</p>
+<dl class="section note"><dt>Note</dt><dd>There is a maximum of 605 versions allowed for a single app.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td>The custom version name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a08ba8180040d5efb0b6506446665588b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setCountBackgroundSessions: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>value</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables opting out of background sessions being counted towards total sessions. </p>
+<dl class="section since"><dt>Since</dt><dd>11.4.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td><code>NO</code> to opt out of counting background sessions towards total sessions. The default value for the session is <code>YES</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a61bc2e34ff1feff35bf25fe9f5e5f580"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1581,6 +1725,32 @@ Class Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>Log level </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b79d4d804074f4b66f3434d9318ceee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setSessionContinueSeconds: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>seconds</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the timeout for expiring a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session. </p>
+<dl class="section since"><dt>Since</dt><dd>11.4.0</dd></dl>
+<p>This is a method that sets the time the app may be in the background before starting a new session upon resume. The default value for the session timeout is 10 seconds in the background.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seconds</td><td>The time in seconds to set the session timeout to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1921,7 +2091,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_32969525/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
