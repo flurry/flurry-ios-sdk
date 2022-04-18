@@ -71,7 +71,7 @@ To use FlurrySDK for tvOS apps:
 
 ```ruby
 target 'Your tvOS Application' do
-  platform :tvos, '9.0'
+  platform :tvos, '10.0'
   pod 'Flurry-iOS-SDK/FlurrySDK'
 end
 ```
@@ -84,8 +84,8 @@ pod 'Flurry-iOS-SDK/FlurryMessaging'
 
 ## Requirements
 
-* iOS 8.0+
-* tvOS 9.0+
+* iOS 10.0+
+* tvOS 10.0+
 * watchOS 1.0+
 
 ## Examples

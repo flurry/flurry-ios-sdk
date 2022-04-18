@@ -1,8 +1,30 @@
 # Change Log
 
+## Version 12.x
+
+### Version 12.0.0 - 04/18/2022
+
+* Introduced the XCFramework in our build pipeline to replace legacy static library 
+* Enhanced the minimum deployment target to iOS 10.0, tvOS 10.0, macOS 11.0, and watchOS 3.0
+* Introduced `NS_SWIFT_NAME()` in header file for re-defining all external Flurry APIs and enums in swift
+
+* APIs removed :
+    * [Flurry setSessionReportsOnCloseEnabled:]
+    * [Flurry setSessionReportsOnPauseEnabled:]
+    * [Flurry logPaymentTransactionParamsWithTransactionId:productId:currency:productName:transactionState:userDefinedParams:statusCallback:]
+    
+    * [Flurry logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:]
+* Fixed the background session reporting issue that caused long session duration
+* Fixed `FlurryConsent` crashes
+    
+    
+
+
+
+
 ## Version 11.x
 
-### Version 11.4.0 - 11/29/2021
+### Version 11.4.0 - 11/10/2021
 
 * Introduced drop rule for user property
 * Added new APIs for `Flurry`
@@ -16,7 +38,6 @@
     
 * Fixed publisher segmentation registering internal listener during initialization
 * Fixed FlurryConfig memory leaks during initialization
-* Changed all public enum to NS_ENUM for better swift compatibility
 * Update Copyright (c) 2021 Yahoo
 
     
