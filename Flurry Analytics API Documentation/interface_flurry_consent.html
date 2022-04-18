@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_consent.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('interface_flurry_consent.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_consent.html">FlurryConsent</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_consent.html#aa8b918945304a9195a4a07f5b2ab7bf9">initWithGDPRScope:andConsentStrings:</a></td></tr>
-<tr class="memdesc:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this api to initialize the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object.  <a href="#aa8b918945304a9195a4a07f5b2ab7bf9">More...</a><br/></td></tr>
-<tr class="separator:aa8b918945304a9195a4a07f5b2ab7bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69c4d609056e8d5dbe3cf5ea9c0cefb"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_consent.html#ad69c4d609056e8d5dbe3cf5ea9c0cefb">initWithGDPRScope:andConsentStrings:</a></td></tr>
+<tr class="memdesc:ad69c4d609056e8d5dbe3cf5ea9c0cefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this api to initialize the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object.  <a href="#ad69c4d609056e8d5dbe3cf5ea9c0cefb">More...</a><br/></td></tr>
+<tr class="separator:ad69c4d609056e8d5dbe3cf5ea9c0cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -147,26 +147,16 @@ NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>consentStri
 
 </div>
 </div>
-<a class="anchor" id="aa8b918945304a9195a4a07f5b2ab7bf9"></a>
+<a class="anchor" id="ad69c4d609056e8d5dbe3cf5ea9c0cefb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="interface_flurry_consent.html">FlurryConsent</a>*) initWithGDPRScope: </td>
+          <td class="memname">- (instancetype) initWithGDPRScope: </td>
           <td></td>
           <td class="paramtype">(BOOL)&#160;</td>
           <td class="paramname"><em>isGDPRScope</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">andConsentStrings:</td>
           <td></td>
-          <td class="paramtype">(NSDictionary *)&#160;</td>
-          <td class="paramname"><em>consentStrings</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +194,7 @@ ConsentStrings must be provided if "isGDPRScope" is set to YES for the consent i
 <p>Use this api to register/update the consent information with the SDK. </p>
 <dl class="section since"><dt>Since</dt><dd>8.5.0</dd></dl>
 <p>This api can be called anytime to pass the consent information to the SDK.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_session_builder.html#ac37e7e5acf5b073b518ab2ca3e33d0c8" title="Registers the consent information with the SDK. Consent information is used to determine if the gdpr ...">- withConsent: (FlurrySessionBuilder)</a> to register the consent before starting <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. <br/>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_session_builder.html#a4438f18346806d4a63d516e1abb444fb" title="Registers the consent information with the SDK. Consent information is used to determine if the gdpr ...">- withConsent: (FlurrySessionBuilder)</a> to register the consent before starting <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. <br/>
  FlurryConsent::initWithGDPRScope:andConsentStrings to create the <a class="el" href="interface_flurry_consent.html">FlurryConsent</a> object</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -217,7 +207,7 @@ ConsentStrings must be provided if "isGDPRScope" is set to YES for the consent i
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_consent_8h_source.html">FlurryConsent.h</a></li>
+<li>/Users/sd_builder_43497419/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_consent_8h_source.html">FlurryConsent.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

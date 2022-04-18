@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_param_builder.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,42 +110,42 @@ Instance Methods</h2></td></tr>
 &lt; NSString *, NSString * &gt; *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#abf50cfe6c3555138253305f8781a33f9">parameters</a></td></tr>
 <tr class="memdesc:abf50cfe6c3555138253305f8781a33f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters map object for logging the standard events.  <a href="#abf50cfe6c3555138253305f8781a33f9">More...</a><br/></td></tr>
 <tr class="separator:abf50cfe6c3555138253305f8781a33f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0150fa29b934f96b8203f9d1da6cf829"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a0150fa29b934f96b8203f9d1da6cf829">setString:forKey:</a></td></tr>
-<tr class="memdesc:a0150fa29b934f96b8203f9d1da6cf829"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a string value for a user defined key  <a href="#a0150fa29b934f96b8203f9d1da6cf829">More...</a><br/></td></tr>
-<tr class="separator:a0150fa29b934f96b8203f9d1da6cf829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaba980b8142d62ef89004b13bc076b9"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#acaba980b8142d62ef89004b13bc076b9">setString:forParam:</a></td></tr>
-<tr class="memdesc:acaba980b8142d62ef89004b13bc076b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a string value for a flurry param key  <a href="#acaba980b8142d62ef89004b13bc076b9">More...</a><br/></td></tr>
-<tr class="separator:acaba980b8142d62ef89004b13bc076b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd6f8da3cd0136a8ca554be2c34b7f5"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#aadd6f8da3cd0136a8ca554be2c34b7f5">setInteger:forKey:</a></td></tr>
-<tr class="memdesc:aadd6f8da3cd0136a8ca554be2c34b7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an int value for a used defined key  <a href="#aadd6f8da3cd0136a8ca554be2c34b7f5">More...</a><br/></td></tr>
-<tr class="separator:aadd6f8da3cd0136a8ca554be2c34b7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0658036725d8646087fb963d9693c5"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a3e0658036725d8646087fb963d9693c5">setInteger:forParam:</a></td></tr>
-<tr class="memdesc:a3e0658036725d8646087fb963d9693c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an int value for a flurry param key  <a href="#a3e0658036725d8646087fb963d9693c5">More...</a><br/></td></tr>
-<tr class="separator:a3e0658036725d8646087fb963d9693c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a265e5f6130b1796f54b7fc2c50ee86d3"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a265e5f6130b1796f54b7fc2c50ee86d3">setLong:forKey:</a></td></tr>
-<tr class="memdesc:a265e5f6130b1796f54b7fc2c50ee86d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a long value for a user defined key  <a href="#a265e5f6130b1796f54b7fc2c50ee86d3">More...</a><br/></td></tr>
-<tr class="separator:a265e5f6130b1796f54b7fc2c50ee86d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c8cc2348b89ce0ccd8c7f2a711fe77"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#ab2c8cc2348b89ce0ccd8c7f2a711fe77">setLong:forParam:</a></td></tr>
-<tr class="memdesc:ab2c8cc2348b89ce0ccd8c7f2a711fe77"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a long value for a flurry param key  <a href="#ab2c8cc2348b89ce0ccd8c7f2a711fe77">More...</a><br/></td></tr>
-<tr class="separator:ab2c8cc2348b89ce0ccd8c7f2a711fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a038d324af19884d60ec9b31e8ecf4822"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a038d324af19884d60ec9b31e8ecf4822">setBoolean:forKey:</a></td></tr>
-<tr class="memdesc:a038d324af19884d60ec9b31e8ecf4822"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a boolean value for a user defined key  <a href="#a038d324af19884d60ec9b31e8ecf4822">More...</a><br/></td></tr>
-<tr class="separator:a038d324af19884d60ec9b31e8ecf4822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43157e28aabb5a43e832d2ea07da7c17"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a43157e28aabb5a43e832d2ea07da7c17">setBoolean:forParam:</a></td></tr>
-<tr class="memdesc:a43157e28aabb5a43e832d2ea07da7c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a boolean value for a flurry param key  <a href="#a43157e28aabb5a43e832d2ea07da7c17">More...</a><br/></td></tr>
-<tr class="separator:a43157e28aabb5a43e832d2ea07da7c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebd65704fa70f5ae64948d44ffe17bd"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a1ebd65704fa70f5ae64948d44ffe17bd">setDouble:forKey:</a></td></tr>
-<tr class="memdesc:a1ebd65704fa70f5ae64948d44ffe17bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a double value for a user defined key  <a href="#a1ebd65704fa70f5ae64948d44ffe17bd">More...</a><br/></td></tr>
-<tr class="separator:a1ebd65704fa70f5ae64948d44ffe17bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad42f371ff627548d61d0001258473cc1"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#ad42f371ff627548d61d0001258473cc1">setDouble:forParam:</a></td></tr>
-<tr class="memdesc:ad42f371ff627548d61d0001258473cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a double value for a flurry param key  <a href="#ad42f371ff627548d61d0001258473cc1">More...</a><br/></td></tr>
-<tr class="separator:ad42f371ff627548d61d0001258473cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7d2a181bfae1e7e97d4e0c9966f591"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#abc7d2a181bfae1e7e97d4e0c9966f591">removeObjectForKey:</a></td></tr>
-<tr class="memdesc:abc7d2a181bfae1e7e97d4e0c9966f591"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the value for a specified key (user-defined key or flurry param key)  <a href="#abc7d2a181bfae1e7e97d4e0c9966f591">More...</a><br/></td></tr>
-<tr class="separator:abc7d2a181bfae1e7e97d4e0c9966f591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107c440ba5148c1946b7932276ed8569"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a107c440ba5148c1946b7932276ed8569">setAll:</a></td></tr>
-<tr class="memdesc:a107c440ba5148c1946b7932276ed8569"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a standard event parameter by parsing a <a class="el" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> object  <a href="#a107c440ba5148c1946b7932276ed8569">More...</a><br/></td></tr>
-<tr class="separator:a107c440ba5148c1946b7932276ed8569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952495dc2086c7aa82c31a962a9a7820"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a952495dc2086c7aa82c31a962a9a7820">setString:forKey:</a></td></tr>
+<tr class="memdesc:a952495dc2086c7aa82c31a962a9a7820"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a string value for a user defined key  <a href="#a952495dc2086c7aa82c31a962a9a7820">More...</a><br/></td></tr>
+<tr class="separator:a952495dc2086c7aa82c31a962a9a7820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f78444bc598e7cb942eb387ee83065"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a04f78444bc598e7cb942eb387ee83065">setString:forParam:</a></td></tr>
+<tr class="memdesc:a04f78444bc598e7cb942eb387ee83065"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a string value for a flurry param key  <a href="#a04f78444bc598e7cb942eb387ee83065">More...</a><br/></td></tr>
+<tr class="separator:a04f78444bc598e7cb942eb387ee83065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df7f9e1a41c26d950659c2cb27db72d"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a1df7f9e1a41c26d950659c2cb27db72d">setInteger:forKey:</a></td></tr>
+<tr class="memdesc:a1df7f9e1a41c26d950659c2cb27db72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an int value for a used defined key  <a href="#a1df7f9e1a41c26d950659c2cb27db72d">More...</a><br/></td></tr>
+<tr class="separator:a1df7f9e1a41c26d950659c2cb27db72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33dd5d6339cb89ec51fe9b870a81b79a"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a33dd5d6339cb89ec51fe9b870a81b79a">setInteger:forParam:</a></td></tr>
+<tr class="memdesc:a33dd5d6339cb89ec51fe9b870a81b79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an int value for a flurry param key  <a href="#a33dd5d6339cb89ec51fe9b870a81b79a">More...</a><br/></td></tr>
+<tr class="separator:a33dd5d6339cb89ec51fe9b870a81b79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2750c593dabbcd5e4c5f413e5d310df"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#ac2750c593dabbcd5e4c5f413e5d310df">setLong:forKey:</a></td></tr>
+<tr class="memdesc:ac2750c593dabbcd5e4c5f413e5d310df"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a long value for a user defined key  <a href="#ac2750c593dabbcd5e4c5f413e5d310df">More...</a><br/></td></tr>
+<tr class="separator:ac2750c593dabbcd5e4c5f413e5d310df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7618770e956ee14984a14a33e11895fa"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a7618770e956ee14984a14a33e11895fa">setLong:forParam:</a></td></tr>
+<tr class="memdesc:a7618770e956ee14984a14a33e11895fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a long value for a flurry param key  <a href="#a7618770e956ee14984a14a33e11895fa">More...</a><br/></td></tr>
+<tr class="separator:a7618770e956ee14984a14a33e11895fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d5116422d856003ab531efc37f19a9"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a57d5116422d856003ab531efc37f19a9">setBoolean:forKey:</a></td></tr>
+<tr class="memdesc:a57d5116422d856003ab531efc37f19a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a boolean value for a user defined key  <a href="#a57d5116422d856003ab531efc37f19a9">More...</a><br/></td></tr>
+<tr class="separator:a57d5116422d856003ab531efc37f19a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d89bba562c88c4a2eab1d2f4fd2bf2"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a10d89bba562c88c4a2eab1d2f4fd2bf2">setBoolean:forParam:</a></td></tr>
+<tr class="memdesc:a10d89bba562c88c4a2eab1d2f4fd2bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a boolean value for a flurry param key  <a href="#a10d89bba562c88c4a2eab1d2f4fd2bf2">More...</a><br/></td></tr>
+<tr class="separator:a10d89bba562c88c4a2eab1d2f4fd2bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c475683713f0493aae18ebae9aefd9f"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a7c475683713f0493aae18ebae9aefd9f">setDouble:forKey:</a></td></tr>
+<tr class="memdesc:a7c475683713f0493aae18ebae9aefd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a double value for a user defined key  <a href="#a7c475683713f0493aae18ebae9aefd9f">More...</a><br/></td></tr>
+<tr class="separator:a7c475683713f0493aae18ebae9aefd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41bfb7b846ae4a37a78ffdae53e5af0"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#ac41bfb7b846ae4a37a78ffdae53e5af0">setDouble:forParam:</a></td></tr>
+<tr class="memdesc:ac41bfb7b846ae4a37a78ffdae53e5af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a double value for a flurry param key  <a href="#ac41bfb7b846ae4a37a78ffdae53e5af0">More...</a><br/></td></tr>
+<tr class="separator:ac41bfb7b846ae4a37a78ffdae53e5af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95325d739b9dbbccd78016886b348ba6"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a95325d739b9dbbccd78016886b348ba6">removeObjectForKey:</a></td></tr>
+<tr class="memdesc:a95325d739b9dbbccd78016886b348ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the value for a specified key (user-defined key or flurry param key)  <a href="#a95325d739b9dbbccd78016886b348ba6">More...</a><br/></td></tr>
+<tr class="separator:a95325d739b9dbbccd78016886b348ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84af64e9b9907e19305fc847d233de13"><td class="memItemLeft" align="right" valign="top">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_param_builder.html#a84af64e9b9907e19305fc847d233de13">setAll:</a></td></tr>
+<tr class="memdesc:a84af64e9b9907e19305fc847d233de13"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a standard event parameter by parsing a <a class="el" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> object  <a href="#a84af64e9b9907e19305fc847d233de13">More...</a><br/></td></tr>
+<tr class="separator:a84af64e9b9907e19305fc847d233de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -863,15 +863,14 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abc7d2a181bfae1e7e97d4e0c9966f591"></a>
+<a class="anchor" id="a95325d739b9dbbccd78016886b348ba6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *) removeObjectForKey: </td>
           <td></td>
-          <td class="paramtype">(nonnull id)&#160;</td>
-          <td class="paramname"><em>key</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -928,15 +927,14 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a107c440ba5148c1946b7932276ed8569"></a>
+<a class="anchor" id="a84af64e9b9907e19305fc847d233de13"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *) setAll: </td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_param_builder.html">FlurryParamBuilder</a> *)&#160;</td>
-          <td class="paramname"><em>param</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -948,7 +946,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a038d324af19884d60ec9b31e8ecf4822"></a>
+<a class="anchor" id="a57d5116422d856003ab531efc37f19a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -957,17 +955,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(BOOL)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forKey:</td>
           <td></td>
-          <td class="paramtype">(nonnull NSString *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -978,7 +966,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a43157e28aabb5a43e832d2ea07da7c17"></a>
+<a class="anchor" id="a10d89bba562c88c4a2eab1d2f4fd2bf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -987,17 +975,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(BOOL)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forParam:</td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_boolean_param.html">FlurryBooleanParam</a> *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1008,7 +986,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1ebd65704fa70f5ae64948d44ffe17bd"></a>
+<a class="anchor" id="a7c475683713f0493aae18ebae9aefd9f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1017,17 +995,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(double)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forKey:</td>
           <td></td>
-          <td class="paramtype">(nonnull NSString *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1038,7 +1006,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad42f371ff627548d61d0001258473cc1"></a>
+<a class="anchor" id="ac41bfb7b846ae4a37a78ffdae53e5af0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1047,17 +1015,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(double)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forParam:</td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_double_param.html">FlurryDoubleParam</a> *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1068,7 +1026,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aadd6f8da3cd0136a8ca554be2c34b7f5"></a>
+<a class="anchor" id="a1df7f9e1a41c26d950659c2cb27db72d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1077,17 +1035,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(int)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forKey:</td>
           <td></td>
-          <td class="paramtype">(nonnull NSString *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1098,7 +1046,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3e0658036725d8646087fb963d9693c5"></a>
+<a class="anchor" id="a33dd5d6339cb89ec51fe9b870a81b79a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1107,17 +1055,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(int)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forParam:</td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_integer_param.html">FlurryIntegerParam</a> *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1128,7 +1066,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a265e5f6130b1796f54b7fc2c50ee86d3"></a>
+<a class="anchor" id="ac2750c593dabbcd5e4c5f413e5d310df"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1137,17 +1075,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(long)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forKey:</td>
           <td></td>
-          <td class="paramtype">(nonnull NSString *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1158,7 +1086,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2c8cc2348b89ce0ccd8c7f2a711fe77"></a>
+<a class="anchor" id="a7618770e956ee14984a14a33e11895fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1167,17 +1095,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(long)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forParam:</td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_long_param.html">FlurryLongParam</a> *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1188,7 +1106,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0150fa29b934f96b8203f9d1da6cf829"></a>
+<a class="anchor" id="a952495dc2086c7aa82c31a962a9a7820"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1197,17 +1115,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(nonnull NSString *)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forKey:</td>
           <td></td>
-          <td class="paramtype">(nonnull NSString *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1218,7 +1126,7 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acaba980b8142d62ef89004b13bc076b9"></a>
+<a class="anchor" id="a04f78444bc598e7cb942eb387ee83065"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1227,17 +1135,7 @@ Class Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(nonnull NSString *)&#160;</td>
           <td class="paramname"><em>val</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">forParam:</td>
           <td></td>
-          <td class="paramtype">(nonnull <a class="el" href="interface_flurry_string_param.html">FlurryStringParam</a> *)&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1429,7 +1327,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_09_event_8h_source.html">Flurry+Event.h</a></li>
+<li>/Users/sd_builder_43497419/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_09_event_8h_source.html">Flurry+Event.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

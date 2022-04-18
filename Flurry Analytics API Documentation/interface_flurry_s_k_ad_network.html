@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_s_k_ad_network.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,10 +90,10 @@ $(document).ready(function(){initNavTree('interface_flurry_s_k_ad_network.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Class Methods</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_flurry_s_k_ad_network-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FlurrySKAdNetwork Class Reference</div>  </div>
+<div class="title">FlurrySKAdNetwork Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -102,29 +102,31 @@ $(document).ready(function(){initNavTree('interface_flurry_s_k_ad_network.html',
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a7a6bb9e465b65bb81926ccd04a906e49"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_s_k_ad_network.html#a7a6bb9e465b65bb81926ccd04a906e49">flurryUpdateConversionValueWithEvent:</a></td></tr>
-<tr class="memdesc:a7a6bb9e465b65bb81926ccd04a906e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this api to allow <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> to set your conversion value. The final conversion value is a decimal number between 0-63. The conversion value is calculated from a 6 bit binary number. The first two bits represent days of user retention from 0-3 days The last four bits represent a true false state indicating if the user has completed the post install event.  <a href="#a7a6bb9e465b65bb81926ccd04a906e49">More...</a><br/></td></tr>
+<tr class="memdesc:a7a6bb9e465b65bb81926ccd04a906e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this api to allow <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> to set your conversion value.  <a href="#a7a6bb9e465b65bb81926ccd04a906e49">More...</a><br/></td></tr>
 <tr class="separator:a7a6bb9e465b65bb81926ccd04a906e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf19f1b8790f5dd98da7f6ca7978b62"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry_s_k_ad_network.html#abdf19f1b8790f5dd98da7f6ca7978b62">flurryUpdateConversionValue:</a></td></tr>
 <tr class="memdesc:abdf19f1b8790f5dd98da7f6ca7978b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this api to send your conversion value to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>. You must calculate the conversion value yourself.  <a href="#abdf19f1b8790f5dd98da7f6ca7978b62">More...</a><br/></td></tr>
 <tr class="separator:abdf19f1b8790f5dd98da7f6ca7978b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a240379e26250e109aba7ed364f867a6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a240379e26250e109aba7ed364f867a6f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NoEvent</b> = 0</td></tr>
-<tr class="separator:a240379e26250e109aba7ed364f867a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07e43054e623ee0b9decb0dda52270f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa07e43054e623ee0b9decb0dda52270f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Registration</b></td></tr>
-<tr class="separator:aa07e43054e623ee0b9decb0dda52270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e111fbecf3ec4e447506d1fcca5d18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6e111fbecf3ec4e447506d1fcca5d18"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Login</b></td></tr>
-<tr class="separator:ad6e111fbecf3ec4e447506d1fcca5d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b97c29d3189c770b4be743bf9fb63c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5b97c29d3189c770b4be743bf9fb63c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Subscription</b></td></tr>
-<tr class="separator:ae5b97c29d3189c770b4be743bf9fb63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9c2c61f2f10ff8a5fac4c7b3933cc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a9c2c61f2f10ff8a5fac4c7b3933cc1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InAppPurchase</b></td></tr>
-<tr class="separator:a8a9c2c61f2f10ff8a5fac4c7b3933cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3d380f96734703847dfe60ab7574234e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d380f96734703847dfe60ab7574234e"></a>
+(NoEvent)&#160;</td><td class="memItemRight" valign="bottom">- <b>NS_SWIFT_NAME</b></td></tr>
+<tr class="separator:a3d380f96734703847dfe60ab7574234e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f000a8d13531c9681cf8b2eed086fce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f000a8d13531c9681cf8b2eed086fce"></a>
+(NoEvent Registration)&#160;</td><td class="memItemRight" valign="bottom">- <b>NS_SWIFT_NAME</b></td></tr>
+<tr class="separator:a0f000a8d13531c9681cf8b2eed086fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1a446894a28458883af0a1e8a3136c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c1a446894a28458883af0a1e8a3136c"></a>
+(NoEvent Registration Login)&#160;</td><td class="memItemRight" valign="bottom">- <b>NS_SWIFT_NAME</b></td></tr>
+<tr class="separator:a8c1a446894a28458883af0a1e8a3136c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d1793f4f772b425466670318e1d42f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8d1793f4f772b425466670318e1d42f"></a>
+(NoEvent Registration Login <br class="typebreak"/>
+Subscription)&#160;</td><td class="memItemRight" valign="bottom">- <b>NS_SWIFT_NAME</b></td></tr>
+<tr class="separator:aa8d1793f4f772b425466670318e1d42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608f2bcd296d619eeedcf32a46868c59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a608f2bcd296d619eeedcf32a46868c59"></a>
+(NoEvent Registration Login <br class="typebreak"/>
+Subscription InAppPurchase)&#160;</td><td class="memItemRight" valign="bottom">- <b>NS_SWIFT_NAME</b></td></tr>
+<tr class="separator:a608f2bcd296d619eeedcf32a46868c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -167,7 +169,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Call this api to allow <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> to set your conversion value. The final conversion value is a decimal number between 0-63. The conversion value is calculated from a 6 bit binary number. The first two bits represent days of user retention from 0-3 days The last four bits represent a true false state indicating if the user has completed the post install event. </p>
+<p>Call this api to allow <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> to set your conversion value. </p>
+<p>The final conversion value is a decimal number between 0-63. The conversion value is calculated from a 6 bit binary number. The first two bits represent days of user retention from 0-3 days The last four bits represent a true false state indicating if the user has completed the post install event.</p>
 <dl class="section since"><dt>Since</dt><dd>11.0.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -179,7 +182,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_s_k_ad_network_8h_source.html">FlurrySKAdNetwork.h</a></li>
+<li>/Users/sd_builder_43497419/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_s_k_ad_network_8h_source.html">FlurrySKAdNetwork.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

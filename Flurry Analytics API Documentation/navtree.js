@@ -1,7 +1,15 @@
 var NAVTREE =
 [
   [ "iOS SDK", "index.html", [
-    [ "Deprecated List", "deprecated.html", null ],
+    [ "Plausible Crash Reporter", "index.html", "index" ],
+    [ "Mach Exceptions on Mac OS X and iOS", "mach_exceptions.html", [
+      [ "Compatibility Issues", "mach_exceptions.html#mach_exceptions_compatibility", [
+        [ "Debuggers", "mach_exceptions.html#Debuggers", null ],
+        [ "Runtimes (Xamarin, Unity)", "mach_exceptions.html#Managed", null ]
+      ] ],
+      [ "Mach Exceptions on iOS", "mach_exceptions.html#mach_exceptions_ios", null ]
+    ] ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -19,7 +27,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_flurry_09_event_8h_source.html"
+"_crash_reporter_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

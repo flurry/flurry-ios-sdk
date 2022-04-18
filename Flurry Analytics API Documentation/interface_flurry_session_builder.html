@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_session_builder.html'
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,62 +100,61 @@ $(document).ready(function(){initNavTree('interface_flurry_session_builder.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:aaf31925cb9685dea4bf1e698c61fe855"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#aaf31925cb9685dea4bf1e698c61fe855">withDataSaleOptOut:</a></td></tr>
-<tr class="memdesc:aaf31925cb9685dea4bf1e698c61fe855"><td class="mdescLeft">&#160;</td><td class="mdescRight">An api to send ccpa compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the user's choice to opt out or opt in to data sale to third parties.  <a href="#aaf31925cb9685dea4bf1e698c61fe855">More...</a><br/></td></tr>
-<tr class="separator:aaf31925cb9685dea4bf1e698c61fe855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759df1999a1212d59b7153cc7524da6e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a759df1999a1212d59b7153cc7524da6e">withAppVersion:</a></td></tr>
-<tr class="memdesc:a759df1999a1212d59b7153cc7524da6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly specifies the App Version that <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use to group Analytics data.  <a href="#a759df1999a1212d59b7153cc7524da6e">More...</a><br/></td></tr>
-<tr class="separator:a759df1999a1212d59b7153cc7524da6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8910aefa70cc2f76cc5b21ed6c34ef"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a1c8910aefa70cc2f76cc5b21ed6c34ef">withSessionContinueSeconds:</a></td></tr>
-<tr class="memdesc:a1c8910aefa70cc2f76cc5b21ed6c34ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout for expiring a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a1c8910aefa70cc2f76cc5b21ed6c34ef">More...</a><br/></td></tr>
-<tr class="separator:a1c8910aefa70cc2f76cc5b21ed6c34ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf13ca5dd0d60d56d2619982a3b06f6"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a8bf13ca5dd0d60d56d2619982a3b06f6">withCrashReporting:</a></td></tr>
-<tr class="memdesc:a8bf13ca5dd0d60d56d2619982a3b06f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatic collection of crash reports.  <a href="#a8bf13ca5dd0d60d56d2619982a3b06f6">More...</a><br/></td></tr>
-<tr class="separator:a8bf13ca5dd0d60d56d2619982a3b06f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac891dc68740af34d6aad9098981e1cd0"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ac891dc68740af34d6aad9098981e1cd0">withLogLevel:</a></td></tr>
-<tr class="memdesc:ac891dc68740af34d6aad9098981e1cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates debug logs to console.  <a href="#ac891dc68740af34d6aad9098981e1cd0">More...</a><br/></td></tr>
-<tr class="separator:ac891dc68740af34d6aad9098981e1cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23c59d06218aba6cd9e4700d7a3564f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ad23c59d06218aba6cd9e4700d7a3564f">withShowErrorInLog:</a></td></tr>
-<tr class="memdesc:ad23c59d06218aba6cd9e4700d7a3564f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays an exception in the debug log if thrown during a Session.  <a href="#ad23c59d06218aba6cd9e4700d7a3564f">More...</a><br/></td></tr>
-<tr class="separator:ad23c59d06218aba6cd9e4700d7a3564f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ac37e7e5acf5b073b518ab2ca3e33d0c8">withConsent:</a></td></tr>
-<tr class="memdesc:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the consent information with the SDK. Consent information is used to determine if the gdpr laws are applicable.  <a href="#ac37e7e5acf5b073b518ab2ca3e33d0c8">More...</a><br/></td></tr>
-<tr class="separator:ac37e7e5acf5b073b518ab2ca3e33d0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a1dc8f27408ae2e4a95b073bffbe1af19">withIAPReportingEnabled:</a></td></tr>
-<tr class="memdesc:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables implicit recording of Apple Store transactions.  <a href="#a1dc8f27408ae2e4a95b073bffbe1af19">More...</a><br/></td></tr>
-<tr class="separator:a1dc8f27408ae2e4a95b073bffbe1af19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c65e0c2424750c857eb8b2426cd6916"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a4c65e0c2424750c857eb8b2426cd6916">withIncludeBackgroundSessionsInMetrics:</a></td></tr>
-<tr class="memdesc:a4c65e0c2424750c857eb8b2426cd6916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables opting out of background sessions being counted towards total sessions.  <a href="#a4c65e0c2424750c857eb8b2426cd6916">More...</a><br/></td></tr>
-<tr class="separator:a4c65e0c2424750c857eb8b2426cd6916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6966b4334e2983b09c7cbfd16600fdaa"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a6966b4334e2983b09c7cbfd16600fdaa">withSessionOrigin:</a></td></tr>
-<tr class="memdesc:a6966b4334e2983b09c7cbfd16600fdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session Origin for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a6966b4334e2983b09c7cbfd16600fdaa">More...</a><br/></td></tr>
-<tr class="separator:a6966b4334e2983b09c7cbfd16600fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931fd74d9844df1e566a91902af5c666"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a931fd74d9844df1e566a91902af5c666">withSessionOriginVerion:</a></td></tr>
-<tr class="memdesc:a931fd74d9844df1e566a91902af5c666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session Origin Version for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a931fd74d9844df1e566a91902af5c666">More...</a><br/></td></tr>
-<tr class="separator:a931fd74d9844df1e566a91902af5c666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ca9b361ff20ae66aa37ea9581cf11d"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a11ca9b361ff20ae66aa37ea9581cf11d">withSessionOriginParameters:</a></td></tr>
-<tr class="memdesc:a11ca9b361ff20ae66aa37ea9581cf11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session OriginSets Paramters for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a11ca9b361ff20ae66aa37ea9581cf11d">More...</a><br/></td></tr>
-<tr class="separator:a11ca9b361ff20ae66aa37ea9581cf11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7516b74a19f8bc5b757bf325ecdab19a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a7516b74a19f8bc5b757bf325ecdab19a">withSessionDeeplink:</a></td></tr>
-<tr class="memdesc:a7516b74a19f8bc5b757bf325ecdab19a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Deeplink for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a7516b74a19f8bc5b757bf325ecdab19a">More...</a><br/></td></tr>
-<tr class="separator:a7516b74a19f8bc5b757bf325ecdab19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751e0ddb8bfdf5be6cc617d9f6c460fe"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a751e0ddb8bfdf5be6cc617d9f6c460fe">withSessionProperties:</a></td></tr>
-<tr class="memdesc:a751e0ddb8bfdf5be6cc617d9f6c460fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session properties for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a751e0ddb8bfdf5be6cc617d9f6c460fe">More...</a><br/></td></tr>
-<tr class="separator:a751e0ddb8bfdf5be6cc617d9f6c460fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e0359373a5e6049f6970288c451ea0"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ab1e0359373a5e6049f6970288c451ea0">withDataSaleOptOut:</a></td></tr>
+<tr class="memdesc:ab1e0359373a5e6049f6970288c451ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An api to send ccpa compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the user's choice to opt out or opt in to data sale to third parties.  <a href="#ab1e0359373a5e6049f6970288c451ea0">More...</a><br/></td></tr>
+<tr class="separator:ab1e0359373a5e6049f6970288c451ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50bcf41cbcb931873744a90a261d2a8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ae50bcf41cbcb931873744a90a261d2a8">withAppVersion:</a></td></tr>
+<tr class="memdesc:ae50bcf41cbcb931873744a90a261d2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly specifies the App Version that <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> will use to group Analytics data.  <a href="#ae50bcf41cbcb931873744a90a261d2a8">More...</a><br/></td></tr>
+<tr class="separator:ae50bcf41cbcb931873744a90a261d2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fd1c6863b983d625feeed03efbf607"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a44fd1c6863b983d625feeed03efbf607">withSessionContinueSeconds:</a></td></tr>
+<tr class="memdesc:a44fd1c6863b983d625feeed03efbf607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout for expiring a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a44fd1c6863b983d625feeed03efbf607">More...</a><br/></td></tr>
+<tr class="separator:a44fd1c6863b983d625feeed03efbf607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca208d93d31eea36a467f5c1bde849e8"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#aca208d93d31eea36a467f5c1bde849e8">withCrashReporting:</a></td></tr>
+<tr class="memdesc:aca208d93d31eea36a467f5c1bde849e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatic collection of crash reports.  <a href="#aca208d93d31eea36a467f5c1bde849e8">More...</a><br/></td></tr>
+<tr class="separator:aca208d93d31eea36a467f5c1bde849e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad378c9c2f91f61a3583925af739a5e52"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ad378c9c2f91f61a3583925af739a5e52">withLogLevel:</a></td></tr>
+<tr class="memdesc:ad378c9c2f91f61a3583925af739a5e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates debug logs to console.  <a href="#ad378c9c2f91f61a3583925af739a5e52">More...</a><br/></td></tr>
+<tr class="separator:ad378c9c2f91f61a3583925af739a5e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21944536978f049bd9825528e65bf19a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a21944536978f049bd9825528e65bf19a">withShowErrorInLog:</a></td></tr>
+<tr class="memdesc:a21944536978f049bd9825528e65bf19a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays an exception in the debug log if thrown during a Session.  <a href="#a21944536978f049bd9825528e65bf19a">More...</a><br/></td></tr>
+<tr class="separator:a21944536978f049bd9825528e65bf19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4438f18346806d4a63d516e1abb444fb"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a4438f18346806d4a63d516e1abb444fb">withConsent:</a></td></tr>
+<tr class="memdesc:a4438f18346806d4a63d516e1abb444fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the consent information with the SDK. Consent information is used to determine if the gdpr laws are applicable.  <a href="#a4438f18346806d4a63d516e1abb444fb">More...</a><br/></td></tr>
+<tr class="separator:a4438f18346806d4a63d516e1abb444fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16bf637490a652025c1439c4708872a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ab16bf637490a652025c1439c4708872a">withIAPReportingEnabled:</a></td></tr>
+<tr class="memdesc:ab16bf637490a652025c1439c4708872a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables implicit recording of Apple Store transactions.  <a href="#ab16bf637490a652025c1439c4708872a">More...</a><br/></td></tr>
+<tr class="separator:ab16bf637490a652025c1439c4708872a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc0241cf653983f50776b1e1dfc2ad6"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#abfc0241cf653983f50776b1e1dfc2ad6">withIncludeBackgroundSessionsInMetrics:</a></td></tr>
+<tr class="memdesc:abfc0241cf653983f50776b1e1dfc2ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables opting out of background sessions being counted towards total sessions.  <a href="#abfc0241cf653983f50776b1e1dfc2ad6">More...</a><br/></td></tr>
+<tr class="separator:abfc0241cf653983f50776b1e1dfc2ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5319cddcea108aa422d126277a376067"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a5319cddcea108aa422d126277a376067">withSessionOrigin:</a></td></tr>
+<tr class="memdesc:a5319cddcea108aa422d126277a376067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session Origin for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a5319cddcea108aa422d126277a376067">More...</a><br/></td></tr>
+<tr class="separator:a5319cddcea108aa422d126277a376067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae552c2424468fa1abd6efd2aa195cf9a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#ae552c2424468fa1abd6efd2aa195cf9a">withSessionOriginVerion:</a></td></tr>
+<tr class="memdesc:ae552c2424468fa1abd6efd2aa195cf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session Origin Version for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#ae552c2424468fa1abd6efd2aa195cf9a">More...</a><br/></td></tr>
+<tr class="separator:ae552c2424468fa1abd6efd2aa195cf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29f5da864212249d252ec3e68f2bf8c"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#af29f5da864212249d252ec3e68f2bf8c">withSessionOriginParameters:</a></td></tr>
+<tr class="memdesc:af29f5da864212249d252ec3e68f2bf8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session OriginSets Paramters for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#af29f5da864212249d252ec3e68f2bf8c">More...</a><br/></td></tr>
+<tr class="separator:af29f5da864212249d252ec3e68f2bf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0121f4d4854234725d6f5c46dd61d5"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#aca0121f4d4854234725d6f5c46dd61d5">withSessionDeeplink:</a></td></tr>
+<tr class="memdesc:aca0121f4d4854234725d6f5c46dd61d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Deeplink for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#aca0121f4d4854234725d6f5c46dd61d5">More...</a><br/></td></tr>
+<tr class="separator:aca0121f4d4854234725d6f5c46dd61d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1050bc2ece9b7565f276d7438f546c0e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_session_builder.html#a1050bc2ece9b7565f276d7438f546c0e">withSessionProperties:</a></td></tr>
+<tr class="memdesc:a1050bc2ece9b7565f276d7438f546c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Session properties for the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session.  <a href="#a1050bc2ece9b7565f276d7438f546c0e">More...</a><br/></td></tr>
+<tr class="separator:a1050bc2ece9b7565f276d7438f546c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_flurry_session_builder_8h_source.html#l00030">30</a> of file <a class="el" href="_flurry_session_builder_8h_source.html">FlurrySessionBuilder.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a759df1999a1212d59b7153cc7524da6e"></a>
+<a class="anchor" id="ae50bcf41cbcb931873744a90a261d2a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withAppVersion: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -174,15 +173,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac37e7e5acf5b073b518ab2ca3e33d0c8"></a>
+<a class="anchor" id="a4438f18346806d4a63d516e1abb444fb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withConsent: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_flurry_consent.html">FlurryConsent</a> *)&#160;</td>
-          <td class="paramname"><em>consent</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -198,19 +196,18 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd>(<a class="el" href="interface_flurry_consent.html#aa8b918945304a9195a4a07f5b2ab7bf9" title="Use this api to initialize the FlurryConsent object.">- initWithGDPRScope:andConsentStrings: (FlurryConsent)</a>) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>(<a class="el" href="interface_flurry_consent.html#ad69c4d609056e8d5dbe3cf5ea9c0cefb" title="Use this api to initialize the FlurryConsent object.">- initWithGDPRScope:andConsentStrings: (FlurryConsent)</a>) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8bf13ca5dd0d60d56d2619982a3b06f6"></a>
+<a class="anchor" id="aca208d93d31eea36a467f5c1bde849e8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withCrashReporting: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -228,15 +225,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf31925cb9685dea4bf1e698c61fe855"></a>
+<a class="anchor" id="ab1e0359373a5e6049f6970288c451ea0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withDataSaleOptOut: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -253,15 +249,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1dc8f27408ae2e4a95b073bffbe1af19"></a>
+<a class="anchor" id="ab16bf637490a652025c1439c4708872a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIAPReportingEnabled: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -279,15 +274,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c65e0c2424750c857eb8b2426cd6916"></a>
+<a class="anchor" id="abfc0241cf653983f50776b1e1dfc2ad6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withIncludeBackgroundSessionsInMetrics: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -305,15 +299,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac891dc68740af34d6aad9098981e1cd0"></a>
+<a class="anchor" id="ad378c9c2f91f61a3583925af739a5e52"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withLogLevel: </td>
           <td></td>
-          <td class="paramtype">(FlurryLogLevel)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -332,15 +325,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1c8910aefa70cc2f76cc5b21ed6c34ef"></a>
+<a class="anchor" id="a44fd1c6863b983d625feeed03efbf607"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionContinueSeconds: </td>
           <td></td>
-          <td class="paramtype">(NSInteger)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -358,15 +350,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7516b74a19f8bc5b757bf325ecdab19a"></a>
+<a class="anchor" id="aca0121f4d4854234725d6f5c46dd61d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionDeeplink: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>deeplink</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -384,15 +375,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6966b4334e2983b09c7cbfd16600fdaa"></a>
+<a class="anchor" id="a5319cddcea108aa422d126277a376067"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOrigin: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>origin</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -410,15 +400,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a11ca9b361ff20ae66aa37ea9581cf11d"></a>
+<a class="anchor" id="af29f5da864212249d252ec3e68f2bf8c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginParameters: </td>
           <td></td>
-          <td class="paramtype">(NSDictionary *)&#160;</td>
-          <td class="paramname"><em>parameters</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -436,15 +425,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a931fd74d9844df1e566a91902af5c666"></a>
+<a class="anchor" id="ae552c2424468fa1abd6efd2aa195cf9a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionOriginVerion: </td>
           <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>version</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -462,15 +450,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a751e0ddb8bfdf5be6cc617d9f6c460fe"></a>
+<a class="anchor" id="a1050bc2ece9b7565f276d7438f546c0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withSessionProperties: </td>
           <td></td>
-          <td class="paramtype">(NSDictionary *)&#160;</td>
-          <td class="paramname"><em>properties</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -488,15 +475,14 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad23c59d06218aba6cd9e4700d7a3564f"></a>
+<a class="anchor" id="a21944536978f049bd9825528e65bf19a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">- (<a class="el" href="interface_flurry_session_builder.html">FlurrySessionBuilder</a>*) withShowErrorInLog: </td>
           <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>value</em></td>
+          <td class="paramname"></td>
           <td></td>
         </tr>
       </table>
@@ -507,7 +493,7 @@ Instance Methods</h2></td></tr>
 <p>This is an optional method that augments the debug logs with exceptions that occur during the session. You must both capture exceptions to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> and set the log level to Debug or All for this method to display information to the console. The default setting for this method is <code>NO</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>This method can be called at any point in the execution of your application and the setting will take effect for SDK activity after this call.</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>#setLogLevel: for information on how to view debugging information on your console. <br/>
- #logError:message:exception: for details on logging exceptions. <br/>
+ #logError:message:exception: for details on logging <a class="el" href="group__exceptions.html">Exceptions</a>. <br/>
  #logError:message:error: for details on logging errors.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -519,7 +505,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_session_builder_8h_source.html">FlurrySessionBuilder.h</a></li>
+<li>/Users/sd_builder_43497419/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_session_builder_8h_source.html">FlurrySessionBuilder.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

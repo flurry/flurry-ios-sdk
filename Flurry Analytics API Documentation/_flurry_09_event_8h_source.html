@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /Users/sd_builder_36674352/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/Flurry+Event.h Source File</title>
+<title>iOS SDK: /Users/sd_builder_43497419/sd/src/git.vzbuilders.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/Flurry+Event.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('_flurry_09_event_8h_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,64 +112,64 @@ $(document).ready(function(){initNavTree('_flurry_09_event_8h_source.html','');}
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> NS_ENUM (NSUInteger, FlurryEvent) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    FLURRY_EVENT_AD_CLICK = 0,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    FLURRY_EVENT_AD_IMPRESSION,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    FLURRY_EVENT_AD_REWARDED,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FLURRY_EVENT_AD_SKIPPED,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FLURRY_EVENT_CREDITS_SPENT,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FLURRY_EVENT_CREDITS_PURCHASED,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FLURRY_EVENT_CREDITS_EARNED,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FLURRY_EVENT_ACHIEVEMENT_UNLOCKED,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    FLURRY_EVENT_LEVEL_COMPLETED,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    FLURRY_EVENT_LEVEL_FAILED,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FLURRY_EVENT_LEVEL_UP,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    FLURRY_EVENT_LEVEL_STARTED,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    FLURRY_EVENT_LEVEL_SKIP,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    FLURRY_EVENT_SCORE_POSTED,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    FLURRY_EVENT_CONTENT_RATED,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    FLURRY_EVENT_CONTENT_VIEWED,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    FLURRY_EVENT_CONTENT_SAVED,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    FLURRY_EVENT_PRODUCT_CUSTOMIZED,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    FLURRY_EVENT_APP_ACTIVATED,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    FLURRY_EVENT_APPLICATION_SUBMITTED,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    FLURRY_EVENT_ADD_ITEM_TO_CART,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    FLURRY_EVENT_ADD_ITEM_TO_WISH_LIST,</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    FLURRY_EVENT_COMPLETED_CHECKOUT,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    FLURRY_EVENT_PAYMENT_INFO_ADDED,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    FLURRY_EVENT_ITEM_VIEWED,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    FLURRY_EVENT_ITEM_LIST_VIEWED,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    FLURRY_EVENT_PURCHASED,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    FLURRY_EVENT_PURCHASE_REFUNDED,</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    FLURRY_EVENT_REMOVE_ITEM_FROM_CART,</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    FLURRY_EVENT_CHECKOUT_INITIATED,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    FLURRY_EVENT_FUNDS_DONATED,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    FLURRY_EVENT_USER_SCHEDULED,</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    FLURRY_EVENT_OFFER_PRESENTED,</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    FLURRY_EVENT_SUBSCRIPTION_STARTED,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    FLURRY_EVENT_SUBSCRIPTION_ENDED,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    FLURRY_EVENT_GROUP_JOINED,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    FLURRY_EVENT_GROUP_LEFT,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    FLURRY_EVENT_TUTORIAL_STARTED,</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    FLURRY_EVENT_TUTORIAL_COMPLETED,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    FLURRY_EVENT_TUTORIAL_STEP_COMPLETED,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    FLURRY_EVENT_TUTORIAL_SKIPPED,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    FLURRY_EVENT_LOGIN,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    FLURRY_EVENT_LOGOUT,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    FLURRY_EVENT_USER_REGISTERED,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    FLURRY_EVENT_SEARCH_RESULT_VIEWED,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    FLURRY_EVENT_KEYWORD_SEARCHED,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    FLURRY_EVENT_LOCATION_SEARCHED,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    FLURRY_EVENT_INVITE,</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    FLURRY_EVENT_SHARE,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    FLURRY_EVENT_LIKE,</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    FLURRY_EVENT_COMMENT,</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    FLURRY_EVENT_MEDIA_CAPTURED,</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    FLURRY_EVENT_MEDIA_STARTED,</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    FLURRY_EVENT_MEDIA_STOPPED,</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    FLURRY_EVENT_MEDIA_PAUSED,</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    FLURRY_EVENT_PRIVACY_PROMPT_DISPLAYED,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    FLURRY_EVENT_PRIVACY_OPT_IN,</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    FLURRY_EVENT_PRIVACY_OPT_OUT,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    FLURRY_EVENT_AD_CLICK NS_SWIFT_NAME(adClick) = 0,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    FLURRY_EVENT_AD_IMPRESSION NS_SWIFT_NAME(adImpression),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    FLURRY_EVENT_AD_REWARDED NS_SWIFT_NAME(adRewarded),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FLURRY_EVENT_AD_SKIPPED NS_SWIFT_NAME(adSkipped),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FLURRY_EVENT_CREDITS_SPENT NS_SWIFT_NAME(creditsSpent),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FLURRY_EVENT_CREDITS_PURCHASED NS_SWIFT_NAME(creditsPurchased),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FLURRY_EVENT_CREDITS_EARNED NS_SWIFT_NAME(creditsEarned),</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FLURRY_EVENT_ACHIEVEMENT_UNLOCKED NS_SWIFT_NAME(achievementUnlocked),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    FLURRY_EVENT_LEVEL_COMPLETED NS_SWIFT_NAME(levelCompleted),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    FLURRY_EVENT_LEVEL_FAILED NS_SWIFT_NAME(levelFailed),</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FLURRY_EVENT_LEVEL_UP NS_SWIFT_NAME(levelUp),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    FLURRY_EVENT_LEVEL_STARTED NS_SWIFT_NAME(levelStarted),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    FLURRY_EVENT_LEVEL_SKIP NS_SWIFT_NAME(levelSkip),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    FLURRY_EVENT_SCORE_POSTED NS_SWIFT_NAME(scorePosted),</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    FLURRY_EVENT_CONTENT_RATED NS_SWIFT_NAME(contentRated),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    FLURRY_EVENT_CONTENT_VIEWED NS_SWIFT_NAME(contentViewed),</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    FLURRY_EVENT_CONTENT_SAVED NS_SWIFT_NAME(contentSaved),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    FLURRY_EVENT_PRODUCT_CUSTOMIZED NS_SWIFT_NAME(productCustomized),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    FLURRY_EVENT_APP_ACTIVATED NS_SWIFT_NAME(appActivated),</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    FLURRY_EVENT_APPLICATION_SUBMITTED NS_SWIFT_NAME(applicationSubmitted),</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    FLURRY_EVENT_ADD_ITEM_TO_CART NS_SWIFT_NAME(addItemToCart),</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    FLURRY_EVENT_ADD_ITEM_TO_WISH_LIST NS_SWIFT_NAME(addItemToWishList),</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    FLURRY_EVENT_COMPLETED_CHECKOUT NS_SWIFT_NAME(completedCheckout),</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    FLURRY_EVENT_PAYMENT_INFO_ADDED NS_SWIFT_NAME(paymentInfoAdded),</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    FLURRY_EVENT_ITEM_VIEWED NS_SWIFT_NAME(itemViewed),</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    FLURRY_EVENT_ITEM_LIST_VIEWED NS_SWIFT_NAME(itemListViewed),</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    FLURRY_EVENT_PURCHASED NS_SWIFT_NAME(purchased),</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    FLURRY_EVENT_PURCHASE_REFUNDED NS_SWIFT_NAME(purchaseRefunded),</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    FLURRY_EVENT_REMOVE_ITEM_FROM_CART NS_SWIFT_NAME(removeItemFromCart),</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    FLURRY_EVENT_CHECKOUT_INITIATED NS_SWIFT_NAME(checkoutInitiated),</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    FLURRY_EVENT_FUNDS_DONATED NS_SWIFT_NAME(fundsDonated),</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    FLURRY_EVENT_USER_SCHEDULED NS_SWIFT_NAME(userScheduled),</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    FLURRY_EVENT_OFFER_PRESENTED NS_SWIFT_NAME(offerPresented),</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    FLURRY_EVENT_SUBSCRIPTION_STARTED NS_SWIFT_NAME(subscriptionStarted),</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    FLURRY_EVENT_SUBSCRIPTION_ENDED NS_SWIFT_NAME(subscriptionEnded),</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    FLURRY_EVENT_GROUP_JOINED NS_SWIFT_NAME(groupJoined),</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    FLURRY_EVENT_GROUP_LEFT NS_SWIFT_NAME(groupLeft),</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    FLURRY_EVENT_TUTORIAL_STARTED NS_SWIFT_NAME(tutorialStarted),</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    FLURRY_EVENT_TUTORIAL_COMPLETED NS_SWIFT_NAME(tutorialCompleted),</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    FLURRY_EVENT_TUTORIAL_STEP_COMPLETED NS_SWIFT_NAME(tutorialStepCompleted),</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    FLURRY_EVENT_TUTORIAL_SKIPPED NS_SWIFT_NAME(tutorialSkipped),</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    FLURRY_EVENT_LOGIN NS_SWIFT_NAME(login),</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    FLURRY_EVENT_LOGOUT NS_SWIFT_NAME(logout),</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    FLURRY_EVENT_USER_REGISTERED NS_SWIFT_NAME(userRegistered),</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    FLURRY_EVENT_SEARCH_RESULT_VIEWED NS_SWIFT_NAME(searchResultViewed),</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    FLURRY_EVENT_KEYWORD_SEARCHED NS_SWIFT_NAME(keywordSearched),</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    FLURRY_EVENT_LOCATION_SEARCHED NS_SWIFT_NAME(locationSearched),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    FLURRY_EVENT_INVITE NS_SWIFT_NAME(invite),</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    FLURRY_EVENT_SHARE NS_SWIFT_NAME(share),</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    FLURRY_EVENT_LIKE NS_SWIFT_NAME(like),</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    FLURRY_EVENT_COMMENT NS_SWIFT_NAME(comment),</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    FLURRY_EVENT_MEDIA_CAPTURED NS_SWIFT_NAME(mediaCaptured),</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    FLURRY_EVENT_MEDIA_STARTED NS_SWIFT_NAME(mediaStarted),</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    FLURRY_EVENT_MEDIA_STOPPED NS_SWIFT_NAME(mediaStopped),</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    FLURRY_EVENT_MEDIA_PAUSED NS_SWIFT_NAME(mediaPaused),</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    FLURRY_EVENT_PRIVACY_PROMPT_DISPLAYED NS_SWIFT_NAME(privacyPromptDisplayed),</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    FLURRY_EVENT_PRIVACY_OPT_IN NS_SWIFT_NAME(privacyOptIn),</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    FLURRY_EVENT_PRIVACY_OPT_OUT NS_SWIFT_NAME(privacyOptOut),</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    </div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;};</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
@@ -239,38 +239,51 @@ $(document).ready(function(){initNavTree('_flurry_09_event_8h_source.html','');}
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;- (nonnull NSDictionary&lt;NSString *, NSString *&gt; *)<a class="code" href="interface_flurry_param_builder.html#abf50cfe6c3555138253305f8781a33f9" title="Get the parameters map object for logging the standard events.">parameters</a>;</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setString:(nonnull NSString *)val</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                                   forKey:(nonnull NSString *)key;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setString:(nonnull NSString *)val</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                                 forParam:(nonnull <a class="code" href="interface_flurry_string_param.html" title="FlurryStringParam is the interface of Flurry-defined param keys which can be only mapped with string ...">FlurryStringParam</a> *)key;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setInteger:(<span class="keywordtype">int</span>)val</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                                    forKey:(nonnull NSString *)key;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setInteger:(<span class="keywordtype">int</span>)val</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                                  forParam:(nonnull <a class="code" href="interface_flurry_integer_param.html" title="FlurryIntegerParam is the interface of Flurry-defined param keys which can be only mapped with intege...">FlurryIntegerParam</a> *)key;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setLong:(<span class="keywordtype">long</span>)val</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                                 forKey:(nonnull NSString *)key;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setLong:(<span class="keywordtype">long</span>)val</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                               forParam:(nonnull <a class="code" href="interface_flurry_long_param.html" title="FlurryLongParam is the interface of Flurry-defined param keys which can be only mapped with long valu...">FlurryLongParam</a> *)key;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setBoolean:(BOOL)val</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                                    forKey:(nonnull NSString *)key;</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setBoolean:(BOOL)val</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                                  forParam:(nonnull <a class="code" href="interface_flurry_boolean_param.html" title="FlurryBooleanParam is the interface of Flurry-defined param keys which can be only mapped with boolea...">FlurryBooleanParam</a> *)key;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setDouble:(<span class="keywordtype">double</span>)val</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                                   forKey:(nonnull NSString *)key;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                                   forKey:(nonnull NSString *)key</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;NS_SWIFT_NAME(set(stringVal:key:));</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setString:(nonnull NSString *)val</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                                 forParam:(nonnull <a class="code" href="interface_flurry_string_param.html" title="FlurryStringParam is the interface of Flurry-defined param keys which can be only mapped with string ...">FlurryStringParam</a> *)key</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;NS_SWIFT_NAME(set(stringVal:param:));</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setInteger:(<span class="keywordtype">int</span>)val</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                                    forKey:(nonnull NSString *)key</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;NS_SWIFT_NAME(set(integerVal:key:));</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setInteger:(<span class="keywordtype">int</span>)val</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                                  forParam:(nonnull <a class="code" href="interface_flurry_integer_param.html" title="FlurryIntegerParam is the interface of Flurry-defined param keys which can be only mapped with intege...">FlurryIntegerParam</a> *)key</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;NS_SWIFT_NAME(set(integerVal:param:));</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setLong:(<span class="keywordtype">long</span>)val</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                                 forKey:(nonnull NSString *)key</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;NS_SWIFT_NAME(set(longVal:key:));</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setLong:(<span class="keywordtype">long</span>)val</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                               forParam:(nonnull <a class="code" href="interface_flurry_long_param.html" title="FlurryLongParam is the interface of Flurry-defined param keys which can be only mapped with long valu...">FlurryLongParam</a> *)key</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;NS_SWIFT_NAME(set(longVal:param:));</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setBoolean:(BOOL)val</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                                    forKey:(nonnull NSString *)key</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;NS_SWIFT_NAME(set(booleanVal:key:));</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setBoolean:(BOOL)val</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                                  forParam:(nonnull <a class="code" href="interface_flurry_boolean_param.html" title="FlurryBooleanParam is the interface of Flurry-defined param keys which can be only mapped with boolea...">FlurryBooleanParam</a> *)key</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;NS_SWIFT_NAME(set(booleanVal:param:));</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setDouble:(<span class="keywordtype">double</span>)val</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                                 forParam:(nonnull <a class="code" href="interface_flurry_double_param.html" title="FlurryDoubleParam is the interface of Flurry-defined param keys which can be only mapped with double ...">FlurryDoubleParam</a> *)key;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)removeObjectForKey:(nonnull <span class="keywordtype">id</span>)key;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setAll:(nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)param;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
-<div class="line"><a name="l00777"></a><span class="lineno"><a class="code" href="category_flurry_07_event_08.html">  777</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_flurry_07_event_08.html">Flurry (Event)</a></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;+ (FlurryEventRecordStatus)logStandardEvent:(FlurryEvent)eventType</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                             withParameters:(nullable <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)parameters;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                                   forKey:(nonnull NSString *)key</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;NS_SWIFT_NAME(set(doubleVal:key:));</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setDouble:(<span class="keywordtype">double</span>)val</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                                 forParam:(nonnull <a class="code" href="interface_flurry_double_param.html" title="FlurryDoubleParam is the interface of Flurry-defined param keys which can be only mapped with double ...">FlurryDoubleParam</a> *)key</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;NS_SWIFT_NAME(set(doubleVal:param:));</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)removeObjectForKey:(nonnull <span class="keywordtype">id</span>)key</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;NS_SWIFT_NAME(remove(key:));</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;- (nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)setAll:(nonnull <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)param</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;NS_SWIFT_NAME(set(all:));</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
+<div class="line"><a name="l00789"></a><span class="lineno"><a class="code" href="category_flurry_07_event_08.html">  789</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_flurry_07_event_08.html">Flurry (Event)</a></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;+ (FlurryEventRecordStatus)logStandardEvent:(FlurryEvent)eventType</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                             withParameters:(nullable <a class="code" href="interface_flurry_param_builder.html" title="FlurryParamBuilder is the interface to use to assemble your parameters for standard event...">FlurryParamBuilder</a> *)parameters</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;NS_SWIFT_NAME(log(standardEvent:param:));</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

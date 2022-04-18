@@ -1,16 +1,16 @@
 var interface_flurry_param_builder =
 [
     [ "parameters", "interface_flurry_param_builder.html#abf50cfe6c3555138253305f8781a33f9", null ],
-    [ "removeObjectForKey:", "interface_flurry_param_builder.html#abc7d2a181bfae1e7e97d4e0c9966f591", null ],
-    [ "setAll:", "interface_flurry_param_builder.html#a107c440ba5148c1946b7932276ed8569", null ],
-    [ "setBoolean:forKey:", "interface_flurry_param_builder.html#a038d324af19884d60ec9b31e8ecf4822", null ],
-    [ "setBoolean:forParam:", "interface_flurry_param_builder.html#a43157e28aabb5a43e832d2ea07da7c17", null ],
-    [ "setDouble:forKey:", "interface_flurry_param_builder.html#a1ebd65704fa70f5ae64948d44ffe17bd", null ],
-    [ "setDouble:forParam:", "interface_flurry_param_builder.html#ad42f371ff627548d61d0001258473cc1", null ],
-    [ "setInteger:forKey:", "interface_flurry_param_builder.html#aadd6f8da3cd0136a8ca554be2c34b7f5", null ],
-    [ "setInteger:forParam:", "interface_flurry_param_builder.html#a3e0658036725d8646087fb963d9693c5", null ],
-    [ "setLong:forKey:", "interface_flurry_param_builder.html#a265e5f6130b1796f54b7fc2c50ee86d3", null ],
-    [ "setLong:forParam:", "interface_flurry_param_builder.html#ab2c8cc2348b89ce0ccd8c7f2a711fe77", null ],
-    [ "setString:forKey:", "interface_flurry_param_builder.html#a0150fa29b934f96b8203f9d1da6cf829", null ],
-    [ "setString:forParam:", "interface_flurry_param_builder.html#acaba980b8142d62ef89004b13bc076b9", null ]
+    [ "removeObjectForKey:", "interface_flurry_param_builder.html#a95325d739b9dbbccd78016886b348ba6", null ],
+    [ "setAll:", "interface_flurry_param_builder.html#a84af64e9b9907e19305fc847d233de13", null ],
+    [ "setBoolean:forKey:", "interface_flurry_param_builder.html#a57d5116422d856003ab531efc37f19a9", null ],
+    [ "setBoolean:forParam:", "interface_flurry_param_builder.html#a10d89bba562c88c4a2eab1d2f4fd2bf2", null ],
+    [ "setDouble:forKey:", "interface_flurry_param_builder.html#a7c475683713f0493aae18ebae9aefd9f", null ],
+    [ "setDouble:forParam:", "interface_flurry_param_builder.html#ac41bfb7b846ae4a37a78ffdae53e5af0", null ],
+    [ "setInteger:forKey:", "interface_flurry_param_builder.html#a1df7f9e1a41c26d950659c2cb27db72d", null ],
+    [ "setInteger:forParam:", "interface_flurry_param_builder.html#a33dd5d6339cb89ec51fe9b870a81b79a", null ],
+    [ "setLong:forKey:", "interface_flurry_param_builder.html#ac2750c593dabbcd5e4c5f413e5d310df", null ],
+    [ "setLong:forParam:", "interface_flurry_param_builder.html#a7618770e956ee14984a14a33e11895fa", null ],
+    [ "setString:forKey:", "interface_flurry_param_builder.html#a952495dc2086c7aa82c31a962a9a7820", null ],
+    [ "setString:forParam:", "interface_flurry_param_builder.html#a04f78444bc598e7cb942eb387ee83065", null ]
 ];

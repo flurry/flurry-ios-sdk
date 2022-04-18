@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,16 +104,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_user_properties.html#a29968d89acac7cfdf482733cbc471c27">FlurryUserProperties</a>
 </li>
 <li>addOrigin:withVersion:
-: <a class="el" href="interface_flurry.html#a0f2942ac8a44a396632e6956fec8c156">Flurry</a>
+: <a class="el" href="interface_flurry.html#a5b88b7d4697e58c7c5e1b0458d612db7">Flurry</a>
 </li>
 <li>addOrigin:withVersion:withParameters:
-: <a class="el" href="interface_flurry.html#accd44339c7290a25142caedfc56434e1">Flurry</a>
+: <a class="el" href="interface_flurry.html#af8bc2c5e2d60bfc8309a0a0d13343448">Flurry</a>
 </li>
 <li>addSessionOrigin:
-: <a class="el" href="interface_flurry.html#aad2620b597022056601cce6e801b78be">Flurry</a>
+: <a class="el" href="interface_flurry.html#a0ed570b65f8e1cf8f18f642a5445eee0">Flurry</a>
 </li>
 <li>addSessionOrigin:withDeepLink:
-: <a class="el" href="interface_flurry.html#ab876cee5600f1a276c493dd6d4a7ba4b">Flurry</a>
+: <a class="el" href="interface_flurry.html#af8fdc67c183149b22b9420df010354e5">Flurry</a>
 </li>
 <li>adType
 : <a class="el" href="interface_flurry_param_builder.html#a592be69c0faba9aaaa719c6914b580c6">FlurryParamBuilder</a>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>endTimedEvent:withParameters:
-: <a class="el" href="interface_flurry.html#a5ae912f27ffa3123a509f19d4d55490d">Flurry</a>
+: <a class="el" href="interface_flurry.html#ac29473b4a9b8234867207ba9d96b2ace">Flurry</a>
 </li>
 </ul>
 
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>initWithGDPRScope:andConsentStrings:
-: <a class="el" href="interface_flurry_consent.html#aa8b918945304a9195a4a07f5b2ab7bf9">FlurryConsent</a>
+: <a class="el" href="interface_flurry_consent.html#ad69c4d609056e8d5dbe3cf5ea9c0cefb">FlurryConsent</a>
 </li>
 <li>isAnnualSubscription
 : <a class="el" href="interface_flurry_param_builder.html#a84a75ec7e747b888daa63d9095aac1ee">FlurryParamBuilder</a>
@@ -210,6 +210,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>isFlurryMsg:
 : <a class="el" href="interface_flurry_messaging.html#a7d9394746831a88efeb67121026ad69c">FlurryMessaging</a>
+</li>
+<li>isInitialized
+: <a class="el" href="interface_flurry.html#a609e1e4a9059efd8c89810a26faed884">Flurry</a>
 </li>
 <li>itemCategory
 : <a class="el" href="interface_flurry_param_builder.html#ac07859070abd3a5305fb7fbb83bb008b">FlurryParamBuilder</a>
@@ -246,47 +249,41 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_param_builder.html#a3e1d7369b3a3ee46efb08a104db263ae">FlurryParamBuilder</a>
 </li>
 <li>logError:message:error:
-: <a class="el" href="interface_flurry.html#ae4e1963ff2c6ad658311a6920014d036">Flurry</a>
+: <a class="el" href="interface_flurry.html#aecb503361d911e065d929fbb183309e3">Flurry</a>
 </li>
 <li>logError:message:error:withParameters:
-: <a class="el" href="interface_flurry.html#ae4566512c574b54fa3dec4fe5b5a4b6f">Flurry</a>
+: <a class="el" href="interface_flurry.html#a5bdd071cbacc19ca94624cb405d121d2">Flurry</a>
 </li>
 <li>logError:message:exception:
-: <a class="el" href="interface_flurry.html#a98c1ff91136a4b966d3acf1d83022993">Flurry</a>
+: <a class="el" href="interface_flurry.html#a35c60533c0dddca7d87d7ff5f66d2a5c">Flurry</a>
 </li>
 <li>logError:message:exception:withParameters:
-: <a class="el" href="interface_flurry.html#adaaa127626e66823723b79363b57ef46">Flurry</a>
+: <a class="el" href="interface_flurry.html#a8d576fce319c13d664c5d0e2e4c4bfd9">Flurry</a>
 </li>
 <li>logEvent:
-: <a class="el" href="interface_flurry.html#aa3beab56bf626663acc76d827bb49902">Flurry</a>
+: <a class="el" href="interface_flurry.html#a948853fb017e424c44571201f5b03766">Flurry</a>
 </li>
 <li>logEvent:syndicationID:parameters:
-: <a class="el" href="interface_flurry.html#a8e6dc6347c14619386031350fc9979b2">Flurry</a>
+: <a class="el" href="interface_flurry.html#aba9af505ef3a56b68f1c36ff46790d3d">Flurry</a>
 </li>
 <li>logEvent:timed:
-: <a class="el" href="interface_flurry.html#ae7150b0e95faa309b8d1ab98b75fe8e8">Flurry</a>
+: <a class="el" href="interface_flurry.html#aeec356c64c2c69876d5d7a48caf68cf0">Flurry</a>
 </li>
 <li>logEvent:withParameters:
-: <a class="el" href="interface_flurry.html#a9eec02f9067c3234009ed5080ab3bbba">Flurry</a>
+: <a class="el" href="interface_flurry.html#ab3dcb9338ec6639588fd1139040c152b">Flurry</a>
 </li>
 <li>logEvent:withParameters:timed:
-: <a class="el" href="interface_flurry.html#a50bf4761d3bd2dbe4b4924fa6940e4c4">Flurry</a>
-</li>
-<li>logFlurryPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:
-: <a class="el" href="interface_flurry.html#aeab59063c1aa796eb7662fc02924bddf">Flurry</a>
+: <a class="el" href="interface_flurry.html#a392f8adf87f51fca0235264354bcaee5">Flurry</a>
 </li>
 <li>logPaymentTransaction:statusCallback:
-: <a class="el" href="interface_flurry.html#aa16d83cf9e0e1112bbd68e5ffb1649c4">Flurry</a>
-</li>
-<li>logPaymentTransactionParamsWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:
-: <a class="el" href="interface_flurry.html#a002840eaa680722db66a57ce2224e723">Flurry</a>
+: <a class="el" href="interface_flurry.html#ab28e1bb499299169e73239f49d9e88f7">Flurry</a>
 </li>
 <li>logPaymentTransactionWithTransactionId:productId:quantity:price:currency:productName:transactionState:userDefinedParams:statusCallback:
-: <a class="el" href="interface_flurry.html#ae020f786a24e3daf4f4c1e52fe83b386">Flurry</a>
+: <a class="el" href="interface_flurry.html#a29bad8c6ffa9e0d713972b97efb4ef01">Flurry</a>
 </li>
 <li>logStandardEvent:withParameters:
-: <a class="el" href="interface_flurry.html#a619e1b8bc420644fe3783c18b960bc7d">Flurry</a>
-, <a class="el" href="category_flurry_07_event_08.html#a619e1b8bc420644fe3783c18b960bc7d">Flurry(Event)</a>
+: <a class="el" href="interface_flurry.html#a1b232b623fa03fb67023f05607980d55">Flurry</a>
+, <a class="el" href="category_flurry_07_event_08.html#a1b232b623fa03fb67023f05607980d55">Flurry(Event)</a>
 </li>
 <li>logWatchEvent:
 : <a class="el" href="interface_flurry_watch.html#acbdf8e279783520d7d7668ade376bca7">FlurryWatch</a>
@@ -334,7 +331,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_param_builder.html#a5cbc302fc858ebad4d4ce70dcc1d0ffb">FlurryParamBuilder</a>
 </li>
 <li>presentNotification:withCompletionHandler:
-: <a class="el" href="interface_flurry_messaging.html#ae09c0f60636b2705cc61fc4f216218fb">FlurryMessaging</a>
+: <a class="el" href="interface_flurry_messaging.html#a629328a5a4f643fc86cf2dccaa8daff8">FlurryMessaging</a>
 </li>
 <li>price
 : <a class="el" href="interface_flurry_param_builder.html#afb10230a5ae69165ee151777ece97261">FlurryParamBuilder</a>
@@ -354,7 +351,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_param_builder.html#a9c690f55f31e3d86626429fd8b8dc13a">FlurryParamBuilder</a>
 </li>
 <li>receivedNotificationResponse:withCompletionHandler:
-: <a class="el" href="interface_flurry_messaging.html#a2d033e020d81301812a2438f69a95d00">FlurryMessaging</a>
+: <a class="el" href="interface_flurry_messaging.html#ad5bc725ff5555219f4153d5cee5995bd">FlurryMessaging</a>
 </li>
 <li>remove:
 : <a class="el" href="interface_flurry_user_properties.html#ae0e33c93962bd1197065ae4a93d5ed4a">FlurryUserProperties</a>
@@ -366,7 +363,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_user_properties.html#afeb372e5238051d8827683a9d5be5489">FlurryUserProperties</a>
 </li>
 <li>removeObjectForKey:
-: <a class="el" href="interface_flurry_param_builder.html#abc7d2a181bfae1e7e97d4e0c9966f591">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a95325d739b9dbbccd78016886b348ba6">FlurryParamBuilder</a>
 </li>
 </ul>
 
@@ -388,94 +385,88 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_user_properties.html#a8529b51fb7fd1126107161c19c1fbaa8">FlurryUserProperties</a>
 </li>
 <li>setAge:
-: <a class="el" href="interface_flurry.html#a55692f576c987dc0ed73a2ba4aa31710">Flurry</a>
+: <a class="el" href="interface_flurry.html#a2105c7017d986c598f317de2223753a7">Flurry</a>
 </li>
 <li>setAll:
-: <a class="el" href="interface_flurry_param_builder.html#a107c440ba5148c1946b7932276ed8569">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a84af64e9b9907e19305fc847d233de13">FlurryParamBuilder</a>
 </li>
 <li>setAppVersion:
-: <a class="el" href="interface_flurry.html#a960d178414ddac8120f32865a3b9cb6e">Flurry</a>
+: <a class="el" href="interface_flurry.html#a4e743bf3ddc53ac585de641a22c9da68">Flurry</a>
 </li>
 <li>setAutoIntegrationForMessaging
 : <a class="el" href="interface_flurry_messaging.html#a60e37a7071e5662cf33bc3c820bdbabc">FlurryMessaging</a>
 </li>
 <li>setBoolean:forKey:
-: <a class="el" href="interface_flurry_param_builder.html#a038d324af19884d60ec9b31e8ecf4822">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a57d5116422d856003ab531efc37f19a9">FlurryParamBuilder</a>
 </li>
 <li>setBoolean:forParam:
-: <a class="el" href="interface_flurry_param_builder.html#a43157e28aabb5a43e832d2ea07da7c17">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a10d89bba562c88c4a2eab1d2f4fd2bf2">FlurryParamBuilder</a>
 </li>
 <li>setCountBackgroundSessions:
-: <a class="el" href="interface_flurry.html#a08ba8180040d5efb0b6506446665588b">Flurry</a>
+: <a class="el" href="interface_flurry.html#a9b2dc5d5dd5e95f622948f1d620af044">Flurry</a>
 </li>
 <li>setDataSaleOptOut:
-: <a class="el" href="interface_flurry_c_c_p_a.html#ab6fcc3c7e321f7b4874dcd78407fc9aa">FlurryCCPA</a>
+: <a class="el" href="interface_flurry_c_c_p_a.html#add55a61d09a468fdaf4f5473f31c55b6">FlurryCCPA</a>
 </li>
 <li>setDelegate:
-: <a class="el" href="interface_flurry.html#a61bc2e34ff1feff35bf25fe9f5e5f580">Flurry</a>
+: <a class="el" href="interface_flurry.html#a67df55c2fa820f4233b1e516a37561a7">Flurry</a>
 </li>
 <li>setDelegate:withCallbackQueue:
-: <a class="el" href="interface_flurry.html#a4bd699551d48e2aa73b73fa2e9e9e1fb">Flurry</a>
+: <a class="el" href="interface_flurry.html#afa404b0af1d6281a0cb0fde973927a96">Flurry</a>
 </li>
 <li>setDelete
 : <a class="el" href="interface_flurry_c_c_p_a.html#ace6a4e999df2672054b684d812e4dd8c">FlurryCCPA</a>
 </li>
 <li>setDeviceToken:
-: <a class="el" href="interface_flurry_messaging.html#a9dc00b938793ae00dccc71bc23a24511">FlurryMessaging</a>
+: <a class="el" href="interface_flurry_messaging.html#ae564d4be58c7228f310b13480750bd3c">FlurryMessaging</a>
 </li>
 <li>setDouble:forKey:
-: <a class="el" href="interface_flurry_param_builder.html#a1ebd65704fa70f5ae64948d44ffe17bd">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a7c475683713f0493aae18ebae9aefd9f">FlurryParamBuilder</a>
 </li>
 <li>setDouble:forParam:
-: <a class="el" href="interface_flurry_param_builder.html#ad42f371ff627548d61d0001258473cc1">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#ac41bfb7b846ae4a37a78ffdae53e5af0">FlurryParamBuilder</a>
 </li>
 <li>setGender:
-: <a class="el" href="interface_flurry.html#aa389b3afef3f9a3ba2974407aafd34cc">Flurry</a>
+: <a class="el" href="interface_flurry.html#a992c7069a0e0ae170e5106cd29406b58">Flurry</a>
 </li>
 <li>setIAPReportingEnabled:
-: <a class="el" href="interface_flurry.html#a1992325a1eef97d4d7592a5ac27630c3">Flurry</a>
+: <a class="el" href="interface_flurry.html#a20959b047c5c7ef2f6b38f3d956c9c83">Flurry</a>
 </li>
 <li>setInteger:forKey:
-: <a class="el" href="interface_flurry_param_builder.html#aadd6f8da3cd0136a8ca554be2c34b7f5">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a1df7f9e1a41c26d950659c2cb27db72d">FlurryParamBuilder</a>
 </li>
 <li>setInteger:forParam:
-: <a class="el" href="interface_flurry_param_builder.html#a3e0658036725d8646087fb963d9693c5">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a33dd5d6339cb89ec51fe9b870a81b79a">FlurryParamBuilder</a>
 </li>
 <li>setLogLevel:
-: <a class="el" href="interface_flurry.html#ab717465e705b23c80253dddae321f5bc">Flurry</a>
+: <a class="el" href="interface_flurry.html#aa8238bc01d0f2493aa6d018f9c34ee7c">Flurry</a>
 </li>
 <li>setLong:forKey:
-: <a class="el" href="interface_flurry_param_builder.html#a265e5f6130b1796f54b7fc2c50ee86d3">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#ac2750c593dabbcd5e4c5f413e5d310df">FlurryParamBuilder</a>
 </li>
 <li>setLong:forParam:
-: <a class="el" href="interface_flurry_param_builder.html#ab2c8cc2348b89ce0ccd8c7f2a711fe77">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a7618770e956ee14984a14a33e11895fa">FlurryParamBuilder</a>
 </li>
 <li>setMessagingDelegate:
-: <a class="el" href="interface_flurry_messaging.html#a736e36c1cf6a82daa22caddf4eccea23">FlurryMessaging</a>
+: <a class="el" href="interface_flurry_messaging.html#a52441923469a8b48f9f4a0a86c2bdec8">FlurryMessaging</a>
 </li>
 <li>setMessagingDelegate:withCallbackQueue:
-: <a class="el" href="interface_flurry_messaging.html#a7131b92dd6a7dbd740a735ad683bb190">FlurryMessaging</a>
+: <a class="el" href="interface_flurry_messaging.html#a54beec26e64d096642fdf0e84ec7a4d1">FlurryMessaging</a>
 </li>
 <li>setSessionContinueSeconds:
-: <a class="el" href="interface_flurry.html#a1b79d4d804074f4b66f3434d9318ceee">Flurry</a>
-</li>
-<li>setSessionReportsOnCloseEnabled:
-: <a class="el" href="interface_flurry.html#a41d18a0681a9a0090cff7c13a8a36ab0">Flurry</a>
-</li>
-<li>setSessionReportsOnPauseEnabled:
-: <a class="el" href="interface_flurry.html#a5847e7c1e3cb5cfda1ff177b972933da">Flurry</a>
+: <a class="el" href="interface_flurry.html#aa14f8e578ba5fb486f906ed01ba52bd7">Flurry</a>
 </li>
 <li>setShowErrorInLogEnabled:
-: <a class="el" href="interface_flurry.html#a642b4d19fc67250c24dafe66bb40ea71">Flurry</a>
+: <a class="el" href="interface_flurry.html#abae2b72767a98faa2fed6c560301dfd4">Flurry</a>
 </li>
 <li>setString:forKey:
-: <a class="el" href="interface_flurry_param_builder.html#a0150fa29b934f96b8203f9d1da6cf829">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a952495dc2086c7aa82c31a962a9a7820">FlurryParamBuilder</a>
 </li>
 <li>setString:forParam:
-: <a class="el" href="interface_flurry_param_builder.html#acaba980b8142d62ef89004b13bc076b9">FlurryParamBuilder</a>
+: <a class="el" href="interface_flurry_param_builder.html#a04f78444bc598e7cb942eb387ee83065">FlurryParamBuilder</a>
 </li>
 <li>setUserID:
-: <a class="el" href="interface_flurry.html#a1c709dc249c075d7da64bf208497f555">Flurry</a>
+: <a class="el" href="interface_flurry.html#ae0edb3009174558a00e226b90a7001df">Flurry</a>
 </li>
 <li>socialContentId
 : <a class="el" href="interface_flurry_param_builder.html#a73adea8a9286d754e1224fab6746e86c">FlurryParamBuilder</a>
@@ -484,16 +475,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_flurry_param_builder.html#a9d39239f285b34f4cfec6c3c3923f5e4">FlurryParamBuilder</a>
 </li>
 <li>startSession:
-: <a class="el" href="interface_flurry.html#a400ad85344ff73f9db482e026ef1bd43">Flurry</a>
+: <a class="el" href="interface_flurry.html#ac3cb9e280723f2982e544dc1b83a4f88">Flurry</a>
 </li>
 <li>startSession:withOptions:
-: <a class="el" href="interface_flurry.html#af294c95eb5a5fa9dd4e6df23ce8a5527">Flurry</a>
+: <a class="el" href="interface_flurry.html#aec3869ff89969cb32485a454ad82c455">Flurry</a>
 </li>
 <li>startSession:withOptions:withSessionBuilder:
-: <a class="el" href="interface_flurry.html#a6899d62f8c303f8a5ab5a394791cfe27">Flurry</a>
+: <a class="el" href="interface_flurry.html#ac951f60ff79d7622feaea9ce01767d7c">Flurry</a>
 </li>
 <li>startSession:withSessionBuilder:
-: <a class="el" href="interface_flurry.html#a2e94bb1db305b0c6f9a60cae74c713a2">Flurry</a>
+: <a class="el" href="interface_flurry.html#a2acc2efe06cade6a1e064637f8d2eb15">Flurry</a>
 </li>
 <li>stepNumber
 : <a class="el" href="interface_flurry_param_builder.html#abddeeda60231ddd57670315b23216c43">FlurryParamBuilder</a>
@@ -538,46 +529,46 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>withAppVersion:
-: <a class="el" href="interface_flurry_session_builder.html#a759df1999a1212d59b7153cc7524da6e">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#ae50bcf41cbcb931873744a90a261d2a8">FlurrySessionBuilder</a>
 </li>
 <li>withConsent:
-: <a class="el" href="interface_flurry_session_builder.html#ac37e7e5acf5b073b518ab2ca3e33d0c8">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#a4438f18346806d4a63d516e1abb444fb">FlurrySessionBuilder</a>
 </li>
 <li>withCrashReporting:
-: <a class="el" href="interface_flurry_session_builder.html#a8bf13ca5dd0d60d56d2619982a3b06f6">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#aca208d93d31eea36a467f5c1bde849e8">FlurrySessionBuilder</a>
 </li>
 <li>withDataSaleOptOut:
-: <a class="el" href="interface_flurry_session_builder.html#aaf31925cb9685dea4bf1e698c61fe855">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#ab1e0359373a5e6049f6970288c451ea0">FlurrySessionBuilder</a>
 </li>
 <li>withIAPReportingEnabled:
-: <a class="el" href="interface_flurry_session_builder.html#a1dc8f27408ae2e4a95b073bffbe1af19">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#ab16bf637490a652025c1439c4708872a">FlurrySessionBuilder</a>
 </li>
 <li>withIncludeBackgroundSessionsInMetrics:
-: <a class="el" href="interface_flurry_session_builder.html#a4c65e0c2424750c857eb8b2426cd6916">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#abfc0241cf653983f50776b1e1dfc2ad6">FlurrySessionBuilder</a>
 </li>
 <li>withLogLevel:
-: <a class="el" href="interface_flurry_session_builder.html#ac891dc68740af34d6aad9098981e1cd0">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#ad378c9c2f91f61a3583925af739a5e52">FlurrySessionBuilder</a>
 </li>
 <li>withSessionContinueSeconds:
-: <a class="el" href="interface_flurry_session_builder.html#a1c8910aefa70cc2f76cc5b21ed6c34ef">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#a44fd1c6863b983d625feeed03efbf607">FlurrySessionBuilder</a>
 </li>
 <li>withSessionDeeplink:
-: <a class="el" href="interface_flurry_session_builder.html#a7516b74a19f8bc5b757bf325ecdab19a">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#aca0121f4d4854234725d6f5c46dd61d5">FlurrySessionBuilder</a>
 </li>
 <li>withSessionOrigin:
-: <a class="el" href="interface_flurry_session_builder.html#a6966b4334e2983b09c7cbfd16600fdaa">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#a5319cddcea108aa422d126277a376067">FlurrySessionBuilder</a>
 </li>
 <li>withSessionOriginParameters:
-: <a class="el" href="interface_flurry_session_builder.html#a11ca9b361ff20ae66aa37ea9581cf11d">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#af29f5da864212249d252ec3e68f2bf8c">FlurrySessionBuilder</a>
 </li>
 <li>withSessionOriginVerion:
-: <a class="el" href="interface_flurry_session_builder.html#a931fd74d9844df1e566a91902af5c666">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#ae552c2424468fa1abd6efd2aa195cf9a">FlurrySessionBuilder</a>
 </li>
 <li>withSessionProperties:
-: <a class="el" href="interface_flurry_session_builder.html#a751e0ddb8bfdf5be6cc617d9f6c460fe">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#a1050bc2ece9b7565f276d7438f546c0e">FlurrySessionBuilder</a>
 </li>
 <li>withShowErrorInLog:
-: <a class="el" href="interface_flurry_session_builder.html#ad23c59d06218aba6cd9e4700d7a3564f">FlurrySessionBuilder</a>
+: <a class="el" href="interface_flurry_session_builder.html#a21944536978f049bd9825528e65bf19a">FlurrySessionBuilder</a>
 </li>
 </ul>
 </div><!-- contents -->
