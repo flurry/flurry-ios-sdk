@@ -2,6 +2,10 @@
 
 ## Version 12.x
 
+### Version 12.0.1 - 05/16/2022
+
+* Add arm64 support to WatchOS simulator
+
 ### Version 12.0.0 - 04/18/2022
 * Introduced the XCFramework in our build pipeline to replace legacy static library 
 * Enhanced the minimum deployment target to iOS 10.0, tvOS 10.0, macOS 11.0, and watchOS 3.0
