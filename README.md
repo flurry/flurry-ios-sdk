@@ -48,7 +48,7 @@ pod 'Flurry-iOS-SDK/FlurryMessaging'
 
 ### watchOS
 
-To use FlurrySDK for Apple Watch Extension:    
+To use FlurrySDK for Apple Watch 2.x Extension:    
 
 ```ruby
 target 'Your Apple Watch 2.x Extension Target' do 
@@ -180,3 +180,4 @@ Flurry.add(originName: "ORIGIN_NAME", originVersion: "ORIGIN_VERSION", parameter
 Copyright (c) 2021 Yahoo. All rights reserved.
 
 This project is licensed under the terms of the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) open source license. Please refer to [LICENSE](LICENSE) for the full terms. Your use of Flurry is governed by [Flurry Terms of Service](https://developer.yahoo.com/flurry/legal-privacy/terms-service/).
+

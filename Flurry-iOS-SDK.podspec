@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flurry-iOS-SDK'
-  s.version          = '12.0.0'
+  s.version          = '12.1.0'
   s.summary          = 'Flurry SDK for iOS'
   s.license          = { :type => 'Commercial', :file => 'Licenses/Flurry-LICENSE.txt' }
   s.description      = 'FlurrySDK consists of: Flurry for analytics tracking and reporting.'
@@ -24,44 +24,44 @@ Pod::Spec.new do |s|
   s.subspec 'FlurrySDK' do |ss|
     ss.ios.deployment_target = '10.0'
     ss.ios.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.ios.vendored_frameworks = 'Flurry.xcframework'
+    ss.ios.vendored_frameworks = 'Flurry_iOS_SDK.xcframework'
     ss.ios.dependency 'Flurry-iOS-SDK/CrashReporter'
 
     ss.tvos.deployment_target = '10.0'
     ss.tvos.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.tvos.vendored_frameworks = 'Flurry.xcframework'
+    ss.tvos.vendored_frameworks = 'Flurry_iOS_SDK.xcframework'
     ss.tvos.dependency 'Flurry-iOS-SDK/CrashReporter'
     
     ss.watchos.deployment_target = '3.0'
     ss.watchos.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.watchos.vendored_frameworks = 'Flurry.xcframework'
+    ss.watchos.vendored_frameworks = 'Flurry_iOS_SDK.xcframework'
   end
 
   s.subspec 'FlurryTVOS' do |ss|
     ss.platform   = :tvos, '10.0'
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.tvos.vendored_frameworks = 'Flurry.xcframework'
-    
+    ss.tvos.vendored_frameworks = 'Flurry_iOS_SDK.xcframework'
+    ss.tvos.dependency 'Flurry-iOS-SDK/CrashReporter'
   end
 
   s.subspec 'FlurryWatchOSSDK' do |ss|
     ss.platform   = :watchos, '3.0'
     ss.frameworks = 'Foundation', 'WatchConnectivity'
-    ss.vendored_frameworks = 'Flurry.xcframework'
+    ss.vendored_frameworks = 'Flurry_iOS_SDK.xcframework'
   end
 
    s.subspec 'FlurryConfig' do |ss|
     ss.platform   = :ios, '10.0'
-    ss.ios.vendored_frameworks = 'FlurryConfig.xcframework'
+    ss.ios.vendored_frameworks = 'Flurry_Config.xcframework'
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
 
    s.subspec 'FlurryMessaging' do |ss|
     ss.ios.deployment_target = '10.0'
-    ss.ios.vendored_frameworks = "FlurryMessaging.xcframework"
+    ss.ios.vendored_frameworks = "Flurry_Messaging.xcframework"
     
     ss.tvos.deployment_target = '10.0'
-    ss.tvos.vendored_frameworks = "FlurryMessaging.xcframework"
+    ss.tvos.vendored_frameworks = "Flurry_Messaging.xcframework"
     
     ss.dependency 'Flurry-iOS-SDK/FlurrySDK'
   end
@@ -72,3 +72,4 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = "CrashReporter.xcframework"
   end
 end
+
