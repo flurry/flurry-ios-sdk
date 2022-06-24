@@ -1,0 +1,6 @@
+framework module Flurry_Messaging {
+  umbrella header "Flurry_Messaging.h"
+
+  export *
+  module * { export * }
+}

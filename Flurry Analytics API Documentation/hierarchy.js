@@ -18,6 +18,7 @@ var hierarchy =
         [ "FlurryStringParam", "interface_flurry_string_param.html", null ]
       ] ],
       [ "FlurryParamBuilder", "interface_flurry_param_builder.html", null ],
+      [ "FlurryPerformance", "interface_flurry_performance.html", null ],
       [ "FlurrySessionBuilder", "interface_flurry_session_builder.html", null ],
       [ "FlurryUserProperties", "interface_flurry_user_properties.html", null ],
       [ "FlurryWatch", "interface_flurry_watch.html", null ]

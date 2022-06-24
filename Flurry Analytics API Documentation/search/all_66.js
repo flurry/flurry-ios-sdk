@@ -15,6 +15,7 @@ var searchData=
   ['flurrymessagingdelegate_2dp',['FlurryMessagingDelegate-p',['../protocol_flurry_messaging_delegate-p.html',1,'']]],
   ['flurryparam',['FlurryParam',['../interface_flurry_param.html',1,'']]],
   ['flurryparambuilder',['FlurryParamBuilder',['../interface_flurry_param_builder.html',1,'']]],
+  ['flurryperformance',['FlurryPerformance',['../interface_flurry_performance.html',1,'']]],
   ['flurrysessionbuilder',['FlurrySessionBuilder',['../interface_flurry_session_builder.html',1,'']]],
   ['flurrysessiondidcreatewithinfo_3a',['flurrySessionDidCreateWithInfo:',['../protocol_flurry_delegate-p.html#a4b32de13d1b6400bb66dd8e0d159f168',1,'FlurryDelegate-p']]],
   ['flurryskadnetwork',['FlurrySKAdNetwork',['../interface_flurry_s_k_ad_network.html',1,'']]],
