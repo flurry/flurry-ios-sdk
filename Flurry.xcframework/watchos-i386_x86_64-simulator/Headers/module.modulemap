@@ -1,4 +1,0 @@
-module Flurry_iOS_SDK {
-    umbrella header "FlurryWatchUmbrella.h"
-    export *
-}
