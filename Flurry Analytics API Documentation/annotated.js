@@ -14,6 +14,7 @@ var annotated =
     [ "<FlurryMessagingDelegate>", "protocol_flurry_messaging_delegate-p.html", "protocol_flurry_messaging_delegate-p" ],
     [ "FlurryParam", "interface_flurry_param.html", null ],
     [ "FlurryParamBuilder", "interface_flurry_param_builder.html", "interface_flurry_param_builder" ],
+    [ "FlurryPerformance", "interface_flurry_performance.html", null ],
     [ "FlurrySessionBuilder", "interface_flurry_session_builder.html", "interface_flurry_session_builder" ],
     [ "FlurrySKAdNetwork", "interface_flurry_s_k_ad_network.html", "interface_flurry_s_k_ad_network" ],
     [ "FlurryStringParam", "interface_flurry_string_param.html", null ],

@@ -1,0 +1,6 @@
+framework module Flurry_Config {
+  umbrella header "Flurry_Config.h"
+
+  export *
+  module * { export * }
+}
