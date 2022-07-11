@@ -2,6 +2,16 @@
 
 ## Version 12.x
 
+### Version 12.1.1 - 06/30/2022
+
+* Fix for http 400 error when consentStrings is nil
+
+### Version 12.1.0 - 06/23/2022
+
+* Flurry's xcframework uses framework rather than static libraries
+* Fix for tvOS arm64 simulator support 
+
+
 ### Version 12.0.0 - 04/18/2022
 
 * Introduced the XCFramework in our build pipeline to replace legacy static library 
