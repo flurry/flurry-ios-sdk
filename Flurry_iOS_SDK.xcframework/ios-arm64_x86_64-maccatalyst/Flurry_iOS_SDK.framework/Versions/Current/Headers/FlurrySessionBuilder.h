@@ -23,18 +23,6 @@ typedef NS_ENUM(NSUInteger, FlurryLogLevel){
     FlurryLogLevelAll NS_SWIFT_NAME(all),               // Highest level, outputs all log events
 };
 
-typedef NS_OPTIONS(NSUInteger, FlurryPerformanceMetrics) {
-    FlurryPerformanceNone           = 0,
-    FlurryPerformanceColdStart      = (1 << 0),
-    FlurryPerformanceScreenTime     = (1 << 1),
-    FlurryPerformanceNetwork        = (1 << 2),
-
-    FlurryPerformanceAll            = FlurryPerformanceColdStart |
-                                      FlurryPerformanceScreenTime |
-                                      FlurryPerformanceNetwork,
-};
-
-
 #if !TARGET_OS_WATCH
 
 

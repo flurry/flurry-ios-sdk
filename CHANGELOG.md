@@ -11,7 +11,6 @@
 * Flurry's xcframework uses framework rather than static libraries
 * Fix for tvOS arm64 simulator support 
 
-
 ### Version 12.0.0 - 04/18/2022
 
 * Introduced the XCFramework in our build pipeline to replace legacy static library 
