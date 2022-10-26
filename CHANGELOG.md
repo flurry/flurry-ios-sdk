@@ -2,6 +2,12 @@
 
 ## Version 12.x
 
+### Version 12.1.3 - 10/27/2022
+
+* Version is built on Xcode 14
+* Watch support is temporarily removed from the podspec due to the following issue: https://github.com/CocoaPods/CocoaPods/issues/11558
+* Use manual installation or Swift Package for WatchOS support
+
 ### Version 12.1.1 - 06/30/2022
 
 * Fix for http 400 error when consentStrings is nil
