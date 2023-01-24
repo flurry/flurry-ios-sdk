@@ -194,9 +194,19 @@ NS_SWIFT_NAME(set(showErrorInLogEnabled:));
  */
 + (void)setLogLevel:(FlurryLogLevel)value
 NS_SWIFT_NAME(set(logLevel:));
+
+/*!
+ *  @brief An api to send gpp compliance data to Flurry on the consent string and section Ids
+ *  @since 12.2.0
+ *
+ *  @param gppString  GPP Consent String
+ *  @param gppSectionIds An array of integer values
+ */
+
++ (void)setGppConsent:(NSString* _Nonnull)gppString gppSectionIds:(NSArray<NSNumber *>* _Nonnull) gppSectionIds
+NS_SWIFT_NAME(set(gppString:gppSectionIds:));
+
 //@}
-
-
 
 #pragma mark - Flurry Delegate setters
 

@@ -23,22 +23,21 @@ typedef NS_ENUM(NSUInteger, FlurryLogLevel){
     FlurryLogLevelAll NS_SWIFT_NAME(all),               // Highest level, outputs all log events
 };
 
-typedef NS_OPTIONS(NSUInteger, FlurryPerformanceMetrics) {
-    FlurryPerformanceNone           = 0,
-    FlurryPerformanceColdStart      = (1 << 0),
-    FlurryPerformanceScreenTime     = (1 << 1),
-    FlurryPerformanceNetwork        = (1 << 2),
-
-    FlurryPerformanceAll            = FlurryPerformanceColdStart |
-                                      FlurryPerformanceScreenTime |
-                                      FlurryPerformanceNetwork,
-};
-
-
 #if !TARGET_OS_WATCH
 
 
 @interface FlurrySessionBuilder : NSObject
+
+/*!
+ *  @brief An api to send gpp compliance data to Flurry on the consent string and section Ids
+ *  @since 12.2.0
+ *
+ *  @param gppString  GPP Consent String
+ *  @param gppSectionIds An array of integer values
+ */
+
+- (FlurrySessionBuilder*) withGppConsent:(NSString*)gppString gppSectionIds:(NSArray<NSNumber *>*) gppSectionIds
+NS_SWIFT_NAME(build(gppString:gppSectionIds:));
 
 /*!
  *  @brief An api to send ccpa compliance data to Flurry on the user's choice to opt out or opt in to data sale to third parties.

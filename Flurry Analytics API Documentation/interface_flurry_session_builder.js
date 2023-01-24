@@ -4,6 +4,7 @@ var interface_flurry_session_builder =
     [ "withConsent:", "interface_flurry_session_builder.html#a4438f18346806d4a63d516e1abb444fb", null ],
     [ "withCrashReporting:", "interface_flurry_session_builder.html#aca208d93d31eea36a467f5c1bde849e8", null ],
     [ "withDataSaleOptOut:", "interface_flurry_session_builder.html#ab1e0359373a5e6049f6970288c451ea0", null ],
+    [ "withGppConsent:gppSectionIds:", "interface_flurry_session_builder.html#ad0609f56931c54465feadbb1e0fbdd00", null ],
     [ "withIAPReportingEnabled:", "interface_flurry_session_builder.html#ab16bf637490a652025c1439c4708872a", null ],
     [ "withIncludeBackgroundSessionsInMetrics:", "interface_flurry_session_builder.html#abfc0241cf653983f50776b1e1dfc2ad6", null ],
     [ "withLogLevel:", "interface_flurry_session_builder.html#ad378c9c2f91f61a3583925af739a5e52", null ],

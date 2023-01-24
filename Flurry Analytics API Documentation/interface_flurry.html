@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">12.1.1</span>
+   &#160;<span id="projectnumber">12.2.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -150,6 +150,9 @@ Class Methods</h2></td></tr>
 <tr class="memitem:aa8238bc01d0f2493aa6d018f9c34ee7c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#aa8238bc01d0f2493aa6d018f9c34ee7c">setLogLevel:</a></td></tr>
 <tr class="memdesc:aa8238bc01d0f2493aa6d018f9c34ee7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates debug logs to console.  <a href="#aa8238bc01d0f2493aa6d018f9c34ee7c">More...</a><br/></td></tr>
 <tr class="separator:aa8238bc01d0f2493aa6d018f9c34ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8359330b10d6dd48fa3a09e661bf9d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#adc8359330b10d6dd48fa3a09e661bf9d">setGppConsent:gppSectionIds:</a></td></tr>
+<tr class="memdesc:adc8359330b10d6dd48fa3a09e661bf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An api to send gpp compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the consent string and section Ids.  <a href="#adc8359330b10d6dd48fa3a09e661bf9d">More...</a><br/></td></tr>
+<tr class="separator:adc8359330b10d6dd48fa3a09e661bf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">startSession APIs'</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>API to start session by passing API key, optionally passing launchOptions and/or customizing the session settings/options Only one of the API must be called to start the session </p>
 </div></td></tr>
@@ -1389,6 +1392,32 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adc8359330b10d6dd48fa3a09e661bf9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setGppConsent: </td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nonnull)&#160;</td>
+          <td class="paramname"><em>gppString</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An api to send gpp compliance data to <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> on the consent string and section Ids. </p>
+<dl class="section since"><dt>Since</dt><dd>12.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gppString</td><td>GPP Consent String </td></tr>
+    <tr><td class="paramname">gppSectionIds</td><td>An array of integer values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a20959b047c5c7ef2f6b38f3d956c9c83"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1717,7 +1746,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sd_builder_46484485/sd/src/git.ouryahoo.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/Users/sd_builder_56340730/sd/src/git.ouryahoo.com/flurry/IOSSDK/FlurrySDK/PublicAPIs/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

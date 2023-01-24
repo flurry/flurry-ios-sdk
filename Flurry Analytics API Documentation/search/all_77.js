@@ -4,6 +4,7 @@ var searchData=
   ['withconsent_3a',['withConsent:',['../interface_flurry_session_builder.html#a4438f18346806d4a63d516e1abb444fb',1,'FlurrySessionBuilder']]],
   ['withcrashreporting_3a',['withCrashReporting:',['../interface_flurry_session_builder.html#aca208d93d31eea36a467f5c1bde849e8',1,'FlurrySessionBuilder']]],
   ['withdatasaleoptout_3a',['withDataSaleOptOut:',['../interface_flurry_session_builder.html#ab1e0359373a5e6049f6970288c451ea0',1,'FlurrySessionBuilder']]],
+  ['withgppconsent_3agppsectionids_3a',['withGppConsent:gppSectionIds:',['../interface_flurry_session_builder.html#ad0609f56931c54465feadbb1e0fbdd00',1,'FlurrySessionBuilder']]],
   ['withiapreportingenabled_3a',['withIAPReportingEnabled:',['../interface_flurry_session_builder.html#ab16bf637490a652025c1439c4708872a',1,'FlurrySessionBuilder']]],
   ['withincludebackgroundsessionsinmetrics_3a',['withIncludeBackgroundSessionsInMetrics:',['../interface_flurry_session_builder.html#abfc0241cf653983f50776b1e1dfc2ad6',1,'FlurrySessionBuilder']]],
   ['withloglevel_3a',['withLogLevel:',['../interface_flurry_session_builder.html#ad378c9c2f91f61a3583925af739a5e52',1,'FlurrySessionBuilder']]],

@@ -20,6 +20,7 @@ var searchData=
   ['setdouble_3aforkey_3a',['setDouble:forKey:',['../interface_flurry_param_builder.html#a7c475683713f0493aae18ebae9aefd9f',1,'FlurryParamBuilder']]],
   ['setdouble_3aforparam_3a',['setDouble:forParam:',['../interface_flurry_param_builder.html#ac41bfb7b846ae4a37a78ffdae53e5af0',1,'FlurryParamBuilder']]],
   ['setgender_3a',['setGender:',['../interface_flurry.html#a992c7069a0e0ae170e5106cd29406b58',1,'Flurry']]],
+  ['setgppconsent_3agppsectionids_3a',['setGppConsent:gppSectionIds:',['../interface_flurry.html#adc8359330b10d6dd48fa3a09e661bf9d',1,'Flurry']]],
   ['setiapreportingenabled_3a',['setIAPReportingEnabled:',['../interface_flurry.html#a20959b047c5c7ef2f6b38f3d956c9c83',1,'Flurry']]],
   ['setinteger_3aforkey_3a',['setInteger:forKey:',['../interface_flurry_param_builder.html#a1df7f9e1a41c26d950659c2cb27db72d',1,'FlurryParamBuilder']]],
   ['setinteger_3aforparam_3a',['setInteger:forParam:',['../interface_flurry_param_builder.html#a33dd5d6339cb89ec51fe9b870a81b79a',1,'FlurryParamBuilder']]],

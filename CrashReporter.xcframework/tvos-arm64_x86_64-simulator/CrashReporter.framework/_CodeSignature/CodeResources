@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/PLCrashMacros.h</key>
 		<data>
-		b7XIBPWuEPNaf4ycw2sed+gffGU=
+		EgfEfSDoo+ipdGXg9d2sqTsTOgc=
 		</data>
 		<key>Headers/PLCrashNamespace.h</key>
 		<data>
-		CISEPF6pCwNhuYX4ayG3hJlN+po=
+		YNeEQDuC5A4jrZjmC08NC6qjJFY=
 		</data>
 		<key>Headers/PLCrashReport.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6DT2S7ufW0A5h909qQU32vElxkA=
+		VhqRcgF+OyBN/D+dabj8gCAwUgI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,22 +129,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b7XIBPWuEPNaf4ycw2sed+gffGU=
+			EgfEfSDoo+ipdGXg9d2sqTsTOgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			KJ3Ee9YR6C+foQSy2Uv/FTp4ZY02BillLVy6NCtt1SQ=
+			onONQ05LiikrFVtyJyeHxsRLgrz8/U0BLgGlQXvbeRE=
 			</data>
 		</dict>
 		<key>Headers/PLCrashNamespace.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CISEPF6pCwNhuYX4ayG3hJlN+po=
+			YNeEQDuC5A4jrZjmC08NC6qjJFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xbYP1Blj245yaTLnx94giQliI/yb99yxRuV47M7pehY=
+			tkOMrwctCwRSaupDu82fuYSFRYu8Xe6+F5FjehcC7HY=
 			</data>
 		</dict>
 		<key>Headers/PLCrashReport.h</key>
