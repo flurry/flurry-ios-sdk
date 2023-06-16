@@ -1006,6 +1006,98 @@ NS_SWIFT_NAME(log(eventName:parameters:timed:));
 + (void)endTimedEvent:(nonnull NSString *)eventName withParameters:(nullable NSDictionary *)parameters
 NS_SWIFT_NAME(endTimedEvent(eventName:parameters:));    // non-nil parameters will update the parameters
 
+
+/*!
+ *  @brief Records a timed event specified by @c eventId.
+ *  @since 12.3.1
+ *
+ *  This method overloads #logEvent to allow you to capture the length of an event. This can
+ *  be extremely valuable to understand the level of engagement with a particular action. For
+ *  example, you can capture how long a user spends on a level or reading an article.
+ *
+ *  @note You should not pass private or confidential information about your users in a
+ *  custom event. \n
+ *  Where applicable, you should make a concerted effort to use parameters with your timed
+ *  events (#logEvent:withParameters:). This provides valuable information
+ *  around the characteristics of an action (e.g. - Buy Event that has a Parameter of Widget with
+ *  Value Golden Sword).
+ *
+ *  @param eventName Name of the event. For maximum effectiveness, we recommend using a naming scheme
+ *  that can be easily understood by non-technical people in your business domain.
+ *  @param eventId Unique string identifier of the event. This new api allows timed events with the same name to be terminated in a specific order through use if the eventId.
+ *  @param parameters An immutable copy of map containing Name-Value pairs of parameters.
+ *
+ *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
+ */
+
++ (FlurryEventRecordStatus) logEvent:(NSString *_Nonnull)eventName withEventId:(NSString *_Nullable)eventId withParameters:(NSDictionary *_Nullable)parameters;
+
+/*!
+ *  @brief Records a timed event specified by @c eventId.
+ *  @since 12.3.1
+ *
+ *  This method overloads #logEvent to allow you to capture the length of an event. This can
+ *  be extremely valuable to understand the level of engagement with a particular action. For
+ *  example, you can capture how long a user spends on a level or reading an article.
+ *
+ *  @note You should not pass private or confidential information about your users in a
+ *  custom event. \n
+ *  Where applicable, you should make a concerted effort to use parameters with your timed
+ *  events (#logEvent:withParameters:). This provides valuable information
+ *  around the characteristics of an action (e.g. - Buy Event that has a Parameter of Widget with
+ *  Value Golden Sword).
+ *
+ *  @param eventName Name of the event. For maximum effectiveness, we recommend using a naming scheme
+ *  that can be easily understood by non-technical people in your business domain.
+ *  @param eventId Unique string identifier of the event. This new api allows timed events with the same name to be terminated in a specific order through use if the eventId
+ *
+ *  @return enum FlurryEventRecordStatus for the recording status of the logged event.
+ */
++ (FlurryEventRecordStatus) logEvent:(NSString *_Nonnull)eventName withEventId:(NSString *_Nullable)eventId;
+
+/*!
+ *  @brief Ends a timed event specified by @c eventId and optionally updates parameters with @c parameters.
+ *  @since 12.3.1
+ *
+ *  This method ends an existing timed event.  If parameters are provided, this will overwrite existing
+ *  parameters with the same name or create new parameters if the name does not exist in the parameter
+ *  map set by #logEvent:withParameters:timed:.
+ *
+ *  @note You should not pass private or confidential information about your users in a
+ *  custom event. \n
+ *  If the app is backgrounded prior to ending a timed event, the Flurry SDK will automatically
+ *  end the timer on the event. \n
+ *  #endTimedEvent:withParameters: is ignored if called on a previously
+ *  terminated event.
+ *
+ *
+ *  @param eventName Name of the event. For maximum effectiveness, we recommend using a naming scheme
+ *  that can be easily understood by non-technical people in your business domain.
+ *  @param eventId Unique string identifier of the event. This new api allows timed events with the same name to be terminated in a specific order through use if the eventId
+ *  @param parameters An immutable copy of map containing Name-Value pairs of parameters.
+ */
++ (void) endTimedEvent:(NSString *_Nonnull) eventName withEventId: (NSString *_Nullable) eventId withParameters: (NSDictionary *_Nullable)parameters;
+
+/*!
+ *  @brief Ends a timed event specified by @c eventId
+ *  @since 12.3.1
+ *
+ *  This method ends an existing timed event.
+ *
+ *  @note You should not pass private or confidential information about your users in a
+ *  custom event. \n
+ *  If the app is backgrounded prior to ending a timed event, the Flurry SDK will automatically
+ *  end the timer on the event. \n
+ *  #endTimedEvent is ignored if called on a previously
+ *  terminated event.
+ *
+ *
+ *  @param eventName Name of the event. For maximum effectiveness, we recommend using a naming scheme
+ *  that can be easily understood by non-technical people in your business domain.
+ *  @param eventId Unique string identifier of the event. This new api allows timed events with the same name to be terminated in a specific order through use if the eventId
+ */
++ (void) endTimedEvent:(NSString *_Nullable) eventName withEventId: (NSString *_Nullable) eventId;
+
 #pragma mark - Exceptions Logging
 
 /*!

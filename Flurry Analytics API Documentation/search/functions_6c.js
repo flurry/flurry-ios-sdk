@@ -11,6 +11,8 @@ var searchData=
   ['logevent_3a',['logEvent:',['../interface_flurry.html#a948853fb017e424c44571201f5b03766',1,'Flurry']]],
   ['logevent_3asyndicationid_3aparameters_3a',['logEvent:syndicationID:parameters:',['../interface_flurry.html#aba9af505ef3a56b68f1c36ff46790d3d',1,'Flurry']]],
   ['logevent_3atimed_3a',['logEvent:timed:',['../interface_flurry.html#aeec356c64c2c69876d5d7a48caf68cf0',1,'Flurry']]],
+  ['logevent_3awitheventid_3a',['logEvent:withEventId:',['../interface_flurry.html#a2fd28d8330bac1f1e33ea0a70dcca682',1,'Flurry']]],
+  ['logevent_3awitheventid_3awithparameters_3a',['logEvent:withEventId:withParameters:',['../interface_flurry.html#a41a104b109f0b826044ed437e809943d',1,'Flurry']]],
   ['logevent_3awithparameters_3a',['logEvent:withParameters:',['../interface_flurry.html#ab3dcb9338ec6639588fd1139040c152b',1,'Flurry']]],
   ['logevent_3awithparameters_3atimed_3a',['logEvent:withParameters:timed:',['../interface_flurry.html#a392f8adf87f51fca0235264354bcaee5',1,'Flurry']]],
   ['logpaymenttransaction_3astatuscallback_3a',['logPaymentTransaction:statusCallback:',['../interface_flurry.html#ab28e1bb499299169e73239f49d9e88f7',1,'Flurry']]],

@@ -2,6 +2,32 @@
 
 ## Version 12.x
 
+### Version 12.3.1 - 06/16/2023
+
+* Adds new apis to provide more flexibility for closing timed events
+
+### Version 12.2.0 - 01/24/2023
+
+* Version is built on Xcode 14
+* New api added to FlurrySessionBuilder to simplify gpp consent implementation
+* Watch support is temporarily removed from the podspec due to the following issue: https://github.com/CocoaPods/CocoaPods/issues/11558
+* Use manual installation or Swift Package for WatchOS support
+
+### Version 12.1.4 - 11/02/2022
+
+* Revert back to 12.1.1 due to conflict with ads sdk
+
+### Version 12.1.3 - 10/27/2022
+
+* Version is built on Xcode 14
+* Watch support is temporarily removed from the podspec due to the following issue: https://github.com/CocoaPods/CocoaPods/issues/11558
+* Use manual installation or Swift Package for WatchOS support
+
+### Version 12.1.2 - 
+
+* internal release only
+
+
 ### Version 12.1.1 - 06/30/2022
 
 * Fix for http 400 error when consentStrings is nil
