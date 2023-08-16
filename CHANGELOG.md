@@ -2,6 +2,11 @@
 
 ## Version 12.x
 
+### Version 12.4.0 - 08/16/2023
+
+* Resolves crash with timedId when string is very long
+* Minimum iOS version is 12.0
+
 ### Version 12.3.1 - 06/16/2023
 
 * Adds new apis to provide more flexibility for closing timed events

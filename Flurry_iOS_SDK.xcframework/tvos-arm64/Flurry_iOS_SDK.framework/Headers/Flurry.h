@@ -1006,7 +1006,6 @@ NS_SWIFT_NAME(log(eventName:parameters:timed:));
 + (void)endTimedEvent:(nonnull NSString *)eventName withParameters:(nullable NSDictionary *)parameters
 NS_SWIFT_NAME(endTimedEvent(eventName:parameters:));    // non-nil parameters will update the parameters
 
-
 /*!
  *  @brief Records a timed event specified by @c eventId.
  *  @since 12.3.1
